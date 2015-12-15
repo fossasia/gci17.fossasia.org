@@ -1,0 +1,75 @@
+.uls-compact .uls-icon-close,
+.uls-compact .uls-title-region,
+.uls-compact .uls-map-block,
+.uls-compact #uls-settings-block {
+    display: none !important;
+}
+
+.uls-compact.uls-menu {
+    border-radius: 0;
+}
+
+.uls-compact .uls-search {
+    background: white;
+    border-top: none;
+    padding: 0.8em 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #DDD;
+}
+
+.uls-compact .uls-filterinput,
+.uls-compact .uls-filterinput:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 18px;
+    left: 0;
+}
+
+.uls-compact .uls-language-list {
+    background: #FCFCFC;
+    height: 20em;
+}
+
+.uls-compact .uls-search-label {
+    background-size: 25px;
+    height: 26px;
+    width: 26px;
+    float: right;
+    opacity: 0.8;
+}
+
+.uls-compact .uls-languagefilter-clear {
+    margin-left: 0;
+}
+
+.uls-compact .uls-title-region a {
+    color: #777;
+    display: inline-block;
+    margin: 15px 0 5px 19px;
+    cursor: pointer;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+.uls-compact .uls-title-region a:hover {
+    color: #252525;
+    background: #F0F0F0;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+}
+
+.uls-compact .uls-title-region a:before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 4px solid #777;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    content: "";
+    margin: 0 6px 0 0;
+}
