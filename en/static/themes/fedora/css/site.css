@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(../fonts/montserrat.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/open-sans.ttf) format('truetype');
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+.bandana a,
+.bandana a:focus,
+.bandana a:hover {
+  color: #27ae60;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+html,
+body {
+  height: 100%;
+  background: url('../img/background.png');
+  background-size: 100% auto;
+}
+body {
+  color: #fff;
+  font-family: 'Open Sans';
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.site-wrapper {
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 75px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 75px rgba(0,0,0,.5);
+}
+
+.site-wrapper-inner {
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+
+.cover-container {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
+  width: 100%;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+#js-warning .panel-body {
+  background-color: #3c6eb4;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: block;
+  width: 141px;
+  height: 45px;
+  background: url('../img/fedora-logo-inverted.png');
+  background-repeat: no-repeat;
+  /* This is hilarious. */
+  text-indent: -9999px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Montserrat;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus,
+.masthead-nav > .open > a,
+.masthead-nav > .open > a:hover,
+.masthead-nav > .open > a:focus {
+  color: #fff;
+  background-color: transparent;
+  border-bottom-color: #fff;
+}
+
+.dropdown-menu {
+    min-width: 105px;
+}
+
+.masthead, .mastfoot {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mastfoot {
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.bandana {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 20px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.main-text {
+  vertical-align: middle;
+  display: inline-block;
+  /* This has to be relative just so z-index applies */
+  position: relative;
+  z-index: 2;
+}
+
+.bandana .img {
+  display: none;
+
+  margin-top: -100px;
+  margin-bottom: -100px;
+  position: absolute;
+  right: 10%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.bandana .img img {
+  z-index: -1;
+  height: 400px;
+  width: 400px
+}
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+  display: none;
+}
+
+.title {
+    font-size: 40pt;
+    font-weight: 900;
+    color: #294172;
+    text-transform: uppercase;
+}
+
+.segue1 {
+    font-size: 12pt;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+
+.segue2 {
+    font-size: 15pt;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 15pt;
+    font-style: italic;
+    margin-top: -10px;
+    padding-bottom: 12px;
+    color: #3c6eb4;
+    border-bottom: dashed 1px #3c6eb4;
+    display: inline;
+}
+
+
+@media (min-width: 480px) {
+    .title { font-size: 46pt; }
+    .segue1 { font-size: 14pt; }
+    .segue2 { font-size: 24pt; }
+    .subtitle { font-size: 18pt; }
+    .mastfoot { display: block; }
+    .bandana {
+      min-height: 200px;
+      background-image:
+        -moz-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
+        -moz-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
+        -moz-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+      background-image:
+        -webkit-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
+        -webkit-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
+        -webkit-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+      background-image:
+        -o-radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
+        -o-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
+        -o-radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+      background-image:
+        radial-gradient(center top, ellipse farthest-side, rgba(116, 116, 116, 0.5), rgba(116, 116, 116, 0) 95%),
+        radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0)),
+        radial-gradient(center top, ellipse farthest-side, rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0));
+      background-size: 100% 5px, 100% 20px, 100% 35px;
+      background-repeat: no-repeat;
+    }
+
+}
+
+@media (min-width: 768px) {
+  .title { font-size: 64pt; }
+  .segue1 { font-size: 18pt; }
+  .segue2 { font-size: 32pt; }
+  .subtitle { font-size: 24pt; }
+  .bandana .img { display: inline-block; }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot {
+    width: 950px;
+  }
+}
