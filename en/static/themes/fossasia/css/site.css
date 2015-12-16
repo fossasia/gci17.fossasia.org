@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Globals
  */
 
@@ -69,6 +69,11 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.masthead-nav {
+	font-family: 'Hind', sans-serif;
 }
 
 .masthead-nav > li {
@@ -136,24 +141,28 @@ body {
 
 .title {
     font-size: 40pt;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .segue1 {
     font-size: 15pt;
     font-style: italic;
     margin-bottom: -20px;
+    font-family: 'Hind', sans-serif;
 }
 
 .segue2 {
     font-size: 15pt;
     font-style: italic;
     margin-bottom: -20px;
+    font-family: 'Hind', sans-serif;
 }
 
 .subtitle {
     font-size: 15pt;
     font-style: italic;
     margin-top: -10px;
+    font-family: 'Hind', sans-serif;
 }
 
 @media (min-width: 480px) {
