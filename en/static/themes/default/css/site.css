@@ -68,10 +68,15 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .masthead-nav > li {
   display: inline-block;
+}
+
+.masthead-nav {
+  font-family: 'Hind', sans-serif;
 }
 .masthead-nav > li + li {
   margin-left: 20px;
@@ -141,12 +146,14 @@ body {
     font-size: 15pt;
     font-style: italic;
     margin-bottom: -20px;
+    font-family: 'Hind', sans-serif;
 }
 
 .segue2 {
     font-size: 15pt;
     font-style: italic;
     margin-bottom: -20px;
+    font-family: 'Hind', sans-serif;
 }
 
 .subtitle {
