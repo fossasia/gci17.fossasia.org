@@ -165,6 +165,19 @@ body {
     font-family: 'Hind', sans-serif;
 }
 
+.btn {
+	border-radius: 0px;
+	border-color: #fff;
+}
+
+.btn-success {
+	background: none;
+}
+
+.btn-danger {
+	background: transparent;
+}
+
 @media (min-width: 480px) {
     .title {
         font-size: 64pt;
