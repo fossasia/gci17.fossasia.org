@@ -1,4 +1,4 @@
-.uls-trigger {
+﻿.uls-trigger {
     /* @embed */
     background: transparent url('/static/img/icon-language.png') no-repeat scroll left center;
     /* @embed */
@@ -73,9 +73,9 @@
     /* @embed */
     background: transparent url('/static/img/world_map.png') no-repeat scroll right top;
     /* @embed */
-    background-image: -webkit-linear-gradient(transparent, transparent), url('/static/img/world_map.svg');
+    background-image: -webkit-linear-gradient(transparent, transparent), url('../../../../static/img/world_map.png');
     /* @embed */
-    background-image: linear-gradient(transparent, transparent), url('/static/img/world_map.svg');
+    background-image: linear-gradient(transparent, transparent), url('../../../../static/img/world_map.png');
     background-size: 100%;
 }
 
@@ -164,9 +164,9 @@ div.uls-region {
     /* @embed */
     background: transparent url('/static/img/close.png') no-repeat scroll center center;
     /* @embed */
-    background-image: -webkit-linear-gradient(transparent, transparent), url('/static/img/close.svg');
+    background-image: -webkit-linear-gradient(transparent, transparent), url('../../../../static/img/close.png');
     /* @embed */
-    background-image: linear-gradient(transparent, transparent), url('/static/img/close.svg');
+    background-image: linear-gradient(transparent, transparent), url('../../../../static/img/close.png');
     float: right;
     padding: 15px;
     cursor: pointer;
@@ -212,9 +212,9 @@ div.uls-region {
     /* @embed */
     background: transparent url('/static/img/search.png') no-repeat scroll right center;
     /* @embed */
-    background-image: -webkit-linear-gradient(transparent, transparent), url('/static/img/search.svg');
+    background-image: -webkit-linear-gradient(transparent, transparent), url('../../../../static/img/search.png');
     /* @embed */
-    background-image: linear-gradient(transparent, transparent), url('/static/img/search.svg');
+    background-image: linear-gradient(transparent, transparent), url('../../../../static/img/search.png');
     background-size: 30px;
     height: 32px;
     width: 32px;
@@ -225,9 +225,9 @@ div.uls-region {
     /* @embed */
     background: transparent url('/static/img/clear.png') no-repeat scroll left center;
     /* @embed */
-    background-image: -webkit-linear-gradient(transparent, transparent), url('/static/img/clear.svg');
+    background-image: -webkit-linear-gradient(transparent, transparent), url('../../../../static/img/clear.png');
     /* @embed */
-    background-image: linear-gradient(transparent, transparent), url('/static/img/clear.svg');
+    background-image: linear-gradient(transparent, transparent), url('../../../../static/img/clear.png');
     cursor: pointer;
     height: 32px;
     position: absolute;
