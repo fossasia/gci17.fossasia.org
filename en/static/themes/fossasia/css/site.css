@@ -69,11 +69,11 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .masthead-nav {
-	font-family: 'Hind', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .masthead-nav > li {
@@ -141,28 +141,29 @@ body {
 
 .title {
     font-size: 40pt;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .segue1 {
-    font-size: 15pt;
-    font-style: italic;
+    font-size: 14pt;
+   /* font-style: italic; */
     margin-bottom: -20px;
-    font-family: 'Hind', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .segue2 {
-    font-size: 15pt;
-    font-style: italic;
+    font-size: 10pt;
+   /* font-style: italic; */
     margin-bottom: -20px;
-    font-family: 'Hind', sans-serif;
+   /* font-family: 'Open Sans', sans-serif; */
+   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .subtitle {
     font-size: 15pt;
-    font-style: italic;
     margin-top: -10px;
-    font-family: 'Hind', sans-serif;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn {
