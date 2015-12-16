@@ -26,7 +26,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: url('../img/background.jpg');
+  /* background: url('../img/background.jpg'); */
+  background-color: #a73737;
   background-size: 100% auto;
 }
 body {
@@ -173,7 +174,12 @@ body {
 	border-color: #fff;
 	width: 300px;
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 
+}
+
+.centre {
+	text-align: center;
 }
 
 .btn-success {
