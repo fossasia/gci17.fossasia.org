@@ -143,18 +143,20 @@ body {
     font-size: 40pt;
     font-family: 'Josefin Sans', sans-serif;
 }
-
+.cover {
+	line-height: 70px;
+}
 .segue1 {
     font-size: 14pt;
    /* font-style: italic; */
-    margin-bottom: -20px;
+     margin-bottom: -20px; 
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .segue2 {
     font-size: 10pt;
    /* font-style: italic; */
-    margin-bottom: -20px;
+    margin-bottom: -20px; 
    /* font-family: 'Open Sans', sans-serif; */
    font-family: 'Open Sans Condensed', sans-serif;
 }
