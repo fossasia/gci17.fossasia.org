@@ -171,7 +171,7 @@ body {
 .btn {
 	border-radius: 0px;
 	border-color: #fff;
-	width: 250px;
+	width: 300px;
 }
 
 .btn-success {
@@ -179,6 +179,10 @@ body {
 }
 
 .btn-danger {
+	background: transparent;
+}
+
+.btn-warning {
 	background: transparent;
 }
 
