@@ -169,6 +169,7 @@ body {
 .btn {
 	border-radius: 0px;
 	border-color: #fff;
+	width: 250px;
 }
 
 .btn-success {
