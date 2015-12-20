@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Globals
  */
 
@@ -26,13 +26,14 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: url('../img/background.jpg');
+  /*background: url('../img/background.jpg'); */
+  background: #A73737;
   background-size: 100% auto;
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -69,6 +70,11 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.masthead-nav {
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .masthead-nav > li {
@@ -136,24 +142,51 @@ body {
 
 .title {
     font-size: 40pt;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
+.cover {
+	line-height: 70px;
+}
 .segue1 {
-    font-size: 15pt;
-    font-style: italic;
-    margin-bottom: -20px;
+    font-size: 14pt;
+   /* font-style: italic; */
+     margin-bottom: -20px; 
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .segue2 {
-    font-size: 15pt;
-    font-style: italic;
-    margin-bottom: -20px;
+    font-size: 10pt;
+   /* font-style: italic; */
+    margin-bottom: -20px; 
+   /* font-family: 'Open Sans', sans-serif; */
+   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .subtitle {
     font-size: 15pt;
-    font-style: italic;
     margin-top: -10px;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+	border-radius: 0px;
+	border-color: #fff;
+	width: 300px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.btn-success {
+	background: none;
+}
+
+.btn-danger {
+	background: transparent;
+}
+
+.btn-warning {
+	background: transparent;
 }
 
 @media (min-width: 480px) {
