@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Globals
  */
 
@@ -23,17 +23,17 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-  /*background: url('../img/background.jpg'); */
-  background: #A73737;
-  background-size: 100% auto;
+html {
+  min-height: 100%;
 }
 body {
+  height: 100%;
+  background-image: url('../img/background.jpg');
+  background-color: #A73737;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
-  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -44,23 +44,33 @@ body {
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
-.site-wrapper-inner {
-  height: -webkit-calc(100% - 40px);
-  height: -moz-calc(100% - 40px);
-  height: calc(100% - 40px);
-}
-.cover-container {
-  position: relative;
-  top: 40%;
-  -webkit-transform: translateY(-45%);
-  -ms-transform: translateY(-45%);
-  transform: translateY(-45%);
-  width: 100%;
+
+@media screen and (min-width: 768px) {
+  html {
+    height: 100%;
+  }
+  .site-wrapper-inner {
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+  }
+  .cover-container {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    transform: translateY(-45%);
+    width: 100%;
+  }
+  
+  .inner {
+    padding: 30px;
+  }
 }
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 10px;
 }
 
 
@@ -110,9 +120,6 @@ body {
   margin-left: auto;
 }
 
-.mastfoot {
-    height: 40px;
-}
 
 @media (min-width: 768px) {
   .masthead-brand {
@@ -135,9 +142,14 @@ body {
  */
 
 .mastfoot {
+  height: 40px;
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
   display: none;
+}
+
+.mastfoot p {
+  margin: 0
 }
 
 .title {

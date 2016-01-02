@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300,300italic|Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300,300italic|Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,126 +14,113 @@
     <title>What can I do for FOSSASIA?</title>
 
     <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../static/css/jquery.uls.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/jquery.uls.grid.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/jquery.uls.lcd.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/jquery.uls.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/jquery.uls.grid.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/jquery.uls.lcd.css">
     <link href="static/themes/fossasia/css/site.css" rel="stylesheet">
     <script>
         var SEP = '#';
         var all_ids = [
-    "foo", 
-    "design-and-usability", 
-    "writing", 
-    "articles", 
-    "documentation", 
-    "languages", 
-    "code", 
-    "making-things-stable", 
-    "fixing-bugs", 
-    "good-tests", 
-    "system-administration"
-];
+          "foo",
+          "design-and-usability",
+          "writing",
+          "articles",
+          "documentation",
+          "languages",
+          "code",
+          "making-things-stable",
+          "fixing-bugs",
+          "good-tests",
+          "system-administration"
+        ];
         var question_tree = {
-    "backlink": "Get me outta here!", 
-    "children": [
-        {
-            "backlink": "Get me outta here!", 
-            "subtitle": "Making sure we focus on users.", 
-            "title": "Design and Usability", 
-            "negative": "Not on your life", 
-            "affirmative": "Sure", 
-            "href": "https://wiki.gnome.org/Design/Contribute", 
-            "id": "design-and-usability"
-        }, 
-        {
-            "backlink": "I was wrong, take me back", 
-            "subtitle": "Want to help with your english skills?", 
-            "title": "Writing", 
-            "children": [
-                {
-                    "backlink": "I was wrong, take me back", 
-                    "subtitle": "Want to help with the engagement team?", 
-                    "title": "Articles", 
-                    "negative": "Not on your life", 
-                    "affirmative": "Sure", 
-                    "href": "https://wiki.gnome.org/Engagement#Contribute", 
-                    "id": "articles"
-                }, 
-                {
-                    "backlink": "I was wrong, take me back", 
-                    "subtitle": "Get all the hidden features to the users!", 
-                    "title": "Documentation", 
-                    "negative": "Nope", 
-                    "affirmative": "Sure", 
-                    "href": "https://wiki.gnome.org/DocumentationProject/Contributing", 
-                    "id": "documentation"
-                }
-            ], 
-            "negative": "No", 
-            "affirmative": "That's me!", 
-            "id": "writing"
-        }, 
-        {
-            "backlink": "I was wrong, take me back", 
-            "subtitle": "You could help translating!", 
-            "title": "Languages", 
-            "negative": "No, thanks", 
-            "affirmative": "Sounds awesome", 
-            "href": "https://wiki.gnome.org/TranslationProject/ContributeTranslations", 
-            "id": "languages"
-        }, 
-        {
-            "backlink": "I think I made a mistake", 
-            "subtitle": "Get your hands dirty!", 
-            "title": "Code", 
-            "negative": "Nope, nope, nope", 
-            "affirmative": "Sounds awesome", 
-            "href": "https://wiki.gnome.org/Newcomers/", 
-            "id": "code"
-        }, 
-        {
-            "backlink": "Get me outta here!", 
-            "subtitle": "May GNOME never crash again", 
-            "title": "Making Things Stable", 
-            "children": [
-                {
-                    "backlink": "I was wrong, take me back", 
-                    "subtitle": "Join our Bugsquad!", 
-                    "title": "Fixing Bugs", 
-                    "negative": "Nope", 
-                    "affirmative": "Totally", 
-                    "href": "https://wiki.gnome.org/Bugsquad", 
-                    "id": "fixing-bugs"
-                }, 
-                {
-                    "backlink": "I was wrong, take me back", 
-                    "subtitle": "The QA team might be right for you.", 
-                    "title": "Good Tests", 
-                    "negative": "Nope", 
-                    "affirmative": "Totally", 
-                    "href": "https://wiki.gnome.org/GnomeQA", 
-                    "id": "good-tests"
-                }
-            ], 
-            "negative": "Absolutely not", 
-            "affirmative": "Yes", 
-            "id": "making-things-stable"
-        }, 
-        {
-            "backlink": "I think I made a mistake", 
-            "subtitle": "Help us managing our infrastructure!", 
-            "title": "System Administration", 
-            "negative": "Next, please", 
-            "affirmative": "Sure", 
-            "href": "https://wiki.gnome.org/Sysadmin/Apprentices", 
-            "id": "system-administration"
-        }
-    ], 
-    "negative": "No, thanks", 
-    "affirmative": "That's me!", 
-    "segue1": "Want to help FOSSASIA?", 
-    "segue2": "First tell us what you like!", 
-    "id": "foo"
+            "backlink": "Get me outta here!",
+            "children": [{
+              "backlink": "Get me outta here!",
+              "subtitle": "Making sure we focus on users.",
+              "title": "Design and Usability",
+              "negative": "Not on your life",
+              "affirmative": "Sure",
+              "href": "https://wiki.gnome.org/Design/Contribute",
+              "id": "design-and-usability"
+            }, {
+              "backlink": "I was wrong, take me back",
+              "subtitle": "Want to help with your english skills?",
+              "title": "Writing",
+              "children": [{
+                "backlink": "I was wrong, take me back",
+                "subtitle": "Want to help with the engagement team?",
+                "title": "Articles",
+                "negative": "Not on your life",
+                "affirmative": "Sure",
+                "href": "https://wiki.gnome.org/Engagement#Contribute",
+                "id": "articles"
+              }, {
+                "backlink": "I was wrong, take me back",
+                "subtitle": "Get all the hidden features to the users!",
+                "title": "Documentation",
+                "negative": "Nope",
+                "affirmative": "Sure",
+                "href": "https://wiki.gnome.org/DocumentationProject/Contributing",
+                "id": "documentation"
+              }],
+              "negative": "No",
+              "affirmative": "That's me!",
+              "id": "writing"
+            }, {
+              "backlink": "I was wrong, take me back",
+              "subtitle": "You could help translating!",
+              "title": "Languages",
+              "negative": "No, thanks",
+              "affirmative": "Sounds awesome",
+              "href": "https://wiki.gnome.org/TranslationProject/ContributeTranslations",
+              "id": "languages"
+            }, {
+              "backlink": "I think I made a mistake",
+              "subtitle": "Get your hands dirty!",
+              "title": "Code",
+              "negative": "Nope, nope, nope",
+              "affirmative": "Sounds awesome",
+              "href": "https://wiki.gnome.org/Newcomers/",
+              "id": "code"
+            }, {
+              "backlink": "Get me outta here!",
+              "subtitle": "May GNOME never crash again",
+              "title": "Making Things Stable",
+              "children": [{
+                "backlink": "I was wrong, take me back",
+                "subtitle": "Join our Bugsquad!",
+                "title": "Fixing Bugs",
+                "negative": "Nope",
+                "affirmative": "Totally",
+                "href": "https://wiki.gnome.org/Bugsquad",
+                "id": "fixing-bugs"
+              }, {
+                "backlink": "I was wrong, take me back",
+                "subtitle": "The QA team might be right for you.",
+                "title": "Good Tests",
+                "negative": "Nope",
+                "affirmative": "Totally",
+                "href": "https://wiki.gnome.org/GnomeQA",
+                "id": "good-tests"
+              }],
+              "negative": "Absolutely not",
+              "affirmative": "Yes",
+              "id": "making-things-stable"
+            }, {
+              "backlink": "I think I made a mistake",
+              "subtitle": "Help us managing our infrastructure!",
+              "title": "System Administration",
+              "negative": "Next, please",
+              "affirmative": "Sure",
+              "href": "https://wiki.gnome.org/Sysadmin/Apprentices",
+              "id": "system-administration"
+            }],
+            "negative": "No, thanks",
+            "affirmative": "That's me!",
+            "segue1": "Want to help FOSSASIA?",
+            "segue2": "First tell us what you like!",
+            "id": "foo"
 };
     </script>
 
@@ -205,7 +192,6 @@
               </div>
               <p class="lead">
                   <a href="https://wiki.gnome.org/Design/Contribute" target="_blank" class="btn btn-lg btn-success">Sure</a>
-                  &nbsp; &nbsp;
                   <a data-next="writing" class="nope btn btn-lg btn-danger">Not on your life</a>
                 </p>
             </div>
@@ -229,7 +215,6 @@
               </div>
                 <p class="lead">
                   <a data-next="articles" class="yes btn btn-lg btn-success">That's me!</a>
-                  &nbsp; &nbsp;
                   <a data-next="languages" class="nope btn btn-lg btn-danger">No</a>
                 </p>
             </div>
@@ -252,7 +237,6 @@
 
                 <p class="lead">
                   <a data-next="documentation" class="nope btn btn-lg btn-danger">Not on your life</a>
-                  &nbsp; &nbsp;
                 <a class="back btn btn-lg btn-warning">I was wrong, take me back</a>
               </p>
             </div>
@@ -273,7 +257,6 @@
                 </span>
               </div>
                   <a href="https://wiki.gnome.org/DocumentationProject/Contributing" target="_blank" class="btn btn-lg btn-success">Sure</a>
-                  &nbsp; &nbsp;
                   <a data-next="articles" class="nope btn btn-lg btn-danger">Nope</a>
                 </p>
               <p class="lead">
@@ -284,9 +267,8 @@
 
           
 
+     
           
-          
-
             <div id="languages" class="cover hidden">
 
               <p class="segue1">Want to help FOSSASIA?</p>
@@ -300,14 +282,11 @@
                   <p class="subtitle"><span>You could help translating!</span></p>
                 </span>
               </div>
-                  <a href="https://wiki.gnome.org/TranslationProject/ContributeTranslations" target="_blank" class="btn btn-lg btn-success">Sounds awesome</a>
-                  &nbsp; &nbsp;
+                <p class="lead">
+                  <a href="https://wiki.gnome.org/TranslationProject/ContributeTranslations" target="_blank" class="btn btn-lg btn-success">Sounds Awesome!</a>
                   <a data-next="code" class="nope btn btn-lg btn-danger">No, thanks</a>
                 </p>
             </div>
-
-
-          
           
 
             <div id="code" class="cover hidden">
@@ -323,14 +302,13 @@
                   <p class="subtitle"><span>Get your hands dirty!</span></p>
                 </span>
               </div>
+                <p class="lead">
                   <a href="https://wiki.gnome.org/Newcomers/" target="_blank" class="btn btn-lg btn-success">Sounds awesome</a>
-                  &nbsp; &nbsp;
                   <a data-next="making-things-stable" class="nope btn btn-lg btn-danger">Nope, nope, nope</a>
                 </p>
             </div>
 
 
-          
           
 
             <div id="making-things-stable" class="cover hidden">
@@ -348,7 +326,6 @@
               </div>
                 <p class="lead">
                   <a data-next="fixing-bugs" class="yes btn btn-lg btn-success">Yes</a>
-                  &nbsp; &nbsp;
                   <a data-next="system-administration" class="nope btn btn-lg btn-danger">Absolutely not</a>
                 </p>
             </div>
@@ -371,7 +348,6 @@
 
                 <p class="lead">
                   <a data-next="good-tests" class="nope btn btn-lg btn-danger">Nope</a>
-                  &nbsp; &nbsp;
                 <a class="back btn btn-lg btn-warning">I was wrong, take me back</a>
               </p>
             </div>
@@ -396,7 +372,6 @@
 
                 <p class="lead">
                   <a data-next="fixing-bugs" class="nope btn btn-lg btn-danger">Nope</a>
-                  &nbsp; &nbsp;
                 <a class="back btn btn-lg btn-warning">I was wrong, take me back</a>
               </p>
             </div>
@@ -420,8 +395,8 @@
                   <p class="subtitle"><span>Help us managing our infrastructure!</span></p>
                 </span>
               </div>
+                <p class="lead">
                   <a href="https://wiki.gnome.org/Sysadmin/Apprentices" target="_blank" class="btn btn-lg btn-success">Sure</a>
-                  &nbsp; &nbsp;
                   <a data-next="design-and-usability" class="nope btn btn-lg btn-danger">Next, please</a>
                 </p>
             </div>
@@ -433,13 +408,13 @@
 
       </div>
 
-      <div class="mastfoot">
+      <footer class="mastfoot">
         <p>Created by <a href="http://github.com/abuissink" target="_blank">Archie Buissink</a> with <a href="https://github.com/fedora-infra/asknot-ng" target="_blank">asknot-ng</a> for <a href="http://gci15.fossasia.org/" target="_blank">Google Code-In 2015</a>.
         Inspired by <a href="http://whatcanidoformozilla.org" target="_blank">the original</a>.
         <span class="active uls-trigger lang-dropdown">Change Language</span>
         </p>
 
-      </div>
+      </footer>
 
     </div>
 
@@ -451,12 +426,12 @@
     <script src="static/js/site.js"></script>
     <!-- language selector -->
 
-    <script type="text/javascript" src="../static/js/jquery.uls.data.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.uls.data.utils.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.uls.lcd.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.uls.languagefilter.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.uls.regionfilter.js"></script>
-    <script type="text/javascript" src="../static/js/jquery.uls.core.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.data.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.data.utils.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.lcd.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.languagefilter.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.regionfilter.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.core.js"></script>
     <script type="text/javascript">
         /* This list is generated, don't edit here */
         $(function() {
