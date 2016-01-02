@@ -197,9 +197,6 @@ body {
 	background: transparent;
 }
 
-@media screen and (min-width: 768px) {
-  margin-left: 10px;
-}
 .btn-warning {
 	background: transparent;
 }
