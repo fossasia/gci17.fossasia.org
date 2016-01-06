@@ -15,3 +15,6 @@ Yes -> Go to: http://
 
 
 
+!- Developers please have a look at animations.md file for information.
+# view online at "yashkumarverma.github.io/whatcanidofor.fossasia.org"
+(remove line 18 to 20 when merged to parent)
