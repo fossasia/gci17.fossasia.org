@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300,300italic|Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="What can I do for FOSSASIA?">
+    <meta name="author" content="Archie Buissink">
+    <link rel="shortcut icon" href="https://d1r7943vfkqpts.cloudfront.net/4bb1501dd9bc03de9e288914e44cfa77.png">
+    <link rel="stylesheet" type="text/css" href="static/css/animation-hover.css" media="all"> <!-- added for animation effects. Contact YashKumarVerma for support -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Learn</title>
+
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./static/css/jquery.uls.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/jquery.uls.grid.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/jquery.uls.lcd.css">
+    <link href="static/themes/fossasia/css/site.css" rel="stylesheet">
+
+    <style type="text/css"></style>
+    <script>
+
+        var SEP = '#';
+        var all_ids = [
+          "foo",
+          "design-and-usability",
+          "writing",
+          "articles",
+          "documentation",
+          "languages",
+          "code",
+          "making-things-stable",
+          "fixing-bugs",
+          "good-tests",
+          "system-administration"
+        ];
+        var question_tree = {
+            "backlink": "Get me outta here!",
+            "children": [{
+              "backlink": "Get me outta here!",
+              "subtitle": "Making sure we focus on users.",
+              "title": "Design and Usability",
+              "negative": "Not on your life",
+              "affirmative": "Sure",
+              "href": "https://wiki.gnome.org/Design/Contribute",
+              "id": "design-and-usability"
+            }, {
+              "backlink": "I was wrong, take me back",
+              "subtitle": "Want to help with your english skills?",
+              "title": "Writing",
+              "children": [{
+                "backlink": "I was wrong, take me back",
+                "subtitle": "Want to help with the engagement team?",
+                "title": "Articles",
+                "negative": "Not on your life",
+                "affirmative": "Sure",
+                "href": "https://wiki.gnome.org/Engagement#Contribute",
+                "id": "articles"
+              }, {
+                "backlink": "I was wrong, take me back",
+                "subtitle": "Get all the hidden features to the users!",
+                "title": "Documentation",
+                "negative": "Nope",
+                "affirmative": "Sure",
+                "href": "https://wiki.gnome.org/DocumentationProject/Contributing",
+                "id": "documentation"
+              }],
+              "negative": "No",
+              "affirmative": "That's me!",
+              "id": "writing"
+            }, {
+              "backlink": "I was wrong, take me back",
+              "subtitle": "You could help translating!",
+              "title": "Languages",
+              "negative": "No, thanks",
+              "affirmative": "Sounds awesome",
+              "href": "https://wiki.gnome.org/TranslationProject/ContributeTranslations",
+              "id": "languages"
+            }, {
+              "backlink": "I think I made a mistake",
+              "subtitle": "Get your hands dirty!",
+              "title": "Code",
+              "negative": "Nope, nope, nope",
+              "affirmative": "Sounds awesome",
+              "href": "https://wiki.gnome.org/Newcomers/",
+              "id": "code"
+            }, {
+              "backlink": "Get me outta here!",
+              "subtitle": "May GNOME never crash again",
+              "title": "Making Things Stable",
+              "children": [{
+                "backlink": "I was wrong, take me back",
+                "subtitle": "Join our Bugsquad!",
+                "title": "Fixing Bugs",
+                "negative": "Nope",
+                "affirmative": "Totally",
+                "href": "https://wiki.gnome.org/Bugsquad",
+                "id": "fixing-bugs"
+              }, {
+                "backlink": "I was wrong, take me back",
+                "subtitle": "The QA team might be right for you.",
+                "title": "Good Tests",
+                "negative": "Nope",
+                "affirmative": "Totally",
+                "href": "https://wiki.gnome.org/GnomeQA",
+                "id": "good-tests"
+              }],
+              "negative": "Absolutely not",
+              "affirmative": "Yes",
+              "id": "making-things-stable"
+            }, {
+              "backlink": "I think I made a mistake",
+              "subtitle": "Help us managing our infrastructure!",
+              "title": "System Administration",
+              "negative": "Next, please",
+              "affirmative": "Sure",
+              "href": "https://wiki.gnome.org/Sysadmin/Apprentices",
+              "id": "system-administration"
+            }],
+            "negative": "No, thanks",
+            "affirmative": "That's me!",
+            "segue1": "Want to help FOSSASIA?",
+            "segue2": "First tell us what you like!",
+            "id": "foo"
+};
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand hvr-float-shadow	">Learn and join the open-source movement</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                    <li
+                    class="active"
+                    ><a href="index.html">Home</a></li>
+                    <li
+                    ><a href="https://wiki.gnome.org/" target="_blank">GNOME Wiki</a></li>
+                    <li
+                    ><a href="http://github.com/" target="_blank">GITHUB</a></li>
+                    <li
+                    ><a href="http://sublimetext.com/" target="_blank">Text Editors</a></li>
+                    <li
+                    ><a href="http://fossasia.org/" target="_blank">FOSSASIA.org</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="cover-container">
+
+          <div id='js-warning'>
+            <div class=" panel panel-warning">
+              <div class="panel-heading clearfix">
+                <span class="pull-left"> This page requires JavaScript </span>
+              </div>
+              <div class="panel-body">
+                <p class="lead">This page only works with JavaScript enabled.</p>
+                <p>If you have JavaScript disabled with a plugin like NoScript, please
+                disable that plugin and reload the page.  If you trust us, you
+                might find it convenient to enable JavaScript just
+                for this domain.</p>
+                <p>If you are opposed to JavaScript in principle, you're not left out!
+                You can read the page source to get at all the data.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+<section id="one" class="wrapper special">
+        <div class="inner">
+          <header class="major">
+            <h2>IMPORTANT STUFF TO LEARN</h2>
+          </header>
+          <div class="features">
+            <div class="feature">
+            
+              <h3>JAVASCRIPT</h3>
+              <p>good for web , app , program development</p>
+              <a href="http://www.learnjavaonline.org/" class="button">Start Learning Java</a>
+            </div>
+            <div class="feature">
+           
+              <h3>C++</h3>
+              <p> generally used if you want to get into robotics</p>
+              <a href="http://www.learn-c.org/" class="button">start learning C++</a>
+            </div>
+            <div class="feature">
+            
+              <h3>HTML & CSS</h3>
+              <p> nessasary if you want to start web page making</p>
+              <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html" class="button">Start learning HTML</a>
+            </div>
+      <div class="feature">
+              
+              <h3>PYTHON</h3>
+              <p> very flexible coding platform For all field's of development</p>
+              <a href="http://www.learnpython.org/" class="button">Start learning PYTHON</a>
+            </div>            
+    
+          </div>
+        </div>
+      </section>
+
+       <ul class="actions">
+          <li><a href="http://fossasia.org/" class="button special">Learn about FOSSASIA</a></li>
+        </ul>
+
+
+
+
+
+            <div id="making-things-stable" class="cover hidden">
+
+              <p class="segue1">Now It Is Your Turn To Help</p>
+
+              
+
+              <div class="bandana">
+                <span class="main-text">
+                  <h1 class="title hvr-float-shadow">Making Things Stable</h1>
+
+                  <p class="subtitle"><span>May GNOME never crash again</span></p>
+                </span>
+              </div>
+                <p class="lead">
+                  <a data-next="fixing-bugs" class="yes btn btn-lg btn-success hvr-wobble-vertical">Yes</a>
+                  <a data-next="system-administration" class="nope btn btn-lg btn-danger hvr-buzz-out">Absolutely not</a>
+                </p>
+            </div>
+
+
+
+            <div id="fixing-bugs" class="cover hidden">
+
+
+
+              <div class="bandana">
+                <span class="main-text">
+                  <h1 class="titlehvr-float-shadow">Fixing Bugs</h1>
+
+                  <p class="subtitle"><span>Join our Bugsquad!</span></p>
+
+                </span>
+              </div>
+                  <a href="https://wiki.gnome.org/Bugsquad" target="_blank" class="btn btn-lg btn-success hvr-wobble-vertical">Totally</a>
+                </p>
+
+                <p class="lead">
+                  <a data-next="good-tests" class="nope btn btn-lg btn-danger hvr-buzz-out">Nope</a>
+                <a class="back btn btn-lg btn-warning hvr-buzz-out">I was wrong, take me back</a>
+              </p>
+            </div>
+
+
+
+
+            <div id="system-administration" class="cover hidden">
+
+
+
+              <div class="bandana">
+                <span class="main-text">
+                  <h1 class="title hvr-float-shadow hvr-float-shadow">System Administration</h1>
+
+                  
+                </span>
+              </div>
+                <p class="lead">
+                  <a href="https://wiki.gnome.org/Sysadmin/Apprentices" target="_blank" class="btn btn-lg btn-success hvr-wobble-vertical">Sure</a>
+                  <a data-next="design-and-usability" class="nope btn btn-lg btn-danger hvr-buzz-out">Next, please</a>
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <footer class="mastfoot">
+        <p>Created by <a href="http://github.com/abuissink" target="_blank">Archie Buissink</a>  <p>And <a href="http://github.com/abuissink" target="_blank">Arjun Bhorkar</a> with <a href="https://github.com/fedora-infra/asknot-ng" target="_blank">asknot-ng</a> for <a href="http://gci15.fossasia.org/" target="_blank">Google Code-In 2015</a>.
+        Inspired by <a href="http://whatcanidoformozilla.org" target="_blank">the original</a>.
+        <span class="active uls-trigger lang-dropdown">Change Language</span>
+        </p>
+
+      </footer>
+
+    </div>
+
+    <script src="static/jquery/js/jquery-2.1.3.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="static/bootstrap/js/ie10-viewport-bug-workaround.js"></script> -->
+    <!-- This is where the magic happens -->
+    <script src="static/js/site.js"></script>
+    <!-- language selector -->
+
+    <script type="text/javascript" src="./static/js/jquery.uls.data.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.data.utils.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.lcd.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.languagefilter.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.regionfilter.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.uls.core.js"></script>
+    <script type="text/javascript">
+        /* This list is generated, don't edit here */
+        $(function() {
+            $('#selectedLang').val('en')
+            $( '.uls-trigger' ).uls( {
+                onSelect : function( language ) {
+                    var languageName = $.uls.data.getAutonym( language );
+                    $( '.uls-trigger' ).text( languageName );
+                    $('#selectedLang').val(language);
+                    window.location = "/"+language;
+                },
+                languages: { 'en' : 'English'
+            	}
+            } );
+            // Language list is a placeholder
+        } );
+    </script>
+  </body>
+</html>

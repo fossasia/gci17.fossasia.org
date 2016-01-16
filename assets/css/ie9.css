@@ -1,0 +1,25 @@
+/*
+	Typify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/* Form */
+
+	.grid-form .form-control {
+		display: block;
+		width: 100% !important;
+	}
+
+/* Feature */
+
+	.features:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.features .feature {
+		display: block;
+		float: left;
+	}
