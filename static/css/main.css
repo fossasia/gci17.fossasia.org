@@ -1615,14 +1615,29 @@
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		height: 2.85em;
+		height: 2.5em;
 		line-height: 2.95em;
-		padding: 0 1.5em;
+		padding: 0 .80em;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
+	@-webkit-keyframes wiggle {
+	0% {
+		-webkit-transform:rotate(3deg);
+	}
+	50% {
+		-webkit-transform:rotate(-3deg);
+	}
+	100% {
+		-webkit-transform:rotate(3deg);
+	}
+}
+
+.button:hover {
+	-webkit-animation: wiggle 0.5s infinite;
+}
 
 		input[type="submit"].icon,
 		input[type="reset"].icon,
