@@ -81,25 +81,34 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Open Sans', sans-serif;
+  font-size:40px;
+  margin-left:-170px;
+  color:#fead6a;
 }
 
 .masthead-nav {
 	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top:10px;
+	margin-right:-150px;
+	color:#fef695;
+	font-size:25px;
+	
 }
 
 .masthead-nav > li {
   display: inline-block;
+  color:#fef695;
+	font-size:25px;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color:#fef695;
+  font-size:20px;
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -121,7 +130,7 @@ body {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .masthead-brand {
     float: left;
   }
@@ -160,30 +169,36 @@ body {
 	line-height: 70px;
 }
 .segue1 {
-    font-size: 14pt;
+    font-size: 15pt;
    /* font-style: italic; */
      margin-bottom: -20px; 
     font-family: 'Open Sans Condensed', sans-serif;
+	color:#f8e119;
+	font-weight:bold;
 }
 
 .segue2 {
-    font-size: 10pt;
+    font-size: 13pt;
    /* font-style: italic; */
     margin-bottom: -20px; 
    /* font-family: 'Open Sans', sans-serif; */
    font-family: 'Open Sans Condensed', sans-serif;
+   font-weight:bold;
+   color:#e0edf5;
 }
+
 
 .subtitle {
     font-size: 15pt;
     margin-top: -10px;
     /* font-family: 'Open Sans Condensed', sans-serif; */
     font-family: 'Open Sans', sans-serif;
+	color:#c2ab1d;
 }
 
 .btn {
+	border:3px dashed white;
 	border-radius: 0px;
-	border-color: #fff;
 	width: 300px;
 	font-family: 'Open Sans', sans-serif;
 
