@@ -36,6 +36,9 @@
           "documentation",
           "languages",
           "code",
+          "fashion",
+          "loklak",
+          "fossasia",
           "making-things-stable",
           "fixing-bugs",
           "good-tests",
@@ -87,10 +90,34 @@
               "backlink": "I think I made a mistake",
               "subtitle": "Get your hands dirty!",
               "title": "Code",
-              "negative": "Nope, nope, nope",
-              "affirmative": "Sounds awesome",
-              "href": "https://wiki.gnome.org/Newcomers/",
-              "id": "code"
+              "children":[{
+              "backlink":"Nope,Nope,Nope",
+              "subtitle":"Want to help code FashionTec?",
+              "title":"FashionTec",
+              "negative":"Never!",
+              "affirmative":"Fashion? I love it!",
+              "href":"https://github.com/fashiontec",
+              "id": "fashion"
+            }, {
+              "backlink":"I was wrong, take me back",
+              "subtitle":"Want access to code on a framework",
+              "title":"loklak",
+              "negative":"Never on your life",
+              "affirmative":"Sure, why not",
+              "href":"https://github.com/loklak",
+              "id":"loklak"
+            },{
+               "backlink":"Nope",
+               "subtitle":"Helping FOSSASIA",
+               "title":"FOSSASIA",
+               "negative":"How about no",
+               "affirmative":"Yes! Who wouldn't",
+               "href":"https://github.com/fossasia",
+               "id":"fossasia"
+             }],
+              "negative":"Thats not me",
+              "affirmative":"Thats me!",
+              "id":"code"
             }, {
               "backlink": "Get me outta here!",
               "subtitle": "Make GNOME never crash again",
@@ -315,13 +342,64 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a href="https://wiki.gnome.org/Newcomers/" target="_blank" class="btn btn-lg btn-success hvr-wobble-vertical">Sounds awesome</a>
+                  <a data-next="fashion" class="yes btn btn-lg btn-success hvr-wobble-vertical">Sounds awesome</a>
                   <a data-next="making-things-stable" class="nope btn btn-lg btn-danger hvr-buzz-out">Nope, nope, nope</a>
                 </p>
             </div>
 
+            <div id="fashion" class="cover hidden">
+              <p class="segue1">Want to help FOSSASIA?</p>
 
+              <p class="segue2">First tell us what you like!</p>
 
+              <div class="bandana">
+                <span class="main-text">
+                  <h1 class="title hvr-float-shadow">Fashion Tec</h1>
+
+                  <p class="subtitle"><span>Want to help code fashiontec?</span></p>
+                </span>
+              </div>
+                <p class="lead">
+                  <a href=https://github.com/fashiontec target="_blank" class="btn btn-lg btn-success hvr-wobble-vertical">Fashion? I love it!</a>
+                  <a data-next="loklak" class="nope btn btn-lg btn-danger hvr-buzz-out">Nope, nope, nope</a>
+                </p>
+            </div>
+
+            <div id="loklak" class="cover hidden">
+              <p class="segue1">Want to help FOSSASIA?</p>
+
+              <p class="segue2">First tell us what you like!</p>
+
+              <div class="bandana">
+                <span class="main-text">
+                  <h1 class="title hvr-float-shadow">loklak</h1>
+
+                  <p class="subtitle"><span>Want access to code on a framework</span></p>
+                </span>
+              </div>
+                <p class="lead">
+                  <a  href="https://github.com/loklak" target="_blank" class="btn btn-lg btn-success hvr-wobble-vertical">Sure, why not</a>
+                  <a data-next="fashion" class="nope btn btn-lg btn-danger hvr-buzz-out">Never on your life</a>
+                </p>
+            </div>
+
+            <div id="fossasia" class="cover hidden">
+              <p class="segue1">Want to help FOSSASIA?</p>
+
+              <p class="segue2">First tell us what you like!</p>
+
+              <div class="bandana">
+                <span class="main-text">
+                  <h1 class="title hvr-float-shadow">fossasia</h1>
+
+                  <p class="subtitle"><span>Want to help code for FOSSASIA</span></p>
+                </span>
+              </div>
+                <p class="lead">
+                  <a  href="https://github.com/fossasia" target="_blank" class="btn btn-lg btn-success hvr-wobble-vertical">Yes! Who wouldn't</a>
+                  <a data-next="making-things-stable" class="nope btn btn-lg btn-danger hvr-buzz-out">How about no</a>
+                </p>
+            </div>
 
             <div id="making-things-stable" class="cover hidden">
 
@@ -333,7 +411,7 @@
                 <span class="main-text">
                   <h1 class="title hvr-float-shadow">Making Things Stable</h1>
 
-                  <p class="subtitle"><span>May GNOME never crash again</span></p>
+                  <p class="subtitle"><span>Make GNOME never crash again</span></p>
                 </span>
               </div>
                 <p class="lead">
