@@ -2395,7 +2395,7 @@
 	}
 
 	header p {
-		color: #bbb;
+		color: #FAFAFA;
 	}
 
 /* Table */
@@ -2545,6 +2545,7 @@
 
 	.feature {
 		border-color: #e3e3e3;
+		padding-bottom: 0.3em;
 	}
 
 		.feature .fa {
