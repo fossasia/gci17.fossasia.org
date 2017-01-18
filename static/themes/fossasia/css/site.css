@@ -251,3 +251,29 @@ body {
     width: 950px;
   }
 }
+
+.segue1, .segue2, .main-text {
+    -webkit-animation: fadi 3s 1;
+    -moz-animation: fadi 3s 1;
+}
+@-webkit-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.lead, .btn.btn-lg.btn-success, .nope.btn.btn-lg.btn-danger{
+    -webkit-animation: fadi 6s 1;
+    -moz-animation: fadi 6s 1;
+}
+@-webkit-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
