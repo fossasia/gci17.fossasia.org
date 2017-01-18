@@ -187,7 +187,8 @@ div.uls-region {
 }
 
 .uls-menu .uls-languagefilter:focus {
-    border: 1px solid #3366bb;
+    outline-color: transparent;
+    outline-style: none;
 }
 
 .uls-menu .uls-search {
