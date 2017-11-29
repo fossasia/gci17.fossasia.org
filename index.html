@@ -1,4 +1,5 @@
-
+---
+---
 <!doctype html>
 <html lang="en">
     <head>
@@ -9,6 +10,7 @@
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
@@ -87,7 +89,7 @@
 		                    </ul>
 		                </div>
 		                
-		                <div class="module widget-handle language left">
+		                <div class="module widget-handle language left">/>
 		                    <ul class="menu">
 		                        <li class="has-dropdown">
 		                            <a href="#">ENG</a>
@@ -182,28 +184,49 @@
 		        </ul>
 		    </section><section class="bg-secondary">
 		        <div class="container">
-		            <div class="row mb64 mb-xs-24">
-		                <div class="col-sm-12 text-center spread-children-large">
-		                    <img alt="Pic" src="img/avatar1.png">
-		                    <img alt="Pic" src="img/avatar2.png">
-		                    <img alt="Pic" src="img/avatar3.png">
-		                    <img alt="Pic" src="img/avatar4.png">
-		                    <img alt="Pic" src="img/avatar5.png">
-		                </div>
-		            </div>
-		            
 		            <div class="row">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h2>Mentors for you.</h2>
-		                    <p class="mb40 mb-xs-24">
-		                        Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
-		                    </p>
-		                    <a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Purchase Foundry</a>
+		                    <h2>Mentors for you</h2>
 		                </div>
 		            </div>
-		            
+		            <div class="row mb64 mb-xs-24">
+		                <div class="col-sm-12 text-center spread-children-large">
+                                    {% for mentor in site.data.mentors %}
+                                        <div class="card">
+                                            {% if mentor.image %}
+ 		                                <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                            {% else %}
+                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
+                                            {% endif %}
+                                            <br>
+                                            <p class="mentor-name">{{ mentor.name }}</p><br>
+                                            <ul class="list-inline social-list">
+                                                {% if mentor.github %}
+                                                    <a href="https://github.com/{{mentor.github}}" class="icon-a">
+                                                       <i class="ti-github icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                                {% if mentor.twitter %}
+                                                    <a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">    
+                                                       <i class="ti-twitter-alt icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                                {% if mentor.blog %}
+                                                    <a href="https://{{mentor.blog}}" class="icon-a">
+                                                       <i class="ti-rss-alt icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                                {% if mentor.facebook %}
+                                                    <a href="https://facebook.com/{{mentor.github}}" class="icon-a">
+                                                       <i class="ti-facebook icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    {% endfor %}
+		                </div>
+		            </div>
 		        </div>
-		        
 		    </section><section>
 		        <div class="container">
 		            <div class="row">
