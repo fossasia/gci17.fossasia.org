@@ -4,4 +4,14 @@
 
 .spread-children-large img {
   margin: 10px 0;
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  animation: polygons 2s ease-out 0s alternate infinite none
+}
+@keyframes polygons {
+  0% {
+    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%)
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0)
+  }
 }
