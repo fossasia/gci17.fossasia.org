@@ -1,0 +1,20 @@
+sudo: required
+dist: trusty
+language: ruby
+
+cache:
+  bundler: true
+
+rvm:
+  - 2.3.3
+
+install:
+  - bundle install
+
+script:
+  - bundle exec jekyll build
+
+branches:
+  only:
+    - gh-pages
+    - /./  # Allows builds for any other branch
