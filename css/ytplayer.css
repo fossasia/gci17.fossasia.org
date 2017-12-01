@@ -1,0 +1,217 @@
+/*___________________________________________________________________________________________________________________________________________________
+ _ jquery.mb.components                                                                                                                             _
+ _                                                                                                                                                  _
+ _ file: mb.YTPlayer.css                                                                                                                            _
+ _ last modified: 19/08/14 19.57                                                                                                                    _
+ _                                                                                                                                                  _
+ _ Open Lab s.r.l., Florence - Italy                                                                                                                _
+ _                                                                                                                                                  _
+ _ email: matteo@open-lab.com                                                                                                                       _
+ _ site: http://pupunzi.com                                                                                                                         _
+ _       http://open-lab.com                                                                                                                        _
+ _ blog: http://pupunzi.open-lab.com                                                                                                                _
+ _ Q&A:  http://jquery.pupunzi.com                                                                                                                  _
+ _                                                                                                                                                  _
+ _ Licences: MIT, GPL                                                                                                                               _
+ _    http://www.opensource.org/licenses/mit-license.php                                                                                            _
+ _    http://www.gnu.org/licenses/gpl.html                                                                                                          _
+ _                                                                                                                                                  _
+ _ Copyright (c) 2001-2014. Matteo Bicocchi (Pupunzi);                                                                                              _
+ ___________________________________________________________________________________________________________________________________________________*/
+
+
+@charset"UTF-8";
+
+.mb_YTPlayer :focus {
+  outline: 0;
+}
+
+.mb_YTPlayer{
+  display:block;
+  transform:translateZ(0);
+  transform-style: preserve-3d;
+  perspective: 1000;
+  backface-visibility: hidden;
+  transform:translate3d(0,0,0);
+  animation-timing-function: linear;
+  box-sizing: border-box;
+}
+
+.mbYTP_wrapper iframe {
+  max-width: 4000px !important;
+}
+
+.inline_YTPlayer{
+  margin-bottom: 20px;
+  vertical-align:top;
+  position:relative;
+  left:0;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,.7);
+  background: rgba(0,0,0,.5);
+}
+
+.inline_YTPlayer img{
+  border: none!important;
+  margin:0!important;
+  padding:0!important;
+  -moz-transform: none!important;
+  -webkit-transform: none!important;
+  -o-transform: none!important;
+  transform: none!important;
+}
+
+/*CONTROL BAR*/
+
+.mb_YTPBar .ytpicon{
+  font-size: 20px;
+  font-family: 'ytpregular';
+}
+
+.mb_YTPBar .mb_YTPUrl.ytpicon{
+  font-size: 30px;
+}
+
+.mb_YTPBar{
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  display:block;
+  width:100%;
+  height:10px;
+  padding:5px;
+  background:#333;
+  position:fixed;
+  bottom:0;
+  left:0;
+  -moz-box-sizing:padding-box;
+  -webkit-box-sizing:border-box;
+  text-align:left;
+  z-index: 1000;
+  font: 14px/16px sans-serif;
+  color:white;
+  opacity:.1;
+}
+
+.mb_YTPBar.visible, .mb_YTPBar:hover{
+  opacity:1;
+}
+
+.mb_YTPBar .buttonBar{
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background:transparent;
+  font:12px/14px Calibri;
+  position:absolute;
+  top:-30px;
+  left:0;
+  padding: 5px;
+  width:100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mb_YTPBar:hover .buttonBar{
+  background: rgba(0,0,0,0.4);
+}
+
+.mb_YTPBar span{
+  display:inline-block;
+  font:16px/20px Calibri, sans-serif;
+  position:relative;
+  width: 30px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.mb_YTPBar span.mb_YTPTime{
+  width: 130px;
+}
+
+.mb_YTPBar span.mb_YTPUrl,.mb_YTPBar span.mb_OnlyYT {
+  position: absolute;
+  width: auto;
+  display:block;
+  top:6px;
+  right:10px;
+  cursor: pointer;
+}
+
+.mb_YTPBar span.mb_YTPUrl img{
+  width: 60px;
+}
+
+.mb_YTPBar span.mb_OnlyYT {
+  left:185px;
+  right: auto;
+}
+.mb_YTPBar span.mb_OnlyYT img{
+  width: 25px;
+}
+
+.mb_YTPBar span.mb_YTPUrl a{
+  color:white;
+}
+
+.mb_YTPPlaypause,.mb_YTPlayer .mb_YTPPlaypause img{
+  cursor:pointer;
+}
+
+.mb_YTPMuteUnmute{
+  cursor:pointer;
+}
+
+/*PROGRESS BAR*/
+.mb_YTPProgress{
+  height:10px;
+  width:100%;
+  background:#222;
+  bottom:0;
+  left:0;
+}
+
+.mb_YTPLoaded{
+  height:10px;
+  width:0;
+  background:#444;
+  left:0;
+}
+
+.mb_YTPseekbar{
+  height:10px;
+  width:0;
+  background:#fff;
+  bottom:0;
+  left:0;
+  box-shadow: rgba(82, 82, 82, 0.47) 1px 1px 3px;
+}
+
+.YTPOverlay{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: "flat";
+  box-sizing: border-box;
+}
+
+/*RASTER OVERLAY*/
+.YTPOverlay.raster{
+  background: url("../images/raster.png");
+}
+
+.YTPOverlay.raster.retina{
+  background: url("../images/raster@2x.png");
+}
+
+.YTPOverlay.raster-dot{
+  background: url("../images/raster_dot.png");
+}
+
+.YTPOverlay.raster-dot.retina{
+  background: url("../images/raster_dot@2x.png");
+}
