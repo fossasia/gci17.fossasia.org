@@ -1,0 +1,24 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+- name: Miguel Piedrafita
+  github: m1guelpf
+  image: m1guelpf.png
+  blog: https://miguelpiedrafita.com/
+  twitter: m1guelpf
+
+- name: Chahat Bansal
+  github: chahatbansal
+  image: chahat.png
+
+- name: Nitesh Kumar Niranjan
+  github: niteshkumarniranjan
+  image: niteshkumarniranjan.jpg
+
+- name: Aleksandr Lymarenko
+  github: a-v-lymarenko
+  image: a-v-lymarenko.png
+
+- name: Abishek V Ashok
+  github: abishekvashok
+  image: abishek.png

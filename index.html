@@ -288,16 +288,36 @@
     <div class="row">
     <div class="row mb64 mb-xs-24">
 		                <div class="col-sm-12 text-center spread-children-large">
-		                    <img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
-		                    <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
-		                    <img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
-		                    <img class="col-sm-2" alt="Aleksandr Lymarenko" src="img/a-v-lymarenko.png">
-		                    <img class="col-sm-2" alt="Naveen Rajan" src="img/naveen.jpg">
-		                    <img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
-
+							{% for student in site.data.students %}
+							<div class="card">
+								{% if student.image %}
+								<img src="img/students/{{student.image}}" alt="{{ student.name }}"> {% else %}
+								<img src="https://github.com/{{student.github}}.png" alt="{{ student.name }}"> {% endif %}
+								<br>
+								<p class="student-name">{{ student.name }}</p>
+								<br>
+								<ul class="list-inline social-list">
+									{% if student.github %}
+									<a href="https://github.com/{{student.github}}" class="icon-a">
+										<i class="ti-github icon-i"></i>
+									</a>
+									{% endif %} {% if student.twitter %}
+									<a href="https://twitter.com/{{student.twitter}}" class="icon-a">
+										<i class="ti-twitter-alt icon-i"></i>
+									</a>
+									{% endif %} {% if student.blog %}
+									<a href="{{student.blog}}" class="icon-a">
+										<i class="ti-rss-alt icon-i"></i>
+									</a>
+									{% endif %}
+								</ul>
+							</div>
+							{% endfor %}
 		                </div>
 		                
 			</div>
+
+		</div>
      <div class="row">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 		                    <h2>Students just like you.</h2>
