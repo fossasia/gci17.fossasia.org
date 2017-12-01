@@ -1,5 +1,7 @@
 # FOSSASIA GCI 2017 Site
 
+[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
+
 # Adding a mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
