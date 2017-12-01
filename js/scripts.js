@@ -10,8 +10,21 @@ var mr_firstSectionHeight,
 
 $(document).ready(function() { 
     "use strict";
-
-    // Smooth scroll to inner links
+        var i = 0;
+        var thankList = ["Thank you for contributing"];
+        setInterval(function() {
+            if(i == thankList.length - 1) {
+                thankList.reverse();
+                i = 0;
+            }
+            else {
+                i++;
+            }
+            $("#thank-you-h1").fadeOut();
+            $("#thank-you-h1").html(thankList[i]);
+            $("#thank-you-h1").fadeIn();
+        }, 6000);
+        // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
 
         if(innerLinks.length){
