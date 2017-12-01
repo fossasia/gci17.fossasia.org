@@ -1,6 +1,5 @@
 # FOSSASIA GCI 2017 Site
 
-[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
 
 # Adding a mentor
 
@@ -17,6 +16,11 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 ```
 
 **IMPORTANT:**
+
+
+[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
+
+
 
 - All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
 - The images should be 240 x 240 pixels.
