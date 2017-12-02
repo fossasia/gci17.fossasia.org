@@ -18,6 +18,7 @@
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 
 
@@ -179,7 +180,7 @@
                                 <img src="img/mentors/member.png" alt="{{ mentor.name }}">
                               {% endif %}
                                 <br>
-                                <p class="mentor-name">{{ mentor.name }}</p><br>
+                                <p class="person-name">{{ mentor.name }}</p><br>
                                 <ul class="list-inline social-list">
                                     {% if mentor.github %}
                                       <a href="https://github.com/{{mentor.github}}" class="icon-a">
@@ -294,7 +295,7 @@
 		        <div class="container">
               <div class="row">
 		              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h2>Students like you</h2>
+		                    <h2 id="student_title">Students just like you.</h2>
 		                </div>
 		            </div>
 
@@ -308,7 +309,7 @@
                                 <img src="img/students/member.png" alt="{{ student.name }}">
                               {% endif %}
                                 <br>
-                                <p class="mentor-name">{{ student.name }}</p><br>
+                                <p class="person-name">{{ student.name }}</p><br>
                                 <ul class="list-inline social-list">
                                     {% if student.github %}
                                       <a href="https://github.com/{{student.github}}" class="icon-a">
@@ -341,24 +342,7 @@
         <section class="bg-secondary">
 		        <div class="container">
               <div class="row">
-                <div class="row mb64 mb-xs-24">
-					         <div class="col-sm-12 text-center spread-children-large">
-  							              <img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
-  							              <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
-                							<img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
-                							<img class="col-sm-2" alt="Yash Kumar Verma" src="img/yashkumarverma.png">
-                							<img class="col-sm-2" alt="Aleksandr Lymarenko" src="img/a-v-lymarenko.png">
-                							<img class="col-sm-2" alt="Naveen Rajan" src="img/naveen.jpg">
-                							<img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
-                							<img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
-                							<img class="col-sm-2" alt="Pic" src="img/avatar5.png">
-					        </div>
-			         </div>
-			      </div>
-
-     <div class="row">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h2>Students just like you.</h2>
 		                    <p class="mb40 mb-xs-24">
 		                        Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
 		                    </p>
