@@ -1,10 +1,4 @@
-var $root = $('html, body');
-$('a').click(function() {
-  $root.animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top
-  }, 1000);
-  return false;
-});
+
 $(function(){
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors"
@@ -24,7 +18,7 @@ $(function(){
       else {
         html += " contributions";
       }
-      $("#contribiii").append(html);
+      $("#contributors").append(html);
     });
     });
 });
