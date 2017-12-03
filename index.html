@@ -25,68 +25,73 @@
 
     <body class="scroll-assist">
 				
-		<div class="nav-container">
+		<div class="nav-container" id="welcome">
 		  
 		    <nav>
 		        <div class="nav-bar">
 		            <div class="module left">
 		                <a href="index.html">
-          <img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
-
+          					<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
 		                </a>
 		            </div>
+
 		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
 		                <i class="ti-menu"></i>
 		            </div>
+
 		            <div class="module-group right">
 		                <div class="module left">
 		                    <ul class="menu">
 		                        <li>
-		                            <a href="#">Single</a>
+		                            <a href="#welcome">Welcome</a>
+		                        </li>
+		                        <li>
+		                            <a href="#mentors">Mentors</a>
+		                        </li>
+		                        <li>
+		                            <a href="#students">Student</a>
+		                        </li>
+		                        <li>
+		                            <a href="#projects">Projects</a>
+		                        </li>
+		                        <li>
+		                            <a href="#student-blog">Blog Posts</a>
+		                        </li>
+		                        <li>
+		                            <a href="#social-links">Social Links</a>
+		                        </li>
+		                        <li>
+		                        	<a href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
 		                        </li>
 		                        <li class="has-dropdown">
 		                            <a href="#">
-		                                Mega Menu
-		                            </a>
-		                            <ul class="mega-menu">
-		                                <li>
-		                                    <ul>
-		                                        <li>
-		                                            <span class="title">Column 1</span>
-		                                        </li>
-		                                        <li>
-		                                            <a href="#">Single</a>
-		                                        </li>
-		                                    </ul>
-		                                </li>
-		                                <li>
-		                                    <ul>
-		                                        <li>
-		                                            <span class="title">Column 2</span>
-		                                        </li>
-		                                        <li>
-		                                            <a href="#">Single</a>
-		                                        </li>
-		                                    </ul>
-		                                </li>
-		                            </ul>
-		                        </li>
-		                        <li class="has-dropdown">
-		                            <a href="#">
-		                                Single Dropdown
+		                                Quick Links
 		                            </a>
 		                            <ul>
-		                                <li class="has-dropdown">
+		                                <li>
 		                                    <a href="#">
-		                                        Second Level
+		                                        Main Site
 		                                    </a>
-		                                    <ul>
-		                                        <li>
-		                                            <a href="#">
-		                                                Single
-		                                            </a>
-		                                        </li>
-		                                    </ul>
+		                                </li>
+		                                <li>
+		                                    <a href="#">
+		                                        Blog
+		                                    </a>
+		                                </li>
+		                                <li>
+		                                    <a href="#">
+		                                        Events
+		                                    </a>
+		                                </li>
+		                                <li>
+		                                    <a href="https://gci16.fossasia.org">
+		                                        Google Code-In 2016
+		                                    </a>
+		                                </li>
+		                                <li>
+		                                    <a href="https://gci15.fossasia.org">
+		                                        Google Code-In 2015
+		                                    </a>
 		                                </li>
 		                            </ul>
 		                        </li>
@@ -159,7 +164,7 @@
 		                
 		            </li>
 		        </ul>
-		    </section><section class="bg-secondary">
+		    </section><section class="bg-secondary" id="mentors">
 		        <div class="container">
          <div class="row">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
@@ -205,7 +210,7 @@
 		            </div>
 		        </div>
 		    </section>
-                    <section class="bg-secondary">
+                    <section class="bg-secondary" id="students">
 		        <div class="container">
     <div class="row">
     <div class="row mb64 mb-xs-24">
@@ -241,7 +246,7 @@
 		            
 		        </div>
 		    </section>
-                    <section>
+                    <section id="projects">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
@@ -447,7 +452,7 @@
 				
 			</section>
 			
-			<section class="bg-secondary">
+			<section class="bg-secondary" id="student-blog">
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
@@ -782,7 +787,7 @@
 
 		    </section>
 
-		   <footer class="footer-2 bg-dark">
+		   <footer class="footer-2 bg-dark" id="social-links">
 		   		<div class="container">
 					<div class="row">
 						<div class="col-sm-3 text-left">
@@ -922,5 +927,36 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+        	/* Smooth Scroll */
+       		$('a[href*="#"]')
+		  		.not('[href="#"]')
+		  		.not('[href="#0"]')
+		  		.click(function(event) {
+		  			if (
+		  				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		  				&& 
+		  				location.hostname == this.hostname
+		  			) {
+		  				var target = $(this.hash);
+		  				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		  				if (target.length) {
+		  					event.preventDefault();
+		  					$('html, body').animate({
+		  						scrollTop: target.offset().top
+		  					}, 1000, 'swing', function() {
+		  						var $target = $(target);
+		  						$target.focus();
+		  						if ($target.is(":focus")) {
+		  							return false;
+		  						} else {
+		  							$target.attr('tabindex','-1');
+		  							$target.focus();
+		  						};
+		  					});
+		  				}
+		  			}
+		  	});
+        </script>
     </body>
 </html>
