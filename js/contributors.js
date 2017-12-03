@@ -1,4 +1,5 @@
 
+
 $(function(){
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors"
@@ -18,7 +19,7 @@ $(function(){
       else {
         html += " contributions";
       }
-      $("#contributors").append(html);
+      $("#Contributors").append(html);
     });
     });
 });
