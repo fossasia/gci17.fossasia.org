@@ -359,7 +359,40 @@
 
 		            
 		        </div>
-		        </section>
+		    </section>
+                    <section>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12 text-center">
+		                    <h4 class="uppercase mb16">Student Projects</h4>
+		                    <p class="lead mb64">Some projects developed by students during GCI</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12">
+		                    <div class="lightbox-grid square-thumbs">
+		                        <ul id="project_holder">
+                                            {% for project in site.data.student_projects %}
+		                                <li class="student_project">
+		                                    <a href="{{project.github}}">
+		                                        <div class="background-image-holder">
+                                                            {% if project.image %}
+		                                                <img title="{{project.name}} by {{project.author}}"
+                                                                     class="background-image" src="img/projects/{{project.image}}">
+                                                            {% else %}
+		                                                <img title="{{project.name}} by {{project.author}}"
+                                                                     class="background-image" src="img/projects/default.png">
+                                                            {% endif %}
+		                                        </div>
+		                                    </a>
+		                                </li>
+                                            {% endfor %}
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
 		        <section class="bg-dark">
 		         <div class="container">
 		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
