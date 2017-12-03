@@ -19,8 +19,7 @@
         <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-
-    
+   
 	</head>
 
     <body class="scroll-assist">
@@ -204,90 +203,13 @@
 		                </div>
 		            </div>
 		        </div>
-		    </section><section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16">Lightbox Grid Gallery</h4>
-		                    <p class="lead mb64">
-		                        A simple lightbox grid with square thumbnails.
-		                    </p>
-		                </div>
-		            </div>
-		            
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
-		                        <ul>
-		                            <li>
-		                                <a href="img/cover1.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover1.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home12.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home12.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home14.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home14.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home17.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home17.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover5.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover5.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover6.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover6.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover7.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover7.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover8.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover8.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                        </ul>
-		                    </div>
-		                    
-		                </div>
-		            </div>
-		            
-		        </div>
-		        
-		    </section><section class="bg-secondary">
+		    </section>
+                    <section class="bg-secondary">
 		        <div class="container">
     <div class="row">
     <div class="row mb64 mb-xs-24">
 					<div class="col-sm-12 text-center spread-children-large">
+							<img class="col-sm-2" alt="Jin Zi Long" src="img/zilong.jpg">
 							<img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
               <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
 							<img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
@@ -299,6 +221,7 @@
 							<img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
 							<img class="col-sm-2" alt="Mehmet Çağrı Arı" src="img/cagriari.jpg">
 							<img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg">
+							<img class="col-sm-2" src="img/sabaxuxuna.png" alt="Saba Khukhunashvili">
 					</div>     
 			</div>
 			</div>
@@ -316,7 +239,40 @@
 
 		            
 		        </div>
-		        </section>
+  </section>
+<section>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12 text-center">
+		                    <h4 class="uppercase mb16">Student Projects</h4>
+		                    <p class="lead mb64">Some projects developed by students during GCI</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12">
+		                    <div class="lightbox-grid square-thumbs">
+		                        <ul id="project_holder">
+                                            {% for project in site.data.student_projects %}
+		                                <li class="student_project">
+		                                    <a href="{{project.github}}">
+		                                        <div class="background-image-holder">
+                                                            {% if project.image %}
+		                                                <img title="{{project.name}} by {{project.author}}"
+                                                                     class="background-image" src="img/projects/{{project.image}}">
+                                                            {% else %}
+		                                                <img title="{{project.name}} by {{project.author}}"
+                                                                     class="background-image" src="img/projects/default.png">
+                                                            {% endif %}
+		                                        </div>
+		                                    </a>
+		                                </li>
+                                            {% endfor %}
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
 		        <section class="bg-dark">
 		         <div class="container">
 		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
@@ -324,7 +280,6 @@
                      </h2> 
 		            </div>
 		        </div>
-
 		    </section><section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
 		        <div class="col-md-6 col-sm-4 p0">
 		            <img alt="Screenshot" class="mb-xs-24" src="img/app4.jpg">
@@ -516,8 +471,7 @@
 		                       
 		                    </div>
 		                    </a>
-		                </div>
-		                
+		                </div>       
 		                <div class="col-md-3 col-sm-6">
 		                <a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
 		                    <div class="image-tile outer-title text-center">
@@ -529,9 +483,20 @@
 		                       
 		                    </div>
 		                    </a>
-		                </div>
-
-
+						</div>
+						
+						<div class="col-md-3 col-sm-6">
+							<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
+								<div class="image-tile outer-title text-center">
+									<img alt="Latop with GitHub pendrive" src="img/blog/3.jpg" height="240" width="240">
+									<div class="title mb16">
+										<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
+										<span>Nitesh Kumar Niranjan</span>
+									</div>
+								   
+								</div>
+								</a>
+							</div>
 		                <div class="col-sm-12">
 		                    <div class="instafeed grid-gallery" data-user-name="mrareweb">
 		                        <ul></ul>
@@ -616,8 +581,10 @@
 		                    </p>
 		                </div>
 		            </div>
-                            <p align="center"><iframe id="ytVideo" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" allowfullscreen></iframe></p>
-		        </div>
+<div class="widget video-container">
+				<iframe id="ytVideo" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>					
+				</div>		        </div>
+
 		        
 		    </section><section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
 		        <ul class="slides">
