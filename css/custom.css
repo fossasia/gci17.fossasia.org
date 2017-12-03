@@ -54,3 +54,30 @@
     padding: 7px;
     box-sizing: content-box;
 }
+
+/* Media Queries for YouTube Video */
+/* ytVideo is ID for video */
+@media (min-width: 992px) {
+    #ytVideo {
+        width: 800px;
+        height: 400px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #ytVideo {
+        width: 700px;
+        height: 350px;
+    }
+}
+@media (max-width: 576px) and (min-width: 500px) {
+    #ytVideo {
+        width: 500px;
+        height: 250px;
+    }
+}
+@media (max-width: 425px) and (min-width: 370px) {
+    #ytVideo {
+        width: 360px;
+        height: 180px;
+    }
+}
