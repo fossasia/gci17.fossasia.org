@@ -1,31 +1,38 @@
-
+---
+---
 <!doctype html>
 <html lang="en">
     <head>
+
+		
+
         <meta charset="utf-8">
         <title>FOSSASIA | Google Code-In 2017</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    </head>
+
+    
+	</head>
+
     <body class="scroll-assist">
 				
 		<div class="nav-container">
-		    
-		    
-		
-		    
+		  
 		    <nav>
 		        <div class="nav-bar">
 		            <div class="module left">
 		                <a href="index.html">
-		                    <img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
+          <img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
+
 		                </a>
 		            </div>
 		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
@@ -106,38 +113,11 @@
 		        </div>
 		    </nav>
 		
-		    
-		    
-		
-		    
-		    
-		
-		    
-		    
-		
-		    
-		
-		    
-		    
-		
-		    
-		
-		    
-		    
-		
-		    
-		    
-		
+
 		</div>
 		
 		<div class="main-container">
-					
 			
-					
-			
-					
-			
-					
 			<section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
 		        <ul class="slides">
 		            <li class="overlay image-bg">
@@ -181,28 +161,49 @@
 		        </ul>
 		    </section><section class="bg-secondary">
 		        <div class="container">
+         <div class="row">
+		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+		                    <h2>Mentors for you</h2>
+		                </div>
+		            </div>
 		            <div class="row mb64 mb-xs-24">
 		                <div class="col-sm-12 text-center spread-children-large">
-		                    <img alt="Pic" src="img/avatar1.png">
-		                    <img alt="Pic" src="img/avatar2.png">
-		                    <img alt="Pic" src="img/avatar3.png">
-		                    <img alt="Pic" src="img/avatar4.png">
-		                    <img alt="Pic" src="img/avatar5.png">
+                                    {% for mentor in site.data.mentors %}
+                                        <div class="card">
+                                            {% if mentor.image %}
+ 		                                <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                            {% else %}
+                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
+                                            {% endif %}
+                                            <br>
+                                            <p class="mentor-name">{{ mentor.name }}</p><br>
+                                            <ul class="list-inline social-list">
+                                                {% if mentor.github %}
+                                                    <a href="https://github.com/{{mentor.github}}" class="icon-a">
+                                                       <i class="ti-github icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                                {% if mentor.twitter %}
+                                                    <a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">    
+                                                       <i class="ti-twitter-alt icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                                {% if mentor.blog %}
+                                                    <a href="https://{{mentor.blog}}" class="icon-a">
+                                                       <i class="ti-rss-alt icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                                {% if mentor.facebook %}
+                                                    <a href="https://facebook.com/{{mentor.github}}" class="icon-a">
+                                                       <i class="ti-facebook icon-i"></i>
+                                                    </a>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    {% endfor %}
 		                </div>
 		            </div>
-		            
-		            <div class="row">
-		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h2>Mentors for you.</h2>
-		                    <p class="mb40 mb-xs-24">
-		                        Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
-		                    </p>
-		                    <a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Purchase Foundry</a>
-		                </div>
-		            </div>
-		            
 		        </div>
-		        
 		    </section><section>
 		        <div class="container">
 		            <div class="row">
@@ -284,18 +285,25 @@
 		        
 		    </section><section class="bg-secondary">
 		        <div class="container">
-		            <div class="row mb64 mb-xs-24">
-		                <div class="col-sm-12 text-center spread-children-large">
-		                    <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
-		                    <img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
-		                    <img class="col-sm-2" alt="Pic" src="img/avatar3.png">
-		                    <img class="col-sm-2" alt="Pic" src="img/avatar4.png">
-		                    <img class="col-sm-2" alt="Pic" src="img/avatar5.png">
-                                    <img class="col-sm-2" alt="Pic" src="img/avatar5.png">
-		                </div>
-		            </div>
-		            
-		            <div class="row">
+    <div class="row">
+    <div class="row mb64 mb-xs-24">
+					<div class="col-sm-12 text-center spread-children-large">
+							<img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
+              <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
+							<img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
+							<img class="col-sm-2" alt="Yash Kumar Verma" src="img/yashkumarverma.png">
+							<img class="col-sm-2" alt="Aleksandr Lymarenko" src="img/a-v-lymarenko.png">
+							<img class="col-sm-2" alt="Naveen Rajan" src="img/naveen.jpg">
+              <img class="col-sm-2" alt="Kuba Michalski" src="img/kuba-michalski.jpg">
+							<img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
+							<img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
+							<img class="col-sm-2" alt="Mehmet Çağrı Arı" src="img/cagriari.jpg">
+							<img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg">
+					</div>     
+			</div>
+			</div>
+
+     <div class="row">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 		                    <h2>Students just like you.</h2>
 		                    <p class="mb40 mb-xs-24">
@@ -304,9 +312,19 @@
 		                    <a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Meet</a>
 		                </div>
 		            </div>
+
+
 		            
 		        </div>
-		        
+		        </section>
+		        <section class="bg-dark">
+		         <div class="container">
+		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
+                     <h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის"]'>
+                     </h2> 
+		            </div>
+		        </div>
+
 		    </section><section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
 		        <div class="col-md-6 col-sm-4 p0">
 		            <img alt="Screenshot" class="mb-xs-24" src="img/app4.jpg">
@@ -476,18 +494,49 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16">Instagram Grid</h4>
+
+
+		                    <h4 class="uppercase mb16">Blog</h4>
 		                    <p class="lead mb64">
-		                        A simple Instagram grid. Change the 'data-user-name' attribute to change user feed.
-		                    </p>
-		                </div>
+		                       Articles from the Contributors. </p>
+             </div>
 		            </div>
 		            
 		            <div class="row">
+
+
+		                <div class="col-md-3 col-sm-6">
+		                <a href="https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/" target="_blank">
+		                    <div class="image-tile outer-title text-center">
+		                        <img alt="Pic" src="img/blog/1.jpg" height="240" width="240">
+		                        <div class="title mb16">
+		                            <h5 class="uppercase mb0">First Time in Google Code In with Fossasia</h5>
+		                            <span>Naveen Rajan</span>
+		                        </div>
+		                       
+		                    </div>
+		                    </a>
+		                </div>
+		                
+		                <div class="col-md-3 col-sm-6">
+		                <a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
+		                    <div class="image-tile outer-title text-center">
+		                        <img alt="Latop with GitHub pendrive" src="img/blog/2.jpg" height="240" width="240">
+		                        <div class="title mb16">
+		                            <h5 class="uppercase mb0">My dive into open source with FOSSASIA during Google Code-in</h5>
+		                            <span>Kuba Michalski</span>
+		                        </div>
+		                       
+		                    </div>
+		                    </a>
+		                </div>
+
+
 		                <div class="col-sm-12">
 		                    <div class="instafeed grid-gallery" data-user-name="mrareweb">
 		                        <ul></ul>
 		                    </div>
+
 		                </div>
 		            </div>
 		            
@@ -553,7 +602,7 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12">
-		                    <ul class="flickr-feed masonry masonryFlyIn" data-user-id="8826848@N03" data-album-id="72157633398893288"></ul>
+		                    <ul class="flickr-feed masonry masonryFlyIn" data-user-id="45240298@N08" data-album-id="72157665486359899"></ul>
 		                </div>
 		            </div>
 		        </div>
@@ -561,39 +610,13 @@
 		        <div class="container">
 		            <div class="row mb64 mb-xs-24">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h3 class="mb40 mb-xs-24">A landing page for the next generation.</h3>
+		                    <h3 class="mb40 mb-xs-24">FOSSASIA Google Code-In 2016/17</h3>
 		                    <p class="lead">
-		                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+                                Here are some videos from last year FOSSASIA Google Code-In!
 		                    </p>
 		                </div>
 		            </div>
-		            
-		            <div class="row mb48 mb-xs-24">
-		                <div class="col-sm-8 col-sm-offset-2">
-		                    <div class="local-video-container mb40">
-		                        <div class="background-image-holder">
-		                            <img alt="Background Image" class="background-image" src="img/capital3.jpg">
-		                        </div>
-		                        <video controls="">
-		                            <source src="video/video.webm" type="video/webm">
-		                            <source src="video/video.mp4" type="video/mp4">
-		                            <source src="video/video.ogv" type="video/ogg">
-		                        </video>
-		                        <div class="play-button dark"></div>
-		                    </div>
-		                    
-		                </div>
-		            </div>
-		            
-		            <div class="row">
-		                <div class="col-sm-12 text-center spread-children-large">
-		                    <img alt="pic" class="image-xxs mb-xs-8 fade-half" src="img/c1.png">
-		                    <img alt="pic" class="image-xxs mb-xs-8 fade-half" src="img/c2.png">
-		                    <img alt="pic" class="image-xxs mb-xs-8 fade-half" src="img/c3.png">
-		                    <img alt="pic" class="image-xxs mb-xs-8 fade-half" src="img/c4.png">
-		                </div>
-		            </div>
-		            
+                            <p align="center"><iframe width="800" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" allowfullscreen></iframe></p>
 		        </div>
 		        
 		    </section><section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
@@ -605,7 +628,7 @@
 		                <div class="container v-align-transform">
 		                    <div class="row">
 		                        <div class="col-sm-12 text-center">
-		                            <img alt="Logo" class="image-small" src="img/logo-light.png">
+		                            <img alt="Logo" class="image-small" src="img/fossasia-light.png">
 		                        </div>
 		                    </div>
 		                    
@@ -786,11 +809,41 @@
 		            
 		        </div>
 		        
-		    </section><footer class="footer-1 bg-dark">
+
+		    </section>
+			
+			<footer class="footer-1 bg-dark">
+				
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-sm-6">
-							<div class="vnu"><img alt="Logo" class="logo" src="img/logo-light.png"></div>
+							<a class="twitter-timeline" data-width="400" data-height="400" data-link-color="#E81C4F" href="https://twitter.com/fossasia">Tweets by fossasia</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<a data-flickr-embed="true" data-context="true" href="http://www.flickr.com/photos/fossasia/30907152523/" title="IMG_20161207_164809">
+						<img src="https://c1.staticflickr.com/1/350/30907152523_ab6bf453f4_z.jpg" width="400" height="200" alt="IMG_20161207_164809">
+						</a>
+						<script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+						<div class="widget">
+								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=270&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="200"></iframe>
+							</div>
+
+							
+						</div>
+						
+						<div class="col-md-6 col-sm-6">
+						<div class="widget video-container">
+				<iframe width="600" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>					
+				</div></div>
+				</div>
+
+		   <footer class="footer-1 bg-dark">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="vnu"><img alt="Logo" class="logo" src="img/fossasia-light.png"></div>
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="widget">
@@ -824,7 +877,7 @@
 								<h6 class="title">Latest Updates</h6>
 								<hr>
 								<div class="twitter-feed">
-									<div class="tweets-feed" data-feed-name="mrareweb" id="tweets-0">
+									<div class="tweets-feed" data-feed-name="hpdang" id="tweets-0">
 									</div>
 								</div>
 							</div>
@@ -832,40 +885,63 @@
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="widget">
-								<h6 class="title">Instagram</h6>
+								<h6 class="title">FOSSASIA Links</h6>
 								<hr>
+								<a href="https://fossasia.org/" class="foss-links"><i class="ti-world" aria-hidden="true"></i> Main Site</a><br>
+								<a href="https://blog.fossasia.org" class="foss-links"><i class="ti-rss" aria-hidden="true"></i> Blog</a><br>
+								<a href="https://codein.withgoogle.com/organizations/fossasia/" class="foss-links"><i class=" ti-bag" aria-hidden="true"></i> Google Code-In Page </a><br>
+								<a href="https://events.fossasia.org" class="foss-links"><i class=" ti-calendar" aria-hidden="true"></i> Events</a><br>
+								<a href="https://gci17.fossasia.org" class="foss-links"><i class="ti-link" aria-hidden="true"></i> Fossasia 2017</a><br>
+								<a href="#" class="foss-links"><i class="ti-arrow-up" aria-hidden="true"></i> Top of the Page</a><br>
 								<div class="instafeed" data-user-name="mrareweb">
-									<ul><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li></ul>
+
+									<ul><li><a href="https://www.instagram.com/fossasia" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li><li><a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template"><img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg"></a></li><li><a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest"><img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg"></a></li><li><a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'"><img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg"></a></li></ul>
+
 								</div>
 							</div>
 							
 						</div>
 					</div>
 					
-					<div class="row">
+					<div class="row" style="padding-top: 75px;">
 						<div class="col-sm-6">
-							<span class="sub">© Copyright 2017 - FOSSASIA</span>
+							<span class="sub">© Copyright 2017 - <a href="https://fossasia.org">FOSSASIA</a></span>
 						</div>
 						<div class="col-sm-6 text-right">
-							<ul class="list-inline social-list">
+							<ul class="list-inline social-list" style="font-size: 20px;">
 								<li>
-									<a href="#">
+									<a href="https://twitter.com/fossasia">
 										<i class="ti-twitter-alt"></i>
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="https://facebook.com/fossasia">
 										<i class="ti-facebook"></i>
 									</a>
 								</li>
 								<li>
-									<a href="#">
-										<i class="ti-dribbble"></i>
+									<a href="https://plus.google.com/108920596016838318216">
+										<i class=" ti-google " aria-hidden="true"></i>
 									</a>
 								</li>
 								<li>
-									<a href="#">
-										<i class="ti-vimeo-alt"></i>
+									<a href="https://www.linkedin.com/groups/FOSSASIA-3762811">
+										<i class=" ti-linkedin " aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/fossasia">
+										<i class=" ti-github " aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://flickr.com/photos/fossasia">
+										<i class=" ti-flickr-alt " aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+										<i class=" ti-youtube  " aria-hidden="true"></i>
 									</a>
 								</li>
 							</ul>
@@ -891,4 +967,3 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
-				
