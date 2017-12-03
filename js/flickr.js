@@ -10,7 +10,7 @@
 
     var flickrPhotoStream = function ($el, options) {
         var url = [
-            'http://api.flickr.com/services/feeds/photoset.gne?nsid=',
+            'https://api.flickr.com/services/feeds/photoset.gne?nsid=',
             options.id,
             '&set=',
             options.setId,
