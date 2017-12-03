@@ -1,0 +1,22 @@
+.icon-a {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.icon-i {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mentor-name {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+}
+
+.card {
+    width: 240px;
+}
