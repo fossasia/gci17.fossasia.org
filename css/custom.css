@@ -22,3 +22,35 @@
     height: 100%;
 }
 
+.back-to-top:visited {
+    color: #fff;
+}
+
+.footer-1 {
+    padding: 60px 0px 20px 0px;
+}
+
+.footer-2 {
+    padding: 16px;
+    background: #383838;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.social-list li {
+    padding: 0px 5px;
+}
+
+.footer-social-text {
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cecece !important;
+    font-size: 20px;
+}
+
+.footer-logo {
+    height: 31px;
+    padding: 7px;
+    box-sizing: content-box;
+}
