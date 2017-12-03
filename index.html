@@ -204,86 +204,8 @@
 		                </div>
 		            </div>
 		        </div>
-		    </section><section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16">Lightbox Grid Gallery</h4>
-		                    <p class="lead mb64">
-		                        A simple lightbox grid with square thumbnails.
-		                    </p>
-		                </div>
-		            </div>
-		            
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
-		                        <ul>
-		                            <li>
-		                                <a href="img/cover1.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover1.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home12.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home12.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home14.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home14.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home17.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home17.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover5.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover5.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover6.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover6.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover7.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover7.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover8.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover8.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                        </ul>
-		                    </div>
-		                    
-		                </div>
-		            </div>
-		            
-		        </div>
-		        
-		    </section><section class="bg-secondary">
+		    </section>
+                    <section class="bg-secondary">
 		        <div class="container">
     <div class="row">
     <div class="row mb64 mb-xs-24">
@@ -318,7 +240,40 @@
 
 		            
 		        </div>
-		        </section>
+		    </section>
+                    <section>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-sm-12 text-center">
+		                    <h4 class="uppercase mb16">Student Projects</h4>
+		                    <p class="lead mb64">Some projects developed by students during GCI</p>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-12">
+		                    <div class="lightbox-grid square-thumbs">
+		                        <ul id="project_holder">
+                                            {% for project in site.data.student_projects %}
+		                                <li class="student_project">
+		                                    <a href="{{project.github}}">
+		                                        <div class="background-image-holder">
+                                                            {% if project.image %}
+		                                                <img title="{{project.name}} by {{project.author}}"
+                                                                     class="background-image" src="img/projects/{{project.image}}">
+                                                            {% else %}
+		                                                <img title="{{project.name}} by {{project.author}}"
+                                                                     class="background-image" src="img/projects/default.png">
+                                                            {% endif %}
+		                                        </div>
+		                                    </a>
+		                                </li>
+                                            {% endfor %}
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
 		        <section class="bg-dark">
 		         <div class="container">
 		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">

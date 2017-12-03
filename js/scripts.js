@@ -10,7 +10,13 @@ var mr_firstSectionHeight,
 
 $(document).ready(function() { 
     "use strict";
-
+    // Diplsay no projects if there are no projects
+    var html='<div class="row"><div class="col-sm-12 text-center">';
+    html+='<h4 class="uppercase mb16">No Student Projects</h4>';
+    html+='<p class="lead mb64">There are no student projects uploaded to website yet</p></div></div>';
+    if($(".student_project").length == 0) {
+        $("#project_holder").append(html);
+    }
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
 
