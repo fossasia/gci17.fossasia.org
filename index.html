@@ -204,122 +204,68 @@
 		                </div>
 		            </div>
 		        </div>
-		    </section><section>
+		    </section>
+                    <section class="bg-secondary">
+		        <div class="container">
+                            <div class="row">
+		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+		                    <h2>Students just like you.</h2>
+		                </div>
+		            </div>
+                            <div class="row">
+                                <div class="row mb64 mb-xs-24">
+			            <div class="col-sm-12 text-center spread-children-large">
+                                        <img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
+                                        <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
+                                        <img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
+                                        <img class="col-sm-2" alt="Yash Kumar Verma" src="img/yashkumarverma.png">
+                                        <img class="col-sm-2" alt="Aleksandr Lymarenko" src="img/a-v-lymarenko.png">
+                                        <img class="col-sm-2" alt="Naveen Rajan" src="img/naveen.jpg">
+                                        <img class="col-sm-2" alt="Kuba Michalski" src="img/kuba-michalski.jpg">
+                                        <img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
+                                        <img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
+                                        <img class="col-sm-2" alt="Mehmet Çağrı Arı" src="img/cagriari.jpg">
+                                        <img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg">
+                                        <img class="col-sm-2" src="img/sabaxuxuna.png" alt="Saba Khukhunashvili">
+				    </div>     
+			        </div>
+			    </div>
+		        </div>
+		    </section>
+                    <section>
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16">Lightbox Grid Gallery</h4>
-		                    <p class="lead mb64">
-		                        A simple lightbox grid with square thumbnails.
-		                    </p>
+		                    <h4 class="uppercase mb16">Student Projects</h4>
+		                    <p class="lead mb64">Some projects developed by students during GCI</p>
 		                </div>
 		            </div>
-		            
 		            <div class="row">
 		                <div class="col-sm-12">
-		                    <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
-		                        <ul>
-		                            <li>
-		                                <a href="img/cover1.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover1.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home12.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home12.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home14.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home14.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home17.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home17.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover5.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover5.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover6.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover6.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover7.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover7.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover8.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover8.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
+		                    <div class="lightbox-grid square-thumbs">
+		                        <ul id="project_holder">
+                                            {% for project in site.data.student_projects %}
+		                                <li class="student_project">
+		                                    <a href="{{project.github}}">
+		                                        <div class="background-image-holder">
+                                                            {% if project.image %}
+		                                                <img title="{{project.name}} by {{project.author_name}}"
+                                                                     class="background-image" src="img/projects/{{project.image}}">
+                                                            {% else %}
+		                                                <img title="{{project.name}} by {{project.author_name}}"
+                                                                     class="background-image" src="img/projects/default.png">
+                                                            {% endif %}
+		                                        </div>
+		                                    </a>
+		                                </li>
+                                            {% endfor %}
 		                        </ul>
 		                    </div>
-		                    
 		                </div>
 		            </div>
-		            
 		        </div>
-		        
-		    </section><section class="bg-secondary">
-		        <div class="container">
-    <div class="row">
-    <div class="row mb64 mb-xs-24">
-					<div class="col-sm-12 text-center spread-children-large">
-							<img class="col-sm-2" alt="Jin Zi Long" src="img/zilong.jpg">
-							<img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
-              <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
-							<img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
-							<img class="col-sm-2" alt="Yash Kumar Verma" src="img/yashkumarverma.png">
-							<img class="col-sm-2" alt="Aleksandr Lymarenko" src="img/a-v-lymarenko.png">
-							<img class="col-sm-2" alt="Naveen Rajan" src="img/naveen.jpg">
-              <img class="col-sm-2" alt="Kuba Michalski" src="img/kuba-michalski.jpg">
-							<img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
-							<img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
-							<img class="col-sm-2" alt="Mehmet Çağrı Arı" src="img/cagriari.jpg">
-							<img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg">
-							<img class="col-sm-2" src="img/sabaxuxuna.png" alt="Saba Khukhunashvili">
-					</div>     
-			</div>
-			</div>
-
-     <div class="row">
-		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h2>Students just like you.</h2>
-		                    <p class="mb40 mb-xs-24">
-		                        Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
-		                    </p>
-		                    <a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Meet</a>
-		                </div>
-		            </div>
-
-
-		            
-		        </div>
-		        </section>
-		        <section class="bg-dark">
+		    </section>
+		    <section class="bg-dark">
 		         <div class="container">
 		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
                      <h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის"]'>
@@ -327,7 +273,8 @@
 		            </div>
 		        </div>
 
-		    </section><section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
+		    </section>
+                    <section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
 		        <div class="col-md-6 col-sm-4 p0">
 		            <img alt="Screenshot" class="mb-xs-24" src="img/app4.jpg">
 		        </div>
