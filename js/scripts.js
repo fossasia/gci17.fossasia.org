@@ -10,7 +10,13 @@ var mr_firstSectionHeight,
 
 $(document).ready(function() { 
     "use strict";
-
+    // Diplsay no projects if there are no projects
+    var html='<div class="row"><div class="col-sm-12 text-center">';
+    html+='<h4 class="uppercase mb16">No Student Projects</h4>';
+    html+='<p class="lead mb64">There are no student projects uploaded to website yet</p></div></div>';
+    if($(".student_project").length == 0) {
+        $("#project_holder").append(html);
+    }
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
 
@@ -379,7 +385,7 @@ $(document).ready(function() {
         var vidURL = '';
 
         if(provider == 'vimeo'){
-            vidURL = "http://player.vimeo.com/video/"+videoID+"?badge=0&title=0&byline=0&title=0&autoplay="+autoplay;
+            vidURL = "https://player.vimeo.com/video/"+videoID+"?badge=0&title=0&byline=0&title=0&autoplay="+autoplay;
             $(this).attr('data-src', vidURL);
         }else if (provider == 'youtube'){
             vidURL = "https://www.youtube.com/embed/"+videoID+"?showinfo=0&autoplay="+autoplay;
@@ -666,7 +672,7 @@ $(document).ready(function() {
         section.find('.container').addClass('fadeOut');
         var src = $(this).attr('data-video-id');
         var startat = $(this).attr('data-start-at');
-        $(this).attr('data-property', "{videoURL:'http://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
+        $(this).attr('data-property', "{videoURL:'https://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
     });
 
 	if($('.player').length){
@@ -1293,7 +1299,7 @@ function prepareSignup(iFrame){
     if(/list-manage\.com/.test(action)){
        action = action.replace('/post?', '/post-json?') + "&c=?";
        if(action.substr(0,2) == "//"){
-           action = 'http:' + action;
+           action = 'https:' + action;
        }
     }
 
