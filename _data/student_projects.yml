@@ -1,0 +1,7 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+# the format is:
+#- name: Mario Behling
+#  github: Link to github repository of project
+#  author: name of author of project
+#  image: projectname.png (upload the image with that name to /img/projects/)

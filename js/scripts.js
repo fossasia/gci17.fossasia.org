@@ -10,7 +10,13 @@ var mr_firstSectionHeight,
 
 $(document).ready(function() { 
     "use strict";
-
+    // Diplsay no projects if there are no projects
+    var html='<div class="row"><div class="col-sm-12 text-center">';
+    html+='<h4 class="uppercase mb16">No Student Projects</h4>';
+    html+='<p class="lead mb64">There are no student projects uploaded to website yet</p></div></div>';
+    if($(".student_project").length == 0) {
+        $("#project_holder").append(html);
+    }
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
 
@@ -379,7 +385,7 @@ $(document).ready(function() {
         var vidURL = '';
 
         if(provider == 'vimeo'){
-            vidURL = "http://player.vimeo.com/video/"+videoID+"?badge=0&title=0&byline=0&title=0&autoplay="+autoplay;
+            vidURL = "https://player.vimeo.com/video/"+videoID+"?badge=0&title=0&byline=0&title=0&autoplay="+autoplay;
             $(this).attr('data-src', vidURL);
         }else if (provider == 'youtube'){
             vidURL = "https://www.youtube.com/embed/"+videoID+"?showinfo=0&autoplay="+autoplay;
@@ -666,7 +672,7 @@ $(document).ready(function() {
         section.find('.container').addClass('fadeOut');
         var src = $(this).attr('data-video-id');
         var startat = $(this).attr('data-start-at');
-        $(this).attr('data-property', "{videoURL:'http://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
+        $(this).attr('data-property', "{videoURL:'https://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
     });
 
 	if($('.player').length){
@@ -1293,7 +1299,7 @@ function prepareSignup(iFrame){
     if(/list-manage\.com/.test(action)){
        action = action.replace('/post?', '/post-json?') + "&c=?";
        if(action.substr(0,2) == "//"){
-           action = 'http:' + action;
+           action = 'https:' + action;
        }
     }
 
@@ -1380,6 +1386,64 @@ var mr_cookies = {
     for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) { aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]); }
     return aKeys;
   }
+};
+
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
 };
 
 /*\
