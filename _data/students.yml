@@ -24,6 +24,8 @@
 
 - name: Abishek V Ashok
   image: abishek.jpg
+  lat: 9.9312328
+  lng: 76.26730409999999
 
 - name: Mochammad Rafi Al Rizkan
   image: rafi.png
@@ -45,3 +47,8 @@
   image: kuba-michalski.jpg  
   github: kubami9
   twitter: top_kuba
+
+- name: Saarthak Chaturvedi
+  image: Saarthak.jpg
+  github: saarthakchats
+  twitter: SaarthakChats41  
