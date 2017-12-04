@@ -15,6 +15,20 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
   lng: Mentor's longitude
 ```
 
+# Adding a student
+
+To add a student open the file `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yml
+- name: Student's name
+  github: Student's github username
+  image: Student's_image
+  twitter: Student's twitter id
+  facebook: Student's facebook id
+  lat: Student's latitude
+  lng: Student's longitude
+```
+
 **IMPORTANT:**
 
 
