@@ -1,7 +1,5 @@
 # FOSSASIA GCI 2017 Site
-|Travis CI Build Status|
-|:------------:|
-| [![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org) |
+[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
 
 ## Adding a Mentor
 
@@ -13,6 +11,9 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
   image: Mentor's image
   twitter: Mentor's Twitter id
   facebook: Mentor's Facebook id
+  Linkedin: Mentor's Linkein Page
+  
+  Geolocation (city or country: optional)
   lat: Mentor's latitude
   lng: Mentor's longitude
 ```
@@ -27,10 +28,14 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 To add a mentor open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Student's name
+  country: Student's country/region
   github: Student's Github username
-  image: Student's image
+  image: Student's image (or representation like a "nick" image)
   twitter: Student's Twitter id
-  facebook: Student's Facebook id
+  
+**Optional** (Please ensure parents agree on sharing this data)
+* facebook: Student's Facebook id
+* Geolocation (Preferably do not share your exact location. If you really want to share it, share city)
   lat: Student's latitude
   lng: Student's longitude
 ```
