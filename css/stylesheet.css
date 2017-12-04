@@ -10,7 +10,7 @@
     margin: 0 !important;
 }
 
-.mentor-name {
+.person-name {
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;
@@ -19,4 +19,8 @@
 
 .card {
     width: 240px;
+}
+
+#student_title {
+  font-family: 'Cabin Sketch', cursive !important;
 }

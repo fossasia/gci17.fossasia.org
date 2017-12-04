@@ -5,3 +5,8 @@
 #  github: Link to github repository of project
 #  author: name of author of project
 #  image: projectname.png (upload the image with that name to /img/projects/)
+
+- name: Mochammad Rafi Al Rizkan
+  github: https://github.com/kol4k/eKantin
+  author: Rafi
+  image: rafi.png
