@@ -59,8 +59,8 @@
 /* ytVideo is ID for video */
 @media (min-width: 992px) {
     #ytVideo {
-        width: 800px;
-        height: 400px;
+        width: 880px;
+        height: 440px;
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
