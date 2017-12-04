@@ -1,27 +1,57 @@
 # FOSSASIA GCI 2017 Site
+|Travis CI Build Status|
+|:------------:|
+| [![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org) |
 
-
-# Adding a mentor
+## Adding a Mentor
 
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
 ```yaml
 - name: Mentor's name
-  github: Mentor's github username
-  image: mentor's_image
-  twitter: Mentor's twitter id
-  facebook: Mentor's facebook id
+  github: Mentor's Github username
+  image: Mentor's image
+  twitter: Mentor's Twitter id
+  facebook: Mentor's Facebook id
   lat: Mentor's latitude
   lng: Mentor's longitude
 ```
-
 **IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/mentors`.
+- The images should be 240 x 240 pixels.
+- If you do not want to include your social media accounts or coordinates , please do not provide empty fields like `facebook:`.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
+## Adding a Student
+To add a mentor open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+```yaml
+- name: Student's name
+  github: Student's Github username
+  image: Student's image
+  twitter: Student's Twitter id
+  facebook: Student's Facebook id
+  lat: Student's latitude
+  lng: Student's longitude
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/students`.
+- The images should be 240 x 240 pixels.
+- If you do not want to include your social media accounts or coordinates , please do not provide empty fields like `facebook:`.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+## Adding a Student Project
 
-[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
-
-
-
-- All images must be optimized before uploaded to the repo via commit or PR. You may use any image optimizer of your choice.
+To add a mentor open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+```yaml
+- name: Name of project
+  github: Github repository of the project
+  author: Name of the author of the project
+  image: Logo of the project
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/projects`.
 - The images should be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+
