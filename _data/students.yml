@@ -43,7 +43,10 @@
   image: zilong.jpg
 
 - name: Kuba Michalski
+  country: Poland
   image: kuba-michalski.jpg  
+  github: kubami9
+  twitter: top_kuba
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
