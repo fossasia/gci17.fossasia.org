@@ -43,9 +43,24 @@
   image: zilong.jpg
 
 - name: Kuba Michalski
+  country: Poland
   image: kuba-michalski.jpg  
+<<<<<<< HEAD
+=======
+  github: kubami9
+  twitter: top_kuba
+>>>>>>> 7a7504f52186d0dc82d87916cad873368debc556
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
   github: saarthakchats
+<<<<<<< HEAD
   twitter: SaarthakChats41  
+=======
+  twitter: SaarthakChats41 
+
+- name: Nguyen Chanh Dai
+  image: ncdai.jpg
+  github: ncdai3651408
+  facebook: ncdai3651408
+>>>>>>> 7a7504f52186d0dc82d87916cad873368debc556
