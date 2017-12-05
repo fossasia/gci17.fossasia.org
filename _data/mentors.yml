@@ -9,19 +9,19 @@
   twitter: mariobehling
   facebook: mariobehling
 
-  
+
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
   blog: blog.fossasia.org
-  facebook: hpdang  
-
+  facebook: hpdang
 
 - name: Harshit Prasad
   github: harsit98
   image: harsit98.jpg
   blog: blog.fossasia.org
   facebook: prasad.dude28
+
 
 - name: Isuru Abeywardana
   github: isuruAb
@@ -74,3 +74,21 @@
 - name: Mohit Sharma
   github: ms10398
   image: mohitsharma.png
+
+
+- name: Ashwani Kumar
+  github: ashwanidv100
+  image: ashwanidv100.jpeg
+  twitter: ashwanidv100
+
+- name: Nikhil Rayaprolu
+  github: nikhilrayaprolu
+  image: nikhilrayaprolu.jpg
+
+- name: Nicco Kunzmann
+  github: niccokunzmann
+  image: niccokunzmann.png
+
+- name: Anshuman Verma
+  image: ansh.jpg
+  twitter: Anshumaniac12
