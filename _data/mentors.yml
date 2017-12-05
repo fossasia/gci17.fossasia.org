@@ -22,6 +22,7 @@
   blog: blog.fossasia.org
   facebook: prasad.dude28
 
+
 - name: Isuru Abeywardana
   github: isuruAb
   image: isuruAb.jpg
@@ -87,3 +88,7 @@
 - name: Nicco Kunzmann
   github: niccokunzmann
   image: niccokunzmann.png
+
+- name: Anshuman Verma
+  image: ansh.jpg
+  twitter: Anshumaniac12
