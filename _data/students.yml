@@ -44,16 +44,23 @@
 
 - name: Kuba Michalski
   country: Poland
-  image: kuba-michalski.jpg  
+  image: kuba-michalski.jpg
   github: kubami9
   twitter: top_kuba
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
   github: saarthakchats
-  twitter: SaarthakChats41 
+  twitter: SaarthakChats41
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
   github: ncdai3651408
   facebook: ncdai3651408
+
+- name: Kartikeya Singh
+  country: India
+  github: kartikeya23
+  image: kart.png
+  twitter: kart_singh08
+  facebook: kartikeya.singh23
