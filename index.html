@@ -3,9 +3,6 @@
 <!doctype html>
 <html lang="en">
     <head>
-
-		
-
         <meta charset="utf-8">
         <title>FOSSASIA | Google Code-In 2017</title>
 
@@ -18,14 +15,15 @@
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-   
+
 	</head>
 
     <body class="scroll-assist">
-				
+
 		<div class="nav-container" id="welcome">
-		  
+
 		    <nav>
 		        <div class="nav-bar">
 		            <div class="module left">
@@ -53,6 +51,9 @@
 		                        <li>
 		                            <a href="#projects">Projects</a>
 		                        </li>
+								<li>
+									<a href="#map-sec">Map</a>
+								</li>
 		                        <li>
 		                            <a href="#student-blog">Blog Posts</a>
 		                        </li>
@@ -96,7 +97,7 @@
 		                        </li>
 		                    </ul>
 		                </div>
-		                
+
 		                <div class="module widget-handle language left">
 		                    <ul class="menu">
 		                        <li class="has-dropdown">
@@ -108,59 +109,61 @@
 		                                <li>
 		                                    <a href="#">Deutsch</a>
 		                                </li>
+		                                <li>
+		                                    <a href="#">Polski</a>
+		                                </li>
 		                            </ul>
 		                        </li>
 		                    </ul>
 		                </div>
 		            </div>
-		            
+
 		        </div>
 		    </nav>
-		
+
 
 		</div>
-		
+
 		<div class="main-container">
-			
+
 			<section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
 		        <ul class="slides">
 		            <li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/home-2-8.jpg">
+		                    <img alt="image" class="background-image" src="img/slider/community-map.jpg">
 		                </div>
 		                <div class="container v-align-transform">
 		                    <div class="row text-center">
 		                        <div class="col-md-10 col-md-offset-1">
-		                            <h2 class="mb-xs-16">Meet FOSSASIA, the cleverest way<br class="hidden-sm"> to learn working with Open Source.</h2>
+		                            <h2 class="mb-xs-16">Educating and inspiring students by being <br class="hidden-sm"> involved in open source projects</h2>
 		                            <p class="lead mb40">
-		                                Build beautiful, contemporary applications&nbsp;<br>with FOSSASIA.
+		                            	Participate in Google Codein with <b>FOSSASIA</b> !
 		                            </p>
-		                            <a class="btn btn-lg" href="#">Start Exploring</a>
-		                            <a class="btn btn-lg btn-filled" href="#">Connect</a>
+		                            <a class="btn btn-lg btn-filled" href="https://codein.withgoogle.com/organizations/fossasia/">Take me Along !</a>
+		                            <a class="btn btn-lg" href="#mentors">Explore the site</a>
 		                        </div>
 		                    </div>
-		                    
+
 		                </div>
-		                
+
 		            </li><li class="overlay image-bg">
 		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/home-2-8.jpg">
+		                    <img alt="image" class="background-image" src="img/slider/group-photo.jpg">
 		                </div>
-		                <div class="container v-align-transform">
+		                <div class="container v-align-transform ">
 		                    <div class="row text-center">
 		                        <div class="col-md-10 col-md-offset-1">
-		                            <h2 class="mb-xs-16">Meet Foundry, the cleverest way<br class="hidden-sm"> to build your next site.</h2>
+		                            <h2 class="mb-xs-16"><b><i>"The Open Conversational Web"</i></b>  <br class="hidden-sm">Asia's Premier Open Technology Event</h2>
 		                            <p class="lead mb40">
-		                                Build beautiful, contemporary sites in just moments
-		                                <br>with Foundry and Variant Page Builder.
+		                                FOSSASIA SUMMIT IN SINGAPORE<br>
+		                                22<sup>th</sup> - 25<sup>th</sup> March, 2018
 		                            </p>
-		                            <a class="btn btn-lg" href="#">Start Exploring</a>
-		                            <a class="btn btn-lg btn-filled" href="#">Purchase</a>
+		                            <a class="btn btn-lg btn-filled" href="https://2018.fossasia.org/">I'm Interested !</a>
 		                        </div>
 		                    </div>
-		                    
+
 		                </div>
-		                
+
 		            </li>
 		        </ul>
 		    </section><section class="bg-secondary" id="mentors">
@@ -180,7 +183,7 @@
                                                 <img src="img/mentors/member.png" alt="{{ mentor.name }}">
                                             {% endif %}
                                             <br>
-                                            <p class="mentor-name">{{ mentor.name }}</p><br>
+                                            <p class="person-name">{{ mentor.name }}</p><br>
                                             <ul class="list-inline social-list">
                                                 {% if mentor.github %}
                                                     <a href="https://github.com/{{mentor.github}}" class="icon-a">
@@ -188,7 +191,7 @@
                                                     </a>
                                                 {% endif %}
                                                 {% if mentor.twitter %}
-                                                    <a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">    
+                                                    <a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">
                                                        <i class="ti-twitter-alt icon-i"></i>
                                                     </a>
                                                 {% endif %}
@@ -212,28 +215,51 @@
                     <section class="bg-secondary" id="students">
 		        <div class="container">
     <div class="row">
-    <div class="row mb64 mb-xs-24">
-					<div class="col-sm-12 text-center spread-children-large">
-							<img class="col-sm-2" alt="Jin Zi Long" src="img/zilong.jpg">
-							<img class="col-sm-2" alt="Miguel Piedrafita" src="img/m1guelpf.png">
-              <img class="col-sm-2" alt="Chahat Bansal" src="img/chahat.png">
-							<img class="col-sm-2" alt="Nitesh Kumar Niranjan" src="img/niteshkumarniranjan.jpg">
-							<img class="col-sm-2" alt="Yash Kumar Verma" src="img/yashkumarverma.png">
-							<img class="col-sm-2" alt="Aleksandr Lymarenko" src="img/a-v-lymarenko.png">
-							<img class="col-sm-2" alt="Naveen Rajan" src="img/naveen.jpg">
-              <img class="col-sm-2" alt="Kuba Michalski" src="img/kuba-michalski.jpg">
-							<img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
-							<img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
-							<img class="col-sm-2" alt="Mehmet Çağrı Arı" src="img/cagriari.jpg">
-							<img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg">
-							<img class="col-sm-2" src="img/sabaxuxuna.png" alt="Saba Khukhunashvili">
-					</div>     
 			</div>
-			</div>
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+          <h2 id="student_title">Students just like you</h2>
+      </div>
+
+      <div class="row mb64 mb-xs-24">
+          <div class="col-sm-12 text-center spread-children-large">
+                          {% for student in site.data.students %}
+                              <div class="card">
+                                  {% if student.image %}
+                          <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                                  {% else %}
+                                      <img src="img/students/member.png" alt="{{ student.name }}">
+                                  {% endif %}
+                                  <br>
+                                  <p class="person-name">{{ student.name }}</p><br>
+                                  <ul class="list-inline social-list">
+                                      {% if student.github %}
+                                          <a href="https://github.com/{{student.github}}" class="icon-a">
+                                             <i class="ti-github icon-i"></i>
+                                          </a>
+                                      {% endif %}
+                                      {% if student.twitter %}
+                                          <a href="https://twitter.com/@{{student.twitter}}" class="icon-a">
+                                             <i class="ti-twitter-alt icon-i"></i>
+                                          </a>
+                                      {% endif %}
+                                      {% if student.blog %}
+                                          <a href="https://{{student.blog}}" class="icon-a">
+                                             <i class="ti-rss-alt icon-i"></i>
+                                          </a>
+                                      {% endif %}
+                                      {% if student.facebook %}
+                                          <a href="https://facebook.com/{{student.github}}" class="icon-a">
+                                             <i class="ti-facebook icon-i"></i>
+                                          </a>
+                                      {% endif %}
+                                  </ul>
+                              </div>
+                          {% endfor %}
+          </div>
+      </div>
 
      <div class="row">
 		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h2>Students just like you.</h2>
 		                    <p class="mb40 mb-xs-24">
 		                        Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
 		                    </p>
@@ -242,7 +268,7 @@
 		            </div>
 
 
-		            
+
 		        </div>
 		    </section>
                     <section id="projects">
@@ -284,47 +310,21 @@
 		         <div class="container">
 		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
                      <h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის"]'>
-                     </h2> 
+                     </h2>
 		            </div>
 		        </div>
-		    </section><section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
-		        <div class="col-md-6 col-sm-4 p0">
-		            <img alt="Screenshot" class="mb-xs-24" src="img/app4.jpg">
-		        </div>
-		        <div class="container">
-		            <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
-		                <h3 class="mb40 mb-xs-16">Combine different blocks together to form your perfect layout.</h3>
-		                <p class="lead mb40">
-		                    We've built three distinct image and text combinations for you to showcase the features of your product or service.
-		                </p>
-		                <div class="feature feature-3">
-		                    <div class="left">
-		                        <i class="ti-user icon-sm"></i>
-		                    </div>
-		                    <div class="right">
-		                        <h4 class="mb16">Built for you</h4>
-		                         <p>
-		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-		                        </p>
-		                    </div>
+		    </section>
+                    <section class="bg-secondary">
+                        <div class="container" id="map-sec">
+                            <div class="row">
+		                <div class="col-sm-12 text-center">
+		                    <h4 class="uppercase mb16">Community Connect</h4>
 		                </div>
-		                
-		                <div class="feature feature-3">
-		                    <div class="left">
-		                        <i class="ti-package icon-sm"></i>
-		                    </div>
-		                    <div class="right">
-		                        <h4 class="mb16">Incredible Value</h4>
-		                         <p>
-		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-		                        </p>
-		                    </div>
-		                </div>
-		                
-		            </div>
-		        </div>
-		        
-		    </section><section class="image-edge">
+		                <div id="map"></div>
+                            </div>
+                        </div>
+		    </section>
+                    <section class="image-edge">
 		        <div class="col-md-6 col-sm-4 p0">
 		            <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
 		        </div>
@@ -338,7 +338,7 @@
 		                <a class="btn-lg btn" href="#">Explore Foundry</a>
 		            </div>
 		        </div>
-		        
+
 		    </section><section class="image-edge">
 		        <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
 		            <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
@@ -353,7 +353,7 @@
 		                <a class="btn-lg btn" href="#">Explore Foundry</a>
 		            </div>
 		        </div>
-		        
+
 		    </section><section>
 		        <div class="container">
 		            <div class="row">
@@ -376,9 +376,9 @@
 		                    </p>
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 		    </section><section class="cover fullscreen image-bg overlay parallax">
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/prop1.jpg">
@@ -390,9 +390,9 @@
 		                    <h5 class="uppercase mb0">Contemporary Living In The Heart Of Toorak</h5>
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 		        <div class="align-bottom relative-xs text-center">
 		            <a class="btn btn-filled btn-lg mb32 mt-xs-40" href="#">Register Interest</a>
 		        </div>
@@ -414,7 +414,7 @@
 								</ul>
 							</div>
 						</div>
-						
+
 						<div class="col-md-3 col-md-pull-6">
 							<div class="mt80 mt-xs-80 text-right text-left-xs">
 								<h5 class="uppercase bold mb16">Never forget again</h5>
@@ -422,7 +422,7 @@
 									The reminder that just keeps reminding! Scramble to your watch to silence these intrusive notifications.
 								</p>
 							</div>
-							
+
 							<div class="mt80 mt-xs-0 text-right text-left-xs">
 								<h5 class="uppercase bold mb16">Stay active, be healthy</h5>
 								<p class="fade-1-4">
@@ -430,7 +430,7 @@
 								</p>
 							</div>
 						</div>
-						
+
 						<div class="col-md-3">
 							<div class="mt80 mt-xs-0">
 								<h5 class="uppercase bold mb16">Powered by you</h5>
@@ -438,7 +438,7 @@
 									Forget empty branding promises, this thing is powered by awesome (you), and we stand by that.
 								</p>
 							</div>
-							
+
 							<div class="mt80 mt-xs-0">
 								<h5 class="uppercase bold mb16">Leave your phone</h5>
 								<p class="fade-1-4">
@@ -447,11 +447,11 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
-				
+
 			</section>
-			
+
 			<section class="bg-secondary" id="student-blog">
 		        <div class="container">
 		            <div class="row">
@@ -463,7 +463,7 @@
 		                       Articles from the Contributors. </p>
              </div>
 		            </div>
-		            
+
 		            <div class="row">
 
 
@@ -475,10 +475,10 @@
 		                            <h5 class="uppercase mb0">First Time in Google Code In with Fossasia</h5>
 		                            <span>Naveen Rajan</span>
 		                        </div>
-		                       
+
 		                    </div>
 		                    </a>
-		                </div>       
+		                </div>
 		                <div class="col-md-3 col-sm-6">
 		                <a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
 		                    <div class="image-tile outer-title text-center">
@@ -487,11 +487,11 @@
 		                            <h5 class="uppercase mb0">My dive into open source with FOSSASIA during Google Code-in</h5>
 		                            <span>Kuba Michalski</span>
 		                        </div>
-		                       
+
 		                    </div>
 		                    </a>
 						</div>
-						
+
 						<div class="col-md-3 col-sm-6">
 							<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
 								<div class="image-tile outer-title text-center">
@@ -500,7 +500,7 @@
 										<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
 										<span>Nitesh Kumar Niranjan</span>
 									</div>
-								   
+
 								</div>
 								</a>
 							</div>
@@ -511,9 +511,9 @@
 
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 		    </section><section>
 		        <div class="container">
 		            <div class="row v-align-children">
@@ -529,9 +529,9 @@
 		                    </p>
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 		    </section><section class="fullscreen image-bg parallax background-multiply">
 		        <div class="background-image-holder">
 		            <img alt="image" class="background-image" src="img/capital5.jpg">
@@ -542,9 +542,9 @@
 		                    <h1 class="thin mb0">FOSSASIA <br>Based in Asia.</h1>
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 		        <div class="align-bottom text-center">
 		            <a class="btn btn-white mb32" href="#">Pitch Us</a>
 		            <ul class="list-inline social-list mb24">
@@ -588,11 +588,9 @@
 		                    </p>
 		                </div>
 		            </div>
-
 <div class="widget video-container">
-				<iframe width="600" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>					
+				<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>					
 				</div>		        </div>
-		        
 		    </section><section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
 		        <ul class="slides">
 		            <li class="overlay image-bg">
@@ -605,9 +603,8 @@
 		                            <img alt="Logo" class="image-small" src="img/fossasia-light.png">
 		                        </div>
 		                    </div>
-		                    
 		                </div>
-		                
+
 		                <div class="align-bottom text-center">
 		                    <a class="btn btn-white mb32" href="#">Connect</a>
 		                    <ul class="list-inline social-list mb24">
@@ -675,9 +672,9 @@
 		                    </div>
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 		    </section><section class="bg-primary">
 				<div class="container">
 					<div class="row">
@@ -690,11 +687,11 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 							</p>
-							
+
 							<p>
 								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 							</p>
-							
+
 							<p>
 								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
 							</p>
@@ -703,7 +700,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section>
 		        <div class="container">
 		            <div class="row">
@@ -714,7 +711,7 @@
 		                    </p>
 		                </div>
 		            </div>
-		            
+
 		            <div class="row">
 		                <div class="col-sm-12">
 		                    <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
@@ -777,12 +774,12 @@
 		                            </li>
 		                        </ul>
 		                    </div>
-		                    
+
 		                </div>
 		            </div>
-		            
+
 		        </div>
-		        
+
 
 		    </section>
 
@@ -880,7 +877,7 @@
 									</li>
 								</ul>
 							</div>
-							
+
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="widget">
@@ -891,7 +888,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="widget">
@@ -904,7 +901,7 @@
 								<a href="https://gci17.fossasia.org" class="foss-links"><i class="ti-link" aria-hidden="true"></i> Fossasia 2017</a><br>
 								<a href="#" class="foss-links"><i class="ti-arrow-up" aria-hidden="true"></i> Top of the Page</a><br>
 							</div>
-							
+
 						</div>
 						<div class="col-sm-12 text-center">
 							<span class="sub">© Copyright 2017 - <a href="https://fossasia.org">FOSSASIA</a></span>
@@ -913,8 +910,8 @@
 				</div>
 			</footer>
 		</div>
-		
-				
+
+
 	<script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/flexslider.min.js"></script>
@@ -928,13 +925,12 @@
         <script src="js/scripts.js"></script>
         <script type="text/javascript">
         	/* Smooth Scroll */
-       		$('a[href*="#"]')
-		  		.not('[href="#"]')
-		  		.not('[href="#0"]')
-		  		.click(function(event) {
-		  			if (
-		  				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		  				&& 
+       		$('a[href*="#"]').not('[href="#"]')
+                                 .not('[href="#0"]')
+                                 .click(function(event) {
+                                     if (
+		  				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+		  				&&
 		  				location.hostname == this.hostname
 		  			) {
 		  				var target = $(this.hash);
@@ -955,7 +951,170 @@
 		  					});
 		  				}
 		  			}
-		  	});
+                                 });
+        window.initMap = function() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 2,
+                    scrollwheel: false,
+                    center: {
+                      lat: 0,
+                      lng: 0
+                    },
+                    styles: [{
+			                "featureType": "administrative",
+			                "elementType": "all",
+			                "stylers": [{
+			                    "saturation": "-100"
+			                }]
+			            },
+			            {
+			                "featureType": "administrative.province",
+			                "elementType": "all",
+			                "stylers": [{
+			                    "visibility": "off"
+			                }]
+			            },
+			            {
+			                "featureType": "landscape",
+			                "elementType": "all",
+			                "stylers": [{
+			                        "saturation": -100
+			                    },
+			                    {
+			                        "lightness": 65
+			                    },
+			                    {
+			                        "visibility": "on"
+			                    }
+			                ]
+			            },
+			            {
+			                "featureType": "poi",
+			                "elementType": "all",
+			                "stylers": [{
+			                        "saturation": -100
+			                    },
+			                    {
+			                        "lightness": "50"
+			                    },
+			                    {
+			                        "visibility": "simplified"
+			                    }
+			                ]
+			            },
+			            {
+			                "featureType": "road",
+			                "elementType": "all",
+			                "stylers": [{
+			                    "saturation": "-100"
+			                }]
+			            },
+			            {
+			                "featureType": "road.highway",
+			                "elementType": "all",
+			                "stylers": [{
+			                    "visibility": "simplified"
+			                }]
+			            },
+			            {
+			                "featureType": "road.arterial",
+			                "elementType": "all",
+			                "stylers": [{
+			                    "lightness": "30"
+			                }]
+			            },
+			            {
+			                "featureType": "road.local",
+			                "elementType": "all",
+			                "stylers": [{
+			                    "lightness": "40"
+			                }]
+			            },
+			            {
+			                "featureType": "transit",
+			                "elementType": "all",
+			                "stylers": [{
+			                        "saturation": -100
+			                    },
+			                    {
+			                        "visibility": "simplified"
+			                    }
+			                ]
+			            },
+			            {
+			                "featureType": "water",
+			                "elementType": "geometry",
+			                "stylers": [{
+			                        "hue": "#ffff00"
+			                    },
+			                    {
+			                        "lightness": -25
+			                    },
+			                    {
+			                        "saturation": -97
+			                    }
+			                ]
+			            },
+			            {
+			                "featureType": "water",
+			                "elementType": "labels",
+			                "stylers": [{
+			                        "lightness": -25
+			                    },
+			                    {
+			                        "saturation": -100
+			                    }
+			                ]
+			            }
+			        ]
+          });
+          var marker;
+          var marker2;
+          var infowindow = null;
+          {% for mentor in site.data.mentors %}
+              {% if mentor.lat %}
+                  marker = new google.maps.Marker({
+                      position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
+                      label: 'M',
+                      map: map
+                  });
+                  infowindow = null;
+                  var content = "<div><img class='img-rounded' src='img/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+                  google.maps.event.addListener(marker, 'click', (function(marker, content) {
+                      return function() {
+                          if (infowindow) {
+                            infowindow.close();
+                          }
+                          infowindow = new google.maps.InfoWindow();
+                          infowindow.setContent(content);
+                          infowindow.open(map, marker);
+                      };
+                  })(marker, content));
+              {% endif %}
+          {% endfor %}
+          {% for student in site.data.students %}
+              {% if student.lat %}
+                  marker2 = new google.maps.Marker({
+                      position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
+                      label : 'S',
+                      map: map
+                  });
+                  infowindow = null;
+                  var content = "<div><img class='img-rounded' src='img/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+                  google.maps.event.addListener(marker2, 'click', (function(marker2, content) {
+                      return function() {
+                          if (infowindow) {
+                            infowindow.close();
+                          }
+                          infowindow = new google.maps.InfoWindow();
+                          infowindow.setContent(content);
+                          infowindow.open(map, marker2);
+                      };
+                  })(marker2, content));
+              {% endif %}
+          {% endfor %}
+        };
         </script>
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDEdg77hrkUariqipecWIb0_sh-ii5DiMk &callback=initMap" async defer></script>
     </body>
 </html>

@@ -1,0 +1,82 @@
+- name: Anastasiia Kostiv
+  github: AKostiv8
+  image: kostiv.jpg
+  twitter: KostivNastya
+  facebook: anastasiya.kostiv
+
+- name: Miguel Piedrafita
+  image: m1guelpf.png
+
+- name: Chahat Bansal
+  image: chahat.png
+
+- name: Nitesh Kumar Niranjan
+  image: niteshkumarniranjan.jpg
+
+- name: Yash Kumar Verma
+  image: yashkumarverma.png
+  github: yashkumarverma
+  twitter: yash_kr_verma
+  facebook: yashkumarverma
+  lat: 30.3164945
+  lng: 78.0321918
+
+- name: Aleksandr Lymarenko
+  image: a-v-lymarenko.png
+
+- name: Naveen Rajan
+  image: naveen.jpg
+
+- name: Abishek V Ashok
+  image: abishek.jpg
+  lat: 9.9312328
+  lng: 76.26730409999999
+
+- name: Mochammad Rafi Al Rizkan
+  image: rafi.png
+  github: kol4k
+  instagram: rafalrzkn
+  facebook: kol4k
+
+- name: Mehmet Çağrı Arı
+  image: cagriari.jpg
+
+- name: Reza Juliandri
+  image: reza_juliandri.jpg
+
+- name: Saba Khukhunashvili
+  image: sabaxuxuna.png
+
+- name: Jin Zi Long
+  image: zilong.jpg
+
+- name: Kuba Michalski
+  country: Poland
+  image: kuba-michalski.jpg
+  github: kubami9
+  twitter: top_kuba
+
+- name: Saarthak Chaturvedi
+  image: Saarthak.jpg
+  github: saarthakchats
+  twitter: SaarthakChats41
+
+- name: Nguyen Chanh Dai
+  image: ncdai.jpg
+  github: ncdai3651408
+  facebook: ncdai3651408
+
+- name: Kartikeya Singh
+  country: India
+  github: kartikeya23
+  image: kart.png
+  twitter: kart_singh08
+  facebook: kartikeya.singh23
+
+- name: Aditya Dutt
+  github: duttaditya18
+  image: duttaditya18.jpg
+  twitter: EighteenAndOut
+  facebook: duttaditya18
+  lat: 28.641485
+  lng: 77.371386
