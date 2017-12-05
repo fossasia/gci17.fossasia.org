@@ -1,14 +1,9 @@
---- ---
 <!doctype html>
 <html lang="en">
 
 <head>
-
-
-
 	<meta charset="utf-8">
 	<title>FOSSASIA | Google Code-In 2017</title>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -18,17 +13,18 @@
 	<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/contributors.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
 	 rel='stylesheet' type='text/css'>
-
 </head>
 
 <body class="scroll-assist">
-	<div class="nav-container">
+
+	<div class="nav-container" id="welcome">
+
 		<nav>
 			<div class="nav-bar">
-
 				<div class="module left">
 					<a href="index.html">
 						<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
@@ -43,53 +39,58 @@
 					<div class="module left">
 						<ul class="menu">
 							<li>
-								<a href="#">Single</a>
+								<a href="#welcome">Welcome</a>
 							</li>
-
+							<li>
+								<a href="#mentors">Mentors</a>
+							</li>
+							<li>
+								<a href="#students">Student</a>
+							</li>
+							<li>
+								<a href="#projects">Projects</a>
+							</li>
+							<li>
+								<a href="#map-sec">Map</a>
+							</li>
+							<li>
+								<a href="#student-blog">Blog Posts</a>
+							</li>
+							<li>
+								<a href="#social-links">Social Links</a>
+							</li>
+							<li>
+								<a href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
+							</li>
 							<li class="has-dropdown">
 								<a href="#">
-									Mega Menu
-								</a>
-								<ul class="mega-menu">
-									<li>
-										<ul>
-											<li>
-												<span class="title">Column 1</span>
-											</li>
-											<li>
-												<a href="#">Single</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<ul>
-											<li>
-												<span class="title">Column 2</span>
-											</li>
-											<li>
-												<a href="#">Single</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-
-							<li class="has-dropdown">
-								<a href="#">
-									Single Dropdown
+									Quick Links
 								</a>
 								<ul>
-									<li class="has-dropdown">
+									<li>
 										<a href="#">
-											Second Level
+											Main Site
 										</a>
-										<ul>
-											<li>
-												<a href="#">
-													Single
-												</a>
-											</li>
-										</ul>
+									</li>
+									<li>
+										<a href="#">
+											Blog
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Events
+										</a>
+									</li>
+									<li>
+										<a href="https://gci16.fossasia.org">
+											Google Code-In 2016
+										</a>
+									</li>
+									<li>
+										<a href="https://gci15.fossasia.org">
+											Google Code-In 2015
+										</a>
 									</li>
 								</ul>
 							</li>
@@ -104,79 +105,84 @@
 									<li>
 										<a href="#">French</a>
 									</li>
-
 									<li>
 										<a href="#">Deutsch</a>
+									</li>
+									<li>
+										<a href="#">Polski</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</div>
+
 			</div>
 		</nav>
+
+
 	</div>
 
 	<div class="main-container">
+
 		<section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
 			<ul class="slides">
-
 				<li class="overlay image-bg">
 					<div class="background-image-holder">
-						<img alt="image" class="background-image" src="img/home-2-8.jpg">
+						<img alt="image" class="background-image" src="img/slider/community-map.jpg">
 					</div>
-
 					<div class="container v-align-transform">
 						<div class="row text-center">
 							<div class="col-md-10 col-md-offset-1">
-								<h2 class="mb-xs-16">
-									Meet FOSSASIA, the cleverest way
-									<br class="hidden-sm">to learn working with Open Source.
-								</h2>
+								<h2 class="mb-xs-16">Educating and inspiring students by being
+									<br class="hidden-sm"> involved in open source projects</h2>
 								<p class="lead mb40">
-									Build beautiful, contemporary applications&nbsp;
-									<br>with FOSSASIA.
+									Participate in Google Codein with
+									<b>FOSSASIA</b> !
 								</p>
-								<a class="btn btn-lg" href="#">Start Exploring</a>
-								<a class="btn btn-lg btn-filled" href="#">Connect</a>
+								<a class="btn btn-lg btn-filled" href="https://codein.withgoogle.com/organizations/fossasia/">Take me Along !</a>
+								<a class="btn btn-lg" href="#mentors">Explore the site</a>
 							</div>
 						</div>
+
 					</div>
+
 				</li>
-
 				<li class="overlay image-bg">
 					<div class="background-image-holder">
-						<img alt="image" class="background-image" src="img/home-2-8.jpg">
+						<img alt="image" class="background-image" src="img/slider/group-photo.jpg">
 					</div>
-
-					<div class="container v-align-transform">
+					<div class="container v-align-transform ">
 						<div class="row text-center">
 							<div class="col-md-10 col-md-offset-1">
 								<h2 class="mb-xs-16">
-									Meet Foundry, the cleverest way
-									<br class="hidden-sm"> to build your next site.
-								</h2>
+									<b>
+										<i>"The Open Conversational Web"</i>
+									</b>
+									<br class="hidden-sm">Asia's Premier Open Technology Event</h2>
 								<p class="lead mb40">
-									Build beautiful, contemporary sites in just moments
-									<br>with Foundry and Variant Page Builder.
+									FOSSASIA SUMMIT IN SINGAPORE
+									<br> 22
+									<sup>th</sup> - 25
+									<sup>th</sup> March, 2018
 								</p>
-								<a class="btn btn-lg" href="#">Start Exploring</a>
-								<a class="btn btn-lg btn-filled" href="#">Purchase</a>
+								<a class="btn btn-lg btn-filled" href="https://2018.fossasia.org/">I'm Interested !</a>
 							</div>
 						</div>
+
 					</div>
+
 				</li>
 			</ul>
 		</section>
 
-		<section class="bg-secondary">
+		<section class="bg-secondary" id="mentors">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-						<h2>Mentors for you</h2>
+				<div class="row ">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center ">
+						<h2 class="animated fadeIn">Mentors for you</h2>
 					</div>
 				</div>
-
 				<div class="row mb64 mb-xs-24">
 					<div class="col-sm-12 text-center spread-children-large">
 						{% for mentor in site.data.mentors %}
@@ -185,7 +191,7 @@
 							<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}"> {% else %}
 							<img src="img/mentors/member.png" alt="{{ mentor.name }}"> {% endif %}
 							<br>
-							<p class="mentor-name">{{ mentor.name }}</p>
+							<p class="person-name">{{ mentor.name }}</p>
 							<br>
 							<ul class="list-inline social-list">
 								{% if mentor.github %}
@@ -219,7 +225,7 @@
 					Contributors
 				</h2>
 			</center>
-			
+
 			<div class="col-md-8 col-md-push-2">
 				<div class="container">
 					<div class="row">
@@ -231,6 +237,89 @@
 
 				<div class="members contributers" id="Contributors">
 					<h1 class="section-h1">
+				</div>
+			</div>
+		</section>
+		<!--End of contributors section-->
+		<!--Student section-->
+		<section class="bg-secondary" id="students">
+			<div class="container">
+				<div class="row">
+				</div>
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+					<h2 id="student_title" class="animated fadeIn">Students just like you</h2>
+				</div>
+
+				<div class="row mb64 mb-xs-24">
+					<div class="col-sm-12 text-center spread-children-large">
+						{% for student in site.data.students %}
+						<div class="card">
+							{% if student.image %}
+							<img src="img/students/{{student.image}}" alt="{{ student.name }}"> {% else %}
+							<img src="img/students/member.png" alt="{{ student.name }}"> {% endif %}
+							<br>
+							<p class="person-name">{{ student.name }}</p>
+							<br>
+							<ul class="list-inline social-list">
+								{% if student.github %}
+								<a href="https://github.com/{{student.github}}" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								{% endif %} {% if student.twitter %}
+								<a href="https://twitter.com/@{{student.twitter}}" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								{% endif %} {% if student.blog %}
+								<a href="https://{{student.blog}}" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								{% endif %} {% if student.facebook %}
+								<a href="https://facebook.com/{{student.github}}" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+								{% endif %}
+							</ul>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End of student section-->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h4 class="uppercase mb16 animated fadeIn">Student Projects</h4>
+						<p class="lead mb64">Some projects developed by students during GCI</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="lightbox-grid square-thumbs">
+							<ul id="project_holder">
+								{% for project in site.data.student_projects %}
+								<li class="student_project">
+									<a href="{{project.github}}">
+										<div class="background-image-holder">
+											{% if project.image %}
+											<img title="{{project.name}} by {{project.author}}" class="background-image" src="img/projects/{{project.image}}"> {% else %}
+											<img title="{{project.name}} by {{project.author}}" class="background-image" src="img/projects/default.png"> {% endif %}
+										</div>
+									</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark">
+			<div class="container">
+				<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
+					<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის"]'>
+					</h2>
 				</div>
 			</div>
 		</section>
@@ -310,9 +399,18 @@
 
 					</div>
 				</div>
-
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+						<p class="mb40 mb-xs-24">
+							Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product,
+							service or portfolio - Foundry's unique and flexible style has you covered.
+						</p>
+						<a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Meet</a>
+					</div>
+				</div>
 			</div>
-
+		</section>
+		<section id="projects">
 		</section>
 		<section class="bg-secondary">
 			<div class="container">
@@ -330,8 +428,8 @@
 							<img class="col-sm-2" alt="Abishek V Ashok" src="img/abishek.jpg">
 							<img class="col-sm-2" alt="Mochammad Rafi Al Rizkan" src="img/rafi.png">
 							<img class="col-sm-2" alt="Mehmet Çağrı Arı" src="img/cagriari.jpg">
-							<img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg">
--							<img class="col-sm-2" alt="Saba Khukhunashvili" src="img/sabaxuxuna.png">
+							<img class="col-sm-2" alt="Reza Juliandri" src="img/reza_juliandri.jpg"> -
+							<img class="col-sm-2" alt="Saba Khukhunashvili" src="img/sabaxuxuna.png">
 						</div>
 					</div>
 				</div>
@@ -351,52 +449,16 @@
 
 			</div>
 		</section>
-		<section class="bg-dark">
-			<div class="container">
-				<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-					<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის"]'>
-					</h2>
+
+		<section class="bg-secondary">
+			<div class="container" id="map-sec">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h4 class="uppercase mb16">Community Connect</h4>
+					</div>
+					<div id="map"></div>
 				</div>
 			</div>
-
-		</section>
-		<section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
-			<div class="col-md-6 col-sm-4 p0">
-				<img alt="Screenshot" class="mb-xs-24" src="img/app4.jpg">
-			</div>
-			<div class="container">
-				<div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
-					<h3 class="mb40 mb-xs-16">Combine different blocks together to form your perfect layout.</h3>
-					<p class="lead mb40">
-						We've built three distinct image and text combinations for you to showcase the features of your product or service.
-					</p>
-					<div class="feature feature-3">
-						<div class="left">
-							<i class="ti-user icon-sm"></i>
-						</div>
-						<div class="right">
-							<h4 class="mb16">Built for you</h4>
-							<p>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-							</p>
-						</div>
-					</div>
-
-					<div class="feature feature-3">
-						<div class="left">
-							<i class="ti-package icon-sm"></i>
-						</div>
-						<div class="right">
-							<h4 class="mb16">Incredible Value</h4>
-							<p>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-							</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
 		</section>
 		<section class="image-edge">
 			<div class="col-md-6 col-sm-4 p0">
@@ -535,7 +597,7 @@
 
 		</section>
 
-		<section class="bg-secondary">
+		<section class="bg-secondary" id="student-blog">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 text-center">
@@ -562,7 +624,6 @@
 							</div>
 						</a>
 					</div>
-
 					<div class="col-md-3 col-sm-6">
 						<a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
 							<div class="image-tile outer-title text-center">
@@ -576,7 +637,18 @@
 						</a>
 					</div>
 
+					<div class="col-md-3 col-sm-6">
+						<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Latop with GitHub pendrive" src="img/blog/3.jpg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
+									<span>Nitesh Kumar Niranjan</span>
+								</div>
 
+							</div>
+						</a>
+					</div>
 					<div class="col-sm-12">
 						<div class="instafeed grid-gallery" data-user-name="mrareweb">
 							<ul></ul>
@@ -593,7 +665,7 @@
 				<div class="row v-align-children">
 					<div class="col-md-7 col-sm-6 text-center mb-xs-24">
 						<div class="embed-video-container embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/120433187?badge=0&amp;title=0&amp;byline=0&amp;title=0"
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/120433187?badge=0&amp;title=0&amp;byline=0&amp;title=0"
 							 allowfullscreen="allowfullscreen"></iframe>
 						</div>
 					</div>
@@ -668,12 +740,11 @@
 						</p>
 					</div>
 				</div>
-				<p align="center">
-					<iframe width="800" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq"
-					 frameborder="0" allowfullscreen></iframe>
-				</p>
+				<div class="widget video-container">
+					<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq"
+					 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
 			</div>
-
 		</section>
 		<section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
 			<ul class="slides">
@@ -687,7 +758,6 @@
 								<img alt="Logo" class="image-small" src="img/fossasia-light.png">
 							</div>
 						</div>
-
 					</div>
 
 					<div class="align-bottom text-center">
@@ -882,585 +952,360 @@
 
 		</section>
 
+		<footer class="footer-2 bg-dark" id="social-links">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 text-left">
+						<div class="vnu">
+							<img alt="Logo" class="footer-logo" src="img/fossasia-light.png">
+						</div>
+					</div>
+					<div class="col-sm-3 text-left"></div>
+					<div class="col-sm-6 text-right">
+						<ul class="list-inline social-list" style="font-size: 17px;padding: 10.5px;">
+							<li>
+								<a href="https://twitter.com/fossasia">
+									<i class="ti-twitter-alt"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://facebook.com/fossasia">
+									<i class="ti-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/108920596016838318216">
+									<i class=" ti-google" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/groups/FOSSASIA-3762811">
+									<i class=" ti-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/fossasia">
+									<i class=" ti-github" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://flickr.com/photos/fossasia">
+									<i class=" ti-flickr-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+									<i class=" ti-youtube" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/fossasia">
+									<i class=" ti-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 		<footer class="footer-1 bg-dark">
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-6">
-						<a class="twitter-timeline" data-width="400" data-height="400" data-link-color="#E81C4F" href="https://twitter.com/fossasia">Tweets by fossasia</a>
-						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<div class="widget">
+							<h6 class="title">Products</h6>
+							<hr>
+							<a href="#">A product</a>
+							<br>
+							<a href="#">Another product</a>
+							<br>
+							<a href="#">Yet another product</a>
+							<br>
+						</div>
+
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a data-flickr-embed="true" data-context="true" href="http://www.flickr.com/photos/fossasia/30907152523/" title="IMG_20161207_164809">
-							<img src="https://c1.staticflickr.com/1/350/30907152523_ab6bf453f4_z.jpg" width="400" height="200" alt="IMG_20161207_164809">
-						</a>
-						<script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 						<div class="widget">
-							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=270&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-							 width="340" height="200"></iframe>
+							<h6 class="title">Recent Posts</h6>
+							<hr>
+							<ul class="link-list recent-posts">
+								<li>
+									<a href="#">Hugging pugs is super trendy</a>
+									<span class="date">February
+										<span class="number">14, 2015</span>
+									</span>
+								</li>
+								<li>
+									<a href="#">Spinning vinyl is oh so cool</a>
+									<span class="date">February
+										<span class="number">9, 2015</span>
+									</span>
+								</li>
+								<li>
+									<a href="#">Superior theme design by pros</a>
+									<span class="date">January
+										<span class="number">27, 2015</span>
+									</span>
+								</li>
+							</ul>
 						</div>
-
 
 					</div>
-
-					<div class="col-md-6 col-sm-6">
-						<div class="widget video-container">
-							<iframe width="600" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq"
-							 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h6 class="title">Latest tweets</h6>
+							<hr>
+							<div class="twitter-feed">
+								<div class="tweets-feed" data-feed-name="hpdang" id="tweets-0">
+								</div>
+							</div>
 						</div>
+
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h6 class="title">Quicklinks</h6>
+							<hr>
+							<a href="https://fossasia.org/" class="foss-links">
+								<i class="ti-world" aria-hidden="true"></i> Main Site</a>
+							<br>
+							<a href="https://blog.fossasia.org" class="foss-links">
+								<i class="ti-rss" aria-hidden="true"></i> Blog</a>
+							<br>
+							<a href="https://codein.withgoogle.com/organizations/fossasia/" class="foss-links">
+								<i class="ti-bag" aria-hidden="true"></i> Google Code-In Page </a>
+							<br>
+							<a href="https://events.fossasia.org" class="foss-links">
+								<i class="ti-calendar" aria-hidden="true"></i> Events</a>
+							<br>
+							<a href="https://gci17.fossasia.org" class="foss-links">
+								<i class="ti-link" aria-hidden="true"></i> Fossasia 2017</a>
+							<br>
+							<a href="#" class="foss-links">
+								<i class="ti-arrow-up" aria-hidden="true"></i> Top of the Page</a>
+							<br>
+						</div>
+
+					</div>
+					<div class="col-sm-12 text-center">
+						<span class="sub">© Copyright 2017 -
+							<a href="https://fossasia.org">FOSSASIA</a>
+						</span>
 					</div>
 				</div>
-
-				<footer class="footer-1 bg-dark">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3 col-sm-6">
-								<div class="vnu">
-									<img alt="Logo" class="logo" src="img/fossasia-light.png">
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="widget">
-									<h6 class="title">Recent Posts</h6>
-									<hr>
-									<ul class="link-list recent-posts">
-										<li>
-											<a href="#">Hugging pugs is super trendy</a>
-											<span class="date">February
-												<span class="number">14, 2015</span>
-											</span>
-										</li>
-										<li>
-											<a href="#">Spinning vinyl is oh so cool</a>
-											<span class="date">February
-												<span class="number">9, 2015</span>
-											</span>
-										</li>
-										<li>
-											<a href="#">Superior theme design by pros</a>
-											<span class="date">January
-												<span class="number">27, 2015</span>
-											</span>
-										</li>
-									</ul>
-								</div>
-
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="widget">
-									<h6 class="title">Latest Updates</h6>
-									<hr>
-									<div class="twitter-feed">
-										<div class="tweets-feed" data-feed-name="hpdang" id="tweets-0">
-										</div>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="widget">
-									<h6 class="title">FOSSASIA Links</h6>
-									<hr>
-									<a href="https://fossasia.org/" class="foss-links">
-										<i class="ti-world" aria-hidden="true"></i> Main Site</a>
-									<br>
-									<a href="https://blog.fossasia.org" class="foss-links">
-										<i class="ti-rss" aria-hidden="true"></i> Blog</a>
-									<br>
-									<a href="https://codein.withgoogle.com/organizations/fossasia/" class="foss-links">
-										<i class=" ti-bag" aria-hidden="true"></i> Google Code-In Page </a>
-									<br>
-									<a href="https://events.fossasia.org" class="foss-links">
-										<i class=" ti-calendar" aria-hidden="true"></i> Events</a>
-									<br>
-									<a href="https://gci17.fossasia.org" class="foss-links">
-										<i class="ti-link" aria-hidden="true"></i> Fossasia 2017</a>
-									<br>
-									<a href="#" class="foss-links">
-										<i class="ti-arrow-up" aria-hidden="true"></i> Top of the Page</a>
-									<br>
-									<div class="instafeed" data-user-name="mrareweb">
-
-										<ul>
-											<li>
-												<a href="https://www.instagram.com/fossasia" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/BGdwg0Br3Wh/" target="_blank" title="A snap of an upcoming portfolio template">
-													<img alt="A snap of an upcoming portfolio template" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/13398476_758284670980565_1964434862_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/seFrrSL3e7/" target="_blank" title="Cooking up some colour scheme goodness on our latest">
-													<img alt="Cooking up some colour scheme goodness on our latest" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10598518_868054983219549_1823485118_n.jpg">
-												</a>
-											</li>
-											<li>
-												<a href="https://www.instagram.com/p/sPR7HPr3eI/" target="_blank" title="A snap of our latest template 'Pivot'">
-													<img alt="A snap of our latest template 'Pivot'" height="320" width="320" src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/10632214_722819361118920_1555795075_n.jpg">
-												</a>
-											</li>
-										</ul>
-
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="row" style="padding-top: 75px;">
-							<div class="col-sm-6">
-								<span class="sub">© Copyright 2017 -
-									<a href="https://fossasia.org">FOSSASIA</a>
-								</span>
-							</div>
-							<div class="col-sm-6 text-right">
-								<ul class="list-inline social-list" style="font-size: 20px;">
-									<li>
-										<a href="https://twitter.com/fossasia">
-											<i class="ti-twitter-alt"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://facebook.com/fossasia">
-											<i class="ti-facebook"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://plus.google.com/108920596016838318216">
-											<i class=" ti-google " aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/groups/FOSSASIA-3762811">
-											<i class=" ti-linkedin " aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://github.com/fossasia">
-											<i class=" ti-github " aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://flickr.com/photos/fossasia">
-											<i class=" ti-flickr-alt " aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-											<i class=" ti-youtube  " aria-hidden="true"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
-				</footer>
 			</div>
+		</footer>
+	</div>
 
 
-			<script src="js/jquery.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/flexslider.min.js"></script>
-			<script src="js/lightbox.min.js"></script>
-			<script src="js/masonry.min.js"></script>
-			<script src="js/flickr.js"></script>
-			<script src="js/twitterfetcher.min.js"></script>
-			<script src="js/spectragram.min.js"></script>
-			<script src="js/smooth-scroll.min.js"></script>
-			<script src="js/parallax.js"></script>
-			<script src="js/scripts.js"></script>
-			<script src="js/contributors.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flexslider.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/masonry.min.js"></script>
+	<script src="js/flickr.js"></script>
+	<script src="js/twitterfetcher.min.js"></script>
+	<script src="js/spectragram.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/contributors.js"></script>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		/* Smooth Scroll */
+		$('a[href*="#"]').not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function (event) {
+				if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+					&&
+					location.hostname == this.hostname
+				) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						event.preventDefault();
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, 'swing', function () {
+							var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) {
+								return false;
+							} else {
+								$target.attr('tabindex', '-1');
+								$target.focus();
+							};
+						});
+					}
+				}
+			});
+		window.initMap = function () {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 2,
+				scrollwheel: false,
+				center: {
+					lat: 0,
+					lng: 0
+				},
+				styles: [{
+					"featureType": "administrative",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": "-100"
+					}]
+				},
+				{
+					"featureType": "administrative.province",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				},
+				{
+					"featureType": "landscape",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					},
+					{
+						"lightness": 65
+					},
+					{
+						"visibility": "on"
+					}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					},
+					{
+						"lightness": "50"
+					},
+					{
+						"visibility": "simplified"
+					}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": "-100"
+					}]
+				},
+				{
+					"featureType": "road.highway",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "simplified"
+					}]
+				},
+				{
+					"featureType": "road.arterial",
+					"elementType": "all",
+					"stylers": [{
+						"lightness": "30"
+					}]
+				},
+				{
+					"featureType": "road.local",
+					"elementType": "all",
+					"stylers": [{
+						"lightness": "40"
+					}]
+				},
+				{
+					"featureType": "transit",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					},
+					{
+						"visibility": "simplified"
+					}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "geometry",
+					"stylers": [{
+						"hue": "#ffff00"
+					},
+					{
+						"lightness": -25
+					},
+					{
+						"saturation": -97
+					}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "labels",
+					"stylers": [{
+						"lightness": -25
+					},
+					{
+						"saturation": -100
+					}
+					]
+				}
+				]
+			});
+			var marker;
+			var marker2;
+			var infowindow = null;
+			{% for mentor in site.data.mentors %}
+			{% if mentor.lat %}
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng({{ mentor.lat }}, {{ mentor.lng }}),
+		label: 'M',
+			map: map
+		  });
+		infowindow = null;
+		var content = "<div><img class='img-rounded' src='img/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+		google.maps.event.addListener(marker, 'click', (function (marker, content) {
+			return function () {
+				if (infowindow) {
+					infowindow.close();
+				}
+				infowindow = new google.maps.InfoWindow();
+				infowindow.setContent(content);
+				infowindow.open(map, marker);
+			};
+		})(marker, content));
+		{% endif %}
+		{% endfor %}
+		{% for student in site.data.students %}
+		{% if student.lat %}
+		marker2 = new google.maps.Marker({
+			position: new google.maps.LatLng({{ student.lat }}, {{ student.lng }}),
+			label : 'S',
+				map: map
+		  });
+		infowindow = null;
+		var content = "<div><img class='img-rounded' src='img/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+		google.maps.event.addListener(marker2, 'click', (function (marker2, content) {
+			return function () {
+				if (infowindow) {
+					infowindow.close();
+				}
+				infowindow = new google.maps.InfoWindow();
+				infowindow.setContent(content);
+				infowindow.open(map, marker2);
+			};
+		})(marker2, content));
+		{% endif %}
+		{% endfor %}
+};
+	</script>
+	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDEdg77hrkUariqipecWIb0_sh-ii5DiMk &callback=initMap" async defer></script>
+
 </body>
 
 </html>
