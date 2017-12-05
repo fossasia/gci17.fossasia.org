@@ -9,7 +9,6 @@
   twitter: mariobehling
   facebook: mariobehling
 
-
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
@@ -22,23 +21,19 @@
   blog: blog.fossasia.org
   facebook: prasad.dude28
 
-
 - name: Isuru Abeywardana
   github: isuruAb
   image: isuruAb.jpg
   blog: icodeplus.wordpress.com
   facebook: isuruAb
 
-
 - name: Abhinav Khare
   github: CosmicCoder96
   image: CosmicCoder96.jpg
 
-
 - name: Harsh Vardhan
   github: royalharsh
   image: royalharsh.jpg
-
 
 - name: Harsh Kothari
   github: harshkothari410
@@ -47,13 +42,11 @@
   facebook: harshkothari410
   twitter: harshkothari410
 
-
 - name: Jigyasa Grover
   github: jigyasa-grover
   image: jigyasa-grover.jpg
   facebook: grover.jigyasa
   twitter: jigyasa_grover
-
 
 - name: Saptak Sengupta
   github: SaptakS
@@ -62,7 +55,6 @@
   facebook: s4pt4ks
   twitter: Saptak013
 
-
 - name: Damini Satya
   github: daminisatya
   image: daminisatya.jpg
@@ -70,11 +62,9 @@
   facebook: daminisatya
   twitter: Daminisatya
 
-
 - name: Mohit Sharma
   github: ms10398
   image: mohitsharma.png
-
 
 - name: Ashwani Kumar
   github: ashwanidv100
@@ -89,6 +79,15 @@
   github: niccokunzmann
   image: niccokunzmann.png
 
+- name: Sudheesh Singanamalla
+  github: sudheesh001
+  image: sudheesh001.jpg
+
 - name: Anshuman Verma
   image: ansh.jpg
   twitter: Anshumaniac12
+
+- name: Avi Aryan
+  image: avi.jpg
+  twitter: aviaryan123
+  github: aviaryan
