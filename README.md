@@ -12,7 +12,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
   twitter: Mentor's Twitter id
   facebook: Mentor's Facebook id
   Linkedin: Mentor's Linkein Page
-  
+
   Geolocation (city or country: optional)
   lat: Mentor's latitude
   lng: Mentor's longitude
@@ -25,14 +25,14 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
 ## Adding a Student
-To add a mentor open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+To add a student open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Student's name
   country: Student's country/region
   github: Student's Github username
   image: Student's image (or representation like a "nick" image)
   twitter: Student's Twitter id
-  
+
 **Optional** (Please ensure parents agree on sharing this data)
 * facebook: Student's Facebook id
 * Geolocation (Preferably do not share your exact location. If you really want to share it, share city)
@@ -47,7 +47,7 @@ To add a mentor open the file  `students.yml` in `_data` folder and please maint
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 ## Adding a Student Project
 
-To add a mentor open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+To add a student project open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Name of project
   github: Github repository of the project
@@ -59,4 +59,3 @@ To add a mentor open the file  `student_projects.yml` in `_data` folder and plea
 - All images must be in `img/projects`.
 - The images should be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
-
