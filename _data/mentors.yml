@@ -52,7 +52,7 @@
   github: jigyasa-grover
   image: jigyasa-grover.jpg
   facebook: grover.jigyasa
-  twitter: jigyasa_grover
+-   twitter: jigyasa_grover
 
 - name: Saptak Sengupta
   github: SaptakS
@@ -101,3 +101,7 @@
   image: avi.jpg
   twitter: aviaryan123
   github: aviaryan
+
+- name: Madhav Rathi
+  image: madhav.jpg
+  github: madhavrathi
