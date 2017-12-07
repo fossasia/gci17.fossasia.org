@@ -1,5 +1,5 @@
 # FOSSASIA GCI 2017 Site
-[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
+[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg?branch=gh-pages)](https://travis-ci.org/fossasia/gci17.fossasia.org)
 
 ## Adding a Mentor
 
