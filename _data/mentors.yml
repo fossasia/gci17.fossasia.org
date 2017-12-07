@@ -92,16 +92,17 @@
 - name: Anshuman Verma
   image: ansh.jpg
   twitter: Anshumaniac12
+ 
+- name: Rahul Tiwari
+  github: invinciblycool
+  twitter: invinciblycool
+  image: Rahul_Tiw
   
 - name: Nguyen Vu Hung 
   image: hung.jpg
   github: vuhung
   facebook: nguyenvuhung
  
-- name: Rahul Tyagi
-  github: invinciblycool
-  image: Rahul_Tiw
-
 - name: Avi Aryan
   image: avi.jpg
   twitter: aviaryan123

@@ -7,7 +7,7 @@ $(function(){
     data.forEach(function(contributors){
       var html = "<div class='col-md-3 col-sm-6'>";
       html += "<a href="+contributors.html_url+">";
-      html += "<img src='icons/github.png' width='18%' height='5%'/>"
+      html += "<img src='icons/github.png' width='18%' height='5%' style='padding-bottom: 5px;'/>"
       html += "    <hover>&nbsp&nbsp"+contributors.login+"&nbsp&nbsp</hover>";
       html += "<div id='hoverpic'><img src="+contributors.avatar_url+"></div></a>";
       html += contributors.contributions;
