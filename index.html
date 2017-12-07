@@ -68,21 +68,21 @@
 								<a href="https://github.com/{{mentor.github}}" class="icon-a">
 								   <i class="ti-github icon-i"></i>
 								</a>
-							{% endif %}
-							{% if mentor.twitter %}
-								<a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">    
-								   <i class="ti-twitter-alt icon-i"></i>
-								</a>
-							{% endif %}
-							{% if mentor.blog %}
-								<a href="https://{{mentor.blog}}" class="icon-a">
-								   <i class="ti-rss-alt icon-i"></i>
-								</a>
-							{% endif %}
-							{% if mentor.facebook %}
-								<a href="https://facebook.com/{{mentor.github}}" class="icon-a">
-								   <i class="ti-facebook icon-i"></i>
 
+								{% endif %}
+								{% if mentor.twitter %}
+								<a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								{% endif %}
+								{% if mentor.blog %}
+								<a href="https://{{ mentor.blog }}" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								{% endif %}
+								{% if mentor.facebook %}
+								<a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
 								</a>
 							{% endif %}
 						</ul>
@@ -354,97 +354,104 @@
 
 <!-- Blog -->
 <section class="bg-secondary" id="student-blog">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h4 class="uppercase mb16">Blog</h4>
-				<p class="lead mb64">
-				   Articles from the Contributors. </p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 col-sm-6">
-				<a href="https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/" target="_blank">
-					<div class="image-tile outer-title text-center">
-						<img alt="Pic" src="img/blog/1.jpg" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">First Time in Google Code In with Fossasia</h5>
-							<span>Naveen Rajan</span>
-						</div>
-					   
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+
+
+						<h4 class="uppercase mb16">Blog</h4>
+						<p class="lead mb64">
+							Articles from the Contributors. </p>
 					</div>
-				</a>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
-					<div class="image-tile outer-title text-center">
-						<img alt="Latop with GitHub pendrive" src="img/blog/2.jpg" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">My dive into open source with FOSSASIA during Google Code-in</h5>
-							<span>Kuba Michalski</span>
-						</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<a href="https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Pic" src="img/blog/1.jpeg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">First Time in Google Code In with Fossasia</h5>
+									<span>Naveen Rajan</span>
+								</div>
+							</div>
+						</a>
 					</div>
-				</a>
+					<div class="col-md-3 col-sm-6">
+						<a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Latop with GitHub pendrive" src="img/blog/2.jpeg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">My dive into open source with FOSSASIA during Google Code-in</h5>
+									<span>Kuba Michalski</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Latop with GitHub pendrive" src="img/blog/3.jpeg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
+									<span>Nitesh Kumar Niranjan</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="https://kartikeya23.wordpress.com/2017/12/06/one-task-two-tasks-three-tasks/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="An awesome guy's pic couldn't be loaded" src="img/blog/4.jpeg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">One Task, Two Tasks, Three Tasks...</h5>
+									<span>Kartikeya Singh</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="https://saarthakchaturvedi05.wordpress.com/2017/12/06/theres-code-in-me/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img src="img/blog/5.jpg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">There's Code-In Me</h5>
+									<span>Saarthak Chaturvedi</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="https://samyakbvs.wordpress.com/2017/12/07/in-code-i-believe/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img src="img/blog/6.png" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">In code, I believe</h5>
+									<span>Samyak Jain</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
-					<div class="image-tile outer-title text-center">
-						<img alt="Latop with GitHub pendrive" src="img/blog/3.jpg" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
-							<span>Nitesh Kumar Niranjan</span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  
-  <div class="row">
+		</section>
 
-    <div class="col-md-3 col-sm-6">
-      <a href="https://saarthakchaturvedi05.wordpress.com/2017/12/06/theres-code-in-me/" target="_blank">
-      <div class="image-tile outer-title text-center">
-        <img src="img/blog/Saarthak.jpg" height="240" width="240">
-        <div class="title mb16">
-          <h5 class="uppercase mb0">There's Code-In Me</h5>
-          <span>Saarthak Chaturvedi</span>
-        </div>
-      </div>
-    </div>
-					
-    <div class="col-md-3 col-sm-6">
-      <a href="https://samyakbvs.wordpress.com/2017/12/07/in-code-i-believe/" target="_blank">
-      <div class="image-tile outer-title text-center">
-        <img src="img/blog/Samyak.png" height="240" width="240">
-        <div class="title mb16">
-          <h5 class="uppercase mb0">In code, I believe</h5>
-          <span>Samyak Jain</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 col-sm-6">
-      <a href="https://kartikeya23.wordpress.com/2017/12/06/one-task-two-tasks-three-tasks/" target="_blank">
-      <div class="image-tile outer-title text-center">
-        <img alt="An awesome guy's pic couldn't be loaded" src="img/blog/4.jpeg" height="240" width="240">
-        <div class="title mb16">
-          <h5 class="uppercase mb0">One Task, Two Tasks, Three Tasks...</h5>
-          <span>Kartikeya Singh</span>
-        </div>
-      </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-		
 <!-- placeholder -->
 <section>
-	<div class="container">
-		<div class="row v-align-children">
-			<div class="col-md-7 col-sm-6 text-center mb-xs-24">
-				<div class="embed-video-container embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/120433187?badge=0&amp;title=0&amp;byline=0&amp;title=0" allowfullscreen="allowfullscreen"></iframe>
+			<div class="container">
+				<div class="row v-align-children">
+					<div class="col-md-7 col-sm-6 text-center mb-xs-24">
+						<div class="embed-video-container embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/120433187?badge=0&amp;title=0&amp;byline=0&amp;title=0"
+							 allowfullscreen="allowfullscreen"></iframe>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+						<h3>Design that looks less 'theme' and more you.</h3>
+						<p>
+							Foundry offers you the modularity and ease-of-use of a template with the style and aesthetic of contemporary, bespoke web
+							design.
+						</p>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
