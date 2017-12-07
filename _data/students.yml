@@ -1,6 +1,6 @@
 - name: Anastasiia Kostiv
   github: AKostiv8
-  image: kostiv.jpg
+  image: kostiv.jpeg
   twitter: KostivNastya
   facebook: anastasiya.kostiv
 
@@ -36,7 +36,7 @@
   image: rafi.png
 
 - name: Mehmet Çağrı Arı
-  image: cagriari.jpg
+  image: cagriari.jpeg
 
 - name: Reza Juliandri
   image: reza_juliandri.jpg
@@ -49,7 +49,7 @@
 
 - name: Kuba Michalski
   country: Poland
-  image: kuba-michalski.jpg
+  image: kuba-michalski.jpeg
   github: kubami9
   twitter: top_kuba
 
@@ -90,17 +90,23 @@
   github: Jerry2001
   facebook: ngohongphuc2001
 
+- name: Tushar Kumar
+  country: India
+  github: awesometushar000
+  image: tushar.jpg
+  twitter: meets2tushar
+
 - name: Aryan Kedare
   country: India
   github: aryankedare
-  image: aryankedare.jpg
+  image: aryankedare.jpeg
   twitter: KedareAryan
-  
+
 - name: Samyak Jain
   github: samyakbvs
   image: samyak.png
   twitter: Samyakbvs
-  facebook: Samyak Jain 
+  facebook: Samyak Jain
   
 - name: Tushar Verma
   github: 2coolife
