@@ -1,468 +1,997 @@
----
----
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>FOSSASIA | Google Code-In 2017</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+<head>
+	<meta charset="utf-8">
+	<title>FOSSASIA | Google Code-In 2017</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/hover.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/contributors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
+	 rel='stylesheet' type='text/css'>
+</head>
 
-	</head>
+<body class="scroll-assist">
 
-    <body class="scroll-assist">
+	<div class="nav-container" id="welcome">
 
-		<div class="nav-container" id="welcome">
+		<nav>
+			<div class="nav-bar">
+				<div class="module left">
+					<a href="index.html">
+						<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
+					</a>
+				</div>
 
-		    <nav>
-		        <div class="nav-bar">
-		            <div class="module left">
-		                <a href="index.html">
-          					<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png">
-		                </a>
-		            </div>
+				<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+					<i class="ti-menu"></i>
+				</div>
 
-		            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-		                <i class="ti-menu"></i>
-		            </div>
-
-		            <div class="module-group right">
-		                <div class="module left">
-		                    <ul class="menu">
-		                        <li>
-		                            <a href="#welcome">Welcome</a>
-		                        </li>
-		                        <li>
-		                            <a href="#mentors">Mentors</a>
-		                        </li>
-		                        <li>
-		                            <a href="#students">Student</a>
-		                        </li>
-		                        <li>
-		                            <a href="#projects">Projects</a>
-		                        </li>
-								<li>
-									<a href="#map-sec">Map</a>
-								</li>
-		                        <li>
-		                            <a href="#student-blog">Blog Posts</a>
-		                        </li>
-		                        <li>
-		                            <a href="#social-links">Social Links</a>
-		                        </li>
-		                        <li>
-		                        	<a href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
-		                        </li>
-		                        <li class="has-dropdown">
-		                            <a href="#">
-		                                Quick Links
-		                            </a>
-		                            <ul>
-		                                <li>
-		                                    <a href="#">
-		                                        Main Site
-		                                    </a>
-		                                </li>
-		                                <li>
-		                                    <a href="#">
-		                                        Blog
-		                                    </a>
-		                                </li>
-		                                <li>
-		                                    <a href="#">
-		                                        Events
-		                                    </a>
-		                                </li>
-		                                <li>
-		                                    <a href="https://gci16.fossasia.org">
-		                                        Google Code-In 2016
-		                                    </a>
-		                                </li>
-		                                <li>
-		                                    <a href="https://gci15.fossasia.org">
-		                                        Google Code-In 2015
-		                                    </a>
-		                                </li>
-		                            </ul>
-		                        </li>
-		                    </ul>
-		                </div>
-
-		                <div class="module widget-handle language left">
-		                    <ul class="menu">
-		                        <li class="has-dropdown">
-		                            <a href="#">ENG</a>
-		                            <ul>
-		                                <li>
-		                                    <a href="#">French</a>
-		                                </li>
-		                                <li>
-		                                    <a href="#">Deutsch</a>
-		                                </li>
-		                                <li>
-		                                    <a href="#">Polski</a>
-		                                </li>
-		                            </ul>
-		                        </li>
-		                    </ul>
-		                </div>
-		            </div>
-
-		        </div>
-		    </nav>
-
-
-		</div>
-
-		<div class="main-container">
-
-			<section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
-		        <ul class="slides">
-		            <li class="overlay image-bg">
-		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/slider/community-map.jpg">
-		                </div>
-		                <div class="container v-align-transform">
-		                    <div class="row text-center">
-		                        <div class="col-md-10 col-md-offset-1">
-		                            <h2 class="mb-xs-16">Educating and inspiring students by being <br class="hidden-sm"> involved in open source projects</h2>
-		                            <p class="lead mb40">
-		                            	Participate in Google Codein with <b>FOSSASIA</b> !
-		                            </p>
-		                            <a class="btn btn-lg btn-filled" href="https://codein.withgoogle.com/organizations/fossasia/">Take me Along !</a>
-		                            <a class="btn btn-lg" href="#mentors">Explore the site</a>
-		                        </div>
-		                    </div>
-
-		                </div>
-
-		            </li><li class="overlay image-bg">
-		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/slider/group-photo.jpg">
-		                </div>
-		                <div class="container v-align-transform ">
-		                    <div class="row text-center">
-		                        <div class="col-md-10 col-md-offset-1">
-		                            <h2 class="mb-xs-16"><b><i>"The Open Conversational Web"</i></b>  <br class="hidden-sm">Asia's Premier Open Technology Event</h2>
-		                            <p class="lead mb40">
-		                                FOSSASIA SUMMIT IN SINGAPORE<br>
-		                                22<sup>th</sup> - 25<sup>th</sup> March, 2018
-		                            </p>
-		                            <a class="btn btn-lg btn-filled" href="https://2018.fossasia.org/">I'm Interested !</a>
-		                        </div>
-		                    </div>
-
-		                </div>
-
-		            </li>
-		        </ul>
-		    </section><section class="bg-secondary" id="mentors">
-		        <div class="container">
-         <div class="row ">
-		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center ">
-		                    <h2 class="animated fadeIn">Mentors for you</h2>
-		                </div>
-		            </div>
-		            <div class="row mb64 mb-xs-24">
-		                <div class="col-sm-12 text-center spread-children-large">
-                                    {% for mentor in site.data.mentors %}
-                                        <div class="card">
-                                            {% if mentor.image %}
- 		                                <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                                            {% else %}
-                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
-                                            {% endif %}
-                                            <br>
-                                            <p class="person-name">{{ mentor.name }}</p><br>
-                                            <ul class="list-inline social-list">
-                                                {% if mentor.github %}
-                                                    <a href="https://github.com/{{mentor.github}}" class="icon-a">
-                                                       <i class="ti-github icon-i"></i>
-                                                    </a>
-                                                {% endif %}
-                                                {% if mentor.twitter %}
-                                                    <a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">
-                                                       <i class="ti-twitter-alt icon-i"></i>
-                                                    </a>
-                                                {% endif %}
-                                                {% if mentor.blog %}
-                                                    <a href="https://{{mentor.blog}}" class="icon-a">
-                                                       <i class="ti-rss-alt icon-i"></i>
-                                                    </a>
-                                                {% endif %}
-                                                {% if mentor.facebook %}
-                                                    <a href="https://facebook.com/{{mentor.github}}" class="icon-a">
-                                                       <i class="ti-facebook icon-i"></i>
-                                                    </a>
-                                                {% endif %}
-                                            </ul>
-                                        </div>
-                                    {% endfor %}
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-                    <section class="bg-secondary" id="students">
-		        <div class="container">
-    <div class="row">
-			</div>
-      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-          <h2 id="student_title" class="animated fadeIn">Students just like you</h2>
-      </div>
-
-      <div class="row mb64 mb-xs-24">
-          <div class="col-sm-12 text-center spread-children-large">
-                          {% for student in site.data.students %}
-                              <div class="card">
-                                  {% if student.image %}
-                          <img src="img/students/{{student.image}}" alt="{{ student.name }}">
-                                  {% else %}
-                                      <img src="img/students/member.png" alt="{{ student.name }}">
-                                  {% endif %}
-                                  <br>
-                                  <p class="person-name">{{ student.name }}</p><br>
-                                  <ul class="list-inline social-list">
-                                      {% if student.github %}
-                                          <a href="https://github.com/{{student.github}}" class="icon-a">
-                                             <i class="ti-github icon-i"></i>
-                                          </a>
-                                      {% endif %}
-                                      {% if student.twitter %}
-                                          <a href="https://twitter.com/@{{student.twitter}}" class="icon-a">
-                                             <i class="ti-twitter-alt icon-i"></i>
-                                          </a>
-                                      {% endif %}
-                                      {% if student.blog %}
-                                          <a href="https://{{student.blog}}" class="icon-a">
-                                             <i class="ti-rss-alt icon-i"></i>
-                                          </a>
-                                      {% endif %}
-                                      {% if student.facebook %}
-                                          <a href="https://facebook.com/{{student.github}}" class="icon-a">
-                                             <i class="ti-facebook icon-i"></i>
-                                          </a>
-                                      {% endif %}
-                                  </ul>
-                              </div>
-                          {% endfor %}
-          </div>
-      </div>
-
-     <div class="row">
-		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <p class="mb40 mb-xs-24">
-		                        Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
-		                    </p>
-		                    <a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Meet</a>
-		                </div>
-		            </div>
-
-
-
-		        </div>
-		    </section>
-                    <section id="projects">
-  </section>
-<section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16 animated fadeIn">Student Projects</h4>
-		                    <p class="lead mb64">Some projects developed by students during GCI</p>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <div class="lightbox-grid square-thumbs">
-		                        <ul id="project_holder">
-                                            {% for project in site.data.student_projects %}
-		                                <li class="student_project">
-		                                    <a href="{{project.github}}">
-		                                        <div class="background-image-holder">
-                                                            {% if project.image %}
-		                                                <img title="{{project.name}} by {{project.author}}"
-                                                                     class="background-image" src="img/projects/{{project.image}}">
-                                                            {% else %}
-		                                                <img title="{{project.name}} by {{project.author}}"
-                                                                     class="background-image" src="img/projects/default.png">
-                                                            {% endif %}
-		                                        </div>
-		                                    </a>
-		                                </li>
-                                            {% endfor %}
-		                        </ul>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-		        <section class="bg-dark">
-		         <div class="container">
-		            <div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-                     <h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის"]'>
-                     </h2>
-		            </div>
-		        </div>
-		    </section>
-                    <section class="bg-secondary">
-                        <div class="container" id="map-sec">
-                            <div class="row">
-		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16">Community Connect</h4>
-		                </div>
-		                <div id="map"></div>
-                            </div>
-                        </div>
-		    </section>
-                    <section class="image-edge">
-		        <div class="col-md-6 col-sm-4 p0">
-		            <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
-		        </div>
-		        <div class="container">
-		            <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
-		                <h1 class="large mb40 mb-xs-16">Clean, Usable Image Blocks.</h1>
-		                <h6 class="uppercase mb16">Left &amp; Right Variations Included</h6>
-		                <p class="lead mb40">
-		                    We've built three distinct image and text combinations for you to showcase the features of your product or service. All combos come in left and right arrangements.
-		                </p>
-		                <a class="btn-lg btn" href="#">Explore Foundry</a>
-		            </div>
-		        </div>
-
-		    </section><section class="image-edge">
-		        <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-		            <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
-		        </div>
-		        <div class="container">
-		            <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
-		                <h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1>
-		                <h6 class="uppercase mb16">A timeless design to be proud of</h6>
-		                <p class="lead mb40">
-		                    We've built three distinct image and text combinations for you to showcase the features of your product or service. All combos come in left and right arrangements.
-		                </p>
-		                <a class="btn-lg btn" href="#">Explore Foundry</a>
-		            </div>
-		        </div>
-
-		    </section><section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-4">
-		                    <h2 class="number">2008</h2>
-		                    <p>
-		                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
-		                    </p>
-		                </div>
-		                <div class="col-sm-4">
-		                    <h2 class="number">150+</h2>
-		                    <p>
-		                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
-		                    </p>
-		                </div>
-		                <div class="col-sm-4">
-		                    <h2>Millions</h2>
-		                    <p>
-		                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
-		                    </p>
-		                </div>
-		            </div>
-
-		        </div>
-
-		    </section><section class="cover fullscreen image-bg overlay parallax">
-		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/prop1.jpg">
-		        </div>
-		        <div class="container v-align-transform">
-		            <div class="row">
-		                <div class="col-sm-12 text-center">
-		                    <h1 class="large uppercase mb16">53 Hopetoun Rd.</h1>
-		                    <h5 class="uppercase mb0">Contemporary Living In The Heart Of Toorak</h5>
-		                </div>
-		            </div>
-
-		        </div>
-
-		        <div class="align-bottom relative-xs text-center">
-		            <a class="btn btn-filled btn-lg mb32 mt-xs-40" href="#">Register Interest</a>
-		        </div>
-		    </section><section>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-push-3 text-center">
-							<div class="image-slider slider-paging-controls controls-outside">
-								<ul class="slides">
-									<li class="mb32">
-										<img alt="App" src="img/app5.png">
+				<div class="module-group right">
+					<div class="module left">
+						<ul class="menu">
+							<li>
+								<a href="#welcome">Welcome</a>
+							</li>
+							<li>
+								<a href="#mentors">Mentors</a>
+							</li>
+							<li>
+								<a href="#students">Student</a>
+							</li>
+							<li>
+								<a href="#projects">Projects</a>
+							</li>
+							<li>
+								<a href="#map-sec">Map</a>
+							</li>
+							<li>
+								<a href="#student-blog">Blog Posts</a>
+							</li>
+							<li>
+								<a href="#social-links">Social Links</a>
+							</li>
+							<li>
+								<a href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
+							</li>
+							<li class="has-dropdown">
+								<a href="#">
+									Quick Links
+								</a>
+								<ul>
+									<li>
+										<a href="#">
+											Main Site
+										</a>
 									</li>
-									<li class="mb32">
-										<img alt="App" src="img/app5.png">
+									<li>
+										<a href="#">
+											Blog
+										</a>
 									</li>
-									<li class="mb32">
-										<img alt="App" src="img/app5.png">
+									<li>
+										<a href="#">
+											Events
+										</a>
+									</li>
+									<li>
+										<a href="https://gci16.fossasia.org">
+											Google Code-In 2016
+										</a>
+									</li>
+									<li>
+										<a href="https://gci15.fossasia.org">
+											Google Code-In 2015
+										</a>
 									</li>
 								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="module widget-handle language left">
+						<ul class="menu">
+							<li class="has-dropdown">
+								<a href="#">ENG</a>
+								<ul>
+									<li>
+										<a href="#">French</a>
+									</li>
+									<li>
+										<a href="#">Deutsch</a>
+									</li>
+									<li>
+										<a href="#">Polski</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+
+	</div>
+
+	<div class="main-container">
+
+		<section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
+			<ul class="slides">
+				<li class="overlay image-bg">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="img/slider/community-map.jpg">
+					</div>
+					<div class="container v-align-transform">
+						<div class="row text-center">
+							<div class="col-md-10 col-md-offset-1">
+								<h2 class="mb-xs-16">Educating and inspiring students by being
+									<br class="hidden-sm"> involved in open source projects</h2>
+								<p class="lead mb40">
+									Participate in Google Codein with
+									<b>FOSSASIA</b> !
+								</p>
+								<a class="btn btn-lg btn-filled" href="https://codein.withgoogle.com/organizations/fossasia/">Take me Along !</a>
+								<a class="btn btn-lg" href="#mentors">Explore the site</a>
 							</div>
 						</div>
 
-						<div class="col-md-3 col-md-pull-6">
-							<div class="mt80 mt-xs-80 text-right text-left-xs">
-								<h5 class="uppercase bold mb16">Never forget again</h5>
-								<p class="fade-1-4">
-									The reminder that just keeps reminding! Scramble to your watch to silence these intrusive notifications.
-								</p>
-							</div>
+					</div>
 
-							<div class="mt80 mt-xs-0 text-right text-left-xs">
-								<h5 class="uppercase bold mb16">Stay active, be healthy</h5>
-								<p class="fade-1-4">
-									No more personal responsibility! You'll now be constantly reminded to stand up and move around.
+				</li>
+				<li class="overlay image-bg">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="img/slider/group-photo.jpg">
+					</div>
+					<div class="container v-align-transform ">
+						<div class="row text-center">
+							<div class="col-md-10 col-md-offset-1">
+								<h2 class="mb-xs-16">
+									<b>
+										<i>"The Open Conversational Web"</i>
+									</b>
+									<br class="hidden-sm">Asia's Premier Open Technology Event</h2>
+								<p class="lead mb40">
+									FOSSASIA SUMMIT IN SINGAPORE
+									<br> 22
+									<sup>th</sup> - 25
+									<sup>th</sup> March, 2018
 								</p>
+								<a class="btn btn-lg btn-filled" href="https://2018.fossasia.org/">I'm Interested !</a>
 							</div>
 						</div>
 
-						<div class="col-md-3">
-							<div class="mt80 mt-xs-0">
-								<h5 class="uppercase bold mb16">Powered by you</h5>
-								<p class="fade-1-4">
-									Forget empty branding promises, this thing is powered by awesome (you), and we stand by that.
-								</p>
-							</div>
+					</div>
 
-							<div class="mt80 mt-xs-0">
-								<h5 class="uppercase bold mb16">Leave your phone</h5>
-								<p class="fade-1-4">
-									And you wont be able to use the app! Make sure you have the phone within close proximity at all times!
-								</p>
-							</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="bg-secondary" id="mentors">
+			<div class="container">
+				<div class="row ">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center ">
+						<h2 class="animated fadeIn">Mentors for you</h2>
+					</div>
+				</div>
+				<div class="row mb64 mb-xs-24">
+					<div class="col-sm-12 text-center spread-children-large">
+						<div class="card">
+							<img src="img/mentors/mariobehling.jpg" alt="Mario Behling">
+							<br>
+							<p class="person-name">Mario Behling</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/mariobehling" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@mariobehling" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://mariobehling.de/" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/mariobehling" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/hpdang.jpg" alt="Hong Phuc Dang">
+							<br>
+							<p class="person-name">Hong Phuc Dang</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/hpdang" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://blog.fossasia.org" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/hpdang" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/harsit98.jpg" alt="Harshit Prasad">
+							<br>
+							<p class="person-name">Harshit Prasad</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/harsit98" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://blog.fossasia.org" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/harsit98" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/isuruAb.jpg" alt="Isuru Abeywardana">
+							<br>
+							<p class="person-name">Isuru Abeywardana</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/isuruAb" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://icodeplus.wordpress.com" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/isuruAb" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/CosmicCoder96.jpg" alt="Abhinav Khare">
+							<br>
+							<p class="person-name">Abhinav Khare</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/CosmicCoder96" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/royalharsh.jpg" alt="Harsh Vardhan">
+							<br>
+							<p class="person-name">Harsh Vardhan</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/royalharsh" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/harshkothari410.jpg" alt="Harsh Kothari">
+							<br>
+							<p class="person-name">Harsh Kothari</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/harshkothari410" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@harshkothari410" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://harshkothari.com" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/harshkothari410" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/jigyasa-grover.jpg" alt="Jigyasa Grover">
+							<br>
+							<p class="person-name">Jigyasa Grover</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/jigyasa-grover" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@jigyasa_grover" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+
+								<a href="https://facebook.com/jigyasa-grover" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/SaptakS.jpg" alt="Saptak Sengupta">
+							<br>
+							<p class="person-name">Saptak Sengupta</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/SaptakS" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@Saptak013" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://saptaks.github.io" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/SaptakS" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/daminisatya.jpg" alt="Damini Satya">
+							<br>
+							<p class="person-name">Damini Satya</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/daminisatya" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@Daminisatya" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://daminisatya.info" class="icon-a">
+									<i class="ti-rss-alt icon-i"></i>
+								</a>
+
+								<a href="https://facebook.com/daminisatya" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/mohitsharma.png" alt="Mohit Sharma">
+							<br>
+							<p class="person-name">Mohit Sharma</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/ms10398" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/ashwanidv100.jpeg" alt="Ashwani Kumar">
+							<br>
+							<p class="person-name">Ashwani Kumar</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/ashwanidv100" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@ashwanidv100" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/nikhilrayaprolu.jpg" alt="Nikhil Rayaprolu">
+							<br>
+							<p class="person-name">Nikhil Rayaprolu</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/nikhilrayaprolu" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+							</ul>
+						</div>
+
+						<div class="card">
+							<img src="img/mentors/niccokunzmann.png" alt="Nicco Kunzmann">
+							<br>
+							<p class="person-name">Nicco Kunzmann</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/niccokunzmann" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/sudheesh001.jpg" alt="Sudheesh Singanamalla">
+							<br>
+							<p class="person-name">Sudheesh Singanamalla</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/sudheesh001" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/ansh.jpg" alt="Anshuman Verma">
+							<br>
+							<p class="person-name">Anshuman Verma</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://twitter.com/@Anshumaniac12" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/mentors/avi.jpg" alt="Avi Aryan">
+							<br>
+							<p class="person-name">Avi Aryan</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/aviaryan" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+
+								<a href="https://twitter.com/@aviaryan123" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+							</ul>
 						</div>
 					</div>
+<<<<<<< HEAD
+				</div>
+			</div>
+		</section>
+		<!--contributors section-->
+		<section>
+			<center>
+				<h2>
+					Contributors
+				</h2>
+			</center>
+
+			<div class="col-md-8 col-md-push-2">
+				<div class="container">
+					<div class="row">
+						<p>
+							Follow contributors on social, simpally click their profile names...
+						</p>
+					</div>
+				</div>
+
+				<div class="members contributers" id="Contributors">
+					<h1 class="section-h1">
+				</div>
+			</div>
+		</section>
+		<!--End of contributors section-->
+		<!--Student section-->
+		<section class="bg-secondary" id="students">
+			<div class="container">
+				<div class="row">
+				</div>
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+					<h2 id="student_title" class="animated fadeIn">Students just like you</h2>
+				</div>
+				<div class="row mb64 mb-xs-24">
+					<div class="col-sm-12 text-center spread-children-large">
+						<div class="card">
+							<img src="img/students/kostiv.jpg" alt="Anastasiia Kostiv">
+							<br>
+							<p class="person-name">Anastasiia Kostiv</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/AKostiv8" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@KostivNastya" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/AKostiv8" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/m1guelpf.png" alt="Miguel Piedrafita">
+							<br>
+							<p class="person-name">Miguel Piedrafita</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/chahat.png" alt="Chahat Bansal">
+							<br>
+							<p class="person-name">Chahat Bansal</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/niteshkumarniranjan.jpg" alt="Nitesh Kumar Niranjan">
+
+							<br>
+							<p class="person-name">Nitesh Kumar Niranjan</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/a-v-lymarenko.png" alt="Aleksandr Lymarenko">
+							<br>
+							<p class="person-name">Aleksandr Lymarenko</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/naveen.jpg" alt="Naveen Rajan">
+							<br>
+							<p class="person-name">Naveen Rajan</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/abishek.jpg" alt="Abishek V Ashok">
+							<br>
+							<p class="person-name">Abishek V Ashok</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/rafi.png" alt="Mochammad Rafi Al Rizkan">
+							<br>
+							<p class="person-name">Mochammad Rafi Al Rizkan</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/cagriari.jpg" alt="Mehmet Çağrı Arı">
+							<br>
+							<p class="person-name">Mehmet Çağrı Arı</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/reza_juliandri.jpg" alt="Reza Juliandri">
+							<br>
+							<p class="person-name">Reza Juliandri</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/sabaxuxuna.png" alt="Saba Khukhunashvili">
+							<br>
+							<p class="person-name">Saba Khukhunashvili</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/zilong.jpg" alt="Jin Zi Long">
+							<br>
+							<p class="person-name">Jin Zi Long</p>
+							<br>
+							<ul class="list-inline social-list">
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/kuba-michalski.jpg" alt="Kuba Michalski">
+							<br>
+							<p class="person-name">Kuba Michalski</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/kubami9" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@top_kuba" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/Saarthak.jpg" alt="Saarthak Chaturvedi">
+							<br>
+							<p class="person-name">Saarthak Chaturvedi</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/saarthakchats" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@SaarthakChats41" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/ncdai.jpg" alt="Nguyen Chanh Dai">
+							<br>
+							<p class="person-name">Nguyen Chanh Dai</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/ncdai3651408" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://facebook.com/ncdai3651408" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/kart.png" alt="Kartikeya Singh">
+							<br>
+							<p class="person-name">Kartikeya Singh</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/kartikeya23" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@kart_singh08" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/kartikeya23" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/duttaditya18.jpg" alt="Aditya Dutt">
+							<br>
+							<p class="person-name">Aditya Dutt</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/duttaditya18" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@EighteenAndOut" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+								<a href="https://facebook.com/duttaditya18" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/oem.jpg" alt="Ngô Hồng Phúc">
+							<br>
+							<p class="person-name">Ngô Hồng Phúc</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/Jerry2001" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://facebook.com/Jerry2001" class="icon-a">
+									<i class="ti-facebook icon-i"></i>
+								</a>
+							</ul>
+						</div>
+						<div class="card">
+							<img src="img/students/aryankedare.jpg" alt="Aryan Kedare">
+							<br>
+							<p class="person-name">Aryan Kedare</p>
+							<br>
+							<ul class="list-inline social-list">
+								<a href="https://github.com/aryankedare" class="icon-a">
+									<i class="ti-github icon-i"></i>
+								</a>
+								<a href="https://twitter.com/@KedareAryan" class="icon-a">
+									<i class="ti-twitter-alt icon-i"></i>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+						<p class="mb40 mb-xs-24">
+							Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product,
+							service or portfolio - Foundry's unique and flexible style has you covered.
+						</p>
+						<a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Meet</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End of student section-->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h4 class="uppercase mb16 animated fadeIn">Student Projects</h4>
+						<p class="lead mb64">Some projects developed by students during GCI</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="lightbox-grid square-thumbs">
+							<ul id="project_holder">
+								<li class="student_project">
+									<a href="https://github.com/kol4k/eKantin">
+										<div class="background-image-holder fadeIn" style="background: url(&quot;img/projects/rafi.png&quot;);">
+											<img title="Mochammad Rafi Al Rizkan by Rafi" class="background-image" src="img/projects/rafi.png" style="display: none;">
+										</div>
+									</a>
+								</li>
+								<li class="student_project">
+									<a href="yashkumarverma">
+										<div class="background-image-holder fadeIn" style="background: url(&quot;img/projects/yashkumarverma-gciposter.jpg&quot;);">
+											<img title="GCI FOSSASIA Poster by Yash Kumar Verma" class="background-image" src="img/projects/yashkumarverma-gciposter.jpg"
+											 style="display: none;">
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark">
+			<div class="container">
+				<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
+					<h2 class="align-middle txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing.", "योगदान करने के लिए धन्यवाद.", "Danke für den Beitrag.","ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ",  "貢献していただきありがとうございます.", "பங்களித்ததற்கு நன்றி" , "Dziękujemy za Twój wkład.", "സംഭാവനയ്ക്ക് നന്ദി", "მადლობა წვლილის შეტანისათვის", "Дякую за внесок!"]'>
+					</h2>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h4 class="uppercase mb16">Lightbox Grid Gallery</h4>
+						<p class="lead mb64">
+							A simple lightbox grid with square thumbnails.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+							<ul>
+								<li>
+									<a href="img/cover1.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover1.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/home12.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/home12.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/home14.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/home14.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/home17.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/home17.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/cover5.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover5.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/cover6.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover6.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/cover7.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover7.jpg">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="img/cover8.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover8.jpg">
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+						<p class="mb40 mb-xs-24">
+							Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product,
+							service or portfolio - Foundry's unique and flexible style has you covered.
+						</p>
+						<a class="mb0 btn btn-lg btn-filled" href="#purchase-template">Meet</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects">
+		</section>
+
+
+		<section class="bg-secondary">
+			<div class="container" id="map-sec">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h4 class="uppercase mb16">Community Connect</h4>
+					</div>
+					<div id="map"></div>
+				</div>
+			</div>
+		</section>
+		<section class="image-edge">
+			<div class="col-md-6 col-sm-4 p0">
+				<img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
+			</div>
+			<div class="container">
+				<div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
+					<h1 class="large mb40 mb-xs-16">Clean, Usable Image Blocks.</h1>
+					<h6 class="uppercase mb16">Left &amp; Right Variations Included</h6>
+					<p class="lead mb40">
+						We've built three distinct image and text combinations for you to showcase the features of your product or service. All combos
+						come in left and right arrangements.
+					</p>
+					<a class="btn-lg btn" href="#">Explore Foundry</a>
+				</div>
+			</div>
+
+		</section>
+		<section class="image-edge">
+			<div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+				<img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
+			</div>
+			<div class="container">
+				<div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+					<h1 class="large mb40 mb-xs-16">Sleek, Smart and Modern.</h1>
+					<h6 class="uppercase mb16">A timeless design to be proud of</h6>
+					<p class="lead mb40">
+						We've built three distinct image and text combinations for you to showcase the features of your product or service. All combos
+						come in left and right arrangements.
+					</p>
+					<a class="btn-lg btn" href="#">Explore Foundry</a>
+				</div>
+			</div>
+
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<h2 class="number">2008</h2>
+						<p>
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+							quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h2 class="number">150+</h2>
+						<p>
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+							quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h2>Millions</h2>
+						<p>
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+							quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="cover fullscreen image-bg overlay parallax">
+			<div class="background-image-holder">
+				<img alt="image" class="background-image" src="img/prop1.jpg">
+			</div>
+			<div class="container v-align-transform">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h1 class="large uppercase mb16">53 Hopetoun Rd.</h1>
+						<h5 class="uppercase mb0">Contemporary Living In The Heart Of Toorak</h5>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="align-bottom relative-xs text-center">
+				<a class="btn btn-filled btn-lg mb32 mt-xs-40" href="#">Register Interest</a>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-push-3 text-center">
+						<div class="image-slider slider-paging-controls controls-outside">
+							<ul class="slides">
+								<li class="mb32">
+									<img alt="App" src="img/app5.png">
+								</li>
+								<li class="mb32">
+									<img alt="App" src="img/app5.png">
+								</li>
+								<li class="mb32">
+									<img alt="App" src="img/app5.png">
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-md-pull-6">
+						<div class="mt80 mt-xs-80 text-right text-left-xs">
+							<h5 class="uppercase bold mb16">Never forget again</h5>
+							<p class="fade-1-4">
+								The reminder that just keeps reminding! Scramble to your watch to silence these intrusive notifications.
+							</p>
+						</div>
+
+						<div class="mt80 mt-xs-0 text-right text-left-xs">
+							<h5 class="uppercase bold mb16">Stay active, be healthy</h5>
+							<p class="fade-1-4">
+								No more personal responsibility! You'll now be constantly reminded to stand up and move around.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="mt80 mt-xs-0">
+							<h5 class="uppercase bold mb16">Powered by you</h5>
+							<p class="fade-1-4">
+								Forget empty branding promises, this thing is powered by awesome (you), and we stand by that.
+							</p>
+						</div>
+
+						<div class="mt80 mt-xs-0">
+							<h5 class="uppercase bold mb16">Leave your phone</h5>
+							<p class="fade-1-4">
+								And you wont be able to use the app! Make sure you have the phone within close proximity at all times!
+							</p>
+=======
 
 				</div>
 
 			</section>
 
-			<section class="bg-secondary" id="student-blog">
+			<section class="bg-secondary">
 		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12 text-center">
+		        <div class="row">
+		        <div class="col-sm-12 text-center">
 
 
-		                    <h4 class="uppercase mb16">Blog</h4>
-		                    <p class="lead mb64">
-		                       Articles from the Contributors. </p>
-             </div>
+		        <h4 class="uppercase mb16">Blog</h4>
+		        <p class="lead mb64">
+		        Articles from the Contributors. </p>
+             		</div>
 		            </div>
 
 		            <div class="row">
@@ -480,6 +1009,7 @@
 		                    </div>
 		                    </a>
 		                </div>
+
 		                <div class="col-md-3 col-sm-6">
 		                <a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
 		                    <div class="image-tile outer-title text-center">
@@ -491,20 +1021,19 @@
 
 		                    </div>
 		                    </a>
-						</div>
+		                </div>
 
-						<div class="col-md-3 col-sm-6">
-							<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
-								<div class="image-tile outer-title text-center">
-									<img alt="Latop with GitHub pendrive" src="img/blog/3.jpg" height="240" width="240">
-									<div class="title mb16">
-										<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
-										<span>Nitesh Kumar Niranjan</span>
-									</div>
+		                <div class="col-md-3 col-sm-6">
+				<a href="https://saarthakchaturvedi05.wordpress.com/2017/12/06/theres-code-in-me/" target="_blank">
+					<div class="image-tile outer-title text-center">
+						<img src="img/blog/Saarthak.jpg" height="240" width="240">
+						<div class="title mb16">
+							<h5 class="uppercase mb0">There's Code-In Me</h5>
+							<span>Saarthak Chaturvedi</span>
+					        </div>
+					</div>
 
-								</div>
-								</a>
-							</div>
+
 		                <div class="col-sm-12">
 		                    <div class="instafeed grid-gallery" data-user-name="mrareweb">
 		                        <ul></ul>
@@ -589,9 +1118,9 @@
 		                    </p>
 		                </div>
 		            </div>
-<div class="widget video-container">
-				<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>					
-				</div>		        </div>
+                            <p align="center"><iframe width="800" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" allowfullscreen></iframe></p>
+		        </div>
+
 		    </section><section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
 		        <ul class="slides">
 		            <li class="overlay image-bg">
@@ -604,6 +1133,7 @@
 		                            <img alt="Logo" class="image-small" src="img/fossasia-light.png">
 		                        </div>
 		                    </div>
+
 		                </div>
 
 		                <div class="align-bottom text-center">
@@ -686,15 +1216,15 @@
 						</div>
 						<div class="col-md-5 col-sm-7">
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 							</p>
 
 							<p>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 							</p>
 
 							<p>
-								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
+							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
 							</p>
 							<img alt="signature" src="img/fitness1.png" class="image-small">
 						</div>
@@ -784,136 +1314,747 @@
 
 		    </section>
 
-		   <footer class="footer-2 bg-dark" id="social-links">
+		   <footer class="footer-2 bg-dark">
 		   		<div class="container">
 					<div class="row">
 						<div class="col-sm-3 text-left">
-							<div class="vnu"><img alt="Logo" class="footer-logo" src="img/fossasia-light.png"></div>
+						<div class="vnu"><img alt="Logo" class="footer-logo" src="img/fossasia-light.png"></div>
+>>>>>>> origin/STEdirisuriya-patch-1
 						</div>
-						<div class="col-sm-3 text-left"></div>
-						<div class="col-sm-6 text-right">
-							<ul class="list-inline social-list" style="font-size: 17px;padding: 10.5px;">
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="bg-secondary" id="student-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+
+
+						<h4 class="uppercase mb16">Blog</h4>
+						<p class="lead mb64">
+							Articles from the Contributors. </p>
+					</div>
+				</div>
+
+				<div class="row">
+
+
+					<div class="col-md-3 col-sm-6">
+						<a href="https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Pic" src="img/blog/1.jpg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">First Time in Google Code In with Fossasia</h5>
+									<span>Naveen Rajan</span>
+								</div>
+
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Latop with GitHub pendrive" src="img/blog/2.jpg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">My dive into open source with FOSSASIA during Google Code-in</h5>
+									<span>Kuba Michalski</span>
+								</div>
+
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<a href="https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="Latop with GitHub pendrive" src="img/blog/3.jpg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">My Journey with Google Code-In and FOSSASIA.</h5>
+									<span>Nitesh Kumar Niranjan</span>
+								</div>
+
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<a href="https://kartikeya23.wordpress.com/2017/12/06/one-task-two-tasks-three-tasks/" target="_blank">
+							<div class="image-tile outer-title text-center">
+								<img alt="An awesome guy's pic couldn't be loaded" src="img/blog/4.jpg" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">One Task, Two Tasks, Three Tasks...</h5>
+									<span>Kartikeya Singh</span>
+								</div>
+
+							</div>
+						</a>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="instafeed grid-gallery" data-user-name="mrareweb">
+							<ul></ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section>
+			<div class="container">
+				<div class="row v-align-children">
+					<div class="col-md-7 col-sm-6 text-center mb-xs-24">
+						<div class="embed-video-container embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/120433187?badge=0&amp;title=0&amp;byline=0&amp;title=0"
+							 allowfullscreen="allowfullscreen"></iframe>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+						<h3>Design that looks less 'theme' and more you.</h3>
+						<p>
+							Foundry offers you the modularity and ease-of-use of a template with the style and aesthetic of contemporary, bespoke web
+							design.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="fullscreen image-bg parallax background-multiply">
+			<div class="background-image-holder">
+				<img alt="image" class="background-image" src="img/capital5.jpg">
+			</div>
+			<div class="container v-align-transform">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="thin mb0">FOSSASIA
+							<br>Based in Asia.</h1>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="align-bottom text-center">
+				<a class="btn btn-white mb32" href="#">Pitch Us</a>
+				<ul class="list-inline social-list mb24">
+					<li>
+						<a href="#">
+							<i class="ti-twitter-alt"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="ti-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="ti-dribbble"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="ti-vimeo-alt"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="flickr-feed masonry masonryFlyIn" data-user-id="45240298@N08" data-album-id="72157665486359899"></ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-primary">
+			<div class="container">
+				<div class="row mb64 mb-xs-24">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+						<h3 class="mb40 mb-xs-24">FOSSASIA Google Code-In 2016/17</h3>
+						<p class="lead">
+							Here are some videos from last year FOSSASIA Google Code-In!
+						</p>
+					</div>
+				</div>
+				<div class="widget video-container">
+					<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq"
+					 frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
+			<ul class="slides">
+				<li class="overlay image-bg">
+					<div class="background-image-holder">
+						<img alt="image" class="background-image" src="img/resto1.jpg">
+					</div>
+					<div class="container v-align-transform">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<img alt="Logo" class="image-small" src="img/fossasia-light.png">
+							</div>
+						</div>
+					</div>
+
+					<div class="align-bottom text-center">
+						<a class="btn btn-white mb32" href="#">Connect</a>
+						<ul class="list-inline social-list mb24">
+							<li>
+								<a href="#">
+									<i class="ti-twitter-alt"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="ti-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="ti-dribbble"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="ti-vimeo-alt"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="image-tile outer-title text-center">
+							<img alt="Pic" src="img/team-1.jpg">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">Sally Marsh</h5>
+								<span>Creative Director</span>
+							</div>
+							<p class="mb0">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+								ipsa quae ab illo inventore veritatis.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="image-tile outer-title text-center">
+							<img alt="Pic" src="img/team-2.jpg">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">Tim Foley</h5>
+								<span>iOS Developer</span>
+							</div>
+							<p class="mb0">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+								ipsa quae ab illo inventore veritatis.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="image-tile outer-title text-center">
+							<img alt="Pic" src="img/team-3.jpg">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">Jake Robbins</h5>
+								<span>Brand Director</span>
+							</div>
+							<p class="mb0">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+								ipsa quae ab illo inventore veritatis.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">
+						<h1 class="uppercase mb24 bold italic">Fitness
+							<br>For Life</h1>
+						<h5 class="uppercase italic fade-1-4">“My passion is motivating
+							<br> people to get results”</h5>
+						<hr class="visible-xs">
+					</div>
+					<div class="col-md-5 col-sm-7">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+							irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+							ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+							quia voluptas sit aspernatur aut odit aut fugit.
+						</p>
+
+						<p>
+							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+							tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+							ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+							qui in ea voluptate velit esse quam nihil molestiae consequatur
+						</p>
+						<img alt="signature" src="img/fitness1.png" class="image-small">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h4 class="uppercase mb16">Lightbox Grid Gallery</h4>
+						<p class="lead mb64">
+							A simple lightbox grid with square thumbnails.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+							<ul>
 								<li>
-									<a href="https://twitter.com/fossasia">
-										<i class="ti-twitter-alt"></i>
+									<a href="img/cover1.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover1.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://facebook.com/fossasia">
-										<i class="ti-facebook"></i>
+									<a href="img/home12.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/home12.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://plus.google.com/108920596016838318216">
-										<i class=" ti-google" aria-hidden="true"></i>
+									<a href="img/home14.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/home14.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://www.linkedin.com/groups/FOSSASIA-3762811">
-										<i class=" ti-linkedin" aria-hidden="true"></i>
+									<a href="img/home17.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/home17.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://github.com/fossasia">
-										<i class=" ti-github" aria-hidden="true"></i>
+									<a href="img/cover5.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover5.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://flickr.com/photos/fossasia">
-										<i class=" ti-flickr-alt" aria-hidden="true"></i>
+									<a href="img/cover6.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover6.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-										<i class=" ti-youtube" aria-hidden="true"></i>
+									<a href="img/cover7.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover7.jpg">
+										</div>
 									</a>
 								</li>
 								<li>
-									<a href="https://www.instagram.com/fossasia">
-										<i class=" ti-instagram" aria-hidden="true"></i>
+									<a href="img/cover8.jpg" data-lightbox="true">
+										<div class="background-image-holder">
+											<img alt="image" class="background-image" src="img/cover8.jpg">
+										</div>
 									</a>
 								</li>
 							</ul>
 						</div>
+
 					</div>
 				</div>
-		   </footer>
 
-		   <footer class="footer-1 bg-dark">
+			</div>
 
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<div class="widget">
-								<h6 class="title">Products</h6>
-								<hr>
-								<a href="#">A product</a><br>
-								<a href="#">Another product</a><br>
-								<a href="#">Yet another product</a><br>
-							</div>
 
+		</section>
+
+		<footer class="footer-2 bg-dark" id="social-links">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 text-left">
+						<div class="vnu">
+							<img alt="Logo" class="footer-logo  hvr-hang" src="img/fossasia-light.png">
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="widget">
-								<h6 class="title">Recent Posts</h6>
-								<hr>
-								<ul class="link-list recent-posts">
-									<li>
-										<a href="#">Hugging pugs is super trendy</a>
-										<span class="date">February
-											<span class="number">14, 2015</span>
-										</span>
-									</li>
-									<li>
-										<a href="#">Spinning vinyl is oh so cool</a>
-										<span class="date">February
-											<span class="number">9, 2015</span>
-										</span>
-									</li>
-									<li>
-										<a href="#">Superior theme design by pros</a>
-										<span class="date">January
-											<span class="number">27, 2015</span>
-										</span>
-									</li>
-								</ul>
-							</div>
+					</div>
+					<div class="col-sm-3 text-left"></div>
+					<div class="col-sm-6 text-right">
+						<ul class="list-inline social-list" style="font-size: 17px;padding: 10.5px;">
+							<li>
+								<a href="https://twitter.com/fossasia">
+									<i class="ti-twitter-alt hvr-hang"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://facebook.com/fossasia">
+									<i class="ti-facebook hvr-hang"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/108920596016838318216">
+									<i class=" ti-google hvr-hang" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/groups/FOSSASIA-3762811">
+									<i class=" ti-linkedin hvr-hang" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/fossasia">
+									<i class=" ti-github hvr-hang" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://flickr.com/photos/fossasia">
+									<i class=" ti-flickr-alt hvr-hang" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+									<i class=" ti-youtube hvr-hang" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/fossasia">
+									<i class=" ti-instagram hvr-hang" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 
+		<footer class="footer-1 bg-dark">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h6 class="title">Products</h6>
+							<hr>
+							<a href="#">A product</a>
+							<br>
+							<a href="#">Another product</a>
+							<br>
+							<a href="#">Yet another product</a>
+							<br>
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="widget">
-								<h6 class="title">Latest tweets</h6>
-								<hr>
-								<div class="twitter-feed">
-									<div class="tweets-feed" data-feed-name="hpdang" id="tweets-0">
-									</div>
+
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h6 class="title">Recent Posts</h6>
+							<hr>
+							<ul class="link-list recent-posts">
+								<li>
+									<a href="#">Hugging pugs is super trendy</a>
+									<span class="date">February
+										<span class="number">14, 2015</span>
+									</span>
+								</li>
+								<li>
+									<a href="#">Spinning vinyl is oh so cool</a>
+									<span class="date">February
+										<span class="number">9, 2015</span>
+									</span>
+								</li>
+								<li>
+									<a href="#">Superior theme design by pros</a>
+									<span class="date">January
+										<span class="number">27, 2015</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h6 class="title">Latest tweets</h6>
+							<hr>
+							<div class="twitter-feed">
+								<div class="tweets-feed" data-feed-name="hpdang" id="tweets-0">
 								</div>
 							</div>
+						</div>
 
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="widget">
+							<h6 class="title">Quicklinks</h6>
+							<hr>
+							<a href="https://fossasia.org/" class="foss-links">
+								<i class="ti-world" aria-hidden="true"></i> Main Site</a>
+							<br>
+							<a href="https://blog.fossasia.org" class="foss-links">
+								<i class="ti-rss" aria-hidden="true"></i> Blog</a>
+							<br>
+							<a href="https://codein.withgoogle.com/organizations/fossasia/" class="foss-links">
+								<i class="ti-bag" aria-hidden="true"></i> Google Code-In Page </a>
+							<br>
+							<a href="https://events.fossasia.org" class="foss-links">
+								<i class="ti-calendar" aria-hidden="true"></i> Events</a>
+							<br>
+							<a href="https://gci17.fossasia.org" class="foss-links">
+								<i class="ti-link" aria-hidden="true"></i> Fossasia 2017</a>
+							<br>
+							<a href="#" class="foss-links">
+								<i class="ti-arrow-up" aria-hidden="true"></i> Top of the Page</a>
+							<br>
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="widget">
-								<h6 class="title">Quicklinks</h6>
-								<hr>
-								<a href="https://fossasia.org/" class="foss-links"><i class="ti-world" aria-hidden="true"></i> Main Site</a><br>
-								<a href="https://blog.fossasia.org" class="foss-links"><i class="ti-rss" aria-hidden="true"></i> Blog</a><br>
-								<a href="https://codein.withgoogle.com/organizations/fossasia/" class="foss-links"><i class="ti-bag" aria-hidden="true"></i> Google Code-In Page </a><br>
-								<a href="https://events.fossasia.org" class="foss-links"><i class="ti-calendar" aria-hidden="true"></i> Events</a><br>
-								<a href="https://gci17.fossasia.org" class="foss-links"><i class="ti-link" aria-hidden="true"></i> Fossasia 2017</a><br>
-								<a href="#" class="foss-links"><i class="ti-arrow-up" aria-hidden="true"></i> Top of the Page</a><br>
-							</div>
 
-						</div>
-						<div class="col-sm-12 text-center">
-							<span class="sub">© Copyright 2017 - <a href="https://fossasia.org">FOSSASIA</a></span>
-						</div>
+					</div>
+					<div class="col-sm-12 text-center">
+						<span class="sub">© Copyright 2017 -
+							<a href="https://fossasia.org">FOSSASIA</a>
+						</span>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
+	</div>
 
 
 	<script src="js/jquery.min.js"></script>
+<<<<<<< HEAD
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flexslider.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/masonry.min.js"></script>
+	<script src="js/flickr.js"></script>
+	<script src="js/twitterfetcher.min.js"></script>
+	<script src="js/spectragram.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/contributors.js"></script>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		/* Smooth Scroll */
+		$('a[href*="#"]').not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function (event) {
+				if (
+					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+					&&
+					location.hostname == this.hostname
+				) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						event.preventDefault();
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000, 'swing', function () {
+							var $target = $(target);
+							$target.focus();
+							if ($target.is(":focus")) {
+								return false;
+							} else {
+								$target.attr('tabindex', '-1');
+								$target.focus();
+							};
+						});
+					}
+				}
+			});
+		window.initMap = function () {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 2,
+				scrollwheel: false,
+				center: {
+					lat: 0,
+					lng: 0
+				},
+				styles: [{
+					"featureType": "administrative",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": "-100"
+					}]
+				},
+				{
+					"featureType": "administrative.province",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				},
+				{
+					"featureType": "landscape",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					},
+					{
+						"lightness": 65
+					},
+					{
+						"visibility": "on"
+					}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					},
+					{
+						"lightness": "50"
+					},
+					{
+						"visibility": "simplified"
+					}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": "-100"
+					}]
+				},
+				{
+					"featureType": "road.highway",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "simplified"
+					}]
+				},
+				{
+					"featureType": "road.arterial",
+					"elementType": "all",
+					"stylers": [{
+						"lightness": "30"
+					}]
+				},
+				{
+					"featureType": "road.local",
+					"elementType": "all",
+					"stylers": [{
+						"lightness": "40"
+					}]
+				},
+				{
+					"featureType": "transit",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					},
+					{
+						"visibility": "simplified"
+					}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "geometry",
+					"stylers": [{
+						"hue": "#ffff00"
+					},
+					{
+						"lightness": -25
+					},
+					{
+						"saturation": -97
+					}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "labels",
+					"stylers": [{
+						"lightness": -25
+					},
+					{
+						"saturation": -100
+					}
+					]
+				}
+				]
+			});
+			var marker;
+			var marker2;
+			var infowindow = null;
+			{% for mentor in site.data.mentors %}
+			{% if mentor.lat %}
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng({{ mentor.lat }}, {{ mentor.lng }}),
+		label: 'M',
+			map: map
+		  });
+		infowindow = null;
+		var content = "<div><img class='img-rounded' src='img/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
+		google.maps.event.addListener(marker, 'click', (function (marker, content) {
+			return function () {
+				if (infowindow) {
+					infowindow.close();
+				}
+				infowindow = new google.maps.InfoWindow();
+				infowindow.setContent(content);
+				infowindow.open(map, marker);
+			};
+		})(marker, content));
+		{% endif %}
+		{% endfor %}
+		{% for student in site.data.students %}
+		{% if student.lat %}
+		marker2 = new google.maps.Marker({
+			position: new google.maps.LatLng({{ student.lat }}, {{ student.lng }}),
+			label : 'S',
+				map: map
+		  });
+		infowindow = null;
+		var content = "<div><img class='img-rounded' src='img/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
+		google.maps.event.addListener(marker2, 'click', (function (marker2, content) {
+			return function () {
+				if (infowindow) {
+					infowindow.close();
+				}
+				infowindow = new google.maps.InfoWindow();
+				infowindow.setContent(content);
+				infowindow.open(map, marker2);
+			};
+		})(marker2, content));
+		{% endif %}
+		{% endfor %}
+};
+	</script>
+	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDEdg77hrkUariqipecWIb0_sh-ii5DiMk &callback=initMap" async defer></script>
+
+</body>
+
+=======
         <script src="js/bootstrap.min.js"></script>
         <script src="js/flexslider.min.js"></script>
         <script src="js/lightbox.min.js"></script>
@@ -923,199 +2064,8 @@
         <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/parallax.js"></script>
-        <script src="js/scripts.js"></script>
-        <script type="text/javascript">
-        	/* Smooth Scroll */
-       		$('a[href*="#"]').not('[href="#"]')
-                                 .not('[href="#0"]')
-                                 .click(function(event) {
-                                     if (
-		  				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-		  				&&
-		  				location.hostname == this.hostname
-		  			) {
-		  				var target = $(this.hash);
-		  				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		  				if (target.length) {
-		  					event.preventDefault();
-		  					$('html, body').animate({
-		  						scrollTop: target.offset().top
-		  					}, 1000, 'swing', function() {
-		  						var $target = $(target);
-		  						$target.focus();
-		  						if ($target.is(":focus")) {
-		  							return false;
-		  						} else {
-		  							$target.attr('tabindex','-1');
-		  							$target.focus();
-		  						};
-		  					});
-		  				}
-		  			}
-                                 });
-        window.initMap = function() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 2,
-                    scrollwheel: false,
-                    center: {
-                      lat: 0,
-                      lng: 0
-                    },
-                    styles: [{
-			                "featureType": "administrative",
-			                "elementType": "all",
-			                "stylers": [{
-			                    "saturation": "-100"
-			                }]
-			            },
-			            {
-			                "featureType": "administrative.province",
-			                "elementType": "all",
-			                "stylers": [{
-			                    "visibility": "off"
-			                }]
-			            },
-			            {
-			                "featureType": "landscape",
-			                "elementType": "all",
-			                "stylers": [{
-			                        "saturation": -100
-			                    },
-			                    {
-			                        "lightness": 65
-			                    },
-			                    {
-			                        "visibility": "on"
-			                    }
-			                ]
-			            },
-			            {
-			                "featureType": "poi",
-			                "elementType": "all",
-			                "stylers": [{
-			                        "saturation": -100
-			                    },
-			                    {
-			                        "lightness": "50"
-			                    },
-			                    {
-			                        "visibility": "simplified"
-			                    }
-			                ]
-			            },
-			            {
-			                "featureType": "road",
-			                "elementType": "all",
-			                "stylers": [{
-			                    "saturation": "-100"
-			                }]
-			            },
-			            {
-			                "featureType": "road.highway",
-			                "elementType": "all",
-			                "stylers": [{
-			                    "visibility": "simplified"
-			                }]
-			            },
-			            {
-			                "featureType": "road.arterial",
-			                "elementType": "all",
-			                "stylers": [{
-			                    "lightness": "30"
-			                }]
-			            },
-			            {
-			                "featureType": "road.local",
-			                "elementType": "all",
-			                "stylers": [{
-			                    "lightness": "40"
-			                }]
-			            },
-			            {
-			                "featureType": "transit",
-			                "elementType": "all",
-			                "stylers": [{
-			                        "saturation": -100
-			                    },
-			                    {
-			                        "visibility": "simplified"
-			                    }
-			                ]
-			            },
-			            {
-			                "featureType": "water",
-			                "elementType": "geometry",
-			                "stylers": [{
-			                        "hue": "#ffff00"
-			                    },
-			                    {
-			                        "lightness": -25
-			                    },
-			                    {
-			                        "saturation": -97
-			                    }
-			                ]
-			            },
-			            {
-			                "featureType": "water",
-			                "elementType": "labels",
-			                "stylers": [{
-			                        "lightness": -25
-			                    },
-			                    {
-			                        "saturation": -100
-			                    }
-			                ]
-			            }
-			        ]
-          });
-          var marker;
-          var marker2;
-          var infowindow = null;
-          {% for mentor in site.data.mentors %}
-              {% if mentor.lat %}
-                  marker = new google.maps.Marker({
-                      position: new google.maps.LatLng({{mentor.lat}}, {{mentor.lng}}),
-                      label: 'M',
-                      map: map
-                  });
-                  infowindow = null;
-                  var content = "<div><img class='img-rounded' src='img/mentors/{{mentor.image}}' width='240' height='240'><br/>{{mentor.name}}<br/></div>";
-                  google.maps.event.addListener(marker, 'click', (function(marker, content) {
-                      return function() {
-                          if (infowindow) {
-                            infowindow.close();
-                          }
-                          infowindow = new google.maps.InfoWindow();
-                          infowindow.setContent(content);
-                          infowindow.open(map, marker);
-                      };
-                  })(marker, content));
-              {% endif %}
-          {% endfor %}
-          {% for student in site.data.students %}
-              {% if student.lat %}
-                  marker2 = new google.maps.Marker({
-                      position: new google.maps.LatLng({{student.lat}}, {{student.lng}}),
-                      label : 'S',
-                      map: map
-                  });
-                  infowindow = null;
-                  var content = "<div><img class='img-rounded' src='img/students/{{student.image}}' width='240' height='240'><br/>{{student.name}}<br/></div>";
-                  google.maps.event.addListener(marker2, 'click', (function(marker2, content) {
-                      return function() {
-                          if (infowindow) {
-                            infowindow.close();
-                          }
-                          infowindow = new google.maps.InfoWindow();
-                          infowindow.setContent(content);
-                          infowindow.open(map, marker2);
-                      };
-                  })(marker2, content));
-              {% endif %}
-          {% endfor %}
-        };
-        </script>
-        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDEdg77hrkUariqipecWIb0_sh-ii5DiMk &callback=initMap" async defer></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/contributors.js"></script>
     </body>
+>>>>>>> origin/STEdirisuriya-patch-1
 </html>

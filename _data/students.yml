@@ -77,8 +77,27 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
+  
+- name: Prasenjit Gautam
+  github: FreakinBabaJi
+  country: India
+  twitter: B477L3_L0RD
+  facebook: prasenjit.gautam.79
+  image: HyperionGrey.jpg
 
 - name: Ngô Hồng Phúc
   image: oem.jpg
   github: Jerry2001
   facebook: ngohongphuc2001
+
+- name: Aryan Kedare
+  country: India
+  github: aryankedare
+  image: aryankedare.jpg
+  twitter: KedareAryan
+  
+- name: Samyak Jain
+  github: samyakbvs
+  image: samyak.png
+  twitter: Samyakbvs
+  facebook: Samyak Jain 
