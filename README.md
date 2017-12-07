@@ -25,7 +25,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
 ## Adding a Student
-To add a mentor open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+To add a student open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Student's name
   country: Student's country/region
@@ -47,7 +47,7 @@ To add a mentor open the file  `students.yml` in `_data` folder and please maint
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 ## Adding a Student Project
 
-To add a mentor open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+To add a student project open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Name of project
   github: Github repository of the project
