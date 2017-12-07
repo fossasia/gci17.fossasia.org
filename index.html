@@ -44,7 +44,7 @@
 	</ul>
 </section>
 
-<!-- Mentors (first five) -->
+<!-- Mentors -->
 <section class="bg-secondary" id="mentors">
 	<div class="container">
 		<div class="row">
@@ -54,7 +54,7 @@
 		</div>
 		<div class="row mb64 mb-xs-24">
 			<div class="col-sm-12 text-center spread-children-large">
-				{% for mentor in site.data.mentors limit:5 %} 
+				{% for mentor in site.data.mentors %} 
 					<div class="card">
 						{% if mentor.image %}
 								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
@@ -98,7 +98,7 @@
 	</div>
 </section>
 
-<!-- Students (first 5) -->
+<!-- Students -->
 <section class="bg-secondary" id="students">
 	<div class="container">
 
@@ -106,7 +106,7 @@
 			<h2 class="animated fadeIn">Students just like you.</h2>+
 		</div>
 			<div class="col-sm-12 text-center spread-children-large">
-				{% for student in site.data.students limit:5  %}
+				{% for student in site.data.students  %}
 				<div class="card">
 					{% if student.image %}
 					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
