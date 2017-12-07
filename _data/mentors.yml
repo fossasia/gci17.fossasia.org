@@ -8,6 +8,12 @@
   blog: mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
+  
+- name: Sumedh Nimkarde
+  github: sumedh123
+  image: sumedh.jpeg
+  twitter: Sumedh Nimkarde
+  facebook: Sumedh Nimkarde
 
 - name: Hong Phuc Dang
   github: hpdang
@@ -90,7 +96,13 @@
 - name: Rahul Tiwari
   github: invinciblycool
   image: Rahul_Tiw.jpg
-
+  twitter: invinciblycool
+  
+- name: Nguyen Vu Hung 
+  image: hung.jpg
+  github: vuhung
+  facebook: nguyenvuhung
+ 
 - name: Avi Aryan
   image: avi.jpg
   twitter: aviaryan123
