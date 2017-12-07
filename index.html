@@ -1,7 +1,6 @@
 ---
 ---
 {% include header.html %}
-			
 <section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
 	<ul class="slides">
 		<li class="overlay image-bg">
@@ -44,7 +43,7 @@
 	</ul>
 </section>
 
-<!-- Mentors (first five) -->
+<!-- Mentors Section -->
 <section class="bg-secondary" id="mentors">
 	<div class="container">
 		<div class="row">
@@ -54,7 +53,7 @@
 		</div>
 		<div class="row mb64 mb-xs-24">
 			<div class="col-sm-12 text-center spread-children-large">
-				{% for mentor in site.data.mentors limit:5 %} 
+				{% for mentor in site.data.mentors %} 
 					<div class="card">
 						{% if mentor.image %}
 								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
@@ -97,7 +96,31 @@
 	</div>
 </section>
 
-<!-- Students (first 5) -->
+<!--contributors section-->
+<section>
+	<center>
+		<h2>
+			Contributors
+		</h2>
+	</center>
+
+	<div class="col-md-8 col-md-push-2">
+		<div class="container">
+			<div class="row">
+				<p>
+					Follow contributors on social, simpally click their profile names...
+				</p>
+			</div>
+		</div>
+
+		<div class="members contributers" id="Contributors">
+			<h1 class="section-h1">
+		</div>
+	</div>
+</section>
+<!--End of contributors section-->
+
+<!-- Students Section -->
 <section class="bg-secondary" id="students">
 	<div class="container">
 
@@ -105,7 +128,7 @@
 			<h2 class="animated fadeIn">Students just like you.</h2>+
 		</div>
 			<div class="col-sm-12 text-center spread-children-large">
-				{% for student in site.data.students limit:5 %}
+				{% for student in site.data.students %}
 				<div class="card">
 					{% if student.image %}
 					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
