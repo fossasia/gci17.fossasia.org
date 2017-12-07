@@ -90,11 +90,18 @@
   github: Jerry2001
   facebook: ngohongphuc2001
 
+- name: Tushar Kumar
+  country: India
+  github: awesometushar000
+  image: tushar.jpg
+  twitter: meets2tushar
+
 - name: Aryan Kedare
   country: India
   github: aryankedare
   image: aryankedare.jpg
   twitter: KedareAryan
+  
 - name: Abhinav Raj
   country: India
   github: abhinavraj0123456789
@@ -106,3 +113,9 @@
   image: samyak.png
   twitter: Samyakbvs
   facebook: Samyak Jain 
+  facebook: Samyak Jain
+  
+- name: Tushar Verma
+  github: 2coolife
+  image: 2coolife.jpg
+  twitter: 2coolife
