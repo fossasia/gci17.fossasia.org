@@ -1,0 +1,52 @@
+---
+permalink: students
+---
+
+{% include header.html %}
+
+<section class="bg-secondary">
+	<div class="container">
+		<div class="row">
+			<div class="row mb64 mb-xs-24">
+				<div class="col-sm-12 text-center spread-children-large">
+				{% for student in site.data.students %}
+				<div class="card">
+					{% if student.image %}
+					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+					{% else %}
+					<img src="img/students/member.png" alt="{{ student.name }}">
+					{% endif %}
+					<br>
+					<p class="person-name">{{ student.name }}</p><br>
+					<ul class="list-inline social-list">
+						{% if student.github %}
+						<a href="https://github.com/{{student.github}}" class="icon-a">
+							<i class="ti-github icon-i"></i>
+						</a>
+						{% endif %}
+						{% if student.twitter %}
+						<a href="https://twitter.com/@{{student.twitter}}" class="icon-a">
+							<i class="ti-twitter-alt icon-i"></i>
+						</a>
+						{% endif %}
+						{% if student.blog %}
+						<a href="https://{{student.blog}}" class="icon-a">
+							<i class="ti-rss-alt icon-i"></i>
+						</a>
+						{% endif %}
+						{% if student.facebook %}
+						<a href="https://facebook.com/{{student.github}}" class="icon-a">
+							<i class="ti-facebook icon-i"></i>
+						</a>
+						{% endif %}
+					</ul>
+				</div>
+				{% endfor %}
+          </div>  
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{% include footer.html %}

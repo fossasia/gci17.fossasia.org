@@ -60,3 +60,19 @@ To add a student project open the file  `student_projects.yml` in `_data` folder
 - The images should be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
+# Adding a page
+
+To add a new page:
+* Make a new top-level `.html` file (i.e. next to `index.html`) with the following format:
+```html
+---
+permalink: <some permalink>
+---
+{% include header.html %}
+
+<!-- your html, including any necessary stylesheet links or scripts -->
+
+{% include footer.html %}
+```
+* Add a link in the nav bar (in `_includes/header.html`)
+* Add a frontpage summary in index.html if you want
