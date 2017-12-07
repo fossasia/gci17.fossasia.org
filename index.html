@@ -1,3 +1,6 @@
+---
+---
+<!-- Please don't remove these above 2 lines as they are riquired by jekyll -->
 <!doctype html>
 <html lang="en">
 
@@ -16,7 +19,7 @@
 	<link href="css/hover.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/contributors.css" rel="stylesheet" type="text/css" media="all" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
 	 rel='stylesheet' type='text/css'>
 </head>
 
@@ -186,265 +189,37 @@
 				</div>
 				<div class="row mb64 mb-xs-24">
 					<div class="col-sm-12 text-center spread-children-large">
+						{% for mentor in site.data.mentors %}
 						<div class="card">
-							<img src="img/mentors/mariobehling.jpg" alt="Mario Behling">
+							<img src="img/mentors/{{ mentor.image }}" alt="{{ mentor.name }}" class="display-picture">
 							<br>
-							<p class="person-name">Mario Behling</p>
+							<p class="person-name">{{ mentor.name }}</p>
 							<br>
 							<ul class="list-inline social-list">
-								<a href="https://github.com/mariobehling" class="icon-a">
+								{% if mentor.github %}
+								<a href="https://github.com/{{ mentor.github }}" class="icon-a">
 									<i class="ti-github icon-i"></i>
 								</a>
-								<a href="https://twitter.com/@mariobehling" class="icon-a">
+								{% endif %}
+								{% if mentor.github %}
+								<a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a">
 									<i class="ti-twitter-alt icon-i"></i>
 								</a>
-								<a href="https://mariobehling.de/" class="icon-a">
+								{% endif %}
+								{% if mentor.github %}
+								<a href="https://{{ mentor.blog }}" class="icon-a">
 									<i class="ti-rss-alt icon-i"></i>
 								</a>
-								<a href="https://facebook.com/mariobehling" class="icon-a">
+								{% endif %}
+								{% if mentor.github %}
+								<a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a">
 									<i class="ti-facebook icon-i"></i>
 								</a>
+								{% endif %}
 							</ul>
 						</div>
-						<div class="card">
-							<img src="img/mentors/hpdang.jpg" alt="Hong Phuc Dang">
-							<br>
-							<p class="person-name">Hong Phuc Dang</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/hpdang" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://blog.fossasia.org" class="icon-a">
-									<i class="ti-rss-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/hpdang" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/harsit98.jpg" alt="Harshit Prasad">
-							<br>
-							<p class="person-name">Harshit Prasad</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/harsit98" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://blog.fossasia.org" class="icon-a">
-									<i class="ti-rss-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/harsit98" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/isuruAb.jpg" alt="Isuru Abeywardana">
-							<br>
-							<p class="person-name">Isuru Abeywardana</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/isuruAb" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://icodeplus.wordpress.com" class="icon-a">
-									<i class="ti-rss-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/isuruAb" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/CosmicCoder96.jpg" alt="Abhinav Khare">
-							<br>
-							<p class="person-name">Abhinav Khare</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/CosmicCoder96" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/royalharsh.jpg" alt="Harsh Vardhan">
-							<br>
-							<p class="person-name">Harsh Vardhan</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/royalharsh" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/harshkothari410.jpg" alt="Harsh Kothari">
-							<br>
-							<p class="person-name">Harsh Kothari</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/harshkothari410" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@harshkothari410" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-								<a href="https://harshkothari.com" class="icon-a">
-									<i class="ti-rss-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/harshkothari410" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/jigyasa-grover.jpg" alt="Jigyasa Grover">
-							<br>
-							<p class="person-name">Jigyasa Grover</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/jigyasa-grover" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@jigyasa_grover" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-
-								<a href="https://facebook.com/jigyasa-grover" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/SaptakS.jpg" alt="Saptak Sengupta">
-							<br>
-							<p class="person-name">Saptak Sengupta</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/SaptakS" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@Saptak013" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-								<a href="https://saptaks.github.io" class="icon-a">
-									<i class="ti-rss-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/SaptakS" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/daminisatya.jpg" alt="Damini Satya">
-							<br>
-							<p class="person-name">Damini Satya</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/daminisatya" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@Daminisatya" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-								<a href="https://daminisatya.info" class="icon-a">
-									<i class="ti-rss-alt icon-i"></i>
-								</a>
-
-								<a href="https://facebook.com/daminisatya" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/mohitsharma.png" alt="Mohit Sharma">
-							<br>
-							<p class="person-name">Mohit Sharma</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/ms10398" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/ashwanidv100.jpeg" alt="Ashwani Kumar">
-							<br>
-							<p class="person-name">Ashwani Kumar</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/ashwanidv100" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@ashwanidv100" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/nikhilrayaprolu.jpg" alt="Nikhil Rayaprolu">
-							<br>
-							<p class="person-name">Nikhil Rayaprolu</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/nikhilrayaprolu" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-							</ul>
-						</div>
-
-						<div class="card">
-							<img src="img/mentors/niccokunzmann.png" alt="Nicco Kunzmann">
-							<br>
-							<p class="person-name">Nicco Kunzmann</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/niccokunzmann" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/sudheesh001.jpg" alt="Sudheesh Singanamalla">
-							<br>
-							<p class="person-name">Sudheesh Singanamalla</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/sudheesh001" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/ansh.jpg" alt="Anshuman Verma">
-							<br>
-							<p class="person-name">Anshuman Verma</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://twitter.com/@Anshumaniac12" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/mentors/avi.jpg" alt="Avi Aryan">
-							<br>
-							<p class="person-name">Avi Aryan</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/aviaryan" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-
-								<a href="https://twitter.com/@aviaryan123" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-							</ul>
-						</div>
+						{% endfor %}
 					</div>
-<<<<<<< HEAD
 				</div>
 			</div>
 		</section>
@@ -481,216 +256,31 @@
 				</div>
 				<div class="row mb64 mb-xs-24">
 					<div class="col-sm-12 text-center spread-children-large">
+						{% for student in site.data.students %}
 						<div class="card">
-							<img src="img/students/kostiv.jpg" alt="Anastasiia Kostiv">
+							<img src="img/students/{{ student.image }}" alt="{{ student.name }}" class="display-picture">
 							<br>
-							<p class="person-name">Anastasiia Kostiv</p>
+							<p class="person-name">{{ student.name }}</p>
 							<br>
 							<ul class="list-inline social-list">
-								<a href="https://github.com/AKostiv8" class="icon-a">
+								{% if student.github %}
+								<a href="https://github.com/{{ student.github }}" class="icon-a">
 									<i class="ti-github icon-i"></i>
 								</a>
-								<a href="https://twitter.com/@KostivNastya" class="icon-a">
+								{% endif %}
+								{% if student.twitter %}
+								<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
 									<i class="ti-twitter-alt icon-i"></i>
 								</a>
-								<a href="https://facebook.com/AKostiv8" class="icon-a">
+								{% endif %}
+								{% if student.facebook %}
+								<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
 									<i class="ti-facebook icon-i"></i>
 								</a>
+								{% endif %}
 							</ul>
 						</div>
-						<div class="card">
-							<img src="img/students/m1guelpf.png" alt="Miguel Piedrafita">
-							<br>
-							<p class="person-name">Miguel Piedrafita</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/chahat.png" alt="Chahat Bansal">
-							<br>
-							<p class="person-name">Chahat Bansal</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/niteshkumarniranjan.jpg" alt="Nitesh Kumar Niranjan">
-
-							<br>
-							<p class="person-name">Nitesh Kumar Niranjan</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/a-v-lymarenko.png" alt="Aleksandr Lymarenko">
-							<br>
-							<p class="person-name">Aleksandr Lymarenko</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/naveen.jpg" alt="Naveen Rajan">
-							<br>
-							<p class="person-name">Naveen Rajan</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/abishek.jpg" alt="Abishek V Ashok">
-							<br>
-							<p class="person-name">Abishek V Ashok</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/rafi.png" alt="Mochammad Rafi Al Rizkan">
-							<br>
-							<p class="person-name">Mochammad Rafi Al Rizkan</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/cagriari.jpg" alt="Mehmet Çağrı Arı">
-							<br>
-							<p class="person-name">Mehmet Çağrı Arı</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/reza_juliandri.jpg" alt="Reza Juliandri">
-							<br>
-							<p class="person-name">Reza Juliandri</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/sabaxuxuna.png" alt="Saba Khukhunashvili">
-							<br>
-							<p class="person-name">Saba Khukhunashvili</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/zilong.jpg" alt="Jin Zi Long">
-							<br>
-							<p class="person-name">Jin Zi Long</p>
-							<br>
-							<ul class="list-inline social-list">
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/kuba-michalski.jpg" alt="Kuba Michalski">
-							<br>
-							<p class="person-name">Kuba Michalski</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/kubami9" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@top_kuba" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/Saarthak.jpg" alt="Saarthak Chaturvedi">
-							<br>
-							<p class="person-name">Saarthak Chaturvedi</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/saarthakchats" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@SaarthakChats41" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/ncdai.jpg" alt="Nguyen Chanh Dai">
-							<br>
-							<p class="person-name">Nguyen Chanh Dai</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/ncdai3651408" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://facebook.com/ncdai3651408" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/kart.png" alt="Kartikeya Singh">
-							<br>
-							<p class="person-name">Kartikeya Singh</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/kartikeya23" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@kart_singh08" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/kartikeya23" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/duttaditya18.jpg" alt="Aditya Dutt">
-							<br>
-							<p class="person-name">Aditya Dutt</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/duttaditya18" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@EighteenAndOut" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-								<a href="https://facebook.com/duttaditya18" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/oem.jpg" alt="Ngô Hồng Phúc">
-							<br>
-							<p class="person-name">Ngô Hồng Phúc</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/Jerry2001" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://facebook.com/Jerry2001" class="icon-a">
-									<i class="ti-facebook icon-i"></i>
-								</a>
-							</ul>
-						</div>
-						<div class="card">
-							<img src="img/students/aryankedare.jpg" alt="Aryan Kedare">
-							<br>
-							<p class="person-name">Aryan Kedare</p>
-							<br>
-							<ul class="list-inline social-list">
-								<a href="https://github.com/aryankedare" class="icon-a">
-									<i class="ti-github icon-i"></i>
-								</a>
-								<a href="https://twitter.com/@KedareAryan" class="icon-a">
-									<i class="ti-twitter-alt icon-i"></i>
-								</a>
-							</ul>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 				<div class="row">
@@ -717,21 +307,15 @@
 					<div class="col-sm-12">
 						<div class="lightbox-grid square-thumbs">
 							<ul id="project_holder">
+								{% for project in site.data.student_projects %}
 								<li class="student_project">
-									<a href="https://github.com/kol4k/eKantin">
-										<div class="background-image-holder fadeIn" style="background: url(&quot;img/projects/rafi.png&quot;);">
-											<img title="Mochammad Rafi Al Rizkan by Rafi" class="background-image" src="img/projects/rafi.png" style="display: none;">
+									<a href="https://github.com/{{ project.github }}">
+										<div class="background-image-holder fadeIn" style="background: url("img/projects/{{ project.image }}");">
+											<img title="{{ project.name }} by {{ project.author }}" class="background-image" src="img/projects/{{ project.image }}" style="display: none;">
 										</div>
 									</a>
 								</li>
-								<li class="student_project">
-									<a href="yashkumarverma">
-										<div class="background-image-holder fadeIn" style="background: url(&quot;img/projects/yashkumarverma-gciposter.jpg&quot;);">
-											<img title="GCI FOSSASIA Poster by Yash Kumar Verma" class="background-image" src="img/projects/yashkumarverma-gciposter.jpg"
-											 style="display: none;">
-										</div>
-									</a>
-								</li>
+								{% endfor %}
 							</ul>
 						</div>
 					</div>
@@ -976,350 +560,6 @@
 							<p class="fade-1-4">
 								And you wont be able to use the app! Make sure you have the phone within close proximity at all times!
 							</p>
-=======
-
-				</div>
-
-			</section>
-
-			<section class="bg-secondary">
-		        <div class="container">
-		        <div class="row">
-		        <div class="col-sm-12 text-center">
-
-
-		        <h4 class="uppercase mb16">Blog</h4>
-		        <p class="lead mb64">
-		        Articles from the Contributors. </p>
-             		</div>
-		            </div>
-
-		            <div class="row">
-
-
-		                <div class="col-md-3 col-sm-6">
-		                <a href="https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/" target="_blank">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/blog/1.jpg" height="240" width="240">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">First Time in Google Code In with Fossasia</h5>
-		                            <span>Naveen Rajan</span>
-		                        </div>
-
-		                    </div>
-		                    </a>
-		                </div>
-
-		                <div class="col-md-3 col-sm-6">
-		                <a href="http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/" target="_blank">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Latop with GitHub pendrive" src="img/blog/2.jpg" height="240" width="240">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">My dive into open source with FOSSASIA during Google Code-in</h5>
-		                            <span>Kuba Michalski</span>
-		                        </div>
-
-		                    </div>
-		                    </a>
-		                </div>
-
-		                <div class="col-md-3 col-sm-6">
-				<a href="https://saarthakchaturvedi05.wordpress.com/2017/12/06/theres-code-in-me/" target="_blank">
-					<div class="image-tile outer-title text-center">
-						<img src="img/blog/Saarthak.jpg" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">There's Code-In Me</h5>
-							<span>Saarthak Chaturvedi</span>
-					        </div>
-					</div>
-
-
-		                <div class="col-sm-12">
-		                    <div class="instafeed grid-gallery" data-user-name="mrareweb">
-		                        <ul></ul>
-		                    </div>
-
-		                </div>
-		            </div>
-
-		        </div>
-
-		    </section><section>
-		        <div class="container">
-		            <div class="row v-align-children">
-		                <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-		                    <div class="embed-video-container embed-responsive embed-responsive-16by9">
-		                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/120433187?badge=0&amp;title=0&amp;byline=0&amp;title=0" allowfullscreen="allowfullscreen"></iframe>
-		                    </div>
-		                </div>
-		                <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-		                    <h3>Design that looks less 'theme' and more you.</h3>
-		                    <p>
-		                        Foundry offers you the modularity and ease-of-use of a template with the style and aesthetic of contemporary, bespoke web design.
-		                    </p>
-		                </div>
-		            </div>
-
-		        </div>
-
-		    </section><section class="fullscreen image-bg parallax background-multiply">
-		        <div class="background-image-holder">
-		            <img alt="image" class="background-image" src="img/capital5.jpg">
-		        </div>
-		        <div class="container v-align-transform">
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <h1 class="thin mb0">FOSSASIA <br>Based in Asia.</h1>
-		                </div>
-		            </div>
-
-		        </div>
-
-		        <div class="align-bottom text-center">
-		            <a class="btn btn-white mb32" href="#">Pitch Us</a>
-		            <ul class="list-inline social-list mb24">
-		                <li>
-		                    <a href="#">
-		                        <i class="ti-twitter-alt"></i>
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#">
-		                        <i class="ti-facebook"></i>
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#">
-		                        <i class="ti-dribbble"></i>
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#">
-		                        <i class="ti-vimeo-alt"></i>
-		                    </a>
-		                </li>
-		            </ul>
-		        </div>
-		    </section><section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <ul class="flickr-feed masonry masonryFlyIn" data-user-id="45240298@N08" data-album-id="72157665486359899"></ul>
-		                </div>
-		            </div>
-		        </div>
-		    </section><section class="bg-primary">
-		        <div class="container">
-		            <div class="row mb64 mb-xs-24">
-		                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-		                    <h3 class="mb40 mb-xs-24">FOSSASIA Google Code-In 2016/17</h3>
-		                    <p class="lead">
-                                Here are some videos from last year FOSSASIA Google Code-In!
-		                    </p>
-		                </div>
-		            </div>
-                            <p align="center"><iframe width="800" height="400" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" allowfullscreen></iframe></p>
-		        </div>
-
-		    </section><section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
-		        <ul class="slides">
-		            <li class="overlay image-bg">
-		                <div class="background-image-holder">
-		                    <img alt="image" class="background-image" src="img/resto1.jpg">
-		                </div>
-		                <div class="container v-align-transform">
-		                    <div class="row">
-		                        <div class="col-sm-12 text-center">
-		                            <img alt="Logo" class="image-small" src="img/fossasia-light.png">
-		                        </div>
-		                    </div>
-
-		                </div>
-
-		                <div class="align-bottom text-center">
-		                    <a class="btn btn-white mb32" href="#">Connect</a>
-		                    <ul class="list-inline social-list mb24">
-		                        <li>
-		                            <a href="#">
-		                                <i class="ti-twitter-alt"></i>
-		                            </a>
-		                        </li>
-		                        <li>
-		                            <a href="#">
-		                                <i class="ti-facebook"></i>
-		                            </a>
-		                        </li>
-		                        <li>
-		                            <a href="#">
-		                                <i class="ti-dribbble"></i>
-		                            </a>
-		                        </li>
-		                        <li>
-		                            <a href="#">
-		                                <i class="ti-vimeo-alt"></i>
-		                            </a>
-		                        </li>
-		                    </ul>
-		                </div>
-		            </li>
-		        </ul>
-		    </section><section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/team-1.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Sally Marsh</h5>
-		                            <span>Creative Director</span>
-		                        </div>
-		                        <p class="mb0">
-		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-		                        </p>
-		                    </div>
-		                </div>
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/team-2.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Tim Foley</h5>
-		                            <span>iOS Developer</span>
-		                        </div>
-		                        <p class="mb0">
-		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-		                        </p>
-		                    </div>
-		                </div>
-		                <div class="col-md-4 col-sm-6">
-		                    <div class="image-tile outer-title text-center">
-		                        <img alt="Pic" src="img/team-3.jpg">
-		                        <div class="title mb16">
-		                            <h5 class="uppercase mb0">Jake Robbins</h5>
-		                            <span>Brand Director</span>
-		                        </div>
-		                        <p class="mb0">
-		                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-		                        </p>
-		                    </div>
-		                </div>
-		            </div>
-
-		        </div>
-
-		    </section><section class="bg-primary">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">
-							<h1 class="uppercase mb24 bold italic">Fitness<br>For Life</h1>
-							<h5 class="uppercase italic fade-1-4">“My passion is motivating<br> people to get results”</h5>
-							<hr class="visible-xs">
-						</div>
-						<div class="col-md-5 col-sm-7">
-							<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							</p>
-
-							<p>
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-							</p>
-
-							<p>
-							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-							</p>
-							<img alt="signature" src="img/fitness1.png" class="image-small">
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section>
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-12 text-center">
-		                    <h4 class="uppercase mb16">Lightbox Grid Gallery</h4>
-		                    <p class="lead mb64">
-		                        A simple lightbox grid with square thumbnails.
-		                    </p>
-		                </div>
-		            </div>
-
-		            <div class="row">
-		                <div class="col-sm-12">
-		                    <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
-		                        <ul>
-		                            <li>
-		                                <a href="img/cover1.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover1.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home12.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home12.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home14.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home14.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/home17.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/home17.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover5.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover5.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover6.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover6.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover7.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover7.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="img/cover8.jpg" data-lightbox="true">
-		                                    <div class="background-image-holder">
-		                                        <img alt="image" class="background-image" src="img/cover8.jpg">
-		                                    </div>
-		                                </a>
-		                            </li>
-		                        </ul>
-		                    </div>
-
-		                </div>
-		            </div>
-
-		        </div>
-
-
-		    </section>
-
-		   <footer class="footer-2 bg-dark">
-		   		<div class="container">
-					<div class="row">
-						<div class="col-sm-3 text-left">
-						<div class="vnu"><img alt="Logo" class="footer-logo" src="img/fossasia-light.png"></div>
->>>>>>> origin/STEdirisuriya-patch-1
 						</div>
 					</div>
 				</div>
@@ -1846,7 +1086,6 @@
 
 
 	<script src="js/jquery.min.js"></script>
-<<<<<<< HEAD
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/flexslider.min.js"></script>
 	<script src="js/lightbox.min.js"></script>
@@ -2053,19 +1292,4 @@
 	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDEdg77hrkUariqipecWIb0_sh-ii5DiMk &callback=initMap" async defer></script>
 
 </body>
-
-=======
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/flexslider.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/masonry.min.js"></script>
-        <script src="js/flickr.js"></script>
-        <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/parallax.js"></script>
-	<script src="js/scripts.js"></script>
-	<script src="js/contributors.js"></script>
-    </body>
->>>>>>> origin/STEdirisuriya-patch-1
 </html>
