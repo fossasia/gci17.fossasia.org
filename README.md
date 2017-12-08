@@ -75,4 +75,19 @@ permalink: <some permalink>
 {% include footer.html %}
 ```
 * Add a link in the nav bar (in `_includes/header.html`)
-* Add a frontpage summary in index.html if you want
+
+## Adding a Blog
+
+To add a blog open the file `blogs.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- url: URL to the blog
+  title: Title of the blog
+  img: Image of the blog
+  author_name: Name of the author of the blog (most likely you)
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/blogs`.
+- The images should be 240 x 240 pixels.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
