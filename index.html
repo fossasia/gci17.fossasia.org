@@ -99,25 +99,13 @@
 </section>
 
 <!--contributors section-->
-<section>
-	<center>
-		<h2>
-			Contributors
-		</h2>
-	</center>
-
-	<div class="col-md-8 col-md-push-2">
-		<div class="container">
-			<div class="row">
-				<p>
-					Follow contributors on social, simpally click their profile names...
-				</p>
-			</div>
+<section class="bg-secondary">
+	<div class="container">
+		<div class="col-sm-12 text-center">
+			<h2 class="animated fadeIn">Contributors</h2>+
+			<p class="lead mb64">People who have made contributions to gci17.fossasia.org</p>
 		</div>
-
-		<div class="members contributers" id="Contributors">
-			<h1 class="section-h1">
-		</div>
+		<div class="col-sm-12 text-center spread-children-large" id="contributors"></div>
 	</div>
 </section>
 <!--End of contributors section-->
@@ -127,7 +115,7 @@
 	<div class="container">
 
 		<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-			<h2 class="animated fadeIn">Students just like you.</h2>+
+			<h2 class="animated fadeIn">Students just like you.</h2>
 		</div>
 			<div class="col-sm-12 text-center spread-children-large">
 				{% for student in site.data.students limit:5 %}
