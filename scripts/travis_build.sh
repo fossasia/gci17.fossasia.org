@@ -7,6 +7,8 @@ if [ "$JOB" == "BUILD" ]; then
     bundle exec jekyll build
 elif [ "$JOB" == "TEST" ]; then
     bundle exec img_checker
+elif [ "$JOB" == "IMAGES" ]; then
+    ruby image_checker.rb
 fi
 
 exit 0
