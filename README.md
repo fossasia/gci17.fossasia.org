@@ -1,5 +1,5 @@
 # FOSSASIA GCI 2017 Site
-[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg)](https://travis-ci.org/fossasia/gci17.fossasia.org)
+[![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg?branch=gh-pages)](https://travis-ci.org/fossasia/gci17.fossasia.org)
 
 ## Adding a Mentor
 
@@ -25,7 +25,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
 ## Adding a Student
-To add a mentor open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+To add a student open the file  `students.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Student's name
   country: Student's country/region
@@ -47,7 +47,7 @@ To add a mentor open the file  `students.yml` in `_data` folder and please maint
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 ## Adding a Student Project
 
-To add a mentor open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+To add a student project open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Name of project
   github: Github repository of the project
@@ -60,3 +60,34 @@ To add a mentor open the file  `student_projects.yml` in `_data` folder and plea
 - The images should be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
+# Adding a page
+
+To add a new page:
+* Make a new top-level `.html` file (i.e. next to `index.html`) with the following format:
+```html
+---
+permalink: <some permalink>
+---
+{% include header.html %}
+
+<!-- your html, including any necessary stylesheet links or scripts -->
+
+{% include footer.html %}
+```
+* Add a link in the nav bar (in `_includes/header.html`)
+
+## Adding a Blog
+
+To add a blog open the file `blogs.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- url: URL to the blog
+  title: Title of the blog
+  img: Image of the blog
+  author_name: Name of the author of the blog (most likely you)
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/blogs`.
+- The images should be 240 x 240 pixels.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
