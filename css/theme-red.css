@@ -1033,6 +1033,10 @@ nav.bg-dark .logo-dark {
   -moz-transform: translate3d(0, 0px, 0);
   visibility: visible;
 }
+.menu > li > ul a:hover {
+  background-color: red;
+  width: 100%;
+}
 .menu > li > ul > li:hover > ul,
 .has-dropdown:hover .mega-menu ul {
   opacity: 1;
