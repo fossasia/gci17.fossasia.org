@@ -43,27 +43,9 @@
   img: 7.jpg
   author_name: Kuba Michalski  
   
-- url: https://codegutter.wordpress.com/2017/12/09/root-to-open-source-with-fossasia/
-  title: Root to Open-Source with FOSSASIA
-  img: rsz_gutter.jpg
-  author_name: Prasenjit Gautam
-  
-- url: https://morethanworld64569539.wordpress.com/2017/12/06/google-code-in-and-open-source/
-  title: Google Code-In and Open Source
-  img: 8.jpg
-  author_name: Supun Tharinda Edirisuriya
-
-- url: https://introductorymusicblockstutorial.wordpress.com/
-  title: Interview of a Student participating in the Google Code In
+- url: https://introductorymusicblockstutorial.wordpress.com/2017/12/10/interview-of-a-teacher/
+  title: Interview with a teacher
   img: 6.png
   author_name: Hasalu Botheju
+  
 
-- url: https://abishek24.wordpress.com/2017/12/03/a-dive-into-open-source/
-  title: A dive into Opensource with FOSSASIA
-  img: abi_blog.jpg
-  author: Abishek V Ashok
-
-- url: http://blog.kubacoding.eu/learning/why-am-doing-it-hope-it-will-be-worth-at-the-end/
-  title: Why am I doing it? I hope it will be worth at the end… (my struggles with Hugo framework)
-  img: 9.jpg
-  author_name: Kuba Michalski  
