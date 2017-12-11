@@ -8,6 +8,11 @@
   img: IMG_0020.JPG
   author_name: Jeewal Kunwar
 
+- url: https://yashkumarverma.wordpress.com/2017/12/08/me-and-code/
+  title: My Journey in Google Code-In with FOSSASIA
+  img: yashkumarverma-blog01.jpg
+  author_name: Yash Kumar Verma
+  
 - url: http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/
   title: My dive into open source with FOSSASIA during Google Code-in
   img: 2.jpeg
@@ -68,7 +73,18 @@
   img: 9.jpg
   author_name: Kuba Michalski  
 
+
 - url: https://saarthakchaturvedi05.wordpress.com/2017/12/10/interview-with-two-open-source-contibutors/
-  title: Interview with 2 FOSSASIA ontibutors
+  title: Interview with 2 FOSSASIA Contibutors
   img: 10.png
   author_name: Saarthak Chaturvedi
+  
+- url: https://morethanworld64569539.wordpress.com/2017/12/10/an-interview-with-a-gci-student/
+  title: An interview with a GCI student
+  img: supun2.jpg
+  author_name: Supun Tharinda Edirisuriya
+
+- url: https://meets2tushar.wordpress.com/2017/12/11/my-interaction-with-fossasia/
+  title: My Interaction with FOSSASIA
+  img: tushar.jpg
+  author_name: Tushar Kumar

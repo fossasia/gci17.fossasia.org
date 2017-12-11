@@ -4,7 +4,7 @@ $(function(){
     url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors"
   }).done(function(data){
     data.forEach(function(contributors){
-      var html = '<div class="card">';
+      var html = '<div class="card hvr-hang">';
       html += '<img src="https://github.com/'+contributors.login+'.png?size=240x240" height="240" width="240">';
       html += '<br>';
       html += '<p class="person-name">'+contributors.login+' ('+contributors.contributions;
