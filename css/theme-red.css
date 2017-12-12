@@ -3065,7 +3065,11 @@ button[type="submit"] .form-loading {
 }
 /*!---------- 22. IMAGE TILES ----------*/
 img {
-  max-width: 100%;
+  padding: 5px;
+  max-width: 240px; 
+  max-height: 159px;
+  min-height: 32px;
+  min-width: 21px;
 }
 .image-tile {
   overflow: hidden;
@@ -3603,6 +3607,7 @@ img {
 }
 .flickr-feed li.masonry-item {
   margin-bottom: 0;
+
 }
 .flickr-feed li img {
   min-width: 100%;
@@ -4258,6 +4263,10 @@ video {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+  max-width: 240px; 
+  max-height: 159px;
+  min-height: 32px;
+  min-width: 21px;
 }
 .masonry-loader {
   transition: all 0.3s ease;
