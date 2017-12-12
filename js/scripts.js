@@ -123,6 +123,29 @@ $(document).ready(function() {
     mr_navOuterHeight = $('body .nav-container nav:first').outerHeight();
         mr_fixedAt = typeof mr_nav.attr('data-fixed-at') !== typeof undefined ? parseInt(mr_nav.attr('data-fixed-at').replace('px', '')) : parseInt($('section:nth-of-type(1)').outerHeight());
     window.addEventListener("scroll", updateNav, false);
+    var scroll_start = 0;
+       var startchange = $('.image-slider');
+       var offset = startchange.offset();
+       $(document).scroll(function() { 
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > offset.top) {
+              $('nav').css({
+                'background-color': 'rgba(255,255,255,0.9)',
+                'color':'#333333'
+              });
+              $('.menu > li > a').css('color','#333333');
+              $('.logo-light').css('opacity','0');
+              $('.logo-dark').css('opacity','1');
+           } else {
+              $('nav').css({
+                'background-color': 'transparent',
+                'color' : '#fff'
+              });
+              $('.menu > li > a').css('color','#fff');
+              $('.logo-dark').css('opacity','0');
+              $('.logo-light').css('opacity','1');
+           }
+       });
 
     // Menu dropdown positioning
 
