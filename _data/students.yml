@@ -125,8 +125,18 @@
   image: supun.jpg
   twitter: Supun_Tharinda_
 
+- name: Kanassanun Namwong
+  country: Thailand
+  github: k7un
+  image: k7un.jpeg
+  facebook: ccr4b
+  twitter: _ccr4b
+  
 - name: Ploypiti Piyaprapan
   country: Thailand
   github: Ploypiti
   image: P10YP1T1.jpg
   twitter: PL0YP1T1
+  facebook: PL0YP1T1
+  lat: 13.756331
+  lng: 100.501765
