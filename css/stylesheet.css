@@ -24,3 +24,9 @@
 #student_title {
   font-family: 'Cabin Sketch', cursive !important;
 }
+
+.bg-secondary {
+  border-top-style: solid;
+  border-top-width: 1.5px;
+  border-color: #ddd;
+ }
