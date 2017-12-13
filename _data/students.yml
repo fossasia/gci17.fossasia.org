@@ -24,9 +24,6 @@
 - name: Aleksandr Lymarenko
   image: a-v-lymarenko.png
 
-- name: Naveen Rajan
-  image: naveen.jpg
-
 - name: Abishek V Ashok
   image: abishek.jpg
   lat: 9.9312328
@@ -145,7 +142,16 @@
   country: Singapore
   github: ChenNupde
   image: Nuode.jpg
-  
+
+  name: Naveen Rajan
+  country: Sri Lanka
+  github: naveentherocker
+  image: naveen.png
+  facebook: ntr.sack
+  twitter: ntr_23
+  lat: 7.2905714999999995
+  lng: 80.6337262
+
 - name: Maciej Synowski
   country: Poland
   github: Shizerq
