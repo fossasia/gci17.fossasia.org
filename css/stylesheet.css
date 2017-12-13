@@ -41,7 +41,7 @@
     border-color: #e31d3b;
     border-style: solid;
     border-width: medium;
-    background: none;
+    background: none; !Important
     color: #333;
 
 div.image-tile.outer-title.text-center {
