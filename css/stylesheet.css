@@ -42,3 +42,7 @@ h2.txt-rotate {
     background: none;
     border-width: medium;
 }
+
+a.mb0.btn.btn-lg.btn-filled:hover {
+    color: #333;
+}
