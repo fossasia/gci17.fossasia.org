@@ -91,3 +91,6 @@ To add a blog open the file `blogs.yml` in `_data` folder and please maintain th
 - All images must be in `img/blogs`.
 - The images should be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+
+## Installation Steps:
+- [Local Setup on Windows](/installation_windows.md)
