@@ -30,3 +30,24 @@
     border-top-width: 1.5px;
     border-color: #ddd;
 }
+
+
+ h2.txt-rotate {
+    height: 30px;
+    margin-bottom: 0px;
+}
+ 
+ .mb0.btn.btn-lg.btn-filled:hover {
+    border-color: #e31d3b;
+    border-style: solid;
+    background: none;
+    border-width: medium;
+}
+ 
+ a.mb0.btn.btn-lg.btn-filled:hover {
+    color: #333;
+}
+
+div.image-tile.outer-title.text-center {
+    margin-bottom: 0px;
+}
