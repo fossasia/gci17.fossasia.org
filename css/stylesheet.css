@@ -30,3 +30,8 @@
   border-top-width: 1.5px;
   border-color: #ddd;
  }
+
+h2.txt-rotate {
+    height: 25px;
+    margin-bottom: 0px;
+}
