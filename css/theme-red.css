@@ -856,10 +856,14 @@ body.btn-rounded .btn {
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
   -webkit-backface-visibility: hidden;
-  max-width: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  z-index: 101;
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
 }
 nav {
-  background: #fff;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
@@ -900,7 +904,6 @@ nav .btn,
   height: 55px;
   max-height: 55px;
   line-height: 53px;
-  border-bottom: 1px solid #ccc;
 }
 .nav-bar .module,
 .nav-bar .module-group {
@@ -911,10 +914,13 @@ nav .btn,
   height: 55px;
 }
 .logo {
-  max-height: 60%;
+  max-height: 45px;
+  max-width: 110px;
+  position: absolute;
+  top:20px;
 }
-.logo-light {
-  display: none;
+.logo-dark {
+  opacity: 0;
 }
 nav.nav-centered .logo {
   max-height: 64px;
@@ -955,8 +961,7 @@ nav.bg-dark .logo-dark {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #292929;
-  opacity: 0.5;
+  color: #fff;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -988,7 +993,7 @@ nav.bg-dark .logo-dark {
 .menu > li ul {
   width: 200px;
   padding: 8px 0;
-  background: #292929;
+  background: rgba(255,255,255,0.9);
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -1018,9 +1023,14 @@ nav.bg-dark .logo-dark {
   content: "\e649";
 }
 .menu > li > ul li a {
-  color: #fff;
+  color: #333;
+  width: 100%;
   height: auto;
   padding: 6px 24px;
+}
+.menu > li > ul li a:hover {
+  background-color: #e12b00;
+  color: #fff;
 }
 .menu > li > ul > li > ul {
   left: 100%;
@@ -1073,7 +1083,7 @@ nav.bg-dark .logo-dark {
   right: 0;
 }
 .module.widget-handle {
-  border-left: 1px solid #ccc;
+  border-left: 2px solid rgba(255,255,255,0.3);
   padding: 0 24px;
   cursor: pointer;
   position: relative;
@@ -1215,9 +1225,9 @@ nav .cart-overview a {
 .nav-open .mobile-toggle {
   border-bottom: 1px solid #ccc;
 }
-@media all and (max-width: 1120px) {
+@media all and (max-width: 1300px) {
   .menu > li {
-    margin-right: 24px;
+    margin-right: 18px;
   }
 }
 .has-offscreen-nav .main-container {
@@ -1297,6 +1307,25 @@ nav .cart-overview a {
   }
 }
 @media all and (max-width: 990px) {
+  
+  .overlay-nav {
+    background-color: rgba(255,255,255,0.9);
+  }
+  .logo-dark {
+    opacity: 1 !important;
+  }
+  .logo-light {
+    display: none;
+  }
+  .module.widget-handle {
+    color: #333;
+  }
+  .menu li a {
+    color: #333 !important;
+  }
+  .menu li ul {
+    background-color: transparent;
+  }
   nav.fixed {
     position: absolute !important;
     opacity: 1 !important;
@@ -1396,7 +1425,6 @@ nav .cart-overview a {
   }
   .module.widget-handle {
     border-left: none;
-    border-top: 1px solid #ccc;
     line-height: 40px;
     min-height: 40px;
   }
@@ -1438,7 +1466,7 @@ nav .cart-overview a {
     top: 18px;
   }
   .mobile-toggle {
-    border-left: 1px solid #ccc !important;
+    color: #fff;
     border-bottom: none !important;
   }
   .mobile-toggle i {
