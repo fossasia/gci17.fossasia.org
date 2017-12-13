@@ -32,6 +32,8 @@
   image: isuruAb.jpg
   blog: icodeplus.wordpress.com
   facebook: isuruAb
+  lat: 6.7949839999999995
+  lng: 79.92979849999999
 
 - name: Abhinav Khare
   github: CosmicCoder96
@@ -92,6 +94,8 @@
 - name: Anshuman Verma
   image: ansh.jpeg
   twitter: Anshumaniac12
+  lat: 23.233086
+  lng: 72.651634
  
 - name: Rahul Tiwari
   github: invinciblycool
