@@ -47,3 +47,7 @@
  a.mb0.btn.btn-lg.btn-filled:hover {
     color: #333;
 }
+
+.image-tile.outer-title.text-center {
+    margin-bottom: 0px;
+}
