@@ -3843,6 +3843,21 @@ iframe {
     margin-bottom: 0px;
     min-height: 200px;
 }
+.arrangement{
+    position: static;
+    visibility: visible;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    border: none;
+    max-width: 100%;
+    min-width: 180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+
+}
 .player {
   position: absolute;
   width: 100%;
