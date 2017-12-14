@@ -26,12 +26,16 @@
   image: harsit98.jpg
   blog: blog.fossasia.org
   facebook: prasad.dude28
+  lat: 26.934855
+  lng: 75.924894
 
 - name: Isuru Abeywardana
   github: isuruAb
   image: isuruAb.jpg
   blog: icodeplus.wordpress.com
   facebook: isuruAb
+  lat: 6.7949839999999995
+  lng: 79.92979849999999
 
 - name: Abhinav Khare
   github: CosmicCoder96
@@ -92,6 +96,8 @@
 - name: Anshuman Verma
   image: ansh.jpeg
   twitter: Anshumaniac12
+  lat: 23.233086
+  lng: 72.651634
  
 - name: Rahul Tiwari
   github: invinciblycool
@@ -118,3 +124,7 @@
 - name: Yash Ladha
   github: yashLadha
   image: Yash.jpg
+  
+- name: Vibhor Verma
+  github: vibhcool
+  image: vibhor.jpg
