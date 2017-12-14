@@ -15,7 +15,5 @@ environment in Linux.
 2. Use git to clone your forked repository, i.e. git clone `https://github.com/<your_username>/gci17.fossasia.org.git`
 3. Change directory to the local repository, i.e. `cd gci17.fossasia.org`. Now type `ls` to see if `Gemfile` can be seen.
 4. Type `bundle install` to install dependencies.
-5. Now open Gemfile(with any text editor e.g. `sublime` or `nano`) and then Comment `gem 'github-pages', group: :jekyll_plugins` and uncomment `#gem 'jekyll-sitemap'`
-`#gem 'jekyll-paginate'`. Save the file.
-6. Type `bundle exec jekyll serve `. You will see a Server address.
-7. Now your server is up and running. To view gci17 page, go to `localhost:4000`
+5. Type `bundle exec jekyll serve `. You will see a Server address.
+6. Now your server is up and running. To view gci17 page, go to `localhost:4000`
