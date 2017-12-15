@@ -3830,6 +3830,33 @@ audio:-webkit-full-screen {
 }
 iframe {
   border: none;
+    position: static;
+    visibility: visible;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    border: none;
+    max-width: 100%;
+    min-width: 180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+}
+.arrangement{
+    position: static;
+    visibility: visible;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    border: none;
+    max-width: 100%;
+    min-width: 180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+
 }
 .player {
   position: absolute;
@@ -4259,6 +4286,15 @@ video {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
 }
+.masonryFlyIn .masonry-item.fadeIn img{
+   padding: 5px;  
+   max-width: 240px;   
+   max-height: 159px;   
+   min-width: 32px;   
+   min-height: 21px;
+
+}
+
 .masonry-loader {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
