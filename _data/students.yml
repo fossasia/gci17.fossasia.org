@@ -1,6 +1,6 @@
 - name: Anastasiia Kostiv
   github: AKostiv8
-  image: kostiv.jpg
+  image: kostiv.jpeg
   twitter: KostivNastya
   facebook: anastasiya.kostiv
 
@@ -24,9 +24,6 @@
 - name: Aleksandr Lymarenko
   image: a-v-lymarenko.png
 
-- name: Naveen Rajan
-  image: naveen.jpg
-
 - name: Abishek V Ashok
   image: abishek.jpg
   lat: 9.9312328
@@ -34,9 +31,13 @@
 
 - name: Mochammad Rafi Al Rizkan
   image: rafi.png
+  github: kol4k
+  facebook: kol4k
+  lat: -6.915510
+  lng: 107.646879
 
 - name: Mehmet Çağrı Arı
-  image: cagriari.jpg
+  image: cagriari.jpeg
 
 - name: Reza Juliandri
   image: reza_juliandri.jpg
@@ -49,9 +50,11 @@
 
 - name: Kuba Michalski
   country: Poland
-  image: kuba-michalski.jpg
+  image: kuba-michalski.jpeg
   github: kubami9
   twitter: top_kuba
+  lat: 52.128588
+  lng: 21.2607444
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
@@ -77,3 +80,86 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
+  
+- name: Prasenjit Gautam
+  github: FreakinBabaJi
+  country: India
+  twitter: B477L3_L0RD
+  facebook: prasenjit.gautam.79
+  image: HyperionGrey.jpg
+
+- name: Ngô Hồng Phúc
+  image: oem.jpg
+  github: Jerry2001
+  facebook: ngohongphuc2001
+
+- name: Tushar Kumar
+  country: India
+  github: awesometushar000
+  image: tushar.jpg
+  twitter: meets2tushar
+
+- name: Aryan Kedare
+  country: India
+  github: aryankedare
+  image: aryankedare.jpeg
+  twitter: KedareAryan
+
+- name: Samyak Jain
+  github: samyakbvs
+  image: samyak.png
+  twitter: Samyakbvs
+  facebook: Samyak Jain
+  
+- name: Tushar Verma
+  github: 2coolife
+  image: 2coolife.jpg
+  twitter: 2coolife
+
+- name: Supun Tharinda
+  country: Sri Lanka
+  github: STEdirisuriya
+  image: supun.jpg
+  twitter: Supun_Tharinda_
+  lat: 6.737028
+  lng: 79.939276
+
+- name: Kanassanun Namwong
+  country: Thailand
+  github: k7un
+  image: k7un.jpeg
+  facebook: ccr4b
+  twitter: _ccr4b
+  
+- name: Ploypiti Piyaprapan
+  country: Thailand
+  github: Ploypiti
+  image: P10YP1T1.jpg
+  twitter: PL0YP1T1
+  facebook: PL0YP1T1
+  lat: 13.756331
+  lng: 100.501765
+
+- name: Nuode Chen
+  country: Singapore
+  github: ChenNupde
+  image: Nuode.jpg
+
+  name: Naveen Rajan
+  country: Sri Lanka
+  github: naveentherocker
+  image: naveen.png
+  facebook: ntr.sack
+  twitter: ntr_23
+  lat: 7.2905714999999995
+  lng: 80.6337262
+
+- name: Maciej Synowski
+  country: Poland
+  github: Shizerq
+  image: MSShizerq.jpg
+  
+- name: Ashish Kumar Singh
+  country: India
+  github: lavavi
+  image: lavavi.jpg

@@ -8,7 +8,12 @@
   blog: mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
-
+  
+- name: Sumedh Nimkarde
+  github: sumedh123
+  image: sumedh.jpeg
+  twitter: Sumedh Nimkarde
+  facebook: Sumedh Nimkarde
 
 - name: Hong Phuc Dang
   github: hpdang
@@ -21,24 +26,24 @@
   image: harsit98.jpg
   blog: blog.fossasia.org
   facebook: prasad.dude28
-
+  lat: 26.934855
+  lng: 75.924894
 
 - name: Isuru Abeywardana
   github: isuruAb
   image: isuruAb.jpg
   blog: icodeplus.wordpress.com
   facebook: isuruAb
-
+  lat: 6.7949839999999995
+  lng: 79.92979849999999
 
 - name: Abhinav Khare
   github: CosmicCoder96
   image: CosmicCoder96.jpg
 
-
 - name: Harsh Vardhan
   github: royalharsh
   image: royalharsh.jpg
-
 
 - name: Harsh Kothari
   github: harshkothari410
@@ -47,13 +52,11 @@
   facebook: harshkothari410
   twitter: harshkothari410
 
-
 - name: Jigyasa Grover
   github: jigyasa-grover
   image: jigyasa-grover.jpg
   facebook: grover.jigyasa
   twitter: jigyasa_grover
-
 
 - name: Saptak Sengupta
   github: SaptakS
@@ -62,7 +65,6 @@
   facebook: s4pt4ks
   twitter: Saptak013
 
-
 - name: Damini Satya
   github: daminisatya
   image: daminisatya.jpg
@@ -70,11 +72,9 @@
   facebook: daminisatya
   twitter: Daminisatya
 
-
 - name: Mohit Sharma
   github: ms10398
   image: mohitsharma.png
-
 
 - name: Ashwani Kumar
   github: ashwanidv100
@@ -89,6 +89,42 @@
   github: niccokunzmann
   image: niccokunzmann.png
 
+- name: Sudheesh Singanamalla
+  github: sudheesh001
+  image: sudheesh001.jpg
+
 - name: Anshuman Verma
-  image: ansh.jpg
+  image: ansh.jpeg
   twitter: Anshumaniac12
+  lat: 23.233086
+  lng: 72.651634
+ 
+- name: Rahul Tiwari
+  github: invinciblycool
+  image: Rahul_Tiw.jpg
+  twitter: invinciblycool
+  
+- name: Nguyen Vu Hung 
+  image: hung.jpg
+  github: vuhung
+  facebook: nguyenvuhung
+ 
+- name: Avi Aryan
+  image: avi.jpg
+  twitter: aviaryan123
+  github: aviaryan
+  
+- name: Suneet Srivastava
+  github: codedsun
+  image: suneet.jpg
+  blog: suneetsrivastavablog.wordpress.com
+  facebook: suneet.srivastava.583
+  twitter: dSuneetsri
+
+- name: Yash Ladha
+  github: yashLadha
+  image: Yash.jpg
+  
+- name: Vibhor Verma
+  github: vibhcool
+  image: vibhor.jpg
