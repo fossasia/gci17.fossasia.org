@@ -405,17 +405,26 @@
 			</div>
 		</div>
 		{% for blog in site.data.blogs %}
-			<div class="col-md-3 col-sm-6">
-				<a href="{{blog.url}}" target="_blank">
-					<div class="image-tile outer-title text-center">
-						<img src="img/blog/{{blog.img}}" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">{{blog.title}}</h5>
-							<span>{{blog.author_name}}</span>
+
+			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
+
+			{% if modulo == '1' %}
+				<div class="row">
+			{% endif %}
+				<div class="col-md-3">
+					<a href="{{blog.url}}" target="_blank">
+						<div class="image-tile outer-title text-center">
+							<img src="img/blog/{{blog.img}}" height="240" width="240">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">{{blog.title}}</h5>
+								<span>{{blog.author_name}}</span>
+							</div>
 						</div>
-					</div>
-				</a>
-			</div>
+					</a>
+				</div>
+			{% if modulo == '0' or forloop.last %}
+				</div>
+			{% endif %}
 		{% endfor %}
 	</div>
 </section>
