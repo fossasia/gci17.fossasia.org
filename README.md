@@ -11,8 +11,8 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
   image: Mentor's image
   twitter: Mentor's Twitter id
   facebook: Mentor's Facebook id
-  Linkedin: Mentor's Linkein Page
-  
+  Linkedin: Mentor's Linkedin Page
+
   Geolocation (city or country: optional)
   lat: Mentor's latitude
   lng: Mentor's longitude
@@ -32,7 +32,7 @@ To add a student open the file  `students.yml` in `_data` folder and please main
   github: Student's Github username
   image: Student's image (or representation like a "nick" image)
   twitter: Student's Twitter id
-  
+
 **Optional** (Please ensure parents agree on sharing this data)
 * facebook: Student's Facebook id
 * Geolocation (Preferably do not share your exact location. If you really want to share it, share city)
