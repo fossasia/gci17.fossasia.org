@@ -6,15 +6,12 @@
 }
 .mentor-list .single-mentor:hover img{
     background-color: black;
-    /*opacity: 0.5;*/
     filter : brightness(50%);
     transition: all 0.6s;
 }
 .mentor-list .single-mentor .social-overlay-list{
     position: relative;
-    /*display: inline;*/
     top:-160px;
-    /*height: ;*/
     background: rgba(0, 0, 0, 0);
     padding: 5px 10px;
     width:240px;
