@@ -7,10 +7,10 @@ permalink: students
 <section class="bg-secondary">
 	<div class="container">
 		<div class="row">
-			<div class="row mb64 mb-xs-24">
+			<div class="row mb64 mb-xs-24 mentor-list">
 				<div class="col-sm-12 text-center spread-children-large">
 				{% for student in site.data.students %}
-				<div class="card">
+				<div class="card single-mentor">
 					{% if student.image %}
 					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
@@ -18,10 +18,10 @@ permalink: students
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
-					<ul class="list-inline social-list">
+					<ul class="list-inline social-list social-overlay-list">
 						{% if student.github %}
 						<a href="https://github.com/{{student.github}}" class="icon-a">
-							<i class="ti-github icon-i"></i>
+							<i class="icon-i fa fa-github" aria-hidden="true"></i>
 						</a>
 						{% endif %}
 						{% if student.twitter %}
@@ -42,7 +42,7 @@ permalink: students
 					</ul>
 				</div>
 				{% endfor %}
-          </div>  
+          </div>
 			</div>
 		</div>
 

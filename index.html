@@ -66,7 +66,7 @@
 						<ul class="list-inline social-list social-overlay-list ">
 							{% if mentor.github %}
 								<a href="https://github.com/{{mentor.github}}" class="icon-a">
-								   <i class="ti-github icon-i"></i>
+									<i class="icon-i fa fa-github" aria-hidden="true"></i>
 								</a>
 
 								{% endif %}
@@ -105,7 +105,7 @@
 			<h2 class="animated fadeIn">Contributors</h2>
 			<p class="lead mb64">People who have made contributions to gci17.fossasia.org</p>
 		</div>
-		<div class="col-sm-12 col-md-12 text-center spread-children-large" id="contributors"></div>
+		<div class="col-sm-12 col-md-12 text-center spread-children-large mentor-list" id="contributors"></div>
 	</div>
 </section>
 <!--End of contributors section-->
@@ -117,9 +117,9 @@
 		<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 			<h2 class="animated fadeIn">Students just like you.</h2>
 		</div>
-			<div class="col-sm-12 text-center spread-children-large">
+			<div class="col-sm-12 text-center spread-children-large mentor-list">
 				{% for student in site.data.students limit:5 %}
-				<div class="card">
+				<div class="card single-mentor">
 					{% if student.image %}
 					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
@@ -127,10 +127,10 @@
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
-					<ul class="list-inline social-list">
+					<ul class="list-inline social-list social-overlay-list">
 						{% if student.github %}
 						<a href="https://github.com/{{student.github}}" class="icon-a">
-							<i class="ti-github icon-i"></i>
+							<i class="icon-i fa fa-github" aria-hidden="true"></i>
 						</a>
 						{% endif %}
 						{% if student.twitter %}
@@ -485,8 +485,8 @@
                                         </li>
                                         <li>
                                                 <a href="https://github.com/fossasia">
-                                                        <i class="ti-github" aria-hidden="true"></i>
-                                                </a>
+													<i class="icon-i fa fa-github" aria-hidden="true"></i>
+												</a>
                                         </li>
 
 				</ul>
