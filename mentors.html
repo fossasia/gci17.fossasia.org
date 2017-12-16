@@ -11,25 +11,27 @@ permalink: mentors
 				<h2>Mentors for you</h2>
 			</div>
 		</div>
-		<div class="row mb64 mb-xs-24">
+		<div class="row mb64 mb-xs-24 mentor-list">
 			<div class="col-sm-12 text-center spread-children-large">
 				{% for mentor in site.data.mentors %}
-					<div class="card">
+					<div class="card single-mentor">
+
 						{% if mentor.image %}
-								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img class="img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
 							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="mentor-name">{{ mentor.name }}</p><br>
-						<ul class="list-inline social-list">
+
+						<ul class="list-inline social-list social-overlay-list">
 							{% if mentor.github %}
 								<a href="https://github.com/{{mentor.github}}" class="icon-a">
-								   <i class="ti-github icon-i"></i>
+									<i class="icon-i ti-github" aria-hidden="true"></i>
 								</a>
 							{% endif %}
 							{% if mentor.twitter %}
-								<a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">    
+								<a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">
 								   <i class="ti-twitter-alt icon-i"></i>
 								</a>
 							{% endif %}

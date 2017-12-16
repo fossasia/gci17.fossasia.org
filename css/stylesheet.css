@@ -36,13 +36,13 @@
     height: 30px;
     margin-bottom: 0px;
 }
- 
+
  .btn:hover {
     border-color: #e31d3b;
     border-style: solid;
     border-width: medium;
     background: none;
-    color: #333;
+    color: #333;}
 
 div.image-tile.outer-title.text-center {
     margin-bottom: 0px;

@@ -52,10 +52,10 @@
 				<h2 class="animated fadeIn">Mentors for you</h2>
 			</div>
 		</div>
-		<div class="row mb64 mb-xs-24">
+		<div class="row mb64 mb-xs-24 mentor-list">
 			<div class="col-sm-12 text-center spread-children-large">
 				{% for mentor in site.data.mentors limit:5 %}
-					<div class="card">
+					<div class="card single-mentor">
 						{% if mentor.image %}
 								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
@@ -63,7 +63,7 @@
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
-						<ul class="list-inline social-list">
+						<ul class="list-inline social-list social-overlay-list ">
 							{% if mentor.github %}
 								<a href="https://github.com/{{mentor.github}}" class="icon-a">
 								   <i class="ti-github icon-i"></i>
