@@ -15,7 +15,7 @@ $(function(){
       }
       html += '<ul class="list-inline social-list social-overlay-list">';
       html += '<a href="'+contributors.html_url+'" class="icon-a">';
-      html += '<i class="icon-i fa fa-github" aria-hidden="true"></i>';
+      html += '<i class="icon-i fa fa-github fa-4x" aria-hidden="true"></i>';
       html += '</a></ul></div>';
       $("#contributors").append(html);
     });
