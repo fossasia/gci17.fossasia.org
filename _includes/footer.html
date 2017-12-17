@@ -188,7 +188,6 @@
 
 	<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/contributors.js"></script>
 		<script src="js/flexslider.min.js"></script>
 		<script src="js/lightbox.min.js"></script>
 		<script src="js/masonry.min.js"></script>
@@ -199,8 +198,9 @@
 		<script src="js/parallax.js"></script>
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script async defer src="https://apis.google.com/js/platform.js" ></script>
+		<script src="js/inview.js" type="text/javascript"></script>
+		<script src="js/contributors.js"></script>
 		<script src="js/scripts.js"></script>
-
 		<script type="text/javascript">
         	/* Smooth Scroll */
        		$('a[href*="#"]').not('[href="#"]')
@@ -233,6 +233,8 @@
         </script>
         <script src="https://openlayers.org/api/OpenLayers.js"></script>
         <script>
+        	$(document).ready(function(){
+
             map = new OpenLayers.Map("map");
             map.addLayer(new OpenLayers.Layer.OSM());
     
@@ -292,6 +294,7 @@
     
             map.addControl(controls['selector']);
             controls['selector'].activate();
+        	});
         </script>
     </body>
 </html>

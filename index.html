@@ -57,9 +57,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -121,9 +121,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img src="img/students/member.png" alt="{{ student.name }}">
+					<img data-src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
@@ -246,7 +246,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="feature feature-1 boxed">
-                     <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400"></iframe>
+                     <iframe data-src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400"></iframe>
                 </div>
             </div>
         </div>
@@ -299,7 +299,7 @@
 				<div class="col-md-3">
 					<a href="{{blog.url}}" target="_blank">
 						<div class="image-tile outer-title text-center">
-							<img src="img/blog/{{blog.img}}" height="240" width="240">
+							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">{{blog.title}}</h5>
 								<span>{{blog.author_name}}</span>
@@ -326,7 +326,7 @@
 			<div class="col-md-3 col-sm-6">
 				<a href="https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s" target="_blank">
 					<div class="image-tile outer-title text-center">
-						<img src="img/blog/8.jpg" height="240" width="240">
+						<img data-src="img/blog/8.jpg" height="240" width="240">
 						<div class="title mb16">
 							<h5 class="uppercase mb0">About FOSSASIA</h5>
 							<span>Supun Tharinda Edirisuriya</span>
@@ -424,7 +424,7 @@
 			</div>
 		</div>
 		<div class="widget video-container">
-			<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" data-src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -517,7 +517,7 @@
 				<p>
 					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
 				</p>
-				<img alt="signature" src="img/fitness1.png" class="image-small">
+				<img alt="signature" data-src="img/fitness1.png" class="image-small">
 			</div>
 		</div>
 	</div>
