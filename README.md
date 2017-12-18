@@ -95,3 +95,4 @@ To add a blog open the file `blogs.yml` in `_data` folder and please maintain th
 ## Installation Steps:
 - [Local Setup on Windows](/installation_windows.md)
 - [Local Setup on Linux](/installation_linux.md)
+- [Local Setup on MacOS](/installation_macos.md)
