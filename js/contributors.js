@@ -1,5 +1,5 @@
 /* Used to get contributions from the Github API */
-$(function(){
+$(document).ready(function(){
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors"
   }).done(function(data){

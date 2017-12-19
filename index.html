@@ -57,9 +57,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -121,9 +121,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img src="img/students/member.png" alt="{{ student.name }}">
+					<img data-src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
@@ -203,7 +203,7 @@
 <section class="bg-dark">
 	 <div class="container">
 		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-		<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Σας ευχαριστώ που συμμετείχατε", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
+		<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
 		</h2>
 		</div>
 	</div>
@@ -239,16 +239,26 @@
                     <a class="twitter-timeline" data-width="400" data-height="400" data-link-color="#E81C4F" href="//twitter.com/fossasia">Tweets by fossasia</a>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="feature feature-1 boxed">
-			<div class="g-page" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="feature feature-1 boxed">
-                     <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400"></iframe>
-                </div>
-            </div>
+			<div class="col-sm-4 g-plus-big">
+				<div class="feature feature-1 boxed">
+					<div class="g-page" data-width="300" data-height="300" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
+				</div>
+			</div>
+			<div class="col-sm-4 g-plus-small">
+				<div class="feature feature-1 boxed">
+					<div class="g-page" data-width="240" data-height="240" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
+				</div>
+			</div>
+			<div class="col-sm-4 fb-big-iframe">
+				<div class="feature feature-1 boxed">
+					<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="overflow-x: scroll"></iframe>
+				</div>
+			</div>
+			<div class="col-sm-4 fb-small-iframe">
+				<div class="feature feature-1 boxed">
+					<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=240&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="overflow-x: scroll"></iframe>
+				</div>
+			</div>
         </div>
     </div>
 </section>
@@ -299,7 +309,7 @@
 				<div class="col-md-3">
 					<a href="{{blog.url}}" target="_blank">
 						<div class="image-tile outer-title text-center">
-							<img src="img/blog/{{blog.img}}" height="240" width="240">
+							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">{{blog.title}}</h5>
 								<span>{{blog.author_name}}</span>
@@ -326,7 +336,7 @@
 			<div class="col-md-3 col-sm-6">
 				<a href="https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s" target="_blank">
 					<div class="image-tile outer-title text-center">
-						<img src="img/blog/8.jpg" height="240" width="240">
+						<img data-src="img/blog/8.jpg" height="240" width="240">
 						<div class="title mb16">
 							<h5 class="uppercase mb0">About FOSSASIA</h5>
 							<span>Supun Tharinda Edirisuriya</span>
@@ -341,12 +351,12 @@
 <!-- parallax image? -->
 <section class="fullscreen image-bg parallax background-multiply">
 	<div class="background-image-holder">
-		<img alt="image" class="background-image" src="img/capital5.jpg">
+		<img alt="image" class="background-image" src="img/asia-bg.jpg">
 	</div>
 	<div class="container v-align-transform">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="thin mb0">FOSSASIA <br>Based in Asia.</h1>
+				<h1 class="bold mb0">FOSSASIA <br>Based in Asia.</h1>
 			</div>
 		</div>
 
@@ -375,25 +385,25 @@
 					<i class="ti-vimeo-alt"></i>
 				</a>
 			</li>
-                        <li>
-                                <a href="https://www.instagram.com/fossasia">
-                                        <i class="ti-instagram" aria-hidden="true"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-                                        <i class="ti-youtube" aria-hidden="true"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://flickr.com/photos/fossasia">
-                                        <i class="ti-flickr-alt" aria-hidden="true"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://github.com/fossasia">
-                                        <i class="ti-github" aria-hidden="true"></i>
-                                </a>
+            <li>
+                    <a href="https://www.instagram.com/fossasia">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+                        <i class="ti-youtube" aria-hidden="true"></i>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://flickr.com/photos/fossasia">
+                        <i class="ti-flickr-alt" aria-hidden="true"></i>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://github.com/fossasia">
+                    	<i class="ti-github" aria-hidden="true"></i>
+                    </a>
 			</li>
 
 		</ul>
@@ -440,7 +450,7 @@
 			<div class="container v-align-transform">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<img alt="Logo" class="image-small" src="img/fossasia-light.png">
+						<img alt="Logo" class="image-small" data-src="img/fossasia-light.png">
 					</div>
 				</div>
 
@@ -517,7 +527,7 @@
 				<p>
 					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
 				</p>
-				<img alt="signature" src="img/fitness1.png" class="image-small">
+				<img alt="signature" data-src="img/fitness1.png" class="image-small">
 			</div>
 		</div>
 	</div>

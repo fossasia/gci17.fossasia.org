@@ -1,3 +1,13 @@
+- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
+  title: Playing with chat.susi.ai | Google Code-In | FOSSASIA
+  img: 0x48piraj.jpg
+  author_name: Piyush Raj
+
+- url: https://demiprestasi.wordpress.com/2017/12/16/me-google-code-in-and-fossasia/
+  title: Me, Google Code-In and FOSSASIA
+  img: me.jpg
+  author_name: Amriyono Maju Ompusunggu
+  
 - url: https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/
   title: First Time in Google Code In with Fossasia
   img: 1.jpeg
@@ -80,7 +90,7 @@
 
 - url: https://introductorymusicblockstutorial.wordpress.com/
   title: Interview of a Student participating in the Google Code In
-  img: 6.png
+  img: interview_hasalu.png
   author_name: Hasalu Botheju
 
 - url: https://abishek24.wordpress.com/2017/12/03/a-dive-into-open-source/
@@ -132,3 +142,8 @@
   title: Interview with a FOSSASIA Contributer | Ploypiti Piyaprapan
   img: aditya-blog-2.jpg
   author_name: Aditya Dutt
+  
+- url: https://peppercat.tk/2017/12/hi-there-issues/
+  title: Hi there, issues
+  img: Blog_Ploypiti_03.jpg
+  author_name: Ploypiti Piyaprapan
