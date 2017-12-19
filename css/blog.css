@@ -1,13 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
 
+
 .box{
-    background: #fff;    
+    width:240px;
+    height: 240px;
+    background: #fff;
+    position: absolute;        
 }
 .box .content{
+    overflow:hidden;
+    width:240px;
+    height: 240px;
     background:#000;
     position:relative;    
 }
 .box .content img{
+    margin-top:-120px;
     -webkit-transition: all 500ms ;
     -moz-transition: all 500ms ;
     -ms-transition: all 500ms ;
