@@ -320,20 +320,31 @@
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h4 class="uppercase mb16">Videos</h4>
-				<p class="lead mb64">Videos from the students</p>
+				<p class="lead mb64">Videos from students</p>
 			</div>
 		</div>
-			<div class="col-md-3 col-sm-6">
-				<a href="https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s" target="_blank">
-					<div class="image-tile outer-title text-center">
-						<img data-src="img/blog/8.jpg" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">About FOSSASIA</h5>
-							<span>Supun Tharinda Edirisuriya</span>
+		{% for video in site.data.video %}
+
+			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
+
+			{% if modulo == '1' %}
+				<div class="row">
+			{% endif %}
+				<div class="col-md-3">
+					<a href="{{video.url}}" target="_blank">
+						<div class="image-tile outer-title text-center">
+							<img data-src="img/video/{{video.img}}" height="240" width="240">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">{{video.title}}</h5>
+								<span>{{video.author_name}}</span>
+							</div>
 						</div>
-					</div>
-				</a>
-			</div>
+					</a>
+				</div>
+			{% if modulo == '0' or forloop.last %}
+				</div>
+			{% endif %}
+		{% endfor %}
 	</div>
 </section>
 
