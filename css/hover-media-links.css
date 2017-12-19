@@ -1,0 +1,32 @@
+.mentor-list {
+    transition: all 0.6s;
+}
+.mentor-list .single-mentor:hover .social-overlay-list{
+    opacity: 1;
+}
+.mentor-list .single-mentor:hover img{
+    background-color: black;
+    filter : brightness(50%);
+    transition: all 0.6s;
+}
+.mentor-list .single-mentor .social-overlay-list{
+    position: relative;
+    top:-160px;
+    background: rgba(0, 0, 0, 0);
+    padding: 5px 10px;
+    width:240px;
+    opacity:0;
+    transition: all 0.6s;
+}
+.mentor-list .single-mentor .social-overlay-list a i{
+    color:white;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    display: inline;
+    transition: all 0.6s;
+}
+.mentor-list .single-mentor .social-overlay-list a:hover i{
+    color:black;
+    transition: all 0.6s;
+}

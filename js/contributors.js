@@ -1,24 +1,23 @@
-
-
-$(function(){
+/* Used to get contributions from the Github API */
+$(document).ready(function(){
   $.ajax({
     url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors"
   }).done(function(data){
     data.forEach(function(contributors){
-      var html = "<div class='col-md-3 col-sm-6'>";
-      html += "<a href="+contributors.html_url+">";
-      html += "<img src='icons/github.png' width='18%' height='5%' style='padding-bottom: 5px;'/>"
-      html += "    <hover>&nbsp&nbsp"+contributors.login+"&nbsp&nbsp</hover>";
-      html += "<div id='hoverpic'><img src="+contributors.avatar_url+"></div></a>";
-      html += contributors.contributions;
-      
+      var html = '<div class="card hvr-hang single-mentor">';
+      html += '<img src="https://github.com/'+contributors.login+'.png?size=240x240" height="240" width="240">';
+      html += '<br>';
+      html += '<p class="person-name">'+contributors.login+' ('+contributors.contributions;
       if (contributors.contributions === 1) {
-        html += " contribution";
+        html += ' contribution)</p><br>';
+      } else {
+        html += ' contributions)</p><br>';
       }
-      else {
-        html += " contributions";
-      }
-      $("#Contributors").append(html);
+      html += '<ul class="list-inline social-list social-overlay-list">';
+      html += '<a href="'+contributors.html_url+'" class="icon-a">';
+      html += '<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>';
+      html += '</a></ul></div>';
+      $("#contributors").append(html);
     });
-    });
+  });
 });

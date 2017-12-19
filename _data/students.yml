@@ -7,6 +7,12 @@
 - name: Miguel Piedrafita
   image: m1guelpf.png
 
+- name: Piyush Raj
+  github: 0x48piraj
+  image: 0x48piraj.jpg
+  twitter: 0x48piraj
+  facebook: 0x48piraj
+
 - name: Chahat Bansal
   image: chahat.png
 
@@ -23,9 +29,6 @@
 
 - name: Aleksandr Lymarenko
   image: a-v-lymarenko.png
-
-- name: Naveen Rajan
-  image: naveen.jpg
 
 - name: Abishek V Ashok
   image: abishek.jpg
@@ -56,6 +59,8 @@
   image: kuba-michalski.jpeg
   github: kubami9
   twitter: top_kuba
+  lat: 52.128588
+  lng: 21.2607444
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
@@ -116,8 +121,3 @@
   github: 2coolife
   image: 2coolife.jpg
   twitter: 2coolife
-  
-- name: Hasalu Botheju
-  github: HasaluSL
-  image: high.jpg
-  twitter: _cyber_doc_
