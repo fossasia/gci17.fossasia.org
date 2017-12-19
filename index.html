@@ -289,14 +289,14 @@
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
 		</div>
+		</div>
 		{% for blog in site.data.blogs %}
-
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
-				<div class="col-md-3">
+				<div class="box">
 					<a href="{{blog.url}}" target="_blank">
 						<div class="image-tile outer-title text-center">
 							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
@@ -315,7 +315,6 @@
 				</div>
 			{% endif %}
 		{% endfor %}
-	</div>
 </section>
 
 <!-- Videos -->
@@ -330,7 +329,6 @@
 		{% for video in site.data.video %}
 
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-			quotation
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
