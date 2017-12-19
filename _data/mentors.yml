@@ -26,6 +26,11 @@
   facebook: hpdang
   lat: 1.352083
   lng: 103.819836
+  
+- name: Louis Gagnon
+  github: louisgag
+  image: LouisGagnon.jpg
+  twitter: louisgagnoncom
 
 - name: Harshit Prasad
   github: harsit98
@@ -62,6 +67,12 @@
   image: royalharsh.jpg
   lat: 20.593684
   lng: 78.962880
+
+- name: Vaibhav Singh
+  github: vaibhavsingh97
+  image: vaibhavsingh97.jpg
+  lat: 28.2453659
+  lng: 76.8086956
 
 - name: Harsh Kothari
   github: harshkothari410
@@ -165,6 +176,11 @@
   lat: 28.669156
   lng: 77.453758
 
+- name: Zameer Ul Haque
+  github: zamhaq
+  image: zamhaq.jpeg
+  twitter: haquezameer
+  
 - name: Yash Ladha
   github: yashLadha
   image: Yash.jpg
