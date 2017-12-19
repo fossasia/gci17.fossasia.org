@@ -26,11 +26,14 @@
   facebook: hpdang
   lat: 1.352083
   lng: 103.819836
-  
-- name: Louis Gagnon
-  github: louisgag
-  image: LouisGagnon.jpg
-  twitter: louisgagnoncom
+
+- name: Mohit Sharma
+  github: ms10398
+  image: mohitsharma.png
+  twitter: MohitSh93319185
+  facebook: ms10398
+  lat: 30.733315
+  lng: 76.779418
 
 - name: Harshit Prasad
   github: harsit98
@@ -40,6 +43,11 @@
   lat: 26.934855
   lng: 75.924894
 
+- name: Louis Gagnon
+  github: louisgag
+  image: LouisGagnon.jpg
+  twitter: louisgagnoncom
+  
 - name: Parth Shandilya
   github: ParthS007
   image: parths007.jpg
@@ -68,6 +76,14 @@
   lat: 20.593684
   lng: 78.962880
 
+- name: Zameer Ul Haque
+  github: zamhaq
+  image: zamhaq.jpeg
+  twitter: haquezameer
+  blog: zamhaq.github.io/blog/
+  lat: 13.128464
+  lng: 77.587308
+  
 - name: Vaibhav Singh
   github: vaibhavsingh97
   image: vaibhavsingh97.jpg
@@ -108,12 +124,6 @@
   twitter: Daminisatya
   lat: 17.385044
   lng: 78.486671
-
-- name: Mohit Sharma
-  github: ms10398
-  image: mohitsharma.png
-  lat: 30.733315
-  lng: 76.779418
 
 - name: Ashwani Kumar
   github: ashwanidv100
@@ -175,11 +185,6 @@
   twitter: dSuneetsri
   lat: 28.669156
   lng: 77.453758
-
-- name: Zameer Ul Haque
-  github: zamhaq
-  image: zamhaq.jpeg
-  twitter: haquezameer
   
 - name: Yash Ladha
   github: yashLadha
