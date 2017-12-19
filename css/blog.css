@@ -1,21 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
-
-
 .box{
     width:240px;
     height: 240px;
     background: #fff;
-    position: absolute;        
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top:-100px;            
 }
 .box .content{
     overflow:hidden;
     width:240px;
-    height: 240px;
+    height:240px;
     background:#000;
     position:relative;    
 }
 .box .content img{
-    margin-top:-120px;
     -webkit-transition: all 500ms ;
     -moz-transition: all 500ms ;
     -ms-transition: all 500ms ;
@@ -24,25 +25,25 @@
 }
 .box .content:hover img{
     opacity:0.3;
-    margin-top:-170px;
+    margin-top:-20px;
     -webkit-filter: blur(3px);
 }
 .box .content:hover .text1{
-    left:130px;
+    left:10px;
     opacity:1;    
   
 }
 .box .content:hover .text2{
-    left:180px;
+    left:25px;
     opacity:1;
 }
 .box .content .text1{
     color:#fff;
-    font-size:40px;
+    font-size:20px;
     font-family: 'Racing Sans One', cursive;
     position:absolute;
-    left:330px;
-    top:60px;
+    left:220px;
+    top:80px;
     opacity:0;
 
 -webkit-transition: all 800ms cubic-bezier(0.000, 0.440, 0.000, 0.795); 
@@ -59,10 +60,10 @@
 }
 .box .content .text2{
     color:#fff;
-    font-size:20px;
+    font-size:10px;
     font-family: 'Racing Sans One', cursive;
     position:absolute;
-    left:-100px;
+    left:-1000px;
     top:100px;
     opacity:0;
 -webkit-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
@@ -102,12 +103,11 @@
     z-index: -1;
     background: #000;
     position: absolute;
-    box-shadow: 10px 10px 20px #000;
+    box-shadow: 100px 200px 300px #000;
     -moz-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -webkit-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -o-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -ms-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
-
 ​​
