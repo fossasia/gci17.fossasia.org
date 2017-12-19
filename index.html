@@ -291,7 +291,6 @@
 		</div>
 		{% for blog in site.data.blogs %}
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
@@ -305,15 +304,14 @@
 							<div class="text2">
 								<span>{{blog.author_name}}</span>
 							</div>
-							</div>
 						</div>
-						
 					</a>
 				</div>
 			{% if modulo == '0' or forloop.last %}
 				</div>
 			{% endif %}
 		{% endfor %}
+	</div>
 </section>
 
 <!-- Videos -->
