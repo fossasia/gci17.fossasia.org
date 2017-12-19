@@ -289,16 +289,15 @@
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
 		</div>
-		</div>
 		{% for blog in site.data.blogs %}
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
-				<div class="box">
 					<a href="{{blog.url}}" target="_blank">
 						<div class="image-tile outer-title text-center">
+				<div class="box">
 							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
 							<div class = "content">
 							<div class="text1">
@@ -315,6 +314,7 @@
 				</div>
 			{% endif %}
 		{% endfor %}
+		</div>
 </section>
 
 <!-- Videos -->

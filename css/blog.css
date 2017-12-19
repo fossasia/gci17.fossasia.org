@@ -1,42 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
 
-<<<<<<< HEAD
-=======
-html{
-    width:100%;
-    height:100%;
-}
-body{
-    background: #f8f8f8;
-    background: -moz-radial-gradient(center, ellipse cover,  #f8f8f8 0%, #d6d6d6 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f8f8f8), color-stop(100%,#d6d6d6));
-    background: -webkit-radial-gradient(center, ellipse cover,  #f8f8f8 0%,#d6d6d6 100%);
-    background: -o-radial-gradient(center, ellipse cover,  #f8f8f8 0%,#d6d6d6 100%);
-    background: -ms-radial-gradient(center, ellipse cover,  #f8f8f8 0%,#d6d6d6 100%);
-    background: radial-gradient(ellipse at center,  #f8f8f8 0%,#d6d6d6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#d6d6d6',GradientType=1 );
-}
->>>>>>> 94fc2b47afc063053139e7dfc3a5d1e003d41d89
-
 .box{
-    width:400px;
-    height: 200px;
-    background: #fff;
-    position: absolute;
-    left:50%;
-    top:50%;
-    margin-left:-200px;
-    margin-top:-100px;            
+    background: #fff;    
 }
 .box .content{
-    overflow:hidden;
-    width:400px;
-    height: 200px;
     background:#000;
     position:relative;    
 }
 .box .content img{
-    margin-top:-120px;
     -webkit-transition: all 500ms ;
     -moz-transition: all 500ms ;
     -ms-transition: all 500ms ;
