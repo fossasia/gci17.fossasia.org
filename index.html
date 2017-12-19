@@ -239,17 +239,27 @@
                     <a class="twitter-timeline" data-width="400" data-height="400" data-link-color="#E81C4F" href="//twitter.com/fossasia">Tweets by fossasia</a>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="feature feature-1 boxed">
-			<div class="g-page" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="feature feature-1 boxed">
-                     <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400"></iframe>
-                </div>
-            </div>
-        </div>
+			<div class="col-sm-4 g-plus-big">
+				<div class="feature feature-1 boxed">
+					<div class="g-page" data-width="300" data-height="300" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
+				</div>
+			</div>
+			<div class="col-sm-4 g-plus-small">
+				<div class="feature feature-1 boxed">
+					<div class="g-page" data-width="240" data-height="240" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
+				</div>
+			</div>
+			<div class="col-sm-4 fb-big-iframe">
+				<div class="feature feature-1 boxed">
+					<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="overflow-x: scroll"></iframe>
+				</div>
+			</div>
+			<div class="col-sm-4 fb-small-iframe">
+				<div class="feature feature-1 boxed">
+					<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=240&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="overflow-x: scroll"></iframe>
+				</div>
+			</div>
+		</div>
     </div>
 </section>
 <!-- Social Embed Ends -->
@@ -288,24 +298,30 @@
 				<h4 class="uppercase mb16">Blogs</h4>
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
 		</div>
 		</div>
+=======
+>>>>>>> 9a981a2... Updated
+=======
+		</div>
+>>>>>>> 1126b1e... Updated
 		{% for blog in site.data.blogs %}
+
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
-				<div class="box">
+				<div class="col-md-3">
 					<a href="{{blog.url}}" target="_blank">
 						<div class="image-tile outer-title text-center">
+							<div class="content">
 							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
-							<div class = "content">
-							<div class="text1">
-								<h5 class="uppercase mb0">{{blog.title}}</h5>
-							</div>
-							<div class="text2">
-								<span>{{blog.author_name}}</span>
+							<div class="title mb16">
+								<div class="text1">{{blog.title}}</div>
+								<div class="text2">{{blog.author_name}}</div>
 							</div>
 							</div>
 						</div>
@@ -315,10 +331,11 @@
 				</div>
 			{% endif %}
 		{% endfor %}
+			</div>
 </section>
 
 <!-- Videos -->
-<section class="bg-secondary" id="student-blog">
+<section class="bg-secondary" id="student-video">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
