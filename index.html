@@ -281,29 +281,34 @@
 </section>
 
 <!-- Blog -->
-<section class="bg-secondary" id="student-blog">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
+<section class="bg-secondary" id="student-video">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
 				<h4 class="uppercase mb16">Blogs</h4>
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
 		</div>
 		{% for blog in site.data.blogs %}
+		
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
+			<div class="col-md-3">
 					<a href="{{blog.url}}" target="_blank">
+						<div class="image-tile outer-title text-center">
 						<div class="box">
 						<div class = "content">
 							<img data-src="img/blog/{{blog.img}}" height="240" width="240"/>
 							<div class="text1">
-								<h5 class="uppercase mb0">{{blog.title}}</h5>
+								{{blog.title}}
 							</div>
 							<div class="text2">
-								<span>{{blog.author_name}}</span>
+								{{blog.author_name}}
 							</div>
+						</div>
+						</div>
 						</div>
 					</a>
 				</div>
@@ -315,7 +320,7 @@
 </section>
 
 <!-- Videos -->
-<section class="bg-secondary" id="student-blog">
+<section class="bg-secondary" id="student-video">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
