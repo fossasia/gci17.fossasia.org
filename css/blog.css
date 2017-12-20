@@ -1,6 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
 
+<<<<<<< HEAD
 .content img{
+=======
+.box{
+    background: #fff;    
+}
+.box .content{
+    background:#000;
+    position:relative;    
+}
+.box .content img{
+>>>>>>> 91090d8... cheanged
     -webkit-transition: all 500ms ;
     -moz-transition: all 500ms ;
     -ms-transition: all 500ms ;
