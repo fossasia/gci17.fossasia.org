@@ -288,12 +288,11 @@
 				<h4 class="uppercase mb16">Blogs</h4>
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
-		</div>
 		{% for blog in site.data.blogs %}
 		
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 			{% if modulo == '1' %}
-				<div class="row">
+			<div class="row">
 			{% endif %}
 			<div class="col-md-3">
 					<div class="box">

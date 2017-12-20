@@ -63,7 +63,7 @@
     font-family: 'Racing Sans One', cursive;
     position:absolute;
     left:-1000px;
-    top:120px;
+    top:200px;
     opacity:0;
 -webkit-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
    -moz-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
