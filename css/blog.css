@@ -22,7 +22,7 @@
     opacity:1;
 }
 .content .text1{
-    color:#fff;
+    color:rgb(58, 55, 55);
     font-size:20px;
     font-family: 'Racing Sans One', cursive;
     position:absolute;
@@ -43,7 +43,7 @@
         transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);    
 }
 .content .text2{
-    color:#fff;
+    color:rgb(0, 0, 0);
     font-size:15px;
     font-family: 'Racing Sans One', cursive;
     position:absolute;
