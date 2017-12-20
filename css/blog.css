@@ -1,40 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
-.box{
-    width:240px;
-    height: 240px;
-    background: #fff;
-    position: absolute;
-    left:50%;
-    top:50%;
-    margin-left:-200px;
-    margin-top:-100px;            
-}
-.box .content{
-    background:#000;
-    position:relative;    
-}
-.box .content img{
+
+.content img{
     -webkit-transition: all 500ms ;
     -moz-transition: all 500ms ;
     -ms-transition: all 500ms ;
     -o-transition: all 500ms ;
     transition: all 500ms ;
 }
-.box .content:hover img{
+.content:hover img{
     opacity:0.3;
     margin-top:-20px;
     -webkit-filter: blur(3px);
 }
-.box .content:hover .text1{
+.content:hover .text1{
     left:15px;
     opacity:1;    
   
 }
-.box .content:hover .text2{
+.content:hover .text2{
     left:25px;
     opacity:1;
 }
-.box .content .text1{
+.content .text1{
     color:#fff;
     font-size:20px;
     font-family: 'Racing Sans One', cursive;
@@ -55,7 +42,7 @@
      -o-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795); 
         transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);    
 }
-.box .content .text2{
+.content .text2{
     color:#fff;
     font-size:15px;
     font-family: 'Racing Sans One', cursive;
@@ -75,7 +62,7 @@
      -o-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980); 
         transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
 }
-.box:before{
+.content:before{
     content:"";
     width:80%;
     height:8px;
@@ -91,7 +78,7 @@
     -ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
-.box:after{
+.acontent:after{
     content:"";
     width:80%;
     height:8px;
