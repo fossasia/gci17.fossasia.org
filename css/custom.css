@@ -87,3 +87,44 @@
         display: block;
     }
 }
+
+.flex-next {
+  animation: bounceleft 2s infinite;
+}
+
+.flex-prev {
+  animation: bounceright 2s infinite;
+}
+
+@keyframes bounceright {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+  
+}
+
+@keyframes bounceleft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
