@@ -308,9 +308,7 @@
 		</div>
 >>>>>>> 1126b1e... Updated
 		{% for blog in site.data.blogs %}
-
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
@@ -344,7 +342,6 @@
 			</div>
 		</div>
 		{% for video in site.data.video %}
-
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 			{% if modulo == '1' %}
 				<div class="row">
