@@ -6,6 +6,11 @@
 #  author: name of author of project
 #  image: projectname.png (upload the image with that name to /img/projects/)
 
+- name: Piyush Raj
+  github: https://github.com/0x48piraj/FOSSASIATask_FlaskAppForm
+  author: Piyush Raj | 0x48piraj
+  image: flask_0x48piraj.png
+
 - name: Mochammad Rafi Al Rizkan
   github: https://github.com/kol4k/eKantin
   author: Rafi
