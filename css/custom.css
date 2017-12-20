@@ -9,7 +9,7 @@
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    height: 0; 
+    height: 0;
     overflow: hidden;
 }
 .video-container iframe,
@@ -70,4 +70,20 @@
 
 .twitter-timeline,.g-page{
     width: 100%;
+}
+
+.fb-big-iframe,.g-plus-big{
+    display: block;
+}
+.fb-small-iframe,.g-plus-small{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px){
+    .fb-big-iframe,.g-plus-big{
+        display: none;
+    }
+    .fb-small-iframe,.g-plus-small{
+        display: block;
+    }
 }
