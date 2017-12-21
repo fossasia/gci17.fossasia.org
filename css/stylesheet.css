@@ -24,3 +24,26 @@
 #student_title {
   font-family: 'Cabin Sketch', cursive !important;
 }
+
+.bg-secondary {
+    border-top-style: solid;
+    border-top-width: 1.5px;
+    border-color: #ddd;
+}
+
+
+ h2.txt-rotate {
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+ .btn:hover {
+    border-color: #e31d3b;
+    border-style: solid;
+    border-width: medium;
+    background: none;
+    color: #333;}
+
+div.image-tile.outer-title.text-center {
+    margin-bottom: 0px;
+}

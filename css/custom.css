@@ -9,7 +9,7 @@
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    height: 0; 
+    height: 0;
     overflow: hidden;
 }
 .video-container iframe,
@@ -66,4 +66,65 @@
 
 .display-picture {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.twitter-timeline,.g-page{
+    width: 100%;
+}
+
+.fb-big-iframe,.g-plus-big{
+    display: block;
+}
+.fb-small-iframe,.g-plus-small{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px){
+    .fb-big-iframe,.g-plus-big{
+        display: none;
+    }
+    .fb-small-iframe,.g-plus-small{
+        display: block;
+    }
+}
+
+.flex-next {
+  animation: bounceleft 2s infinite;
+}
+
+.flex-prev {
+  animation: bounceright 2s infinite;
+}
+
+@keyframes bounceright {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+  
+}
+
+@keyframes bounceleft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
 }

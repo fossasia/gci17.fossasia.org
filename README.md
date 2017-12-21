@@ -11,8 +11,8 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
   image: Mentor's image
   twitter: Mentor's Twitter id
   facebook: Mentor's Facebook id
-  Linkedin: Mentor's Linkein Page
-  
+  Linkedin: Mentor's Linkedin Page
+
   Geolocation (city or country: optional)
   lat: Mentor's latitude
   lng: Mentor's longitude
@@ -32,7 +32,7 @@ To add a student open the file  `students.yml` in `_data` folder and please main
   github: Student's Github username
   image: Student's image (or representation like a "nick" image)
   twitter: Student's Twitter id
-  
+
 **Optional** (Please ensure parents agree on sharing this data)
 * facebook: Student's Facebook id
 * Geolocation (Preferably do not share your exact location. If you really want to share it, share city)
@@ -75,4 +75,24 @@ permalink: <some permalink>
 {% include footer.html %}
 ```
 * Add a link in the nav bar (in `_includes/header.html`)
-* Add a frontpage summary in index.html if you want
+
+## Adding a Blog
+
+To add a blog open the file `blogs.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- url: URL to the blog
+  title: Title of the blog
+  img: Image of the blog
+  author_name: Name of the author of the blog (most likely you)
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/blogs`.
+- The images should be 240 x 240 pixels.
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+
+## Installation Steps:
+- [Local Setup on Windows](/installation_windows.md)
+- [Local Setup on Linux](/installation_linux.md)
+- [Local Setup on MacOS](/installation_macos.md)
