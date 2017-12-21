@@ -128,8 +128,11 @@
     transform: translateX(-15px);
   }
 }
+<<<<<<< HEAD
+=======
 
 .row.vid-row, .row.blog-row, ul#project_holder {
   display: flex;
   justify-content: space-around;
 }
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc
