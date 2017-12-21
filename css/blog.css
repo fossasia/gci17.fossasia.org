@@ -1,0 +1,98 @@
+.content img {
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content:hover img {
+    opacity:0.3;
+    margin-top:-20px;
+    -webkit-filter: blur(3px);
+}
+
+.content:hover .titletext {
+    left:15px;
+    opacity:1;    
+  
+}
+
+.content:hover .nameofauthor {
+    left:25px;
+    opacity:1;
+}
+
+.content .titletext {
+    color:rgb(58, 55, 55);
+    font-size:20px;
+    position:absolute;
+    left:220px;
+    top:50px;
+    opacity:0;
+
+    -webkit-transition: all 800ms cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    -moz-transition: all 800ms cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    -ms-transition: all 800ms cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    -o-transition: all 800ms cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    transition: all 800ms cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    -ms-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    -o-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795); 
+    transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);    
+}
+
+.content .nameofauthor {
+    color:rgb(0, 0, 0);
+    font-size:15px;
+    position:absolute;
+    left:-1000px;
+    top:200px;
+    opacity:0;
+
+    -webkit-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    -moz-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    -ms-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    -o-transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    transition: all 800ms cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    -ms-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    -o-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980); 
+    transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
+}
+
+.content:before {
+    content:"";
+    width:80%;
+    height:8px;
+    bottom: 18px;
+    left: 13px;
+    z-index: -1;
+    background: #000;
+    position: absolute;
+    box-shadow: -10px 10px 20px #000;
+    -moz-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.acontent:after {
+    content:"";
+    width:80%;
+    height:8px;
+    bottom: 18px;
+    right: 13px;
+    z-index: -1;
+    background: #000;
+    position: absolute;
+    box-shadow: 100px 200px 300px #000;
+    -moz-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}

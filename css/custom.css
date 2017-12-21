@@ -128,3 +128,8 @@
     transform: translateX(-15px);
   }
 }
+
+.row.vid-row, .row.blog-row, ul#project_holder {
+  display: flex;
+  justify-content: space-around;
+}

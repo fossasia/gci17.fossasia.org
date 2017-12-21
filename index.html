@@ -367,25 +367,27 @@
 			</div>
 		</div>
 		{% for blog in site.data.blogs %}
-
-			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-
+			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}		 
 			{% if modulo == '1' %}
-				<div class="row">
+		<div class="row blog-row">
 			{% endif %}
-				<div class="col-md-3">
-					<a href="{{blog.url}}" target="_blank">
-						<div class="image-tile outer-title text-center">
-							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
-							<div class="title mb16">
-								<h5 class="uppercase mb0">{{blog.title}}</h5>
-								<span>{{blog.author_name}}</span>
-							</div>
+			<div class="col-md-3">
+				<a href="{{blog.url}}" target="_blank">
+					<div class="image-tile outer-title text-center">
+						<img data-src="img/blog/{{blog.img}}" height="240" width="240">
+						<div class="title mb16">
+							<h5 class="uppercase mb0">
+								<div class="titletext">{{blog.title}}</div>
+							</h5>
+							<span>
+								<div class="nameofauthor">{{blog.author_name}}</div>
+							</span>
 						</div>
-					</a>
-				</div>
+					</div>
+				</a>
+			</div>
 			{% if modulo == '0' or forloop.last %}
-				</div>
+		</div>
 			{% endif %}
 		{% endfor %}
 	</div>
@@ -401,25 +403,27 @@
 			</div>
 		</div>
 		{% for video in site.data.video %}
-
 			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-
 			{% if modulo == '1' %}
-				<div class="row">
+		<div class="row vid-row">
 			{% endif %}
-				<div class="col-md-3">
-					<a href="{{video.url}}" target="_blank">
-						<div class="image-tile outer-title text-center">
-							<img data-src="img/video/{{video.img}}" height="240" width="240">
-							<div class="title mb16">
-								<h5 class="uppercase mb0">{{video.title}}</h5>
-								<span>{{video.author_name}}</span>
-							</div>
+			<div class="col-md-3">
+				<a href="{{video.url}}" target="_blank">
+					<div class="image-tile outer-title text-center">
+						<img data-src="img/video/{{video.img}}" height="240" width="240">
+						<div class="title mb16">
+							<h5 class="uppercase mb0">
+								<div class="titletext">{{video.title}}</div>
+							</h5>
+							<span>
+								<div class="nameofauthor">{{video.author_name}}</div>
+							</span>
 						</div>
-					</a>
-				</div>
+					</div>
+				</a>
+			</div>
 			{% if modulo == '0' or forloop.last %}
-				</div>
+		</div>
 			{% endif %}
 		{% endfor %}
 	</div>
