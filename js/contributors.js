@@ -30,7 +30,7 @@ $(document).ready(function(){
   }).done(function(data) {
     Shuffle(data)
     data.forEach(function(repos){
-      var html = '<div class="card hvr-hang single-mentor">';
+      var html = '<div class="card hvr-hang revealOnScroll single-mentor" data-animation="pulse">';
       html += '<img src="https://github.com/'+repos.owner.login+'.png?size=240x240" height="240" width="240">';
       html += '<br>';
       html += '<p class="person-name">'+repos.name+' ('+repos.open_issues;

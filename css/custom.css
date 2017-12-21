@@ -133,3 +133,7 @@
   display: flex;
   justify-content: space-around;
 }
+
+.repos-container {
+  width: 1470px;
+}
