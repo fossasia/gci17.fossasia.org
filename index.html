@@ -1,5 +1,4 @@
 ---
----
 {% include header.html %}
 
 <section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
@@ -366,15 +365,14 @@
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
 		</div>
-	{% for blog in site.data.blogs %}
-		{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-		{% if modulo == '1' %}
-		<div class="row">
-		{% endif %}
-		<div class="col-md-3">
-			<a href="{{blog.url}}" target="_blank">
-				<div class="image-tile outer-title text-center">
-					<div class="content">
+		{% for blog in site.data.blogs %}
+			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}		 
+			{% if modulo == '1' %}
+		<div class="row blog-row">
+			{% endif %}
+			<div class="col-md-3">
+				<a href="{{blog.url}}" target="_blank">
+					<div class="image-tile outer-title text-center">
 						<img data-src="img/blog/{{blog.img}}" height="240" width="240">
 						<div class="title mb16">
 							<h5 class="uppercase mb0">
@@ -385,13 +383,12 @@
 							</span>
 						</div>
 					</div>
-				</div>
-			</a>
+				</a>
+			</div>
+			{% if modulo == '0' or forloop.last %}
 		</div>
-		{% if modulo == '0' or forloop.last %}
-		</div>
-		{% endif %}
-	{% endfor %}
+			{% endif %}
+		{% endfor %}
 	</div>
 </section>
 
