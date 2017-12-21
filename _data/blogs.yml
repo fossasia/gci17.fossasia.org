@@ -2,6 +2,11 @@
   title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
   img: 0x48piraj.jpg
   author_name: Piyush Raj
+  
+- url: https://samyakbvs.wordpress.com/2017/12/20/interview-with-a-teacher/
+  title: Interview with a teacher
+  img: samyakbvs.jpeg
+  author_name: Samyak Jain
 
 - url: https://demiprestasi.wordpress.com/2017/12/16/me-google-code-in-and-fossasia/
   title: Me, Google Code-In and FOSSASIA
@@ -162,7 +167,15 @@
   img: himani.png
   author_name: Himani Yadav
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 749b15b... Add new blog entry (#373)
 =======
 >>>>>>> dcf65b7... Update blog and added blog image (#377)
+=======
+
+- url: https://betaking146970080.wordpress.com/2017/12/21/42/
+  title: Code is Life!!
+  img: Beta_KIng.jpg
+  author_name: Yash Kothari
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc

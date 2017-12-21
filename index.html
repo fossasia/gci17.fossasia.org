@@ -1,5 +1,4 @@
 ---
----
 {% include header.html %}
 
 <section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
@@ -369,6 +368,7 @@
 <<<<<<< HEAD
 		</div>
 		</div>
+<<<<<<< HEAD
 =======
 >>>>>>> 9a981a2... Updated
 =======
@@ -413,24 +413,71 @@
 			{% if modulo == '1' %}
 				<div class="row">
 			{% endif %}
+=======
+		{% for video in site.data.video %}
+				{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
+				{% if modulo == '1' %}
+		<div class="row">
+				{% endif %}
+			<div class="col-md-3">
+				<a href="{{blog.url}}" target="_blank">
+					<div class="image-tile outer-title text-center">
+						<div class="content">
+							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">
+									<div class="blogtitle">{{blog.title}}</div>
+								</h5>
+								<span>
+									<div class="nameofauthor">{{blog.author_name}}</div>
+								</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+				{% if modulo == '0' or forloop.last %}
+		</div>
+			{% endif %} {% endfor %}
+	</div>
+</section>
+	
+	<!-- Videos -->
+	<section class="bg-secondary" id="student-video">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h4 class="uppercase mb16">Videos</h4>
+					<p class="lead mb64">Videos from students</p>
+				</div>
+			</div>
+			{% for video in site.data.video %}
+				{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
+				{% if modulo == '1' %}
+			<div class="row">
+				{% endif %}
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc
 				<div class="col-md-3">
 					<a href="{{video.url}}" target="_blank">
 						<div class="image-tile outer-title text-center">
-							<img data-src="img/video/{{video.img}}" height="240" width="240">
-							<div class="title mb16">
-								<h5 class="uppercase mb0">{{video.title}}</h5>
-								<span>{{video.author_name}}</span>
+							<div class="content">
+								<img data-src="img/video/{{video.img}}" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">
+										<div class="blogtitle">{{video.title}}</div>
+									</h5>
+									<span>
+										<div class="nameofauthor">{{video.author_name}}</div>
+									</span>
+								</div>
 							</div>
-						</div>
 					</a>
+					</div>
+					{% if modulo == '0' or forloop.last %}
 				</div>
-			{% if modulo == '0' or forloop.last %}
-				</div>
-			{% endif %}
-		{% endfor %}
-	</div>
-</section>
-
+				{% endif %} {% endfor %}
+			</div>
+	</section>
 
 <!-- parallax image? -->
 <section class="fullscreen image-bg parallax background-multiply">

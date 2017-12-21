@@ -25,7 +25,11 @@ $(document).ready(function(){
     url: "https://api.github.com/users/fossasia/repos"
   }).done(function(data){
     data.forEach(function(repos){
+<<<<<<< HEAD
       var html = '<div class="card hvr-hang single-mentor">';
+=======
+      var html = '<div class="card hvr-hang revealOnScroll single-mentor aos-all aos-item" data-aos="fade-down-right">';
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc
       html += '<img src="https://github.com/'+repos.owner.login+'.png?size=240x240" height="240" width="240">';
       html += '<br>';
       html += '<p class="person-name">'+repos.name+' ('+repos.open_issues;

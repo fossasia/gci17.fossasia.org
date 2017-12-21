@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css?family=Racing+Sans+One);
+=======
+
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc
 
 .content img{
     -webkit-transition: all 500ms ;
@@ -24,7 +28,10 @@
 .content .text1{
     color:rgb(58, 55, 55);
     font-size:20px;
+<<<<<<< HEAD
     font-family: 'Racing Sans One', cursive;
+=======
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc
     position:absolute;
     left:220px;
     top:50px;
@@ -45,7 +52,10 @@
 .content .text2{
     color:rgb(0, 0, 0);
     font-size:15px;
+<<<<<<< HEAD
     font-family: 'Racing Sans One', cursive;
+=======
+>>>>>>> 5cf062b05abca4d10940ce4ad286fad6cd554cfc
     position:absolute;
     left:-1000px;
     top:200px;
