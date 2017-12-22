@@ -1,3 +1,9 @@
+/* Used to get randomize repositories by using the Github API */
+function shuffle(o) {
+  for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+};
+
 /* Used to get contributions from the Github API */
 $(document).ready(function(){
   $.ajax({
@@ -23,9 +29,10 @@ $(document).ready(function(){
 
   $.ajax({
     url: "https://api.github.com/users/fossasia/repos"
-  }).done(function(data){
+  }).done(function(data) {
+    shuffle(data)
     data.forEach(function(repos){
-      var html = '<div class="card hvr-hang revealOnScroll single-mentor aos-all aos-item" data-aos="fade-down-right">';
+      var html = '<div class="card hvr-hang revealOnScroll single-mentor aos-all aos-item" data-aos="flip-left">';
       html += '<img src="https://github.com/'+repos.owner.login+'.png?size=240x240" height="240" width="240">';
       html += '<br>';
       html += '<p class="person-name">'+repos.name+' ('+repos.open_issues;

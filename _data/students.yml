@@ -1,3 +1,8 @@
+- name: Akshat Jain
+  github: AkshatJain1
+  image: akshatj.jpg
+  twitter: akshatjain0101
+  
 - name: Anastasiia Kostiv
   github: AKostiv8
   image: kostiv.jpeg
@@ -86,7 +91,7 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
-  
+
 - name: Prasenjit Gautam
   github: FreakinBabaJi
   country: India
@@ -116,7 +121,7 @@
   image: samyak.png
   twitter: Samyakbvs
   facebook: Samyak Jain
-  
+
 - name: Tushar Verma
   github: 2coolife
   image: 2coolife.jpg
@@ -136,7 +141,7 @@
   image: k7un.jpeg
   facebook: ccr4b
   twitter: _ccr4b
-  
+
 - name: Ploypiti Piyaprapan
   country: Thailand
   github: Ploypiti
@@ -164,34 +169,40 @@
   country: Poland
   github: Shizerq
   image: MSShizerq.jpg
-  
+
 - name: Ashish Kumar Singh
   country: India
   github: lavavi
   image: lavavi.jpg
-  
+
 - name: Jeewal Kunwar
   country: Nepal
   github: Jeewal
   image: Jeewal.jpg
   twitter: jeewalkunwar1
-  
+
 - name: Mridul Birla
   country: India
   github: Mridulbirla13
   image: Mridul.jpg
-  twitter: mridulbirla13  
-  
+  twitter: mridulbirla13
+
 - name: Krish Birla
   country: India
   github: krishbirla13
   image: Krish.jpg
   twitter: krishbirla13
-  
+
 - name: Arjun Pandey
   country: India
   github: arjunpandey2003
   image: arjun.jpg
   twitter: arjunpandey2003
   lat: 77.2090
-  lng: 28.6139 
+  lng: 28.6139
+
+- name: Daniel Lawson
+  country: USA
+  github: daniellawson9999
+  image: danielProfile.jpg
+  twitter: danielblawson9
