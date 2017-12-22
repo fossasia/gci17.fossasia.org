@@ -176,7 +176,7 @@
   github: aviaryan
 
 - name: Sayan Chowdhury
-  image: sayanchowdhury.jpg
+  image: sayanchowdhury.jpeg
   twitter: yudocaa
   github: sayanchowdhury
   lat: 23.215635
@@ -217,3 +217,16 @@
   image: rupav.jpg
   lat: 28.6687
   lng: 77.1019
+
+- name: Tarun Kumar
+  github: meets2tarun
+  image: meets2tarun.jpg
+  lat: 27.133991
+  lng: 81.961897
+
+- name: Shubham Padia
+  github: shubham-padia
+  twitter: shubham_p98
+  image: shubham-padia.jpg
+  lat: 22.303894
+  lng: 70.802160
