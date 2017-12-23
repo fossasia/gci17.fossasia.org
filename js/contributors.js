@@ -49,18 +49,16 @@ $(document).ready(function(){
       $("#repos").append(html);
     });
   });
-});
-
 
   $.getJSON("https://api.github.com/repos/fossasia/gci17.fossasia.org/issues?state=open", function (allIssues) {
     if(allIssues==""||!allIssues||allIssues==0||allIssues=="undefined"){
       $(".issue-container").append("<li class='mi'>Sorry there are no issues labeled feature currently opened at gci15.fossasia.org</li>");
     }
 
-    $(".issue-container").append("<a class='btn totalIssue'>" + allIssues.length + " issues on <i class='fa fa-github  '></i> Github");
+    $(".issue-container").append("<a href='https://github.com/fossasia/gci17.fossasia.org/issues' class='btn totalIssue'>" + allIssues.length + " issues on <i class='fa fa-github'></i> Github");
 
     $.each(allIssues, function (i, issue) {
-      issueHref = "https://github.com/fossasia/gci17.fossasia.org/";
+      issueHref = "https://github.com/fossasia/gci17.fossasia.org/issues";
       issueHref += issue.number
       issueAppend = "<li class='issue'>" + "<span class='issueNum'>#" + issue.number + "</span> <a href='" + issueHref + "'>" + issue.title + "</a> "; 
       issueAppend += "<span class='open'>Opened by " + "<a href='" + issue.user.html_url + "'>" + issue.user.login + "</a></span>";
@@ -70,3 +68,4 @@ $(document).ready(function(){
     });
   });
 });
+
