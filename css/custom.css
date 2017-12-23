@@ -133,3 +133,34 @@
   display: flex;
   justify-content: space-around;
 }
+
+.btn.totalIssue {
+  text-align: center;
+  display: block;
+}
+
+.issue {
+  display: block;
+  text-align: left;
+  width: 100%;
+  height: 80px;
+  padding: 18px;
+  border-radius: 5px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 10px;
+  background: #FFF;
+}
+
+.issue .open {
+  display: block;
+}
+
+.comments {
+  float: right;
+  margin-top: -40px;
+  font-size: 15px;
+}
+
+.issue a {
+  font-size: 15px;
+}
