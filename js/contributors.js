@@ -52,7 +52,7 @@ $(document).ready(function(){
 
   $.getJSON("https://api.github.com/repos/fossasia/gci17.fossasia.org/issues?state=open", function (allIssues) {
     if(allIssues==""||!allIssues||allIssues==0||allIssues=="undefined"){
-      $(".issue-container").append("<li class='mi'>Sorry there are no issues labeled feature currently opened at gci15.fossasia.org</li>");
+      $(".issue-container").append("<li class='mi'>Sorry there are no issues labeled feature currently opened at gci17.fossasia.org</li>");
     }
 
     $(".issue-container").append("<a href='https://github.com/fossasia/gci17.fossasia.org/issues' class='btn totalIssue'>" + allIssues.length + " issues on <i class='fa fa-github'></i> Github");
