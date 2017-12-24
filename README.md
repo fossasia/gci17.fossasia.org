@@ -84,7 +84,7 @@ To add a blog open the file `video.yml` in `_data` folder and please maintain th
 To add a student project open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Name of project
-  github: Github repository of the project
+  github: Github repository of the project (username/projectName)
   author: Name of the author of the project
   image: Logo of the project
 ```

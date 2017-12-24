@@ -1,4 +1,4 @@
-﻿- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
+- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
   title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
   img: 0x48piraj.jpg
   author_name: Piyush Raj
@@ -167,13 +167,19 @@
   title: Code is Life!!
   img: Beta_KIng.jpg
   author_name: Yash Kothari
+  
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/22/interview-with-a-teacher/
+  title: Interview with a Teacher
+  img: akansha.jpg
+  author_name: Saarthak Chaturvedi
 
--  url: https://saarthakchaturvedi05.wordpress.com/2017/12/22/interview-with-a-teacher/
-   title: Interview with a Teacher
-   img: akansha.jpg
-   author_name: Saarthak Chaturvedi
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/22/interview-with-a-teacher/
+  title: Interview with a Teacher
+  img: akansha.jpg
+  author_name: Saarthak Chaturvedi
 
--  url: https://wordpress.com/post/samyakbvs.wordpress.com/31
-   title: Interview with Two open source contributors
-   img: samyakjainbvs.png
-   author_name: Samyak Jain
+- url: https://wordpress.com/post/samyakbvs.wordpress.com/31
+  title: Interview with Two open source contributors
+  img: samyakjainbvs.png
+  author_name: Samyak Jain
+
