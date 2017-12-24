@@ -45,6 +45,11 @@
   image: abishek.jpg
   lat: 9.9312328
   lng: 76.26730409999999
+  
+  -name: Amey Bhavsar
+  image: amey.jpg
+  github: ameybhavsar24
+  twitter: iamey24
 
 - name: Mochammad Rafi Al Rizkan
   image: rafi.png
