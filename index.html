@@ -1,4 +1,5 @@
 ---
+---
 {% include header.html %}
 
 <section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
@@ -103,11 +104,22 @@
 		<div class="col-sm-12 text-center">
 			<h2 class="animated fadeIn">Contributors</h2>
 			<p class="lead mb64">People who have made contributions to gci17.fossasia.org</p>
+			<a class="btn btn-lg" href="{{ baseurl }}./activities">view activities</a>
 		</div>
 		<div class="col-sm-12 col-md-12 text-center spread-children-large mentor-list" id="contributors"></div>
 	</div>
 </section>
 <!--End of contributors section-->
+
+<!-- Thanks -->
+<section class="bg-dark">
+	<div class="container">
+		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
+			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
+		   	</h2>
+		</div>
+	</div>
+</section>
 
 <!-- Students -->
 <section class="bg-secondary" id="students">
@@ -197,17 +209,6 @@
 		</div>
 	</div>
 </section>
-
-<!-- Thanks -->
-<section class="bg-dark">
-	 <div class="container">
-		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-		<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
-		</h2>
-		</div>
-	</div>
-</section>
-
 
 <!-- Map -->
 <section class="bg-secondary">
@@ -494,13 +495,7 @@
 
 <!-- placeholder flickr feed -->
 <section>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<ul class="flickr-feed masonry masonryFlyIn" data-user-id="45240298@N08" data-album-id="72157665486359899"></ul>
-			</div>
-		</div>
-	</div>
+<div id="flickrembed"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://youtubevideoembed.com">Embed Youtube</a></div><script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157665486359899&sort=0&by=album&theme=default&scale=fill&limit=10&skin=default-light&autoplay=true'></script><small style="display: block; text-align: center; margin: 0 auto;">Powered by <a href="https://github.com/0x48piraj">flickr | 0x48piraj</a>.</small>
 </section>
 
 

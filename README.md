@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.org/fossasia/gci17.fossasia.org.svg?branch=gh-pages)](https://travis-ci.org/fossasia/gci17.fossasia.org)
 
 ## Adding a Mentor
-
 To add a mentor open the file `mentors.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 
 ```yaml
@@ -20,7 +19,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 **IMPORTANT:**
 - All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
 - All images must be in `img/mentors`.
-- The images should be 240 x 240 pixels.
+- The images must be 240 x 240 pixels.
 - If you do not want to include your social media accounts or coordinates , please do not provide empty fields like `facebook:`.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
@@ -42,11 +41,46 @@ To add a student open the file  `students.yml` in `_data` folder and please main
 **IMPORTANT:**
 - All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
 - All images must be in `img/students`.
-- The images should be 240 x 240 pixels.
+- The images must be 240 x 240 pixels.
 - If you do not want to include your social media accounts or coordinates , please do not provide empty fields like `facebook:`.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
-## Adding a Student Project
 
+
+## Adding a Blog
+
+To add a blog open the file `blogs.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- url: URL to the blog
+  title: Title of the blog
+  img: Image of the blog
+  author_name: Name of the author of the blog (most likely you)
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/blogs`.
+- The images must be 240 x 240 pixels. (Don't add any other!)
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+
+
+## Adding a Video
+
+To add a blog open the file `video.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- url: URL to the video in YouTube 
+  title: Title of the video
+  img: Image of the video
+  author_name: Name of the creator of the blog (most likely you)
+```
+**IMPORTANT:**
+- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
+- All images must be in `img/video`.
+- The images must be 240 x 240 pixels. (Don't add any other!)
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+- Don't add URL to a YouTube channel, the URL must be to a video in YouTube.
+
+## Adding a Student Project
 To add a student project open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
 - name: Name of project
@@ -57,7 +91,7 @@ To add a student project open the file  `student_projects.yml` in `_data` folder
 **IMPORTANT:**
 - All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
 - All images must be in `img/projects`.
-- The images should be 240 x 240 pixels.
+- The images must be 240 x 240 pixels.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
 # Adding a page
@@ -75,22 +109,6 @@ permalink: <some permalink>
 {% include footer.html %}
 ```
 * Add a link in the nav bar (in `_includes/header.html`)
-
-## Adding a Blog
-
-To add a blog open the file `blogs.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
-
-```yaml
-- url: URL to the blog
-  title: Title of the blog
-  img: Image of the blog
-  author_name: Name of the author of the blog (most likely you)
-```
-**IMPORTANT:**
-- All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
-- All images must be in `img/blogs`.
-- The images should be 240 x 240 pixels.
-- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
 ## Installation Steps:
 - [Local Setup on Windows](/installation_windows.md)
