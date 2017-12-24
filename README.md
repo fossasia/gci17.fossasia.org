@@ -110,7 +110,24 @@ permalink: <some permalink>
 ```
 * Add a link in the nav bar (in `_includes/header.html`)
 
+# Adding installation steps files in other languages.
+
+- Copy installation files in English and paste them on same directory.
+ The name must be like below,
+  You must give same file name of english files with 2 or 3 leters that showing your language that contains in brackets.
+  That 2 or 3 letters must be english letters.
+  ex:- If it's you adding language is Sinhala you can use 'si' as following, 
+  `installation_windows(si).md` 
+- After translate (Only translating, the data on english files like URLs must be there as same.) those files to your language save them. 
+- Finally add links of those installation files to the `README.md`.  
+
 ## Installation Steps:
-- [Local Setup on Windows](/installation_windows.md)
-- [Local Setup on Linux](/installation_linux.md)
-- [Local Setup on MacOS](/installation_macos.md)
+- Local Setup on Windows 
+    - [In English](/installation/installation_windows.md) 
+    - [In Sinhala - සිංහලෙන්](/installation/installation_windows(sin).md) 
+- Local Setup on Linux 
+    - [In English](/installation/installation_linux.md)
+    - [In Sinhala - සිංහලෙන්](/installation/installation_linux(sin).md) 
+- Local Setup on MacOS 
+    - [In English](/installation/installation_macos.md)
+    - [In Sinhala - සිංහලෙන්](/installation/installation_macos(sin).md) 
