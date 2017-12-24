@@ -131,3 +131,4 @@ permalink: <some permalink>
 - Local Setup on MacOS 
     - [In English](/installation/installation_macos.md)
     - [In Sinhala - සිංහලෙන්](/installation/installation_macos(sin).md) 
+
