@@ -175,3 +175,14 @@
 .issue a {
   font-size: 15px;
 }
+.background-image-holder:hover span.author{
+  opacity: 1;
+  top: 0;
+ }
+.author{
+  color: #000000;
+  padding: 10px;
+  font-size: 15pt;
+  text-align: center;
+  vertical-align: center;
+}
