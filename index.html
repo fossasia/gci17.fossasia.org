@@ -189,32 +189,24 @@
 				<p class="lead mb64">Some projects developed by students during GCI</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="lightbox-grid square-thumbs">
-					<ul id="project_holder">
-							{% for project in site.data.student_projects %}
-							<li class="student_project">
-								<a href="https://github.com/{{project.github}}">
-									<div class="background-image-holder">
-											{% if project.image %}
-											<img title="{{project.name}} by {{project.author}}"
-									2					 class="background-image" src="img/projects/{{project.image}}">
-											{% else %}
-											<img title="{{project.name}} by {{project.author}}"
-														 class="background-image" src="img/projects/default.png">
-											{% endif %}
-											
-									</div>
-								</a>
-						</li>
-						<li>
-							<span class="author">{{project.author}}</span>
-							{% endfor %}
-						</li>
-					</ul>
+        <div class="col-sm-12">
+	        <div class="lightbox-grid square-thumbs">
+				{% for student in site.data.students limit:5 %}
+				<div class="card single-mentor">
+					{% if student.image %}
+					<a href="{{project.github}}"><img title="{{project.name}} by {{project.author}}"
+								     			 class="background-image" src="img/projects/{{project.image}}"></a>
+					{% else %}
+					<a href="{{project.github}}"><img title="{{project.name}} by {{project.author}}"
+												 class="background-image" src="img/projects/default.png"></a>
+					{% endif %}
+					<br>
+					<p class="person-name">{{project.author}}</p>
 				</div>
+				{% endfor %}
 			</div>
+		  </div>
+			
 		</div>
 	</div>
 </section>
