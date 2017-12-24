@@ -175,3 +175,32 @@
 .issue a {
   font-size: 15px;
 }
+span.student-project-name {
+  background: #0000007F;
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 269px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  top: -300px;
+  padding: 10px;
+  width: 269px;
+ }
+ 
+ span.student-project-name span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+ }
+ 
+ .background-image-holder:hover span.student-project-name {
+  opacity: 1;
+  top: 0;
+}
+ 
