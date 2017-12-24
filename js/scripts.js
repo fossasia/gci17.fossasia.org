@@ -1450,6 +1450,34 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+// Search functions for activities.html page
+
+// can be used to implement search into other components
+function searchStringInArray(str, strArray) {
+    str = str.toLowerCase();
+    for (var j=0; j<strArray.length; j++) {
+        if (strArray[j][1].title.toLowerCase().match(str)) return j;
+    }
+    return -1;
+}
+
+$("#searchString").keydown(function(){
+    // issueArr has all issues loaded in contributers.js
+    var searchString = $("#searchString").val();
+    var index = searchStringInArray(searchString,issueArr);
+    if(index != -1){
+        issueHref = "https://github.com/fossasia/gci17.fossasia.org/issues/";
+        issueHref += issueArr[index][1].number
+        issueAppend = "<li class='issue'>" + "<span class='issueNum'>#" + issueArr[index][1].number + "</span> <a href='" + issueHref + "'>" + issueArr[index][1].title + "</a> "; 
+        issueAppend += "<span class='open'>Opened by " + "<a href='" + issueArr[index][1].user.html_url + "'>" + issueArr[index][1].user.login + "</a></span>";
+        issueAppend += "<span class='comments'><i class='fa fa-comment' aria-hidden='true'></i> " + issueArr[index][1].comments + "</span>" ;
+        issueAppend += "</li>";
+    }else{
+        issueAppend = "Nothing with <i><b>"+searchString+"</b></i> found.";
+    }
+    $("#issueSearchOutput").html(issueAppend);        
+});
+
 /*\
 |*|  END COOKIE LIBRARY
 \*/

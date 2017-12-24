@@ -58,6 +58,7 @@ $(document).ready(function(){
     $(".issue-container").append("<a href='https://github.com/fossasia/gci17.fossasia.org/issues' class='btn totalIssue'>" + allIssues.length + " issues on <i class='fa fa-github'></i> Github");
 
     $.each(allIssues, function (i, issue) {
+      issueArr.push([issue.number, issue]);
       issueHref = "https://github.com/fossasia/gci17.fossasia.org/issues/";
       issueHref += issue.number
       issueAppend = "<li class='issue'>" + "<span class='issueNum'>#" + issue.number + "</span> <a href='" + issueHref + "'>" + issue.title + "</a> "; 
@@ -68,4 +69,3 @@ $(document).ready(function(){
     });
   });
 });
-
