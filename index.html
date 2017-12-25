@@ -196,7 +196,7 @@
 					<ul id="project_holder">
 							{% for project in site.data.student_projects %}
 							<li class="student_project">
-								<a href="https://github.com/{{project.github}}">
+								<a href="{{project.github}}">
 									<div class="background-image-holder">
 											{% if project.image %}
 											<img title="{{project.name}} by {{project.author}}"
