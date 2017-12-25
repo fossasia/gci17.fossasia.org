@@ -199,8 +199,33 @@ span.student-project-name {
   vertical-align: middle;
  }
  
- .background-image-holder:hover span.student-project-name {
+.background-image-holder:hover span.student-project-name {
   opacity: 1;
   top: 0;
 }
- 
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.background-image-holder:hover{
+  animation-name: tada;
+  animation-duration:2s;
+  animation-iteration-count:1;
+}
