@@ -231,3 +231,13 @@ span.student-project-name {
   animation-duration:2s;
   animation-iteration-count:1;
 }
+
+.code-in-nav:before { 
+  content: " "; 
+  background-image: url("../img/gci-logo.png"); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  padding: 0 12px; 
+  padding-top: 0px; 
+  font-size: 1.5rem; 
+}
