@@ -176,6 +176,7 @@
   font-size: 15px;
 }
 span.student-project-name {
+  transition: 0.5s;
   background: #0000007F;
   color: white;
   cursor: pointer;
@@ -191,6 +192,7 @@ span.student-project-name {
  }
  
  span.student-project-name span {
+  transition: 0.5s;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
