@@ -10,6 +10,7 @@ var mr_firstSectionHeight,
 
 $(document).ready(function() { 
     "use strict";
+    
     // Diplsay no projects if there are no projects
     var html='<div class="row"><div class="col-sm-12 text-center">';
     html+='<h4 class="uppercase mb16">No Student Projects</h4>';
@@ -70,6 +71,9 @@ $(document).ready(function() {
     // Initialize Tooltips
 
     $('[data-toggle="tooltip"]').tooltip();
+    
+    //Initialize popover
+    $("[data-toggle=popover]").popover({html:true})
 
     // Icon bulleted lists
 
@@ -1449,5 +1453,6 @@ window.onload = function() {
 /*\
 |*|  END COOKIE LIBRARY
 \*/
-
-
+$(document).ready(function() {
+  $("img").unveil(200);
+});
