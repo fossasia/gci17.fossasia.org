@@ -19,7 +19,9 @@ You may do so by changing each `[ ]` to `[x]` Please take note of the whitespace
 - [ ] Images are `240 x 240` [w x h]
 - [ ] Resolved merge conflicts
 - [ ] Included a description of my change below
+- [ ] Squashed the commits
 
 # Things done in this Pull Request
 
+- If your change will be reflected on the website, please provide a **Test-Link** (**Hint : `gh-pages`**)
 - Replace this with your change description
