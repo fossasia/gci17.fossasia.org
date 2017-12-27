@@ -1,27 +1,16 @@
-Thank you for your pull request! Please read and understand everything below
+Please read and understand everything below
+**Do not delete any text other than where you are instructed.**
 
-Please acknowledge that you have read and understood each of the following before submitting your pull request.
+**Students: If one of them is applicable to you. Please check it.**
 
-<!-- Ignore MarkdownBear -->
-# _Do not_ delete any text other than where you are instructed.
-<!-- Stop ignoring MarkdownBear -->
-
-**Maintainers: If any of these are left unchecked, do not merge.**
-
-**Students: If one of them is not applicable to you -- Please check it anyways. DO NOT REMOVE ANYTHING!**
-
-**You may check them after opening your pull request.**
-
-You may do so by changing each `[ ]` to `[x]` Please take note of the whitespace as it matters.
+Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it matters.
 
 - [ ] Read and understood (see CONTRIBUTING.md)
-- [ ] Included a live link or preview screenshot
-- [ ] Images are `240 x 240` [w x h]
-- [ ] Resolved merge conflicts
-- [ ] Included a description of my change below
-- [ ] Squashed the commits
+- [ ] Included a Preview link and screenshot showning after and before the changes.
+- [ ] Images are `240 x 240` [w x h].
+- [ ] Included a description of change below.
+- [ ] Squashed the commits.
 
-# Things done in this Pull Request
+# Changes done in this Pull Request
 
 - If your change will be reflected on the website, please provide a **Test-Link** (**Hint : `gh-pages`**)
-- Replace this with your change description
