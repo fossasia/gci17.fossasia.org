@@ -2,6 +2,12 @@
 ---
 {% include header.html %}
 
+<div class="rocket">
+	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
+		<div class="fire"></div>
+	</a>
+</div>
+
 <section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
 	<ul class="slides">
 		<li class="overlay image-bg">
@@ -16,7 +22,7 @@
 							Participate in Google Codein with <b>FOSSASIA</b> !
 						</p>
 						<a class="btn btn-lg btn-filled" href="https://codein.withgoogle.com/organizations/fossasia/">Take me Along !</a>
-						<a class="btn btn-lg" href="#mentors">Explore the site</a>
+						<a class="btn btn-lg" href="repositories.html">Explore the site</a>
 					</div>
 				</div>
 			</div>
@@ -57,9 +63,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -104,11 +110,28 @@
 		<div class="col-sm-12 text-center">
 			<h2 class="animated fadeIn">Contributors</h2>
 			<p class="lead mb64">People who have made contributions to gci17.fossasia.org</p>
+			<a class="btn btn-lg" href="{{ baseurl }}./activities">view activities</a>
 		</div>
 		<div class="col-sm-12 col-md-12 text-center spread-children-large mentor-list" id="contributors"></div>
+		
+		<div class="col-sm-12 col-md-12 text-center">
+	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/">How can I be a contributor?</a>	
+	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://github.com/fossasia/gci17.fossasia.org">View the Github Repository <i class="fa fa-github fa-lg"></i></a>
+	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://gci16.fossasia.org/#contributors">Contributors Gci'16</a>		
+	 </div>
 	</div>
 </section>
 <!--End of contributors section-->
+
+<!-- Thanks -->
+<section class="bg-dark">
+	<div class="container">
+		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
+			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
+		   	</h2>
+		</div>
+	</div>
+</section>
 
 <!-- Students -->
 <section class="bg-secondary" id="students">
@@ -121,9 +144,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img src="img/students/member.png" alt="{{ student.name }}">
+					<img data-src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
@@ -176,7 +199,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="lightbox-grid square-thumbs">
-					<ul id="project_holder">
+					<ul class="list-inline social-list social-overlay-list">
 							{% for project in site.data.student_projects %}
 							<li class="student_project">
 								<a href="{{project.github}}">
@@ -188,6 +211,7 @@
 											<img title="{{project.name}} by {{project.author}}"
 														 class="background-image" src="img/projects/default.png">
 											{% endif %}
+											<span class="student-project-name"><span>By {{ {project.author }}</span></span>
 									</div>
 								</a>
 							</li>
@@ -198,17 +222,6 @@
 		</div>
 	</div>
 </section>
-
-<!-- Thanks -->
-<section class="bg-dark">
-	 <div class="container">
-		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-		<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Σας ευχαριστώ που συμμετείχατε", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
-		</h2>
-		</div>
-	</div>
-</section>
-
 
 <!-- Map -->
 <section class="bg-secondary">
@@ -239,38 +252,120 @@
                     <a class="twitter-timeline" data-width="400" data-height="400" data-link-color="#E81C4F" href="//twitter.com/fossasia">Tweets by fossasia</a>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="feature feature-1 boxed">
-			<div class="g-page" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="feature feature-1 boxed">
-                     <iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400"></iframe>
-                </div>
-            </div>
-        </div>
+			<div class="col-sm-4 g-plus-big">
+				<div class="feature feature-1 boxed">
+					<div class="g-page" data-width="300" data-height="300" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
+				</div>
+			</div>
+			<div class="col-sm-4 g-plus-small">
+				<div class="feature feature-1 boxed">
+					<div class="g-page" data-width="240" data-height="240" data-href="//plus.google.com/108920596016838318216" data-rel="publisher"></div>
+				</div>
+			</div>
+			<div class="col-sm-4 fb-big-iframe">
+				<div class="feature feature-1 boxed">
+					<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="overflow-x: scroll"></iframe>
+				</div>
+			</div>
+			<div class="col-sm-4 fb-small-iframe">
+				<div class="feature feature-1 boxed">
+					<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia&tabs=timeline&width=240&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="overflow-x: scroll"></iframe>
+				</div>
+			</div>
+		</div>
     </div>
 </section>
 <!-- Social Embed Ends -->
+
+<!-- App Section -->
+<section class="image-edge">
+    <div class="col-md-6 col-sm-4 p0">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
+            <h1 class="large mb40 mb-xs-16">Open Event Android App Generator.</h1>
+            <h6 class="uppercase mb16">Technologies used: Java, Shell Script, Python, Javascript, HTML, CSS, JSON, Rest-APIs, Android SDK</h6>
+            <p class="lead mb40">
+                The Open Event Android App Generator consists of 2 main parts - the app generator itself that creates apps and the Android app for browsing any event. The generator can be installed as a stand alone application or integrated as a microservice into the Open Event Server. Updates to content of events are done automatically through Rest-APIs of the server.
+            </p>
+            <a class="btn-lg btn" href="https://github.com/fossasia/open-event-android">Github Repository <i class="fa fa-github fa-lg"></i></a>
+        </div>
+    </div>
+    
+</section>
+<section class="image-edge">
+    <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+            <h1 class="large mb40 mb-xs-16">SUSI.AI Android App</h1>
+            <h6 class="uppercase mb16">Technologies used: Kotlin, Java, Shell Script, Python, Javascript, HTML, CSS, JSON, Rest-APIs, Android SDK, APIs, Facebook, Slack</h6>
+            <p class="lead mb40">
+                The main feature of the app is to provide a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure. The app also offers login functionalities to connect to other services and stored personal data. Additionally, the application uses data provided by the user's phone to improve Susi answers. Geolocation information, for example, helps to offer better answers related to questions about "things nearby".
+            </p>
+            <a class="btn-lg btn" href="https://github.com/fossasia/susi_android">Github Repository <i class="fa fa-github fa-lg"></i></a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container" >
+        <div class="row text-center" >
+            <div class="col-sm-4" style="height:350px">
+                <h2 class="number">Phimp.me</h2>
+                <p>
+                    Do you have many different apps in your Android Phone for the purpose of clicking, editing and sharing images? Hey guess what, now you don't need all of those because Phimp.me is here, with all the features packaged into one. So go and clean your phone memory to save your space for other useful purposes.
+                </p>                
+                <div class="row" style="position:absolute; bottom:0px;left:30%">
+                    <div class="col-sm-12"><a class="btn" href="https://phimp.me">Learn More</a></div>
+                </div>                
+            </div>            
+            <div class="col-sm-4" style="height:350px">
+                <h2 class="number">PSLab Android</h2>
+                <p>
+                    PSLab is a tiny pocket science lab that provides an array of equipment for doing science and engineering experiments. It can function like an oscilloscope, waveform generator, frequency counter, programmable voltage and current source and also as a data logger.
+                </p>                
+                <div class="row" style="position:absolute; bottom:0px; left:30%">
+                    <div class="col-sm-12"><a class="btn" href="http://pslab.fossasia.org">Learn More</a></div>
+                </div>           
+            </div>
+            <div class="col-sm-4" style="height:350px">
+                <h2>Open Event Organizer App</h2>
+                <p>Open Event Organizer App provides event management features like:<br>
+					- Event manager log in and sign up<br>
+					- Manual attendee check in<br>
+					- Attendee check in through QR code scan<br>
+					- Basic event analytics
+                </p>                
+                <div class="row" style="position:absolute; bottom:0px;left:30%">
+                     <div class="col-sm-12"><a class="btn" href="https://github.com/fossasia/open-event-orga-app">Learn More</a></div>
+                </div>              
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- App Section Ends -->
+
 <!-- Placeholder -->
 <section>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<h2 class="number">370+ students</h2>
+				<a href="https://gci17.fossasia.org/students"><h2 class="number">370+ students</h2></a>
 				<p>
 					Over 370 students participated in Fossasia Google code-in 2017, many students made their way in contributing on many open source projects.
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<h2 class="number">300+ Tasks</h2>
+				<a href="https://codein.withgoogle.com/organizations/fossasia/"><h2 class="number">300+ Tasks</h2></a>
 				<p>
 					More than 300 tasks are completed this year, from blog post to creating website to developing AI, doesn't matter where do you start, you can be a great contributor!
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<h2>2000+ contributors</h2>
+				<a href="https://github.com/fossasia/gci17.fossasia.org/graphs/contributors"><h2>2000+ contributors</h2></a>
 				<p>
 					Contributors are students, professors, mentors, and people who loves to be a part of our open source community, they helps creating better program and community.
 				</p>
@@ -290,70 +385,86 @@
 			</div>
 		</div>
 		{% for blog in site.data.blogs %}
-
-			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-
-			{% if modulo == '1' %}
-				<div class="row">
-			{% endif %}
-				<div class="col-md-3">
-					<a href="{{blog.url}}" target="_blank">
-						<div class="image-tile outer-title text-center">
-							<img src="img/blog/{{blog.img}}" height="240" width="240">
-							<div class="title mb16">
-								<h5 class="uppercase mb0">{{blog.title}}</h5>
-								<span>{{blog.author_name}}</span>
-							</div>
-						</div>
-					</a>
-				</div>
-			{% if modulo == '0' or forloop.last %}
-				</div>
-			{% endif %}
-		{% endfor %}
-	</div>
-</section>
-
-<!-- Videos -->
-<section class="bg-secondary" id="student-blog">
-	<div class="container">
+				{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
+				{% if modulo == '1' %}
 		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h4 class="uppercase mb16">Videos</h4>
-				<p class="lead mb64">Videos from the students</p>
-			</div>
-		</div>
-			<div class="col-md-3 col-sm-6">
-				<a href="https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s" target="_blank">
+			{% endif %}
+			<div class="col-md-3">
+				<a href="{{blog.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
-						<img src="img/blog/8.jpg" height="240" width="240">
-						<div class="title mb16">
-							<h5 class="uppercase mb0">About FOSSASIA</h5>
-							<span>Supun Tharinda Edirisuriya</span>
+						<div class="content">
+							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">
+									<div class="blogorvideotitle">{{blog.title}}</div>
+								</h5>
+								<span>
+									<div class="nameofauthor">{{blog.author_name}}</div>
+								</span>
+							</div>
 						</div>
 					</div>
 				</a>
 			</div>
+			{% if modulo == '0' or forloop.last %}
+		</div>
+		{% endif %} {% endfor %}
 	</div>
 </section>
-
+				
+<!-- Videos -->
+<section class="bg-secondary" id="student-video">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h4 class="uppercase mb16">Videos</h4>
+				<p class="lead mb64">Videos from students</p>
+			</div>
+		</div>
+		{% for video in site.data.video %}
+			{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
+			{% if modulo == '1' %}
+		<div class="row">
+			{% endif %}
+			<div class="col-md-3">
+				<a href="{{video.url}}" target="_blank">
+					<div class="image-tile outer-title text-center">
+						<div class="content">
+							<img data-src="img/video/{{video.img}}" height="240" width="240">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">
+									<div class="blogorvideotitle">{{video.title}}</div>
+								</h5>
+								<span>
+									<div class="nameofauthor">{{video.author_name}}</div>
+								</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			{% if modulo == '0' or forloop.last %}
+		</div>
+		{% endif %} {% endfor %}
+	</div>
+</section>
 
 <!-- parallax image? -->
 <section class="fullscreen image-bg parallax background-multiply">
 	<div class="background-image-holder">
-		<img alt="image" class="background-image" src="img/capital5.jpg">
+		<img alt="image" class="background-image" src="img/asia-bg.jpg">
 	</div>
 	<div class="container v-align-transform">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="thin mb0">FOSSASIA <br>Based in Asia.</h1>
+				<h1 class="bold mb0">FOSSASIA <br>Based in Asia.</h1>
 			</div>
 		</div>
 
 	</div>
 
 	<div class="align-bottom text-center">
-		<a class="btn btn-white mb32" href="#">Pitch Us</a>
+		<a class="btn btn-white mb32" href="https://2017.fossasia.org">What happened in the last Summit?</a>
 		<ul class="list-inline social-list mb24">
 			<li>
 				<a href="https://twitter.com/fossasia">
@@ -365,35 +476,30 @@
 					<i class="ti-facebook"></i>
 				</a>
 			</li>
-			<li>
-				<a href="https://dribbble.com/fossasia">
-					<i class="ti-dribbble"></i>
-				</a>
+            <li>
+                    <a href="https://www.instagram.com/fossasia">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+                        <i class="ti-youtube" aria-hidden="true"></i>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://flickr.com/photos/fossasia">
+                        <i class="ti-flickr-alt" aria-hidden="true"></i>
+                    </a>
+            </li>
+            <li>
+                    <a href="https://github.com/fossasia">
+                    	<i class="ti-github" aria-hidden="true"></i>
+                    </a>
 			</li>
 			<li>
-				<a href="https://vimeo.com/fossasia">
-					<i class="ti-vimeo-alt"></i>
-				</a>
-			</li>
-                        <li>
-                                <a href="https://www.instagram.com/fossasia">
-                                        <i class="ti-instagram" aria-hidden="true"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-                                        <i class="ti-youtube" aria-hidden="true"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://flickr.com/photos/fossasia">
-                                        <i class="ti-flickr-alt" aria-hidden="true"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="https://github.com/fossasia">
-                                        <i class="ti-github" aria-hidden="true"></i>
-                                </a>
+                    <a href="https://www.vk.com/fossasia">
+                    	<i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
 			</li>
 
 		</ul>
@@ -402,13 +508,7 @@
 
 <!-- placeholder flickr feed -->
 <section>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<ul class="flickr-feed masonry masonryFlyIn" data-user-id="45240298@N08" data-album-id="72157665486359899"></ul>
-			</div>
-		</div>
-	</div>
+<div id="flickrembed"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://youtubevideoembed.com">Embed Youtube</a></div><script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157665486359899&sort=0&by=album&theme=default&scale=fill&limit=10&skin=default-light&autoplay=true'></script><small style="display: block; text-align: center; margin: 0 auto;">Powered by <a href="https://github.com/0x48piraj">flickr | 0x48piraj</a>.</small>
 </section>
 
 
@@ -435,18 +535,18 @@
 	<ul class="slides">
 		<li class="overlay image-bg">
 			<div class="background-image-holder">
-				<img alt="image" class="background-image" src="img/resto1.jpg">
+				<img alt="image" class="background-image" src="img/singapore.jpg">
 			</div>
 			<div class="container v-align-transform">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<img alt="Logo" class="image-small" src="img/fossasia-light.png">
+						<img alt="Logo" class="image-small" data-src="img/fossasia-light.png">
 					</div>
 				</div>
 
 			</div>
 			<div class="align-bottom text-center">
-				<a class="btn btn-white mb32" href="#">Connect</a>
+				<a class="btn btn-white mb32" href="#social-links">Connect</a>
 				<ul class="list-inline social-list mb24">
 					<li>
 						<a href="https://twitter.com/fossasia">
@@ -459,36 +559,30 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://dribbble.com/fossasia">
-							<i class="ti-dribbble"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://vimeo.com/fossasia">
-							<i class="ti-vimeo-alt"></i>
-						</a>
-					</li>
-					<li>
-                                                <a href="https://www.instagram.com/fossasia">
-                                                        <i class="ti-instagram" aria-hidden="true"></i>
-                                                </a>
-                                        </li>
-                                        <li>
-                                                <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-                                                        <i class="ti-youtube" aria-hidden="true"></i>
-                                                </a>
-                                        </li>
-                                        <li>
-                                                <a href="https://flickr.com/photos/fossasia">
-                                                        <i class="ti-flickr-alt" aria-hidden="true"></i>
-                                                </a>
-                                        </li>
-                                        <li>
-                                                <a href="https://github.com/fossasia">
-													<i class="ti-github icon-i" aria-hidden="true"></i>
-												</a>
-                                        </li>
-
+                        <a href="https://www.instagram.com/fossasia">
+                            <i class="ti-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+                            <i class="ti-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://flickr.com/photos/fossasia">
+                            <i class="ti-flickr-alt" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/fossasia">
+                            <i class="ti-github icon-i" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.vk.com/fossasia">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </li>
 				</ul>
 			</div>
 		</li>
@@ -501,23 +595,22 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">
-				<h1 class="uppercase mb24 bold italic">Fitness<br>For Life</h1>
-				<h5 class="uppercase italic fade-1-4">“My passion is motivating<br> people to get results”</h5>
+				<h1 class="uppercase mb24 bold italic">Loklak<br></h1>
+				<h5 class="uppercase italic fade-1-4">A FOSSASIA<br> sister project.”</h5>
 				<hr class="visible-xs">
 			</div>
 			<div class="col-md-5 col-sm-7">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Distributed search and analytics framework to collect, store, search, and analyze social media.
 				</p>
 
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+					loklak is a server application which is able to collect messages from various sources, including twitter. The server contains a search index and a peer-to-peer index sharing interface. All messages are stored in an elasticsearch index. Visit <a href="https://loklak.org/">Loklak Website.</a>
 				</p>
 
 				<p>
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-				</p>
-				<img alt="signature" src="img/fitness1.png" class="image-small">
+					'Lok Lak' is also a very tasty Cambodian stir-fry meat dish (usually beef) with a LOT of fresh black pepper. If you ever have the chance to eat Beef Lok Lak, please try it. Hope not to scare vegetarians with this name.
+				
 			</div>
 		</div>
 	</div>

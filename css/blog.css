@@ -1,0 +1,166 @@
+.rocket a {
+    position: fixed;
+    bottom: 50px;
+    z-index: 7;
+    display: none;
+    visibility: hidden;
+    width: 26px;
+    height: 48px;
+    right: 25px;
+    background: url(icons/rocket.png) no-repeat 50% 0;
+    opacity: 0;
+    -webkit-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    -moz-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.rocket a .fire {
+    display: block;
+    margin-top: 48px;
+    height: 14px;
+    background: url(icons/rocket.png) no-repeat 50% -48px;
+    opacity: .5;
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    transition: transform .2s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+
+.rocket a:hover {
+    background-position: 50% -62px
+}
+
+.rocket a:hover .fire {
+    background-position: 50% 100%;
+    -webkit-animation: flaming .7s infinite;
+    -moz-animation: flaming .7s infinite;
+    animation: flaming .7s infinite
+}
+
+.rocket a.showrocket {
+    visibility: visible;
+    opacity: 1
+}
+
+.rocket a.launchrocket {
+    background-position: 50% -62px;
+    opacity: 0;
+    -webkit-transform: translateY(-800px);
+    -moz-transform: translateY(-800px);
+    -ms-transform: translateY(-800px);
+    transform: translateY(-800px);
+    pointer-events: none
+}
+
+.rocket a.launchrocket .fire {
+    background-position: 50% 100%;
+    -webkit-transform: scale(1.4, 3.2);
+    -moz-transform: scale(1.4, 3.2);
+    transform: scale(1.4, 3.2)
+}
+
+.content img {
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content:hover img {
+    opacity: 0.3;
+    margin-top: -20px;
+    -webkit-filter: blur(3px);
+}
+
+.content:hover .blogorvideotitle {
+    left: 15px;
+    opacity: 1;
+}
+
+.content:hover .nameofauthor {
+    left: 25px;
+    opacity: 1;
+}
+
+.content .blogorvideotitle {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 220px;
+    top: 50px;
+    opacity: 0;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Raleway"), local("Raleway-Regular"), url("https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2") format("woff2");
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    -webkit-transition: all 200ms cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -moz-transition: all 200ms cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -ms-transition: all 200ms cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -o-transition: all 200ms cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    transition: all 200ms cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -ms-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    -o-transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);
+    transition-timing-function: cubic-bezier(0.000, 0.440, 0.000, 0.795);
+}
+
+.content .nameofauthor {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    left: -1000px;
+    top: 175px;
+    opacity: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans Regular"), local("OpenSans-Regular"), url("https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2") format("woff2");
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    -webkit-transition: all 200ms cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -moz-transition: all 200ms cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -ms-transition: all 200ms cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -o-transition: all 200ms cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    transition: all 200ms cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -ms-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    -o-transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
+    transition-timing-function: cubic-bezier(0.000, 0.890, 0.630, 0.980);
+}
+
+.content:before {
+    content: "";
+    width: 80%;
+    height: 8px;
+    bottom: 18px;
+    left: 13px;
+    z-index: -1;
+    background: #000;
+    position: absolute;
+    box-shadow: -10px 10px 20px #000;
+    -moz-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(-5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.content:after {
+    content: "";
+    width: 80%;
+    height: 8px;
+    bottom: 18px;
+    right: 13px;
+    z-index: -1;
+    background: #000;
+    position: absolute;
+    box-shadow: 100px 200px 300px #000;
+    -moz-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(5deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
