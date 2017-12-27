@@ -14,3 +14,4 @@ Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it m
 # Changes done in this Pull Request
 
 - If your change will be reflected on the website, please provide a **Test-Link** (**Hint : `gh-pages`**)
+- Fixes`#<Issue no.>`
