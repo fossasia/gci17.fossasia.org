@@ -1,3 +1,13 @@
+- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
+  title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
+  img: 0x48piraj.jpg
+  author_name: Piyush Raj
+  
+- url: https://samyakbvs.wordpress.com/2017/12/20/interview-with-a-teacher/
+  title: Interview with a teacher
+  img: samyakbvs.jpeg
+  author_name: Samyak Jain
+
 - url: https://demiprestasi.wordpress.com/2017/12/16/me-google-code-in-and-fossasia/
   title: Me, Google Code-In and FOSSASIA
   img: me.jpg
@@ -85,7 +95,7 @@
 
 - url: https://introductorymusicblockstutorial.wordpress.com/
   title: Interview of a Student participating in the Google Code In
-  img: 6.png
+  img: interview_hasalu.png
   author_name: Hasalu Botheju
 
 - url: https://abishek24.wordpress.com/2017/12/03/a-dive-into-open-source/
@@ -137,3 +147,48 @@
   title: Interview with a FOSSASIA Contributer | Ploypiti Piyaprapan
   img: aditya-blog-2.jpg
   author_name: Aditya Dutt
+
+- url: https://peppercat.tk/2017/12/hi-there-issues/
+  title: Hi there, issues
+  img: Blog_Ploypiti_03.jpg
+  author_name: Ploypiti Piyaprapan
+
+- url: https://anushka264230468.wordpress.com/2017/12/16/first-blog-post/
+  title: A Student’s Experience
+  img: Anushka.jpeg
+  author_name: Anushka Kadam
+
+- url: https://hellohimani.wordpress.com/2017/12/19/code-in-experience/
+  title: Code-In Experience
+  img: himani.png
+  author_name: Himani Yadav
+
+- url: https://betaking146970080.wordpress.com/2017/12/21/42/
+  title: Code is Life!!
+  img: Beta_KIng.jpg
+  author_name: Yash Kothari
+  
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/22/interview-with-a-teacher/
+  title: Interview with a Teacher
+  img: akansha.jpg
+  author_name: Saarthak Chaturvedi
+
+- url: https://gciarjunloomba1311.wordpress.com/2017/12/22/interviewing-mehul-jangir/
+  title: Interview with Mehul, a Fossasia contributer 
+  img: gci pic.jpg
+  author_name: Arjun Loomba
+  
+- url: http://blog.kubacoding.eu/google-code-in/interview-with-two-active-open-source-contributors/
+  title: Interview with two active Open Source Contributors
+  img: 12.jpg
+  author_name: Kuba Michalski
+  
+- url: https://samyakbvs.wordpress.com/2017/12/24/interview-with-two-open-source-contributors-2/
+  title: Interview with Two Open Source Contributors
+  img: samyakjainbvs.png
+  author_name: Samyak Jain
+
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/24/interview-with-long-term-open-source-contributors/
+  title: Interview with Two Long-Term Open Source Contributors
+  img: saarthakchaturvediinterview.jpg
+  author_name: Saarthak Chaturvedi

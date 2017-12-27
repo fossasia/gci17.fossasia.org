@@ -5,11 +5,22 @@
   twitter: AmryArios
   facebook: ompusunggu.amri
   
+- name: Akshat Jain
+  github: AkshatJain1
+  image: akshatj.jpg
+  twitter: akshatjain0101
+  
 - name: Anastasiia Kostiv
   github: AKostiv8
   image: kostiv.jpeg
   twitter: KostivNastya
   facebook: anastasiya.kostiv
+
+- name: Andre Christoga
+  country: Indonesia
+  github: acga
+  image: andre.png
+  twitter: christogandre
 
 - name: Miguel Piedrafita
   image: m1guelpf.png
@@ -87,7 +98,7 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
-  
+
 - name: Prasenjit Gautam
   github: FreakinBabaJi
   country: India
@@ -117,7 +128,7 @@
   image: samyak.png
   twitter: Samyakbvs
   facebook: Samyak Jain
-  
+
 - name: Tushar Verma
   github: 2coolife
   image: 2coolife.jpg
@@ -137,7 +148,7 @@
   image: k7un.jpeg
   facebook: ccr4b
   twitter: _ccr4b
-  
+
 - name: Ploypiti Piyaprapan
   country: Thailand
   github: Ploypiti
@@ -146,6 +157,15 @@
   facebook: PL0YP1T1
   lat: 13.756331
   lng: 100.501765
+
+- name: Piyush Raj
+  country: India
+  github: 0x48piraj
+  image: 0x48piraj.jpg
+  twitter: 0x48piraj
+  facebook: 0x48piraj
+  lat: 25.5938
+  lng: 85.1605
 
 - name: Nuode Chen
   country: Singapore
@@ -165,20 +185,46 @@
   country: Poland
   github: Shizerq
   image: MSShizerq.jpg
-  
+
 - name: Ashish Kumar Singh
   country: India
   github: lavavi
   image: lavavi.jpg
-  
+
 - name: Jeewal Kunwar
   country: Nepal
   github: Jeewal
   image: Jeewal.jpg
   twitter: jeewalkunwar1
-  
+
 - name: Mridul Birla
   country: India
   github: Mridulbirla13
   image: Mridul.jpg
-  twitter: mridulbirla13  
+  twitter: mridulbirla13
+
+- name: Krish Birla
+  country: India
+  github: krishbirla13
+  image: Krish.jpg
+  twitter: krishbirla13
+
+- name: Arjun Pandey
+  country: India
+  github: arjunpandey2003
+  image: arjun.jpg
+  twitter: arjunpandey2003
+  lat: 77.2090
+  lng: 28.6139
+
+- name: Daniel Lawson
+  country: USA
+  github: daniellawson9999
+  image: danielProfile.jpg
+  twitter: danielblawson9
+  
+- name: Yash Kothari
+  country: India
+  github: Beta-King
+  image: Beta_KIng.jpg
+  twitter: Yash_Beta_King
