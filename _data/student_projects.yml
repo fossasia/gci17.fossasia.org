@@ -2,16 +2,36 @@
 # This is to remove conflicts with other people adding entries.
 # the format is:
 #- name: Mario Behling
-#  github: Link to github repository of project
+#  github: Link to github repository of project (username/projectName)
 #  author: name of author of project
 #  image: projectname.png (upload the image with that name to /img/projects/)
+
+- name: Piyush Raj
+  github: https://github.com/0x48piraj/FOSSASIATask_FlaskAppForm
+  author: Piyush Raj | 0x48piraj
+  image: flask_0x48piraj.png
+
+- name: Piyush Raj
+  github: https://github.com/0x48piraj/countdown-2018
+  author: Piyush Raj | 0x48piraj
+  image: countdown_0x48piraj.png
+
+- name: Piyush Raj
+  github: https://github.com/0x48piraj/advanced-calculator
+  author: Piyush Raj | 0x48piraj
+  image: emberjs_0x48piraj.png
 
 - name: Mochammad Rafi Al Rizkan
   github: https://github.com/kol4k/eKantin
   author: Rafi
   image: rafi.png
+  
+- name: Atomic Act of Kindness
+  github: https://atomickindness.tk/
+  author: Ploypiti P.
+  image: AAK_logo.png
 
-- name: GCI FOSSASIA Poster
-  github: yashkumarverma
-  author: Yash Kumar Verma
-  image: yashkumarverma-gciposter.jpg
+- name: Aditya Dutt
+  github: https://github.com/duttaditya18/beautiful-flask
+  author: Aditya Dutt | duttaditya18
+  image: beautiful-flask.png
