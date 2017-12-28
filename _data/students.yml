@@ -234,3 +234,10 @@
   github: Beta-King
   image: Beta_KIng.jpg
   twitter: Yash_Beta_King
+
+- name: Divit Solanki
+  country: India
+  github: divitsolanki
+  image: divit.jpeg
+  lat: 18.5204
+  lng: 73.8567
