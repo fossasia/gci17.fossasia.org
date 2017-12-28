@@ -2,6 +2,12 @@
 ---
 {% include header.html %}
 
+<div class="rocket">
+	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
+		<div class="fire"></div>
+	</a>
+</div>
+
 <section class="image-slider slider-all-controls controls-inside pt0 pb0 height-70 parallax">
 	<ul class="slides">
 		<li class="overlay image-bg">
@@ -35,6 +41,7 @@
 							22<sup>th</sup> - 25<sup>th</sup> March, 2018
 						</p>
 						<a class="btn btn-lg btn-filled" href="https://2018.fossasia.org/">I'm Interested !</a>
+						<a class="btn btn-lg btn-filled" href="https://fossasia.org/">Official Site</a>
 					</div>
 				</div>
 
@@ -111,7 +118,7 @@
 		<div class="col-sm-12 col-md-12 text-center">
 	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/">How can I be a contributor?</a>	
 	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://github.com/fossasia/gci17.fossasia.org">View the Github Repository <i class="fa fa-github fa-lg"></i></a>
-		
+	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://gci16.fossasia.org/#contributors">Contributors Gci'16</a>		
 	 </div>
 	</div>
 </section>
@@ -196,7 +203,7 @@
 					<ul class="list-inline social-list social-overlay-list">
 							{% for project in site.data.student_projects %}
 							<li class="student_project">
-								<a href="https://github.com/{{project.github}}">
+								<a href="{{project.github}}">
 									<div class="background-image-holder">
 											{% if project.image %}
 											<img title="{{project.name}} by {{project.author}}"
@@ -304,35 +311,40 @@
     </div>
 </section>
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
+    <div class="container" >
+        <div class="row text-center" >
+            <div class="col-sm-4" style="height:350px">
                 <h2 class="number">Phimp.me</h2>
                 <p>
                     Do you have many different apps in your Android Phone for the purpose of clicking, editing and sharing images? Hey guess what, now you don't need all of those because Phimp.me is here, with all the features packaged into one. So go and clean your phone memory to save your space for other useful purposes.
-                </p>
-            </div>
-            <div class="col-sm-4">
+                </p>                
+                <div class="row" style="position:absolute; bottom:0px;left:30%">
+                    <div class="col-sm-12"><a class="btn" href="https://phimp.me">Learn More</a></div>
+                </div>                
+            </div>            
+            <div class="col-sm-4" style="height:350px">
                 <h2 class="number">PSLab Android</h2>
                 <p>
                     PSLab is a tiny pocket science lab that provides an array of equipment for doing science and engineering experiments. It can function like an oscilloscope, waveform generator, frequency counter, programmable voltage and current source and also as a data logger.
-                </p>
+                </p>                
+                <div class="row" style="position:absolute; bottom:0px; left:30%">
+                    <div class="col-sm-12"><a class="btn" href="http://pslab.fossasia.org">Learn More</a></div>
+                </div>           
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" style="height:350px">
                 <h2>Open Event Organizer App</h2>
                 <p>Open Event Organizer App provides event management features like:<br>
 					- Event manager log in and sign up<br>
 					- Manual attendee check in<br>
 					- Attendee check in through QR code scan<br>
 					- Basic event analytics
-                </p>
+                </p>                
+                <div class="row" style="position:absolute; bottom:0px;left:30%">
+                     <div class="col-sm-12"><a class="btn" href="https://github.com/fossasia/open-event-orga-app">Learn More</a></div>
+                </div>              
             </div>
         </div>
-        <div class="row">
-        	<div class="col-sm-4"><a class="btn" href="https://phimp.me">Learn More</a></div>
-        	<div class="col-sm-4"><a class="btn" href="http://pslab.fossasia.org">Learn More</a></div>
-        	<div class="col-sm-4"><a class="btn" href="https://github.com/fossasia/open-event-orga-app">Learn More</a></div>
-        </div>
+        
     </div>
 </section>
 <!-- App Section Ends -->
@@ -342,19 +354,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<h2 class="number">370+ students</h2>
+				<a href="https://gci17.fossasia.org/students"><h2 class="number">370+ students</h2></a>
 				<p>
 					Over 370 students participated in Fossasia Google code-in 2017, many students made their way in contributing on many open source projects.
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<h2 class="number">300+ Tasks</h2>
+				<a href="https://codein.withgoogle.com/organizations/fossasia/"><h2 class="number">300+ Tasks</h2></a>
 				<p>
 					More than 300 tasks are completed this year, from blog post to creating website to developing AI, doesn't matter where do you start, you can be a great contributor!
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<h2>2000+ contributors</h2>
+				<a href="https://github.com/fossasia/gci17.fossasia.org/graphs/contributors"><h2>2000+ contributors</h2></a>
 				<p>
 					Contributors are students, professors, mentors, and people who loves to be a part of our open source community, they helps creating better program and community.
 				</p>
@@ -485,6 +497,11 @@
                     	<i class="ti-github" aria-hidden="true"></i>
                     </a>
 			</li>
+			<li>
+                    <a href="https://www.vk.com/fossasia">
+                    	<i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+			</li>
 
 		</ul>
 	</div>
@@ -542,28 +559,31 @@
 							<i class="ti-facebook"></i>
 						</a>
 					</li>
-					
 					<li>
                         <a href="https://www.instagram.com/fossasia">
                             <i class="ti-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                               <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-                                       <i class="ti-youtube" aria-hidden="true"></i>
-                               </a>
+                        <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+                            <i class="ti-youtube" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                            <a href="https://flickr.com/photos/fossasia">
-                                    <i class="ti-flickr-alt" aria-hidden="true"></i>
-                            </a>
+                        <a href="https://flickr.com/photos/fossasia">
+                            <i class="ti-flickr-alt" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                            <a href="https://github.com/fossasia">
-					<i class="ti-github icon-i" aria-hidden="true"></i>
-			    </a>
+                        <a href="https://github.com/fossasia">
+                            <i class="ti-github icon-i" aria-hidden="true"></i>
+                        </a>
                     </li>
-
+                    <li>
+                        <a href="https://www.vk.com/fossasia">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </li>
 				</ul>
 			</div>
 		</li>
