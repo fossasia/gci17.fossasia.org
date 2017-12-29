@@ -384,13 +384,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h4 class="uppercase mb16">Blogs</h4>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+				<div id="flip"><h4 class="uppercase mb16">Blogs</h4>
 				<p class="lead mb64">Articles from the contributors</p>
+				</div>
 			</div>
 		</div>
 		{% for blog in site.data.blogs %}
 				{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 				{% if modulo == '1' %}
+		<div id="panel">
 		<div class="row">
 			{% endif %}
 			<div class="col-md-3">
@@ -413,6 +416,7 @@
 			{% if modulo == '0' or forloop.last %}
 		</div>
 		{% endif %} {% endfor %}
+		</div>
 	</div>
 </section>
 				
