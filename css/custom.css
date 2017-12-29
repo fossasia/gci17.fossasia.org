@@ -226,11 +226,6 @@ span.student-project-name {
     transform: scale3d(1, 1, 1);
   }
 }
-.background-image-holder:hover{
-  animation-name: tada;
-  animation-duration:2s;
-  animation-iteration-count:1;
-}
 
 .code-in-nav:before { 
   content: " "; 
@@ -240,4 +235,18 @@ span.student-project-name {
   padding: 0 12px; 
   padding-top: 0px; 
   font-size: 1.5rem; 
+}
+
+#student-blog .row {
+	margin: auto;
+}
+
+#student-blog .col-md-3 {
+	margin: auto;
+	width: 240px;
+	box-sizing: initial;
+}
+
+#student-blog .col-md-3 a {
+	width: 240px;
 }
