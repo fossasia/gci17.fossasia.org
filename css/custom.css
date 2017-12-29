@@ -240,11 +240,13 @@ span.student-project-name {
 #student-blog .row {
 	margin: auto;
 }
+
 #student-blog .col-md-3 {
 	margin: auto;
 	width: 240px;
 	box-sizing: initial;
 }
+
 #student-blog .col-md-3 a {
 	width: 240px;
 }
