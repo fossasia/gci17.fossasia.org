@@ -64,9 +64,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -145,9 +145,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img data-src="img/students/member.png" alt="{{ student.name }}">
+					<img src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
