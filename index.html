@@ -2,6 +2,10 @@
 ---
 {% include header.html %}
 
+<center>
+	<div id="google_translate_element"></div>
+</center>
+
 <div class="rocket">
 	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
 		<div class="fire"></div>
@@ -41,6 +45,7 @@
 							22<sup>th</sup> - 25<sup>th</sup> March, 2018
 						</p>
 						<a class="btn btn-lg btn-filled" href="https://2018.fossasia.org/">I'm Interested !</a>
+						<a class="btn btn-lg btn-filled" href="https://fossasia.org/">Official Site</a>
 					</div>
 				</div>
 
@@ -127,7 +132,8 @@
 <section class="bg-dark">
 	<div class="container">
 		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
+			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!", "
+Ευχαριστώ για τη συμβολή!"]'>
 		   	</h2>
 		</div>
 	</div>
@@ -278,9 +284,10 @@
 <!-- Social Embed Ends -->
 
 <!-- App Section -->
-<section class="image-edge">
+<section id="fossasia-projects">
+	<section class="image-edge">
     <div class="col-md-6 col-sm-4 p0">
-        <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
+        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone1.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
@@ -294,9 +301,9 @@
     </div>
     
 </section>
-<section class="image-edge">
+<section class="image-edge" id="sus">
     <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-        <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
+        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone2.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
@@ -309,7 +316,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="other-projects">
     <div class="container" >
         <div class="row text-center" >
             <div class="col-sm-4" style="height:350px">
@@ -346,6 +353,8 @@
         
     </div>
 </section>
+</section>
+
 <!-- App Section Ends -->
 
 <!-- Placeholder -->
@@ -468,33 +477,38 @@
 		<ul class="list-inline social-list mb24">
 			<li>
 				<a href="https://twitter.com/fossasia">
-					<i class="ti-twitter-alt"></i>
+					<i class="fa fa-twitter"></i>
 				</a>
 			</li>
 			<li>
 				<a href="https://facebook.com/fossasia">
-					<i class="ti-facebook"></i>
+					<i class="fa fa-facebook"></i>
 				</a>
 			</li>
             <li>
-                    <a href="https://www.instagram.com/fossasia">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                    </a>
+                <a href="https://www.instagram.com/fossasia">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                    <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-                        <i class="ti-youtube" aria-hidden="true"></i>
-                    </a>
+                <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                    <a href="https://flickr.com/photos/fossasia">
-                        <i class="ti-flickr-alt" aria-hidden="true"></i>
-                    </a>
+                <a href="https://flickr.com/photos/fossasia">
+                    <i class="fa fa-flickr" aria-hidden="true"></i>
+                </a>
             </li>
             <li>
-                    <a href="https://github.com/fossasia">
-                    	<i class="ti-github" aria-hidden="true"></i>
-                    </a>
+                <a href="https://github.com/fossasia">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+			</li>
+			<li>
+                <a href="https://www.vk.com/fossasia">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
 			</li>
 
 		</ul>
@@ -503,6 +517,13 @@
 
 <!-- placeholder flickr feed -->
 <section>
+
+<div class="col-sm-12 text-center">
+			<h2 class="animated fadeIn">Pictures</h2>
+			<p class="lead mb64">Humans, not places, make memories.</p>
+			<a class="btn btn-lg" target = "_blank" href="https://www.flickr.com/photos/fossasia/">see memories!</a>
+</div>
+
 <div id="flickrembed"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://youtubevideoembed.com">Embed Youtube</a></div><script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157665486359899&sort=0&by=album&theme=default&scale=fill&limit=10&skin=default-light&autoplay=true'></script><small style="display: block; text-align: center; margin: 0 auto;">Powered by <a href="https://github.com/0x48piraj">flickr | 0x48piraj</a>.</small>
 </section>
 
@@ -545,36 +566,39 @@
 				<ul class="list-inline social-list mb24">
 					<li>
 						<a href="https://twitter.com/fossasia">
-							<i class="ti-twitter-alt"></i>
+							<i class="fa fa-twitter"></i>
 						</a>
 					</li>
 					<li>
 						<a href="https://facebook.com/fossasia">
-							<i class="ti-facebook"></i>
+							<i class="fa fa-facebook"></i>
 						</a>
 					</li>
-					
 					<li>
                         <a href="https://www.instagram.com/fossasia">
-                            <i class="ti-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
-                               <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
-                                       <i class="ti-youtube" aria-hidden="true"></i>
-                               </a>
+                        <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                            <a href="https://flickr.com/photos/fossasia">
-                                    <i class="ti-flickr-alt" aria-hidden="true"></i>
-                            </a>
+                        <a href="https://flickr.com/photos/fossasia">
+                            <i class="fa fa-flickr" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
-                            <a href="https://github.com/fossasia">
-					<i class="ti-github icon-i" aria-hidden="true"></i>
-			    </a>
+                        <a href="https://github.com/fossasia">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
                     </li>
-
+                    <li>
+                        <a href="https://www.vk.com/fossasia">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </li>
 				</ul>
 			</div>
 		</li>
@@ -583,7 +607,7 @@
 
 
 
-<section class="bg-primary">
+<section class="bg-primary" id="loki">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">
