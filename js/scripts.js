@@ -1485,13 +1485,6 @@ $(document).ready(function() {
   $("img").unveil(200);
 });
 
-//Slide Panel
-$(document).ready(function(){
-      $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-      });
-    });
-
 //Back to top button
 jQuery(window).scroll(function () {
     if (jQuery(window).scrollTop() < 50) {
