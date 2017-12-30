@@ -98,6 +98,9 @@
   image: Saarthak.jpg
   github: saarthakchats
   twitter: SaarthakChats41
+  facebook: saarthak.chaturvedi
+  lat: 28.5689232
+  lng: 77.26205139999999
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
@@ -246,5 +249,6 @@
 - name: Yash Kothari
   country: India
   github: Beta-King
+  twitter: Beta_King_500
   image: Beta_KIng.jpg
   twitter: Yash_Beta_King
