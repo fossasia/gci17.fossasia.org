@@ -296,7 +296,7 @@
     </div>
     
 </section>
-<section class="image-edge">
+<section class="image-edge" id="sus">
     <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
         <img alt="Screenshot" class="mb-xs-24" data-src="img/phone2.png">
     </div>
@@ -311,7 +311,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="other-projects">
     <div class="container" >
         <div class="row text-center" >
             <div class="col-sm-4" style="height:350px">
@@ -384,7 +384,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 				<h4 class="uppercase mb16">Blogs</h4>
 				<p class="lead mb64">Articles from the contributors</p>
 			</div>
@@ -406,6 +405,7 @@
 								<span>
 									<div class="nameofauthor">{{blog.author_name}}</div>
 								</span>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -413,7 +413,6 @@
 			{% if modulo == '0' or forloop.last %}
 		</div>
 		{% endif %} {% endfor %}
-		</div>
 	</div>
 </section>
 				
@@ -513,6 +512,13 @@
 
 <!-- placeholder flickr feed -->
 <section>
+
+<div class="col-sm-12 text-center">
+			<h2 class="animated fadeIn">Pictures</h2>
+			<p class="lead mb64">Humans, not places, make memories.</p>
+			<a class="btn btn-lg" target = "_blank" href="https://www.flickr.com/photos/fossasia/">see memories!</a>
+</div>
+
 <div id="flickrembed"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://youtubevideoembed.com">Embed Youtube</a></div><script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157665486359899&sort=0&by=album&theme=default&scale=fill&limit=10&skin=default-light&autoplay=true'></script><small style="display: block; text-align: center; margin: 0 auto;">Powered by <a href="https://github.com/0x48piraj">flickr | 0x48piraj</a>.</small>
 </section>
 
@@ -596,7 +602,7 @@
 
 
 
-<section class="bg-primary">
+<section class="bg-primary" id="loki">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">
