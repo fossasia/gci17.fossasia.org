@@ -61,7 +61,7 @@ $(document).ready(function(){
       issueArr.push([issue.number, issue]);
       issueHref = "https://github.com/fossasia/gci17.fossasia.org/issues/";
       issueHref += issue.number
-      issueAppend = "<li class='issue'>" + "<span class='issueNum'>#" + issue.number + "</span> <a href='" + issueHref + "'>" + issue.title + "</a> "; 
+      issueAppend = "<li class='issue' data-aos='flip-up'>" + "<span class='issueNum'>#" + issue.number + "</span> <a href='" + issueHref + "'>" + issue.title + "</a> ";
       issueAppend += "<span class='open'>Opened by " + "<a href='" + issue.user.html_url + "'>" + issue.user.login + "</a></span>";
       issueAppend += "<span class='comments'><i class='fa fa-comment' aria-hidden='true'></i> " + issue.comments + "</span>" ;
       issueAppend += "</li>";

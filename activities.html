@@ -4,6 +4,7 @@ permalink: activities
 
 {% include header.html %}
 
+<link rel="stylesheet" href="css/aos.css" />
 <div class="rocket">
 	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
 		<div class="fire"></div>
@@ -28,4 +29,10 @@ permalink: activities
 	</div>
 </section>
 
+<script src="js/aos.js"></script> 
+<script>
+	AOS.init({ 
+		easing: 'ease-in-out-sine' 
+	}); 
+</script>
 {% include footer.html %}
