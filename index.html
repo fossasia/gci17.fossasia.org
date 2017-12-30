@@ -68,9 +68,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -150,9 +150,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img data-src="img/students/member.png" alt="{{ student.name }}">
+					<img src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
@@ -287,7 +287,7 @@
 <section id="fossasia-projects">
 	<section class="image-edge">
     <div class="col-md-6 col-sm-4 p0">
-        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone1.png">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
@@ -303,7 +303,7 @@
 </section>
 <section class="image-edge" id="sus">
     <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone2.png">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
@@ -402,7 +402,7 @@
 				<a href="{{blog.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
 						<div class="content">
-							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
+							<img src="img/blog/{{blog.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">
 									<div class="blogorvideotitle">{{blog.title}}</div>
@@ -439,7 +439,7 @@
 				<a href="{{video.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
 						<div class="content">
-							<img data-src="img/video/{{video.img}}" height="240" width="240">
+							<img src="img/video/{{video.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">
 									<div class="blogorvideotitle">{{video.title}}</div>
@@ -556,7 +556,7 @@
 			<div class="container v-align-transform">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<img alt="Logo" class="image-small" data-src="img/fossasia-light.png">
+						<img alt="Logo" class="image-small" src="img/fossasia-light.png">
 					</div>
 				</div>
 
