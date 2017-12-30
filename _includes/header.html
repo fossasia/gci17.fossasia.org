@@ -1,130 +1,220 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>FOSSASIA | Google Code-In 2017</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="utf-8">
+	<title>FOSSASIA | Google Code-In 2017</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/hover.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/blog.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/hover-media-links.css" rel="stylesheet" type="text/css" media="all">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="favicon.ico" />
+</head>
 
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme-red.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/hover.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/blog.css" rel="stylesheet" type="text/css" media="all" />	
-		<link href="css/hover-media-links.css" rel="stylesheet" type="text/css" media="all">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-		<link rel="icon" href="favicon.ico" />
-	</head>
-
-	<body class="scroll-assist">
-		<div class="nav-container" id="welcome">
-			<nav>
-				<div class="nav-bar">
-					<div class="module left">
-						<a href="./#welcome">
-							<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png" width="110px" height="18.69">
-						</a>
-					</div>
-					<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-						<i class="fa fa-bar"></i>
-					</div>
-					<div class="module-group right">
-		                <div class="module left">
-		                    <ul class="menu">	                    
-		                        <li>
-		                            <a href="{{ baseurl }}./#mentors">Mentors</a>
-		                        </li>
-		                        <li>
-		                            <a href="{{ baseurl }}./#contributors">Contributors</a>
-		                        </li>
-		                        <li>
-		                            <a href="{{ baseurl }}./#students">Student</a>
-		                        </li>
-		                        <li>
-		                            <a href="{{ baseurl }}./#projects">Projects</a>
-		                        </li>
-					<li class="has-dropdown">
-		                            <a href="#">
-		                                Fossasia Projects
-		                            </a>
-		                            <ul>
-						<li>
-							<a href="{{ baseurl }} ./#fossasia-projects">Open-Event Android App</a>
-						</li>
-						<li>
-							<a href="{{ baseurl }} ./#sus">Susi.ai</a>
-						</li>
-						<li>
-							<a href="{{ baseurl }} ./#loki">Loklak Search</a>
-						</li>
-						<li>
-							<a href="{{ baseurl }} ./#other-projects">Other Sister Projects</a>
-						</li>
-						</ul>
-					</li>	
-		                        <li>
-		                            <a href="{{ baseurl }}./repositories.html">Repositories</a>
-		                        </li>
-		                        <li>
-									<a href="{{ baseurl }}./#map-sec">Map</a>
-								</li>
-		                        <li>
-		                            <a href="{{ baseurl }}./#student-blog">Blog Posts</a>
-		                        </li>
-		                       
-		                        <li>
-		                        	<a class="code-in-nav" href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
-		                        </li>
-		                        <li class="has-dropdown">
-		                            <a href="#">
-		                                Quick Links
-		                            </a>
-		                            <ul>
-		                                <li>
-		                                    <a href="https://fossasia.org/">
-		                                        Main Site
-		                                    </a>
-		                                </li>
-		                                <li>
-		                                    <a href="http://blog.fossasia.org/">
-		                                        Blog
-		                                    </a>
-		                                </li>
-		                                <li>
-											<a href="#">Events</a>
-												<ul>
-													<li><a target="_self" href="http://eventyay.com">FOSSASIA Event Management</a></li>
-													<li><a target="_self" href="http://sciencehack.asia">Science Hack Asia</a></li>
-													<li><a target="_self" href="http://sciencehack.in">Science Hack India</a></li>
-													<li><a target="_self" href="http://opentechsummit.cn">OpenTechSummit China</a></li>
-													<li><a target="_self" href="http://jugaadfest.com">Jugaadfest India</a></li>
-													<li><a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a></li>
-													<li><a target="_self" href="http://2017.fossasia.org">FOSSASIA Summit 2017</a></li>
-													<li><a href="https://gci16.fossasia.org">Google Code-In 2016</a></li>
-													<li><a href="https://gci15.fossasia.org">Google Code-In 2015</a></li>
-												</ul>
-		                                </li>
-		                                <li>
-		                                    <a href="http://events.fossasia.org/#sponsorship">
-		                                        Sponsorship
-		                                    </a>
-		                                </li>
-		                                <li>
-		                            		<a href="{{ baseurl }}./#social-links">Social Links</a>
-		                        		</li>
-		                            </ul>
-		                        </li>
-		                         
-		                    </ul>
-		                </div>
+<body class="scroll-assist">
+	<div class="nav-container" id="welcome">
+		<nav>
+			<div class="nav-bar">
+				<div class="module left">
+					<a href="./#welcome">
+						<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png" width="110px" height="18.69">
+					</a>
 				</div>
-			</nav>
+				<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+					<i class="fa fa-bar"></i>
+				</div>
+				<div class="module-group right">
+					<div class="module left">
+						<ul class="menu">
+							<li>
+								<a href="{{ baseurl }}./#mentors">Mentors</a>
+							</li>
+							<li>
+								<a href="{{ baseurl }}./#contributors">Contributors</a>
+							</li>
+							<li>
+								<a href="{{ baseurl }}./#students">Student</a>
+							</li>
+							<li>
+								<a href="{{ baseurl }}./#projects">Projects</a>
+							</li>
+							<li class="has-dropdown">
+								<a href="#">
+									Fossasia Projects
+								</a>
+								<ul>
+									<li>
+										<a href="{{ baseurl }} ./#fossasia-projects">Open-Event Android App</a>
+									</li>
+									<li>
+										<a href="{{ baseurl }} ./#sus">Susi.ai</a>
+									</li>
+									<li>
+										<a href="{{ baseurl }} ./#loki">Loklak Search</a>
+									</li>
+									<li>
+										<a href="{{ baseurl }} ./#other-projects">Other Sister Projects</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="{{ baseurl }}./repositories.html">Repositories</a>
+							</li>
+							<li>
+								<a href="{{ baseurl }}./#map-sec">Map</a>
+							</li>
+							<li>
+								<a href="{{ baseurl }}./#student-blog">Blog Posts</a>
+							</li>
+
+							<li>
+								<a class="code-in-nav" href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
+							</li>
+							<li class="has-dropdown">
+								<a href="#">
+									Quick Links
+								</a>
+								<ul>
+									<li>
+										<a href="https://fossasia.org/">
+											Main Site
+										</a>
+									</li>
+									<li>
+										<a href="http://blog.fossasia.org/">
+											Blog
+										</a>
+									</li>
+									<li>
+										<a href="#">Events</a>
+										<ul>
+											<li>
+												<a target="_self" href="http://eventyay.com">FOSSASIA Event Management</a>
+											</li>
+											<li>
+												<a target="_self" href="http://sciencehack.asia">Science Hack Asia</a>
+											</li>
+											<li>
+												<a target="_self" href="http://sciencehack.in">Science Hack India</a>
+											</li>
+											<li>
+												<a target="_self" href="http://opentechsummit.cn">OpenTechSummit China</a>
+											</li>
+											<li>
+												<a target="_self" href="http://jugaadfest.com">Jugaadfest India</a>
+											</li>
+											<li>
+												<a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a>
+											</li>
+											<li>
+												<a target="_self" href="http://2017.fossasia.org">FOSSASIA Summit 2017</a>
+											</li>
+											<li>
+												<a href="https://gci16.fossasia.org">Google Code-In 2016</a>
+											</li>
+											<li>
+												<a href="https://gci15.fossasia.org">Google Code-In 2015</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="http://events.fossasia.org/#sponsorship">
+											Sponsorship
+										</a>
+									</li>
+									<li>
+										<a href="{{ baseurl }}./#social-links">Social Links</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+						</li>
+						<li>
+							<a href="{{ baseurl }}./repositories.html">Repositories</a>
+						</li>
+						<li>
+							<a href="{{ baseurl }}./#map-sec">Map</a>
+						</li>
+						<li>
+							<a href="{{ baseurl }}./#student-blog">Blog Posts</a>
+						</li>
+
+						<li>
+							<a class="code-in-nav" href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="#">
+								Quick Links
+							</a>
+							<ul>
+								<li>
+									<a href="https://fossasia.org/">
+										Main Site
+									</a>
+								</li>
+								<li>
+									<a href="http://blog.fossasia.org/">
+										Blog
+									</a>
+								</li>
+								<li>
+									<a href="#">Events</a>
+									<ul>
+										<li>
+											<a target="_self" href="http://eventyay.com">FOSSASIA Event Management</a>
+										</li>
+										<li>
+											<a target="_self" href="http://sciencehack.asia">Science Hack Asia</a>
+										</li>
+										<li>
+											<a target="_self" href="http://sciencehack.in">Science Hack India</a>
+										</li>
+										<li>
+											<a target="_self" href="http://opentechsummit.cn">OpenTechSummit China</a>
+										</li>
+										<li>
+											<a target="_self" href="http://jugaadfest.com">Jugaadfest India</a>
+										</li>
+										<li>
+											<a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a>
+										</li>
+										<li>
+											<a target="_self" href="http://2017.fossasia.org">FOSSASIA Summit 2017</a>
+										</li>
+										<li>
+											<a href="https://gci16.fossasia.org">Google Code-In 2016</a>
+										</li>
+										<li>
+											<a href="https://gci15.fossasia.org">Google Code-In 2015</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://events.fossasia.org/#sponsorship">
+										Sponsorship
+									</a>
+								</li>
+								<li>
+									<a href="{{ baseurl }}./#social-links">Social Links</a>
+								</li>
+							</ul>
+						</li>
+
+						</ul>
+					</div>
+				</div>
+		</nav>
 		</div>
 
 		<div class="main-container">

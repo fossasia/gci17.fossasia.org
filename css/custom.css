@@ -7,85 +7,92 @@
 }
 
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .back-to-top:visited {
-    color: #fff;
+  color: #fff;
 }
 
 .footer-1 {
-    padding: 60px 0px 20px 0px;
+  padding: 60px 0px 20px 0px;
 }
 
 .footer-2 {
-    padding: 16px;
-    background: #383838;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+  padding: 16px;
+  background: #383838;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .social-list li {
-    padding: 0px 5px;
+  padding: 0px 5px;
 }
 
 .footer-social-text {
-    margin-bottom: 4px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #cecece !important;
-    font-size: 20px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cecece !important;
+  font-size: 20px;
 }
 
 .footer-logo {
-    height: 31px;
-    padding: 7px;
-    box-sizing: content-box;
+  height: 31px;
+  padding: 7px;
+  box-sizing: content-box;
 }
 
 #map {
-    width: 100%;
-    height: 500px;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+  width: 100%;
+  height: 500px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .display-picture {
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-.twitter-timeline,.g-page{
-    width: 100%;
+.twitter-timeline,
+.g-page {
+  width: 100%;
 }
 
-.fb-big-iframe,.g-plus-big{
-    display: block;
+.fb-big-iframe,
+.g-plus-big {
+  display: block;
 }
-.fb-small-iframe,.g-plus-small{
+
+.fb-small-iframe,
+.g-plus-small {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px) {
+  .fb-big-iframe,
+  .g-plus-big {
     display: none;
-}
-
-@media screen and (max-width: 1200px) and (min-width:768px){
-    .fb-big-iframe,.g-plus-big{
-        display: none;
-    }
-    .fb-small-iframe,.g-plus-small{
-        display: block;
-    }
+  }
+  .fb-small-iframe,
+  .g-plus-small {
+    display: block;
+  }
 }
 
 .flex-next {
@@ -110,7 +117,6 @@
   60% {
     transform: translateX(15px);
   }
-  
 }
 
 @keyframes bounceleft {
@@ -129,7 +135,9 @@
   }
 }
 
-.row.vid-row, .row.blog-row, ul#project_holder {
+.row.vid-row,
+.row.blog-row,
+ul#project_holder {
   display: flex;
   justify-content: space-around;
 }
@@ -175,6 +183,7 @@
 .issue a {
   font-size: 15px;
 }
+
 span.student-project-name {
   transition: 0.5s;
   background: #0000007F;
@@ -189,9 +198,9 @@ span.student-project-name {
   top: -300px;
   padding: 10px;
   width: 269px;
- }
- 
- span.student-project-name span {
+}
+
+span.student-project-name span {
   transition: 0.5s;
   font-weight: bold;
   text-transform: uppercase;
@@ -199,54 +208,57 @@ span.student-project-name {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
- }
- 
+}
+
 .background-image-holder:hover span.student-project-name {
   opacity: 1;
   top: 0;
 }
+
 @keyframes tada {
   from {
     transform: scale3d(1, 1, 1);
   }
-
-  10%, 20% {
+  10%,
+  20% {
     transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
   }
-
-  30%, 50%, 70%, 90% {
+  30%,
+  50%,
+  70%,
+  90% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-
-  40%, 60%, 80% {
+  40%,
+  60%,
+  80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-
   to {
     transform: scale3d(1, 1, 1);
   }
 }
 
-.code-in-nav:before { 
-  content: " "; 
-  background-image: url("../img/gci-logo.png"); 
-  background-size: contain; 
-  background-repeat: no-repeat; 
-  padding: 0 12px; 
-  padding-top: 0px; 
-  font-size: 1.5rem; 
+.code-in-nav:before {
+  content: " ";
+  background-image: url("../img/gci-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 12px;
+  padding-top: 0px;
+  font-size: 1.5rem;
 }
 
 #student-blog .row {
-	margin: auto;
+  margin: auto;
 }
 
 #student-blog .col-md-3 {
-	margin: auto;
-	width: 240px;
-	box-sizing: initial;
+  margin: auto;
+  width: 240px;
+  box-sizing: initial;
 }
 
 #student-blog .col-md-3 a {
-	width: 240px;
+  width: 240px;
 }

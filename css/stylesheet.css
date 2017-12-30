@@ -22,7 +22,7 @@
 }
 
 #student_title {
-  font-family: 'Cabin Sketch', cursive !important;
+    font-family: 'Cabin Sketch', cursive !important;
 }
 
 .bg-secondary {
@@ -31,18 +31,18 @@
     border-color: #ddd;
 }
 
-
- h2.txt-rotate {
+h2.txt-rotate {
     height: 30px;
     margin-bottom: 0px;
 }
 
- .btn:hover {
+.btn:hover {
     border-color: #e31d3b;
     border-style: solid;
     border-width: medium;
     background: none;
-    color: #333;}
+    color: #333;
+}
 
 div.image-tile.outer-title.text-center {
     margin-bottom: 0px;
