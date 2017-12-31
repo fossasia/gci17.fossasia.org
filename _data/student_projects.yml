@@ -12,6 +12,11 @@
   image: flask_0x48piraj.png
 
 - name: Piyush Raj
+  github: https://github.com/0x48piraj/countdown-2018
+  author: Piyush Raj | 0x48piraj
+  image: countdown_0x48piraj.png
+
+- name: Piyush Raj
   github: https://github.com/0x48piraj/advanced-calculator
   author: Piyush Raj | 0x48piraj
   image: emberjs_0x48piraj.png
@@ -25,3 +30,8 @@
   github: https://atomickindness.tk/
   author: Ploypiti P.
   image: AAK_logo.png
+
+- name: Aditya Dutt
+  github: https://github.com/duttaditya18/beautiful-flask
+  author: Aditya Dutt | duttaditya18
+  image: beautiful-flask.png
