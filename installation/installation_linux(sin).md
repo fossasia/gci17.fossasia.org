@@ -3,7 +3,7 @@
 මෙම පිටුවෙහි ඇති උපදෙස් ඔබට ලිනක්ස් පාරිසරිකය තුල ප්‍රාදේශීය ප්‍රවර්ධන සැකසුමට මග පෙන්වනු ඇත. 
 
 ### Ruby ස්ථාපනය කිරීම  
-1. ටර්මිනල් එකක් විවෘත කර ruby ස්ථාපනය කිරීම සඳහා ඇසුරුම් කළමණාකරු භාවිතා කරන්න. නිදසුනක් ලෙස, Ubuntu or Debian භාවිතා කර `sudo apt-get install ruby` හෝ Arch Linux මත `sudo pacman -S ruby` හෝ භාවිතා කරන්න
+1. ටර්මිනල් එකක් විවෘත කර ruby ස්ථාපනය කිරීම සඳහා ඇසුරුම් කළමණාකරු භාවිතා කරන්න. නිදසුනක් ලෙස, Ubuntu or Debian භාවිතා කර `sudo apt-get install ruby ruby-dev` හෝ Arch Linux මත `sudo pacman -S ruby ruby-dev` හෝ භාවිතා කරන්න
 2. ක්‍රියාත්මක කළ හැකි gems වර්ගයක් සැකසීම සඳහා `(ruby -e 'print Gem.user_dir')` අනතුරුව `PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"` ඒ වගේම අවසානයට `export GEM_HOME=$HOME/.gem` ලියනය කරන්න.(වැඩි දුර විස්තර මෙතැන `https://wiki.archlinux.org/index.php/ruby#Setup`)
 
 ### jekyll ස්ථාපනය කිරීම
