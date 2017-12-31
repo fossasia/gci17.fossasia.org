@@ -1,7 +1,7 @@
 - name: Lokinder Singh
   country: India
   github: demonsingh336
-  image: Lokinder Singh.jpg
+  image: lokinder.jpg
   twitter: demonsingh336
   
 - name: Chirag Kumar
@@ -98,6 +98,9 @@
   image: Saarthak.jpg
   github: saarthakchats
   twitter: SaarthakChats41
+  facebook: saarthak.chaturvedi
+  lat: 28.5689232
+  lng: 77.26205139999999
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
@@ -148,6 +151,8 @@
   image: samyak.png
   twitter: Samyakbvs
   facebook: Samyak Jain
+  lat: 28.621091399999997
+  lng: 77.2173155
 
 - name: Tushar Verma
   github: 2coolife
@@ -246,5 +251,8 @@
 - name: Yash Kothari
   country: India
   github: Beta-King
+  twitter: Beta_King_500
   image: Beta_KIng.jpg
   twitter: Yash_Beta_King
+  lat: 26.9255
+  lng: 75.7861
