@@ -1,3 +1,9 @@
+- name: Mrthunjai Dhanasekhar
+  country: India
+  github: mjd220903
+  image: mjd.jpg
+  twitter: mrthunjai
+
 - name: Lokinder Singh
   country: India
   github: demonsingh336
@@ -257,8 +263,3 @@
   lat: 26.9255
   lng: 75.7861
   
-  - name: Mrthunjai D
-  country: India
-  github: mjd220903
-  image: mjd.jpg
-  twitter: mrthunjai
