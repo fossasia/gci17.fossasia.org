@@ -1,4 +1,12 @@
-  
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - url: URL to the video in YouTube 
+#   title: Title of the video
+#   img: Image of the video
+#   author_name: Name of the creator of the blog (most likely you)
+
 - url: https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s
   title: About FOSSASIA
   img: FOSSASIA.jpeg
@@ -18,4 +26,9 @@
   title: Interview with Two Fossasia Buddies
   img: suups.png
   author_name: Saarthak Chaturvedi
+  
+- url: https://www.youtube.com/watch?v=RMgVHA7xGXU
+  title: FOSSASIA Summit 2018 Promo
+  img: FOSSASIA.jpeg
+  author_name: Naveen Rajan
   

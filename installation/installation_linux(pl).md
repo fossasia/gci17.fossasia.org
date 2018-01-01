@@ -3,7 +3,7 @@
 Instrukcje na tej stronie przeprowadzą Cię przez proces konfiguracji lokalnego środowiska programistycznego w Linuksie.
 
 ### Instalacja Ruby
-1. Otwórz Terminal i użyj package managera aby zainstalować Ruby. Na przykład, dla Ubuntu lub Debiana użyj `sudo apt-get install ruby` a dla Arch Linux `sudo pacman -S ruby`.
+1. Otwórz Terminal i użyj package managera aby zainstalować Ruby. Na przykład, dla Ubuntu lub Debiana użyj `sudo apt-get install ruby ruby-dev` a dla Arch Linux `sudo pacman -S ruby ruby-dev`.
 2. Aby gemy były wykonywalne użyj `(ruby -e 'print Gem.user_dir')` następnie `PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"` i w końcu `export GEM_HOME=$HOME/.gem`.(więcej informacji `https://wiki.archlinux.org/index.php/ruby#Setup`)
 
 ### Instalacja jekyll

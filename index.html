@@ -2,6 +2,10 @@
 ---
 {% include header.html %}
 
+<center>
+	<div id="google_translate_element"></div>
+</center>
+
 <div class="rocket">
 	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
 		<div class="fire"></div>
@@ -64,9 +68,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -128,7 +132,8 @@
 <section class="bg-dark">
 	<div class="container">
 		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
+			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!", "
+Ευχαριστώ για τη συμβολή!", "شكرا للمساهمة!", "Tibi gratias ob tuam contributionem!"]'>
 		   	</h2>
 		</div>
 	</div>
@@ -145,9 +150,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img data-src="img/students/member.png" alt="{{ student.name }}">
+					<img src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
@@ -221,6 +226,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<a class="mb0 btn btn-lg btn-filled" href="https://gci16.fossasia.org/#stprojects">Student Projects'16</a>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -282,7 +292,7 @@
 <section id="fossasia-projects">
 	<section class="image-edge">
     <div class="col-md-6 col-sm-4 p0">
-        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone1.png">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
@@ -298,7 +308,7 @@
 </section>
 <section class="image-edge" id="sus">
     <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone2.png">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
@@ -397,7 +407,7 @@
 				<a href="{{blog.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
 						<div class="content">
-							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
+							<img src="img/blog/{{blog.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">
 									<div class="blogorvideotitle">{{blog.title}}</div>
@@ -434,7 +444,7 @@
 				<a href="{{video.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
 						<div class="content">
-							<img data-src="img/video/{{video.img}}" height="240" width="240">
+							<img src="img/video/{{video.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">
 									<div class="blogorvideotitle">{{video.title}}</div>
@@ -505,6 +515,11 @@
                     <i class="fa fa-vk" aria-hidden="true"></i>
                 </a>
 			</li>
+			<li>
+				<a href="https://www.reddit.com/r/FOSSASIA/">
+					<i class="fa fa-reddit"></i>
+				</a>
+			</li>	
 
 		</ul>
 	</div>
@@ -538,7 +553,8 @@
 			<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 		</div>
 	</div>
-
+<blockquote class="embedly-card"><h4><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">FOSSASIA</a></h4><p>FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events ar...</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 </section>
 
 <!-- Placeholder connect -->
@@ -551,7 +567,7 @@
 			<div class="container v-align-transform">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<img alt="Logo" class="image-small" data-src="img/fossasia-light.png">
+						<img alt="Logo" class="image-small" src="img/fossasia-light.png">
 					</div>
 				</div>
 
@@ -594,6 +610,11 @@
                             <i class="fa fa-vk" aria-hidden="true"></i>
                         </a>
                     </li>
+		    <li>
+			    <a href="https://www.reddit.com/r/FOSSASIA/">
+				    <i class="fa fa-reddit" aria-hidden="true"></i>
+			    </a>
+		    </li>			
 				</ul>
 			</div>
 		</li>
