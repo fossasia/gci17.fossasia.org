@@ -271,3 +271,7 @@ span.student-project-name {
     padding: 5px;
     flex-basis: 360px;
 }
+
+.learn-more {
+    text-align: center;
+}
