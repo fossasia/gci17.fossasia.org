@@ -1436,6 +1436,7 @@ TxtRotate.prototype.tick = function() {
 
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
+  console.log(elements);
   for (var i=0; i<elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
     var period = elements[i].getAttribute('data-period');
@@ -1486,7 +1487,7 @@ $(document).ready(function() {
 });
 
 //Back to top button
-jQuery(window).scroll(function () {
+jQuery(window).scroll(function() {
     if (jQuery(window).scrollTop() < 50) {
         jQuery('#rocketmeluncur').slideUp(500);
     } else {
@@ -1499,24 +1500,27 @@ jQuery(window).scroll(function () {
     var basewrocketmeluncur = parseInt(ftrocketmeluncur.clientWidth);
     var swrocketmeluncur = scrolltoprocketmeluncur.clientWidth;
     if (basewrocketmeluncur < 1000) {
-        var leftrocketmeluncur = parseInt(fetchOffset(ftrocketmeluncur)['left']);
+        var leftrocketmeluncur = parseInt(ftrocketmeluncur.offsetLeft);
         leftrocketmeluncur = leftrocketmeluncur < swrocketmeluncur ? leftrocketmeluncur * 2 - swrocketmeluncur : leftrocketmeluncur;
-        scrolltoprocketmeluncur.style.left = (basewrocketmeluncur + leftrocketmeluncur) + 'px';
+        scrolltoprocketmeluncur.css('left', (basewrocketmeluncur + leftrocketmeluncur + "px"));
     } else {
-        scrolltoprocketmeluncur.style.left = 'auto';
-        scrolltoprocketmeluncur.style.right = '10px';
+        scrolltoprocketmeluncur.css('left', 'auto');
+        scrolltoprocketmeluncur.css('right', '10px');
     }
-})
+});
 
-jQuery('#rocketmeluncur').click(function () {
-    jQuery("html, body").animate({ scrollTop: '0px', display: 'none' }, {
-        duration: 400,
+jQuery('#rocketmeluncur').click(function() {
+    jQuery("html, body").animate({
+        scrollTop: '0px',
+        display: 'none'
+    }, {
+        duration: 600,
         easing: 'linear'
     });
 
     var self = this;
     this.className += ' ' + "launchrocket";
-    setTimeout(function () {
+    setTimeout(function() {
         self.className = 'showrocket';
-    }, 800)
+    }, 800);
 });
