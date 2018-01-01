@@ -250,3 +250,24 @@ span.student-project-name {
 #student-blog .col-md-3 a {
 	width: 240px;
 }
+
+.page{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+@media (min-width: 900px){
+    .flex-row{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    }
+}
+
+
+.flex-row > *{
+    flex: 1;
+    padding: 5px;
+    flex-basis: 360px;
+}
