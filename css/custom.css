@@ -263,6 +263,9 @@ span.student-project-name {
     align-items: stretch;
     justify-content: space-between;
     }
+    #phimp, #ps {
+        position: relative; transform:translateY(175%);
+    }
 }
 
 
@@ -274,6 +277,8 @@ span.student-project-name {
 
 .learn-more {
     text-align: center;
+    margin: auto;
     display: flex;
-    align-items: flex-end!important;
+    vertical-align: middle;
+    justify-content: space-around;
 }
