@@ -270,8 +270,11 @@ span.student-project-name {
         transform:translateY(70%);
     }
     #ps{
-        transform: translateY(109%);
+        transform: translateY(74%);
     }
+/*    .flex-row > :last-child {
+        margin-right: 40px;
+    }*/
 }
 
 
@@ -281,9 +284,7 @@ span.student-project-name {
     flex-basis: 360px;
 }
 
-.flex-row > :last-child {
-    margin-right: 40px;
-}
+
 
 .learn-more {
     text-align: center;
