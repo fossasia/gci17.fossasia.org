@@ -1,3 +1,12 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - url: URL to the blog
+#   title: Title of the blog
+#   img: Image of the blog
+#   author_name: Name of the author of the blog (most likely you)
+
 - url: https://participationgcin.wordpress.com/
   title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
   img: sudhanshuedoc.jpg
