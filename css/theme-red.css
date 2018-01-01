@@ -3942,6 +3942,29 @@ video {
 .play-button.dark:before {
   border-color: transparent transparent transparent #292929;
 }
+.jig{
+  position: absolute; 
+  bottom:0px; 
+  left: 30%;
+}
+
+@media only screen and (max-width: 990px) {
+    .jig {
+    position:absolute;
+    bottom:0px; 
+    top: 100%;
+    left: 20%;
+        }
+}
+@media only screen and (max-width: 770px) {
+    .jig{
+    position:absolute;
+    top: 50%;
+    left: 40%; 
+
+    }
+}
+
 @media all and (max-width: 767px) {
   .play-button {
     width: 65px;
