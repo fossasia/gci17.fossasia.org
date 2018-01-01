@@ -1,17 +1,55 @@
+- name: Mrthunjai Dhanasekhar
+  country: India
+  github: mjd220903
+  image: mjd.jpg
+  twitter: mrthunjai
+
+- name: Lokinder Singh
+  country: India
+  github: demonsingh336
+  image: lokinder.jpg
+  twitter: demonsingh336
+  
+- name: Chirag Kumar
+  country: India
+  github: INFERNOMK1
+  image: ChiragKumar.jpg
+  twitter: INFERNOMK1
+  
+- name: Amriyono Maju Ompusunggu
+  country: Indonesia
+  github: amryarios
+  image: amryarios.jpg
+  twitter: AmryArios
+  facebook: ompusunggu.amri
+  lat: -6.2087634
+  lng: 106.84559899999999
+
+- name: Raj Khare
+  country: India
+  github: RajKhare
+  image: rajkhare.png
+  twitter: UserRajKhare
+
+- name: Akshat Jain
+  github: AkshatJain1
+  image: akshatj.jpg
+  twitter: akshatjain0101
+  
 - name: Anastasiia Kostiv
   github: AKostiv8
   image: kostiv.jpeg
   twitter: KostivNastya
   facebook: anastasiya.kostiv
 
+- name: Andre Christoga
+  country: Indonesia
+  github: acga
+  image: andre.png
+  twitter: christogandre
+
 - name: Miguel Piedrafita
   image: m1guelpf.png
-
-- name: Piyush Raj
-  github: 0x48piraj
-  image: 0x48piraj.jpg
-  twitter: 0x48piraj
-  facebook: 0x48piraj
 
 - name: Chahat Bansal
   image: chahat.png
@@ -66,6 +104,9 @@
   image: Saarthak.jpg
   github: saarthakchats
   twitter: SaarthakChats41
+  facebook: saarthak.chaturvedi
+  lat: 28.5689232
+  lng: 77.26205139999999
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
@@ -86,7 +127,7 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
-  
+
 - name: Prasenjit Gautam
   github: FreakinBabaJi
   country: India
@@ -116,7 +157,9 @@
   image: samyak.png
   twitter: Samyakbvs
   facebook: Samyak Jain
-  
+  lat: 28.621091399999997
+  lng: 77.2173155
+
 - name: Tushar Verma
   github: 2coolife
   image: 2coolife.jpg
@@ -136,7 +179,7 @@
   image: k7un.jpeg
   facebook: ccr4b
   twitter: _ccr4b
-  
+
 - name: Ploypiti Piyaprapan
   country: Thailand
   github: Ploypiti
@@ -145,6 +188,15 @@
   facebook: PL0YP1T1
   lat: 13.756331
   lng: 100.501765
+
+- name: Piyush Raj
+  country: India
+  github: 0x48piraj
+  image: 0x48piraj.jpg
+  twitter: 0x48piraj
+  facebook: 0x48piraj
+  lat: 25.5938
+  lng: 85.1605
 
 - name: Nuode Chen
   country: Singapore
@@ -164,27 +216,50 @@
   country: Poland
   github: Shizerq
   image: MSShizerq.jpg
-  
+
 - name: Ashish Kumar Singh
   country: India
   github: lavavi
   image: lavavi.jpg
-  
+
 - name: Jeewal Kunwar
   country: Nepal
   github: Jeewal
   image: Jeewal.jpg
   twitter: jeewalkunwar1
-  
+
 - name: Mridul Birla
   country: India
   github: Mridulbirla13
   image: Mridul.jpg
-  twitter: mridulbirla13  
-  
+  twitter: mridulbirla13
+
 - name: Krish Birla
   country: India
   github: krishbirla13
   image: Krish.jpg
   twitter: krishbirla13
+
+- name: Arjun Pandey
+  country: India
+  github: arjunpandey2003
+  image: arjun.jpg
+  twitter: arjunpandey2003
+  lat: 77.2090
+  lng: 28.6139
+
+- name: Daniel Lawson
+  country: USA
+  github: daniellawson9999
+  image: danielProfile.jpg
+  twitter: danielblawson9
+  
+- name: Yash Kothari
+  country: India
+  github: Beta-King
+  twitter: Beta_King_500
+  image: Beta_KIng.jpg
+  twitter: Yash_Beta_King
+  lat: 26.9255
+  lng: 75.7861
   
