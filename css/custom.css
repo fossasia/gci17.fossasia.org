@@ -264,7 +264,13 @@ span.student-project-name {
     justify-content: space-between;
     }
     #phimp, #ps {
-        position: relative; transform:translateY(175%);
+        position: relative;
+    }
+    #phimp{
+        transform:translateY(70%);
+    }
+    #ps{
+        transform: translateY(109%);
     }
 }
 
@@ -273,6 +279,10 @@ span.student-project-name {
     flex: 1;
     padding: 20px;
     flex-basis: 360px;
+}
+
+.flex-row > :last-child {
+    margin-right: 40px;
 }
 
 .learn-more {
