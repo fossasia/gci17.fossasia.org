@@ -27,16 +27,19 @@
 			<nav>
 				<div class="nav-bar">
 					<div class="module left">
-						<a href="./#welcome">
+						<a href="https://fossasia.org">
 							<img class="logo logo-dark" alt="FOSSASIA" src="img/fossasia-dark.png" width="110px" height="18.69">
 						</a>
 					</div>
 					<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-						<i class="fa fa-bar"></i>
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</div>
 					<div class="module-group right">
 		                <div class="module left">
-		                    <ul class="menu">	                    
+		                    <ul class="menu">
+		                    	<li>
+		                            <a href="{{ baseurl }}./#welcome">Welcome</a>
+		                        </li>	                    
 		                        <li>
 		                            <a href="{{ baseurl }}./#mentors">Mentors</a>
 		                        </li>
@@ -49,9 +52,28 @@
 		                        <li>
 		                            <a href="{{ baseurl }}./#projects">Projects</a>
 		                        </li>
-					<li>
-						<a href="{{ baseurl }} ./#fossasia-projects">Fossasia Projects</a>
+					<li class="has-dropdown">
+		                            <a href="#">
+		                                Fossasia Projects
+		                            </a>
+		                            <ul>
+						<li>
+							<a href="{{ baseurl }} ./#fossasia-projects">Open-Event Android App</a>
+						</li>
+						<li>
+							<a href="{{ baseurl }} ./#sus">Susi.ai</a>
+						</li>
+						<li>
+							<a href="{{ baseurl }} ./#loki">Loklak Search</a>
+						</li>
+						<li>
+							<a href="{{ baseurl }} ./#other-projects">Other Sister Projects</a>
+						</li>
+						</ul>
 					</li>	
+		                        <li>
+		                        	<a href="{{ baseurl }}./activities">Activities</a>
+		                        </li>
 		                        <li>
 		                            <a href="{{ baseurl }}./repositories.html">Repositories</a>
 		                        </li>
@@ -61,9 +83,7 @@
 		                        <li>
 		                            <a href="{{ baseurl }}./#student-blog">Blog Posts</a>
 		                        </li>
-		                        <li>
-		                            <a href="{{ baseurl }}./#social-links">Social Links</a>
-		                        </li>
+		                       
 		                        <li>
 		                        	<a class="code-in-nav" href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
 		                        </li>
@@ -83,48 +103,37 @@
 		                                    </a>
 		                                </li>
 		                                <li>
-							<a href="#">Events</a>
-							<ul>
-								<li><a target="_self" href="http://eventyay.com">FOSSASIA Event Management</a></li>
-								<li><a target="_self" href="http://sciencehack.asia">Science Hack Asia</a></li>
-								<li><a target="_self" href="http://sciencehack.in">Science Hack India</a></li>
-								<li><a target="_self" href="http://opentechsummit.cn">OpenTechSummit China</a></li>
-								<li><a target="_self" href="http://jugaadfest.com">Jugaadfest India</a></li>
-								<li><a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a></li>
-								<li><a target="_self" href="http://2017.fossasia.org">FOSSASIA Summit 2017</a></li>
-								<li><a href="https://gci16.fossasia.org">Google Code-In 2016</a></li>
-								<li><a href="https://gci15.fossasia.org">Google Code-In 2015</a></li>
-							</ul>
+											<a href="#">Events</a>
+												<ul>
+													<li><a target="_self" href="http://eventyay.com">FOSSASIA Event Management</a></li>
+													<li><a target="_self" href="http://sciencehack.asia">Science Hack Asia</a></li>
+													<li><a target="_self" href="http://sciencehack.in">Science Hack India</a></li>
+													<li><a target="_self" href="http://opentechsummit.cn">OpenTechSummit China</a></li>
+													<li><a target="_self" href="http://jugaadfest.com">Jugaadfest India</a></li>
+													<li><a target="_self" href="http://2018.fossasia.org">FOSSASIA Summit 2018</a></li>
+													<li><a target="_self" href="http://2017.fossasia.org">FOSSASIA Summit 2017</a></li>
+													<li><a href="https://gci16.fossasia.org">Google Code-In 2016</a></li>
+													<li><a href="https://gci15.fossasia.org">Google Code-In 2015</a></li>
+												</ul>
+		                                </li>
+		                                <li>
+		                                	<a href="https://codeheat.org">Code Heat</a>
+												<ul>
+													<li><a target="_self" href="http://2016.codeheat.org">2016 Code Heat</a></li>
+													<li><a target="_self" href="http://2017.codeheat.org">2017 Code Heat</a></li>
+												</ul>
 		                                </li>
 		                                <li>
 		                                    <a href="http://events.fossasia.org/#sponsorship">
 		                                        Sponsorship
 		                                    </a>
 		                                </li>
+		                                <li>
+		                            		<a href="{{ baseurl }}./#social-links">Social Links</a>
+		                        		</li>
 		                            </ul>
 		                        </li>
-		                    </ul>
-		                </div>
-
-						<div class="module widget-handle language left">
-		                    <ul class="menu">
-		                        <li class="has-dropdown">
-		                            <a href="#">ENG</a>
-		                            <ul>
-		                                <li>
-		                                    <a href="https://translate.google.com/translate?sl=auto&tl=fr&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fgci17.fossasia.org%2F&edit-text=">French</a>
-		                                </li>
-		                                <li>
-		                                    <a href="https://translate.google.com/translate?hl=en&sl=auto&tl=es&u=https%3A%2F%2Fgci17.fossasia.org%2F&sandbox=1">Spanish</a>
-		                                </li>
-		                                <li>
-		                                    <a href="https://translate.google.com/translate?hl=en&sl=auto&tl=pt&u=https%3A%2F%2Fgci17.fossasia.org%2F">Portuegese</a>
-		                                </li>
-		                                <li>
-		                                    <a href="https://translate.google.com/translate?hl=en&sl=en&tl=zh-CN&u=https%3A%2F%2Fgci17.fossasia.org%2F">Chinese</a>
-		                                </li>
-		                            </ul>
-		                        </li>
+		                         
 		                    </ul>
 		                </div>
 				</div>

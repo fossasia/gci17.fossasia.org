@@ -4,7 +4,7 @@ The instructions on this page will guide you in setting up a local development
 environment in Linux.
 
 ### Ruby Installation
-1. Open a Terminal and use a package manager to install ruby. For example, on Ubuntu or Debian use `sudo apt-get install ruby` or on Arch Linux `sudo pacman -S ruby`.
+1. Open a Terminal and use a package manager to install ruby. For example, on Ubuntu or Debian use `sudo apt-get install ruby ruby-dev` or on Arch Linux `sudo pacman -S ruby ruby-dev`.
 2. To make gems executable type `(ruby -e 'print Gem.user_dir')` then `PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"` and last `export GEM_HOME=$HOME/.gem`.(more info at `https://wiki.archlinux.org/index.php/ruby#Setup`)
 
 ### jekyll Installation

@@ -2,6 +2,10 @@
 ---
 {% include header.html %}
 
+<center>
+	<div id="google_translate_element"></div>
+</center>
+
 <div class="rocket">
 	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
 		<div class="fire"></div>
@@ -64,9 +68,9 @@
 				{% for mentor in site.data.mentors limit:5 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
-								<img data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
 						{% else %}
-							<img data-src="img/mentors/member.png" alt="{{ mentor.name }}">
+							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
 						{% endif %}
 						<br>
 						<p class="person-name">{{ mentor.name }}</p><br>
@@ -128,7 +132,8 @@
 <section class="bg-dark">
 	<div class="container">
 		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!"]'>
+			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!", "
+Ευχαριστώ για τη συμβολή!", "شكرا للمساهمة!", "Tibi gratias ob tuam contributionem!"]'>
 		   	</h2>
 		</div>
 	</div>
@@ -145,9 +150,9 @@
 				{% for student in site.data.students limit:5 %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img data-src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
 					{% else %}
-					<img data-src="img/students/member.png" alt="{{ student.name }}">
+					<img src="img/students/member.png" alt="{{ student.name }}">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
@@ -282,7 +287,7 @@
 <section id="fossasia-projects">
 	<section class="image-edge">
     <div class="col-md-6 col-sm-4 p0">
-        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone1.png">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone1.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
@@ -296,9 +301,9 @@
     </div>
     
 </section>
-<section class="image-edge">
+<section class="image-edge" id="sus">
     <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
-        <img alt="Screenshot" class="mb-xs-24" data-src="img/phone2.png">
+        <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png">
     </div>
     <div class="container">
         <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
@@ -311,7 +316,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="other-projects">
     <div class="container" >
         <div class="row text-center" >
             <div class="col-sm-4" style="height:350px">
@@ -397,7 +402,7 @@
 				<a href="{{blog.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
 						<div class="content">
-							<img data-src="img/blog/{{blog.img}}" height="240" width="240">
+							<img src="img/blog/{{blog.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">
 									<div class="blogorvideotitle">{{blog.title}}</div>
@@ -434,7 +439,7 @@
 				<a href="{{video.url}}" target="_blank">
 					<div class="image-tile outer-title text-center">
 						<div class="content">
-							<img data-src="img/video/{{video.img}}" height="240" width="240">
+							<img src="img/video/{{video.img}}" height="240" width="240">
 							<div class="title mb16">
 								<h5 class="uppercase mb0">
 									<div class="blogorvideotitle">{{video.title}}</div>
@@ -505,6 +510,11 @@
                     <i class="fa fa-vk" aria-hidden="true"></i>
                 </a>
 			</li>
+			<li>
+				<a href="https://www.reddit.com/r/FOSSASIA/">
+					<i class="fa fa-reddit"></i>
+				</a>
+			</li>	
 
 		</ul>
 	</div>
@@ -512,6 +522,13 @@
 
 <!-- placeholder flickr feed -->
 <section>
+
+<div class="col-sm-12 text-center">
+			<h2 class="animated fadeIn">Pictures</h2>
+			<p class="lead mb64">Humans, not places, make memories.</p>
+			<a class="btn btn-lg" target = "_blank" href="https://www.flickr.com/photos/fossasia/">see memories!</a>
+</div>
+
 <div id="flickrembed"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://youtubevideoembed.com">Embed Youtube</a></div><script src='https://flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=72157665486359899&sort=0&by=album&theme=default&scale=fill&limit=10&skin=default-light&autoplay=true'></script><small style="display: block; text-align: center; margin: 0 auto;">Powered by <a href="https://github.com/0x48piraj">flickr | 0x48piraj</a>.</small>
 </section>
 
@@ -531,7 +548,8 @@
 			<iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-10" src="https://www.youtube.com/embed/SLl--BrmAXs?list=PLzZVLecTsGpK544UhC1_Gm4sl4eW3lTEq" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 		</div>
 	</div>
-
+<blockquote class="embedly-card"><h4><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">FOSSASIA</a></h4><p>FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events ar...</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 </section>
 
 <!-- Placeholder connect -->
@@ -544,7 +562,7 @@
 			<div class="container v-align-transform">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<img alt="Logo" class="image-small" data-src="img/fossasia-light.png">
+						<img alt="Logo" class="image-small" src="img/fossasia-light.png">
 					</div>
 				</div>
 
@@ -587,6 +605,11 @@
                             <i class="fa fa-vk" aria-hidden="true"></i>
                         </a>
                     </li>
+		    <li>
+			    <a href="https://www.reddit.com/r/FOSSASIA/">
+				    <i class="fa fa-reddit" aria-hidden="true"></i>
+			    </a>
+		    </li>			
 				</ul>
 			</div>
 		</li>
@@ -595,7 +618,7 @@
 
 
 
-<section class="bg-primary">
+<section class="bg-primary" id="loki">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-1 text-right text-left-xs col-sm-5">
