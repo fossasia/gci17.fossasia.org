@@ -55,7 +55,7 @@ $(document).ready(function(){
       $(".issue-container").append("<li class='mi'>Sorry there are no issues labeled feature currently opened at gci17.fossasia.org</li>");
     }
 
-    $(".issue-container").append("<a href='https://github.com/fossasia/gci17.fossasia.org/issues' class='btn totalIssue'>" + allIssues.length + " issues on <i class='fa fa-github'></i> Github");
+    $(".issue-container").append("<a href='https://github.com/fossasia/gci17.fossasia.org/issues' class='btn totalIssue'>" + allIssues.length + " activities on <i class='fa fa-github'></i> Github");
 
     $.each(allIssues, function (i, issue) {
       issueArr.push([issue.number, issue]);
