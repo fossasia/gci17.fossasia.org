@@ -268,10 +268,12 @@ span.student-project-name {
 
 .flex-row > *{
     flex: 1;
-    padding: 5px;
+    padding: 20px;
     flex-basis: 360px;
 }
 
 .learn-more {
     text-align: center;
+    position: absolute;
+    bottom: 0;
 }
