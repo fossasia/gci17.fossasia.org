@@ -250,3 +250,8 @@ span.student-project-name {
 #student-blog .col-md-3 a {
 	width: 240px;
 }
+
+.typed-cursor{
+  font-size: 40px;
+  display: inline-block;
+}
