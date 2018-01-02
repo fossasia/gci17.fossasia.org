@@ -1,0 +1,254 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - url: URL to the blog
+#   title: Title of the blog
+#   img: Image of the blog
+#   author_name: Name of the author of the blog (most likely you)
+
+- url: https://participationgcin.wordpress.com/
+  title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
+  img: sudhanshuedoc.jpg
+  author_name: Sudhanshu Ranjan
+
+- url: https://demiprestasi.wordpress.com/2017/12/23/interview-with-a-teacher-about-fossasia-and-google-code-in/
+  title: Interview with a teacher about FOSSASIA and Google Code-in
+  img: me1.png
+  author_name: Amriyono Maju Ompusunggu
+
+- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
+  title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
+  img: 0x48piraj.jpg
+  author_name: Piyush Raj
+  
+- url: https://samyakbvs.wordpress.com/2017/12/20/interview-with-a-teacher/
+  title: Interview with a teacher
+  img: samyakbvs.jpeg
+  author_name: Samyak Jain
+
+- url: https://demiprestasi.wordpress.com/2017/12/16/me-google-code-in-and-fossasia/
+  title: Me, Google Code-In and FOSSASIA
+  img: me.jpg
+  author_name: Amriyono Maju Ompusunggu
+  
+- url: https://naveenrocker.wordpress.com/2017/12/01/first-time-in-google-code-in-with-fossasia/
+  title: First Time in Google Code In with Fossasia
+  img: 1.jpeg
+  author_name: Naveen Rajan
+
+- url: https://blogbyjeewal.wordpress.com/
+  title: Open Source Community of Fossasia
+  img: IMG_0020.JPG
+  author_name: Jeewal Kunwar
+
+- url: https://yashkumarverma.wordpress.com/2017/12/08/me-and-code/
+  title: My Journey in Google Code-In with FOSSASIA
+  img: yashkumarverma-blog01.jpg
+  author_name: Yash Kumar Verma
+
+- url: https://yashkumarverma.wordpress.com/2017/12/11/interview-with-anjali-sharma/
+  title: Interview with a Teacher from Doon International School
+  img: yashkumarverma-blog02.jpg
+  author_name: Yash Kumar Verma
+
+- url: https://yashkumarverma.wordpress.com/2017/12/13/how-i-fixed-an-issue-in-a-fossasia-project/
+  title: How I fixed an issue on a FOSSASIA Project
+  img: yashkumarverma-blog03.jpg
+  author_name: Yash Kumar Verma
+    
+- url: https://yashkumarverma.wordpress.com/2017/12/14/interview-with-a-fellow-developer/
+  title: Interview with a fellow Developer
+  img: yashkumarverma-blog04.jpg
+  author_name: Yash Kumar Verma
+
+- url: http://blog.kubacoding.eu/web-development/dive-into-open-source-with-fossasia-during-google-code-in/
+  title: My dive into open source with FOSSASIA during Google Code-in
+  img: 2.jpeg
+  author_name: Kuba Michalski
+ 
+- url: https://matthewleecodeinblog.wordpress.com/
+  title: Experience with Google Code-In
+  img: matthewblog.png
+  author_name: Matthew Lee
+  
+- url: https://wordpress.com/post/samyakbvs.wordpress.com/27
+  title: Interview with two open source contributors
+  img: 11.png
+  author_name: Samyak Jain
+
+- url: https://niteshkumarniranjan.wordpress.com/2017/12/03/my-journey-with-google-code-in-and-fossasia/
+  title: My Journey with Google Code-In and FOSSASIA.
+  img: 3.jpeg
+  author_name: Nitesh Kumar Niranjan
+
+- url: https://samyakbvs.wordpress.com/2017/12/07/just-go-with-the-flow/
+  title: Just go with the flow
+  img: 6.png
+  author_name: Samyak Jain
+
+- url: https://kartikeya23.wordpress.com/2017/12/06/one-task-two-tasks-three-tasks/
+  title: One Task, Two Tasks, Three Tasks...
+  img: 4.jpeg
+  author_name: Kartikeya Singh
+
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/06/theres-code-in-me/
+  title: There's Code-In Me
+  img: 5.jpg
+  author_name: Saarthak Chaturvedi
+
+- url: https://samyakbvs.wordpress.com/2017/12/07/in-code-i-believe/
+  title: In code, I believe
+  img: 6.png
+  author_name: Samyak Jain
+
+- url: http://blog.kubacoding.eu/google-code-in/interview-with-prasenji-prasenji-gci-contestant-and-open-source-contributor/
+  title: Interview with Prasenjit Gautam, GCI Contestant and Open Source Contributor
+  img: 7.jpg
+  author_name: Kuba Michalski  
+  
+- url: https://codegutter.wordpress.com/2017/12/09/root-to-open-source-with-fossasia/
+  title: Root to Open-Source with FOSSASIA
+  img: rsz_gutter.jpg
+  author_name: Prasenjit Gautam
+  
+- url: https://morethanworld64569539.wordpress.com/2017/12/06/google-code-in-and-open-source/
+  title: Google Code-In and Open Source
+  img: opensource.jpg
+  author_name: Supun Tharinda Edirisuriya
+
+- url: https://introductorymusicblockstutorial.wordpress.com/
+  title: Interview of a Student participating in the Google Code In
+  img: interview_hasalu.png
+  author_name: Hasalu Botheju
+
+- url: https://abishek24.wordpress.com/2017/12/03/a-dive-into-open-source/
+  title: A dive into Opensource with FOSSASIA
+  img: abi_blog.jpg
+  author: Abishek V Ashok
+
+- url: http://blog.kubacoding.eu/learning/why-am-doing-it-hope-it-will-be-worth-at-the-end/
+  title: Why am I doing it? I hope it will be worth at the end… (my struggles with Hugo framework)
+  img: 9.jpg
+  author_name: Kuba Michalski  
+
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/10/interview-with-two-open-source-contibutors/
+  title: Interview with 2 FOSSASIA Contibutors
+  img: 10.png
+  author_name: Saarthak Chaturvedi
+  
+- url: https://morethanworld64569539.wordpress.com/2017/12/10/an-interview-with-a-gci-student/
+  title: An interview with a GCI student
+  img: interview.png
+  author_name: Supun Tharinda Edirisuriya
+
+- url: https://meets2tushar.wordpress.com/2017/12/11/my-interaction-with-fossasia/
+  title: My Interaction with FOSSASIA
+  img: tushar.jpg
+  author_name: Tushar Kumar
+
+- url: https://bloglavavi.wordpress.com/
+  title: MY EXPERIENCE OF GOOGLE CODE – IN
+  img: aks.jpg
+  author_name: Ashish Kumar Singh
+
+- url: https://morethanworld64569539.wordpress.com/2017/12/12/how-i-fixed-an-issue-by-20-steps/
+  title: How I fixed an issue? – By 20 steps
+  img: issue.jpg
+  author_name: Supun Tharinda Edirisuirya
+  
+- url: https://peppercat.tk/2017/12/how-gci-effected-my-life
+  title: How GCI effected my life (The positive way!)
+  img: Blog_Ploypiti_01.jpg
+  author_name: Ploypiti Piyaprapan
+
+- url: https://peppercat.tk/2017/12/interview-with-an-indian-fossasia-contributor-aditya-dutt/
+  title: Interview with an Indian Fossasia contributor | Aditya Dutt
+  img: Blog_Ploypiti_02.jpg
+  author_name: Ploypiti Piyaprapan
+
+- url: https://medium.com/@duttaditya18/66b9a66ffcf6
+  title: Interview with a FOSSASIA Contributer | Ploypiti Piyaprapan
+  img: aditya-blog-2.jpg
+  author_name: Aditya Dutt
+
+- url: https://peppercat.tk/2017/12/hi-there-issues/
+  title: Hi there, issues
+  img: Blog_Ploypiti_03.jpg
+  author_name: Ploypiti Piyaprapan
+
+- url: https://anushka264230468.wordpress.com/2017/12/16/first-blog-post/
+  title: A Student’s Experience
+  img: Anushka.jpeg
+  author_name: Anushka Kadam
+
+- url: https://hellohimani.wordpress.com/2017/12/19/code-in-experience/
+  title: Code-In Experience
+  img: himani.png
+  author_name: Himani Yadav
+
+- url: https://betaking146970080.wordpress.com/2017/12/21/42/
+  title: Code is Life!!
+  img: Beta_KIng.jpg
+  author_name: Yash Kothari
+  
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/22/interview-with-a-teacher/
+  title: Interview with a Teacher
+  img: akansha.jpg
+  author_name: Saarthak Chaturvedi
+
+- url: https://gciarjunloomba1311.wordpress.com/2017/12/22/interviewing-mehul-jangir/
+  title: Interview with Mehul, a Fossasia contributer 
+  img: gci pic.jpg
+  author_name: Arjun Loomba
+  
+- url: http://blog.kubacoding.eu/google-code-in/interview-with-two-active-open-source-contributors/
+  title: Interview with two active Open Source Contributors
+  img: 12.jpg
+  author_name: Kuba Michalski
+  
+- url: https://samyakbvs.wordpress.com/2017/12/24/interview-with-two-open-source-contributors-2/
+  title: Interview with Two Open Source Contributors
+  img: samyakjainbvs.png
+  author_name: Samyak Jain
+
+- url: https://saarthakchaturvedi05.wordpress.com/2017/12/24/interview-with-long-term-open-source-contributors/
+  title: Interview with Two Long-Term Open Source Contributors
+  img: saarthakchaturvediinterview.jpg
+  author_name: Saarthak Chaturvedi
+
+- url: https://hiteshsgci2017experience.wordpress.com/
+  title: Hitesh's GCI-2017 experience
+  img: Hitesh.jpeg
+  author_name: Hitesh Reddy
+  
+- url: https://amantiwari123.wordpress.com/2017/12/27/my-journey-to-google-code-in-gci-2017-18/
+  title: My Journey to Google Code-In With FOSSASIA (2017-18)
+  img: aman1.jpg
+  author_name: Aman Tiwari
+
+- url: https://wordpress.com/read/feeds/77017858/posts/1711640617
+  title: Google Code In Task :Fossasia
+  img: DSC_3288.jpg
+  author_name: Aman Singh
+ 
+- url: https://betaking146970080.wordpress.com/2017/12/28/interviewing-a-teacher/
+  title: Interviewing a Teacher 
+  img: Valley.jpg
+  author_name: Yash Kothari
+  
+- url: https://coffee473047928.wordpress.com/2017/12/30/my-experience-with-google-code-in/
+  title: Fossasia GCI interview with teacher
+  img: gci2017_pic
+  author_name: Gowri Harish
+
+- url: https://arjunpandeyblog.wordpress.com/2017/12/29/flying-with-fossasia/
+  title: Flying with Fossasia
+  img: arjun.jpg
+  author_name: Arjun Pandey
+  
+- url: https://betaking146970080.wordpress.com/2018/01/01/issue-hunting/
+  title: Issue Hunting
+  img: Yash.jpg
+  author_name: Yash Kothari
+
