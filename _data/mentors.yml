@@ -1,6 +1,14 @@
-
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - name: Mentor's name
+#   github: Mentor's Github Username
+#   image: Mentor's image (or representation like a "nick" image)
+#   twitter: Mentor's Twitter ID
+#   facebook: Mentor's Facebook ID
+#   lat: Mentor's Latitude
+#   lng: Mentor's Longitude
 
 - name: Mario Behling
   github: mariobehling
@@ -215,6 +223,7 @@
 
 - name: Vibhor Verma
   github: vibhcool
+  twitter: vibhcool
   image: vibhor.jpg
   lat: 28.613939
   lng: 77.209021

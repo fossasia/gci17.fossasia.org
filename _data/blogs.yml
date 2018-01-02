@@ -1,3 +1,18 @@
+﻿
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - url: URL to the blog
+#   title: Title of the blog
+#   img: Image of the blog
+#   author_name: Name of the author of the blog (most likely you)
+
+- url: https://participationgcin.wordpress.com/
+  title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
+  img: sudhanshuedoc.jpg
+  author_name: Sudhanshu Ranjan
+
 - url: https://demiprestasi.wordpress.com/2017/12/23/interview-with-a-teacher-about-fossasia-and-google-code-in/
   title: Interview with a teacher about FOSSASIA and Google Code-in
   img: me1.png
@@ -7,6 +22,11 @@
   title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
   img: 0x48piraj.jpg
   author_name: Piyush Raj
+
+- url: https://coffee473047928.wordpress.com/2017/12/30/my-experience-with-google-code-in/
+  title: Google Code in FOSSASIA - Interview with teacher
+  img: gci2017_pic.jpg
+  author_name: Gowri Harish
   
 - url: https://samyakbvs.wordpress.com/2017/12/20/interview-with-a-teacher/
   title: Interview with a teacher
@@ -52,6 +72,11 @@
   title: My dive into open source with FOSSASIA during Google Code-in
   img: 2.jpeg
   author_name: Kuba Michalski
+ 
+- url: https://matthewleecodeinblog.wordpress.com/
+  title: Experience with Google Code-In
+  img: matthewblog.png
+  author_name: Matthew Lee
   
 - url: https://wordpress.com/post/samyakbvs.wordpress.com/27
   title: Interview with two open source contributors
@@ -200,7 +225,7 @@
 
 - url: https://hiteshsgci2017experience.wordpress.com/
   title: Hitesh's GCI-2017 experience
-  img: intro.jpg
+  img: Hitesh.jpeg
   author_name: Hitesh Reddy
   
 - url: https://amantiwari123.wordpress.com/2017/12/27/my-journey-to-google-code-in-gci-2017-18/
@@ -223,7 +248,21 @@
   img: arjun.jpg
   author_name: Arjun Pandey
   
+- url: https://betaking146970080.wordpress.com/2018/01/01/issue-hunting/
+  title: Issue Hunting
+  img: Yash.jpg
+  author_name: Yash Kothari
+  
+- url: https://betaking146970080.wordpress.com/2018/01/02/interview-two-long-term-contributors/
+  title: Interviewing Contributors !!
+  img: Kothari.jpg
+  author_name: Yash Kothari
+
 - url: https://mygeekyworld786.wordpress.com/2017/12/30/here-i-come-coding-in/
   title: Here I come Coding In
   img: haider1.jpg
   author_name: Haider Shafaq
+
+
+
+
