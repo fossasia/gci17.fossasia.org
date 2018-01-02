@@ -259,6 +259,7 @@ span.student-project-name {
   animation-iteration-count: infinite;
 }
 @keyframes blink {
-  0%, 100%{color: transparent!important;}
-  50%{color: white!important;}
+  0% {opacity: 0}
+  20%{opacity: 0}
+  50% {opacity: 1}
 }
