@@ -199,14 +199,19 @@
 	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/mattboldt/typed.js/master/src/typed.js"></script>
 	<script>
-	$('.typed').typed({
+/*	$('.typed').typed({
 		strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
 		typeSpeed: 40,
 		loop: true,
 		loopCount: Infinity
 	});
+*/	Typed.new('.typed', {
+	// strings: ["Hello^1000", "こんにちは^1000", "नमस्ते^1000", "We are <span class='type-bold'>Forever EV3</span>^1000", "And we Love <span class='type-bold'>Robotics</span>"],
+	strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+	typeSpeed: 75,
+	backDelay: 75,
+	});
 
-	var typed = new Typed(".typed", options);
 	</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/flexslider.min.js"></script>
