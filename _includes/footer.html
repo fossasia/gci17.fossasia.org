@@ -199,12 +199,12 @@
 	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/mattboldt/typed.js/master/src/typed.js"></script>
 	<script>
-	var options = {
+	$('.typed').typed({
 		strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
 		typeSpeed: 40,
 		loop: true,
 		loopCount: Infinity
-	}
+	});
 
 	var typed = new Typed(".typed", options);
 	</script>
