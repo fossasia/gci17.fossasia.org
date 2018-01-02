@@ -250,3 +250,46 @@ span.student-project-name {
 #student-blog .col-md-3 a {
 	width: 240px;
 }
+
+.page{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+@media (min-width: 900px){
+    .flex-row{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    }
+    #phimp, #ps {
+        position: relative;
+    }
+    #phimp{
+        transform:translateY(70%);
+    }
+    #ps{
+        transform: translateY(74%);
+    }
+/*    .flex-row > :last-child {
+        margin-right: 40px;
+    }*/
+}
+
+
+.flex-row > *{
+    flex: 1;
+    padding: 20px;
+    flex-basis: 360px;
+}
+
+
+
+.learn-more {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-around;
+}
