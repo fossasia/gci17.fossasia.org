@@ -17,7 +17,7 @@ Gdy uruchomisz plik, zostaniesz zapytany o ścieżkę pliku. Podaj ścieżkę pl
 1. `Fork` this repository.
 2. Użyj gita aby sklonować repository które zforkowałeś, t.j.
 `git clone https://github.com/<your_username>/gci17.fossasia.org.git`
-3. Zmień ścieżkę do lokalnego repository, t.j. `cd gci17.fossasia.org`. Teraz wpisz `ls` aby zobaczyć czy `Gemfile` jest widoczny.
+3. Zmień ścieżkę do lokalnego repository, t.j. `cd gci17.fossasia.org`. Teraz wpisz `dir` aby zobaczyć czy `Gemfile` jest widoczny.
 4. Wpisz `bundle install` aby zainstalować zależności.
 5. Wpisz `bundle exec jekyll serve `. Zobaczysz adres serwera.
 6. Teraz Twój serwer powinien działać. Aby zobaczyć stronę gci17.fossasia.org, otwórz w przeglądarce `localhost:4000`.
