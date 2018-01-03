@@ -1296,7 +1296,7 @@ nav .cart-overview a {
     transform: none !important;
   }
 }
-@media all and (max-width: 990px) {
+@media all and (max-width: 1200px) {
   nav.fixed {
     position: absolute !important;
     opacity: 1 !important;
@@ -3942,14 +3942,14 @@ video {
 .play-button.dark:before {
   border-color: transparent transparent transparent #292929;
 }
-.jig{
+.text-extend{
   position: absolute; 
   bottom:0px; 
   left: 30%;
 }
 
 @media only screen and (max-width: 990px) {
-    .jig {
+    .text-extend {
     position:absolute;
     bottom:0px; 
     top: 100%;
@@ -3957,11 +3957,35 @@ video {
         }
 }
 @media only screen and (max-width: 770px) {
-    .jig{
+    .text-extend{
     position:absolute;
     top: 50%;
     left: 40%; 
 
+    }
+}
+@media only screen and (max-width: 360px) {
+    .text-extend{
+    position:absolute;
+    top: 70%;
+    left: 40%;
+    
+    }
+}
+@media only screen and (max-width: 360px) {
+    .text-extend{
+    position:absolute;
+    top: 73%;
+    left: 40%;
+    
+    }
+}
+@media only screen and (max-width: 413px) {
+    .text-extend{
+    position:absolute;
+    top: 60%;
+    left: 34%;
+    
     }
 }
 
