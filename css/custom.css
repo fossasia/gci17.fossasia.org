@@ -250,3 +250,16 @@ span.student-project-name {
 #student-blog .col-md-3 a {
 	width: 240px;
 }
+
+.typed-cursor{
+  font-size: 40px;
+  display: inline-block;
+  animation-name: blink;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {opacity: 0}
+  20%{opacity: 0}
+  50% {opacity: 1}
+}
