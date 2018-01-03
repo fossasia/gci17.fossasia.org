@@ -16,6 +16,15 @@
   github: mjd220903
   image: mjd.jpg
   twitter: mrthunjai
+ 
+- name: Matthew Lee
+  country: United States of America
+  github: mhlee304
+  image: matthewprofile.JPG
+  twitter: mhlee304
+  facebook: mhlee304
+  lat: 43.7844
+  lng: 88.7879
 
 - name: Lokinder Singh
   country: India
@@ -276,3 +285,15 @@
   lat: 26.9255
   lng: 75.7861
   
+- name: Mishaal Kandapath
+  country: Kuwait
+  github: ecomparer
+  image: mishaal_ecomparer.jpg
+  facebook: Mishaal Kandapath
+  website: ecomparer.cf
+  
+- name: Aditya Kharote
+  country: India
+  github: Akharote1
+  image: aditya_kharote.jpg
+  twitter: Akharote1

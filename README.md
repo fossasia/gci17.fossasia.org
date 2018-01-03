@@ -126,12 +126,15 @@ permalink: <some permalink>
     - [In English](/installation/installation_windows.md) 
     - [In Sinhala - සිංහලෙන්](/installation/installation_windows(sin).md)
     - [In Polish - Polski](/installation/installation_windows(pl).md)
+    - [In French - Français](/installation/installation_windows(fr).md)
 - Local Setup on Linux 
     - [In English](/installation/installation_linux.md)
     - [In Sinhala - සිංහලෙන්](/installation/installation_linux(sin).md) 
     - [In Polish - Polski](/installation/installation_linux(pl).md)
+    - [In French - Français](/installation/installation_linux(fr).md)
 - Local Setup on MacOS 
     - [In English](/installation/installation_macos.md)
     - [In Sinhala - සිංහලෙන්](/installation/installation_macos(sin).md) 
     - [In Polish - Polski](/installation/installation_macos(pl).md)
+    - [In French - Français](/installation/installation_macos(fr).md)
 

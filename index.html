@@ -26,7 +26,7 @@
 							Participate in Google Codein with <b>FOSSASIA</b> !
 						</p>
 						<a class="btn btn-lg btn-filled" href="https://codein.withgoogle.com/organizations/fossasia/">Take me Along !</a>
-						<a class="btn btn-lg" href="repositories.html">Explore the site</a>
+						<a class="btn btn-lg btn-filled" href="repositories.html">Explore the site</a>
 					</div>
 				</div>
 			</div>
@@ -102,9 +102,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-				<a class="mb0 btn btn-lg btn-filled" href="{{ baseurl }}./mentors">More</a>
-			</div>
+
+
 		</div>
 	</div>
 </section>
@@ -182,7 +181,6 @@
 				{% endfor %}
 		  </div>
 		</div>
-
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 				<p class="mb40 mb-xs-24">
@@ -224,6 +222,11 @@
 							{% endfor %}
 					</ul>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<a class="mb0 btn btn-lg btn-filled btnSpacing" href="https://gci16.fossasia.org/#stprojects">Student Projects'16</a>
 			</div>
 		</div>
 	</div>
@@ -324,7 +327,7 @@
                 <p>
                     Do you have many different apps in your Android Phone for the purpose of clicking, editing and sharing images? Hey guess what, now you don't need all of those because Phimp.me is here, with all the features packaged into one. So go and clean your phone memory to save your space for other useful purposes.
                 </p>                
-                <div class="row" style="position:absolute; bottom:0px;left:30%">
+                <div class="row text-extend">
                     <div class="col-sm-12"><a class="btn" href="https://phimp.me">Learn More</a></div>
                 </div>                
             </div>            
@@ -333,7 +336,7 @@
                 <p>
                     PSLab is a tiny pocket science lab that provides an array of equipment for doing science and engineering experiments. It can function like an oscilloscope, waveform generator, frequency counter, programmable voltage and current source and also as a data logger.
                 </p>                
-                <div class="row" style="position:absolute; bottom:0px; left:30%">
+                <div class="row text-extend">
                     <div class="col-sm-12"><a class="btn" href="http://pslab.fossasia.org">Learn More</a></div>
                 </div>           
             </div>
@@ -345,7 +348,7 @@
 					- Attendee check in through QR code scan<br>
 					- Basic event analytics
                 </p>                
-                <div class="row" style="position:absolute; bottom:0px;left:30%">
+                <div class="row text-extend">
                      <div class="col-sm-12"><a class="btn" href="https://github.com/fossasia/open-event-orga-app">Learn More</a></div>
                 </div>              
             </div>
@@ -396,7 +399,7 @@
 		{% for blog in site.data.blogs %}
 				{% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
 				{% if modulo == '1' %}
-		<div class="row">
+		<div class="row col-sm-6 col-md-4">
 			{% endif %}
 			<div class="col-md-3">
 				<a href="{{blog.url}}" target="_blank">
@@ -419,6 +422,9 @@
 		</div>
 		{% endif %} {% endfor %}
 	</div>
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<a class="mb0 btn btn-lg btn-filled" href="{{ baseurl }}./mentors">More</a>
+			</div>
 </section>
 				
 <!-- Videos -->
@@ -549,7 +555,7 @@
 		</div>
 	</div>
 <blockquote class="embedly-card"><h4><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">FOSSASIA</a></h4><p>FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events ar...</p></blockquote>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+<script defer src="//cdn.embedly.com/widgets/platform.js"></script>
 </section>
 
 <!-- Placeholder connect -->

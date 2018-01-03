@@ -17,7 +17,7 @@ When you execute the file , it’ll ask you for a destination for the files. Ent
 ### Setting up locally
 1. Fork this repository.
 2. Open git terminal(Git bash in windows), and clone your forked repo i.e. `git clone https://github.com/<your_username>/gci17.fossasia.org.git` in the directory you want.
-3. Change directory to the local repository i.e. `cd gci17.fossasia.org`. Now type `ls` to see if `Gemfile` can be seen.
+3. Change directory to the local repository i.e. `cd gci17.fossasia.org`. Now type `dir` to see if `Gemfile` can be seen.
 4. Type `bundle install` to install dependencies.
 5. Type `gem install jekyll-sitemap` and then `gem install jekyll-paginate`.(Not necessary, If it is installed in the previous step.)
 6. Now open Gemfile(with any text editor e.g. sublime) and then remove '#' in `#gem 'github-pages', group: :jekyll_plugins` and add '#' to `gem 'jekyll-sitemap'` 
