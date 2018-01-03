@@ -3312,8 +3312,8 @@ img {
 }
 .flex-direction-nav a.flex-next:before,
 .flex-direction-nav a.flex-prev:before {
-  content: "\e649";
-  font-family: 'themify';
+  content: "\f061";
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -3327,7 +3327,7 @@ img {
   left: 16px;
 }
 .flex-direction-nav a.flex-prev:before {
-  content: "\e64a";
+  content: "\f060";
 }
 .flex-direction-nav a {
   opacity: 1;
