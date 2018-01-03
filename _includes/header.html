@@ -20,6 +20,8 @@
         <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 		<link rel="icon" href="favicon.ico" />
+		
+		<link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
 	</head>
 
 	<body class="scroll-assist">
@@ -38,7 +40,7 @@
 		                <div class="module left">
 		                    <ul class="menu">
 		                    	<li>
-		                            <a href="{{ baseurl }}./#welcome">Welcome</a>
+		                            <a href="{{ baseurl }}./#welcome">Home</a>
 		                        </li>	                    
 		                        <li>
 		                            <a href="{{ baseurl }}./#mentors">Mentors</a>
@@ -47,7 +49,7 @@
 		                            <a href="{{ baseurl }}./#contributors">Contributors</a>
 		                        </li>
 		                        <li>
-		                            <a href="{{ baseurl }}./#students">Student</a>
+		                            <a href="{{ baseurl }}./#students">Students</a>
 		                        </li>
 		                        <li>
 		                            <a href="{{ baseurl }}./#projects">Projects</a>
@@ -72,7 +74,7 @@
 						</ul>
 					</li>	
 		                        <li>
-		                        	<a href="{{ baseurl }}./activities">Activities</a>
+		                        	<a href="{{ baseurl }}./activities">Activity</a>
 		                        </li>
 		                        <li>
 		                            <a href="{{ baseurl }}./repositories.html">Repositories</a>
@@ -80,12 +82,16 @@
 		                        <li>
 									<a href="{{ baseurl }}./#map-sec">Map</a>
 								</li>
-		                        <li>
-		                            <a href="{{ baseurl }}./#student-blog">Blog Posts</a>
+		                        <li class="has-dropdown">
+		                            <a href="#">Blog</a>
+		                            <ul>
+		                            	<li><a href="{{ baseurl }}./#student-blog">Student Blogs</a></li>
+		                            	<li><a href="https://blog.fossasia.org">Fossasia Blogs</a></li>
+		                            </ul>
 		                        </li>
 		                       
 		                        <li>
-		                        	<a class="code-in-nav" href="https://codein.withgoogle.com/organizations/fossasia/">Google Code-In</a>
+		                        	<a class="code-in-nav" href="https://codein.withgoogle.com/organizations/fossasia/">Code-In</a>
 		                        </li>
 		                        <li class="has-dropdown">
 		                            <a href="#">
@@ -95,11 +101,6 @@
 		                                <li>
 		                                    <a href="https://fossasia.org/">
 		                                        Main Site
-		                                    </a>
-		                                </li>
-		                                <li>
-		                                    <a href="http://blog.fossasia.org/">
-		                                        Blog
 		                                    </a>
 		                                </li>
 		                                <li>

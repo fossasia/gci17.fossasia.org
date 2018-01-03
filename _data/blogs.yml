@@ -1,3 +1,4 @@
+﻿
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
@@ -21,6 +22,11 @@
   title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
   img: 0x48piraj.jpg
   author_name: Piyush Raj
+
+- url: https://coffee473047928.wordpress.com/2017/12/30/my-experience-with-google-code-in/
+  title: Google Code in FOSSASIA - Interview with teacher
+  img: gci2017_pic.jpg
+  author_name: Gowri Harish
   
 - url: https://samyakbvs.wordpress.com/2017/12/20/interview-with-a-teacher/
   title: Interview with a teacher
@@ -229,7 +235,7 @@
 
 - url: https://wordpress.com/read/feeds/77017858/posts/1711640617
   title: Google Code In Task :Fossasia
-  img: DSC_3288.jpg
+  img: amantask.jpg
   author_name: Aman Singh
  
 - url: https://betaking146970080.wordpress.com/2017/12/28/interviewing-a-teacher/
@@ -252,3 +258,7 @@
   img: Kothari.jpg
   author_name: Yash Kothari
 
+- url: https://techfinders54747083.wordpress.com/2018/01/02/explore-discover-a-new-essence-in-technology/
+  title: Explore & Discover a new essence in Technology
+  img: Saniya blog pic.jpg
+  author_name: Saniya Kolangde
