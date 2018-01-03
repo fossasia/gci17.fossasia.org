@@ -2989,8 +2989,8 @@ button[type="submit"] .form-loading {
   display: inline-block;
   margin-right: 8px;
   color: #292929;
-  content: "\e74b";
-  font-family: 'themify';
+  content: "\f099";
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
