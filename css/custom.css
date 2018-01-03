@@ -250,3 +250,7 @@ span.student-project-name {
 #student-blog .col-md-3 a {
 	width: 240px;
 }
+
+.btnSpacing{
+	margin-top:10px;
+}

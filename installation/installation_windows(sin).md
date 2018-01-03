@@ -16,7 +16,7 @@
 ### Setting up locally
 1. රෙපෝසිට්‍රිය ෆොර්ක් කර ගන්න.
 2. git ටර්මිනලය (Git bash in windows) විවෘත කර ඔබගේ ෆොර්ක් කරගත් රෙපෝව පෙ.අ.* `git clone https://github.com/<your_username>/gci17.fossasia.org.git` ඔබට අවශ්‍ය යොමුවක පිටපත් කරගන්න.
-3. යොමුව ප්‍රාදේශීය රෙපෝවට මාරු කරන්න. පෙ.අ.* `cd gci17.fossasia.org`. `Gemfile` තිබේ දැයි බැලීමට `ls` ලෙස ලියනය කරන්න.
+3. යොමුව ප්‍රාදේශීය රෙපෝවට මාරු කරන්න. පෙ.අ.* `cd gci17.fossasia.org`. `Gemfile` තිබේ දැයි බැලීමට `dir` ලෙස ලියනය කරන්න.
 4. යැපෙන්නන් ස්ථාපනයට `bundle install` ලියනය කරන්න.
 5. `gem install jekyll-sitemap`හා අනතුරුව `gem install jekyll-paginate` ලියනය කරන්න.(එය පෙර පියවරේදී ස්ථාපනය කර තිබේ නම් අවශ්‍ය නොවේ.)
 6. දැන් Gemfile(ඕනෑම වදන් සකසනයක් මඟින් උදා:- sublime) සමඟ විවෘත කරන්න, ඉන්පසු `#gem 'github-pages', group: :jekyll_plugins` තුළ පවතින '#' ඉවත් කර `gem 'jekyll-sitemap'`,`gem 'jekyll-paginate'` වලට '#' යොදන්න. ගොනුව සුරකින්න.
