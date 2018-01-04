@@ -1,0 +1,20 @@
+  # - url: Add asciicast URL (https://asciinema.org/a/154686/)
+  #   title: Title of asciicast
+  #   imgurl: Image for asciicast. You must use default image of asciicast as following. 
+  #                " Your asciicast URL + .png " (ex:- https://asciinema.org/a/154686.png)
+  #   maker: Maker of asciicast
+
+- url: https://asciinema.org/a/154686/
+  title: How to deploy SUSI with surge
+  imgurl: https://asciinema.org/a/154686.png
+  maker: Supun Tharinda Edirisuriya
+
+- url: https://asciinema.org/a/152805/
+  title: How to install SUSI locally
+  imgurl: https://asciinema.org/a/152805.png
+  maker: Supun Tharinda Edirisuriya
+
+- url: https://asciinema.org/a/152580/
+  title: How to install SUSI locally
+  imgurl: https://asciinema.org/a/152580.png
+  maker: Aditya Dutt
