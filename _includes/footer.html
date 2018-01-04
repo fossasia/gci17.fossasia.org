@@ -197,6 +197,18 @@
 
 
 	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script>
+	Typed.new('.txt-rotate', {
+	strings: [ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merçi de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!", "Ευχαριστώ για τη συμβολή!", "شكرا للمساهمة!", "Tibi gratias ob tuam contributionem!"],
+	typeSpeed: 0,
+	backDelay: 500,
+	startDelay: 1000,
+	loop: true,
+	loopCount: Infinity
+	});
+
+	</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/flexslider.min.js"></script>
 		<script src="js/lightbox.min.js"></script>
@@ -310,17 +322,17 @@
             map.addControl(controls['selector']);
             controls['selector'].activate();
         </script>
-        <script>
-		    if ('serviceWorker' in navigator) {
-		      navigator.serviceWorker.register('sw.js')
-		        .then(function(registration) {
-		          console.log('Service Worker registration successful with scope: ',
-		          registration.scope);
-		        })
-		        .catch(function(err) {
-		          console.log('Service Worker registration failed: ', err);
-		        });
-		    }
-	    </script>
+	<script>
+	    if ('serviceWorker' in navigator) {
+	      navigator.serviceWorker.register('sw.js')
+		.then(function(registration) {
+		  console.log('Service Worker registration successful with scope: ',
+		  registration.scope);
+		})
+		.catch(function(err) {
+		  console.log('Service Worker registration failed: ', err);
+		});		    
+	    }
+	</script>
     </body>
 </html>
