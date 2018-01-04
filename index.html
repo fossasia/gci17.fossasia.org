@@ -463,6 +463,42 @@
 	</div>
 </section>
 
+<!-- Asccicasts -->
+<section class="bg-secondary" id="student-video">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h4 class="uppercase mb16">Asciicasts</h4>
+				<p class="lead mb64">Asciicasts from students</p>
+			</div>
+		</div>
+		{% for asciicast in site.data.asciicast %} {% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %} {% if modulo
+		== '1' %}
+		<div class="row">
+			{% endif %}
+			<div class="col-md-3">
+				<a href="{{asciicast.url}}" target="_blank">
+					<div class="image-tile outer-title text-center">
+						<div class="content">
+							<img src="{{asciicast.imgurl}}">
+							<div class="title mb16">
+								<h5 class="uppercase mb0">
+									<div class="asciicast">{{asciicast.title}}</div>
+								</h5>
+								<span>
+									<div class="maker">{{asciicast.maker}}</div>
+								</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			{% if modulo == '0' or forloop.last %}
+		</div>
+		{% endif %} {% endfor %}
+	</div>
+</section>
+
 <!-- parallax image? -->
 <section class="fullscreen image-bg parallax background-multiply">
 	<div class="background-image-holder">
