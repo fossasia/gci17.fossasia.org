@@ -80,6 +80,23 @@ To add a blog open the file `video.yml` in `_data` folder and please maintain th
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 - Don't add URL to a YouTube channel, the URL must be to a video in YouTube.
 
+## Adding a asciicast
+
+To add a asciicast open the file `asciicast.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
+
+```yaml
+- url: Add asciicast URL (https://asciinema.org/a/154686/)
+  title: Title of asciicast
+  imgurl: URL of image for asciicast
+  maker: Maker of asciicast
+```
+**IMPORTANT:**
+- Don't add any asciicasts or images about asciicasts into folders of site. You have to add only add URL of asciinema and URL of asciinema's image as above.
+- You must use default image of asciicast as following. 
+       	<b>" Your asciicast URL + .png " (ex:- https://asciinema.org/a/154686.png)</b>
+- Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
+- Only add real name of asciicast that shows in your profile of `asciinema.org`.
+
 ## Adding a Student Project
 To add a student project open the file  `student_projects.yml` in `_data` folder and please maintain the following format *EXACTLY* (replacing values where indicated):
 ```yaml
