@@ -254,3 +254,25 @@ span.student-project-name {
 .btnSpacing{
 	margin-top:10px;
 }
+
+.typed-cursor{
+  font-size: 40px;
+  display: inline-block;
+  animation-name: blink;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+	  opacity: 0;
+  }
+  
+  20% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+}
