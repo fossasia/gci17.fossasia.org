@@ -8,6 +8,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://myblogs938167194.wordpress.com/
+  title: My Google Code-In participation
+  img: momtahina (2).png
+  author_name: Momtahina Karim
+
 - url: https://participationgcin.wordpress.com/
   title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
   img: sudhanshuedoc.jpg
@@ -272,3 +277,8 @@
   title: Participation in Open source community
   img: Blog pic.jpeg
   author_name: Shahaam Marzook
+
+- url: https://axirie.wordpress.com/2018/01/05/gci-2017-2018/
+  title: GCI 2017 with FOSSASIA
+  img: axirygit.jpg
+  author_name: Eiffel Chong
