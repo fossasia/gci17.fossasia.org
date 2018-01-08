@@ -8,6 +8,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://myblogs938167194.wordpress.com/
+  title: My Google Code-In participation
+  img: momtahina (2).png
+  author_name: Momtahina Karim
+
 - url: https://participationgcin.wordpress.com/
   title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
   img: sudhanshuedoc.jpg
@@ -268,7 +273,18 @@
   img: haider2.jpg
   author_name: Haider Shafaq
 
+- url: https://workingwithfossasiawordpress.wordpress.com/2018/01/06/participation-in-open-source-community/
+  title: Participation in Open source community
+  img: Shahaam.jpg
+  author_name: Shahaam Marzook
+
 - url: https://axirie.wordpress.com/2018/01/05/gci-2017-2018/
   title: GCI 2017 with FOSSASIA
   img: axirygit.jpg
   author_name: Eiffel Chong
+
+- url: https://nishantgci.wordpress.com/2018/01/02/my-journey-in-open-source/
+  title: My journey in the world of open-source programming
+  img: pp.jpeg
+  author_name: Nishant S.
+
