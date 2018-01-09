@@ -77,7 +77,7 @@
   title: My dive into open source with FOSSASIA during Google Code-in
   img: 2.jpeg
   author_name: Kuba Michalski
- 
+  
 - url: https://matthewleecodeinblog.wordpress.com/
   title: Experience with Google Code-In
   img: matthewblog.png
@@ -287,3 +287,8 @@
   title: My journey in the world of open-source programming
   img: pp.jpeg
   author_name: Nishant S.
+ 
+- url: https://arjunpandeyblog.wordpress.com/2018/01/09/fossasia-with-gci/
+  title: With fellow contributors
+  img: arjunvideo.jpg
+  author_name: Arjun Pandey
