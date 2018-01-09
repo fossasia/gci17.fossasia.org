@@ -10,6 +10,12 @@
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
 
+- name: elfgoh
+  github: elfgoh
+  image: elfogh (2).jpg 
+  lat: 52.520007
+  lng: 13.404954
+  
 - name: Mario Behling
   github: mariobehling
   image: mariobehling.jpg
