@@ -153,6 +153,13 @@ hr.short-thick {
 .container {
   position: relative;
 }
+@media all and (max-width: 320px) {
+ .space{
+   padding-left: 2%;
+   padding-left: 2%;
+ }
+}
+ 
 .vnu {
   display: inline;
 }
@@ -337,6 +344,57 @@ h6,
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
+}
+.text-extend{
+  position: absolute;
+  bottom: 0px;
+  left:30%:;
+  }
+
+@media only screen and (max-width: 990px) {
+    .text-extend {
+  position:absolute;
+  bottom:0px; 
+  top: 100%;
+  left: 20%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+    .text-extend {
+  position:absolute;
+  top: 50%;
+  left: 40%;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+    .text-extend {
+  position:absolute;
+  top: 60%;
+  left: 34%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+    .text-extend {
+  position:absolute;
+  top: 70%;
+  left: 40%;
+  }
+}
+@media only screen and (max-width: 320px) {
+    .text-extend {
+  position:absolute;
+  top: 70%;
+  left: 25%;
+  }
+}
+@media only screen and (max-width: 320px) {
+    .text-gap {
+     padding-right: 10%;
+     padding-left: 10%
+  }
 }
 @media all and (max-width: 767px) {
   h1,
@@ -1296,7 +1354,7 @@ nav .cart-overview a {
     transform: none !important;
   }
 }
-@media all and (max-width: 990px) {
+@media all and (max-width: 1200px) {
   nav.fixed {
     position: absolute !important;
     opacity: 1 !important;
