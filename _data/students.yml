@@ -11,6 +11,12 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Shivam Rai  
+  country: India
+  github: ShivamRai2003
+  image: (rai)shivam.jpg 
+  twitter: Shivam Rai
+  
 - name: Mrthunjai Dhanasekhar
   country: India
   github: mjd220903
