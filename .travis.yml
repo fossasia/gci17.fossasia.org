@@ -1,5 +1,8 @@
+# use a sudo enabled trusty distribution of ubuntu
 sudo: required
 dist: trusty
+
+#This line tells Travis to use a Ruby build container. It gives our script access to Bundler, RubyGems, and a Ruby runtime.
 language: ruby
 
 cache:

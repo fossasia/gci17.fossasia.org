@@ -52,6 +52,23 @@
 			</div>
 
 		</li>
+		<li class="overlay image-bg">
+			<div class="background-image-holder">
+				<img alt="Public Code" class="background-image" src="img/slider/PublicCode.jpg">
+			</div>
+			<div class="container v-align-transform ">
+				<div class="row text-center">
+					<div class="col-md-10 col-md-offset-1"><br><br><br><br><br><br><br><br><br><br><br>
+						<h2 class="mb-xs-16"><b><i>Fossasia is a supporting organization !!</i></b>  <br class="hidden-sm">"Code paid by the people should be available to the people!"</h2>
+						<p class="lead mb40">
+						</p>
+						<a class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://publiccode.asia/">Public Code</a>
+					</div>
+				</div>
+
+			</div>
+
+		</li>
 	</ul>
 </section>
 
@@ -129,11 +146,10 @@
 <!--End of contributors section-->
 
 <!-- Thanks -->
-<section class="bg-dark">
+<section class="bg-dark" style="height: 264px;">
 	<div class="container">
-		<div class="col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform text-center">
-			<h2 class="txt-rotate" data-period="1000" data-rotate='[ "Thank You For Contributing!", "योगदान करने के लिए धन्यवाद!", "Danke für den Beitrag!", "Dziękujemy za Twój wkład!", "貢献していただきありがとうございます!", "பங்களித்ததற்கு நன்றி!", "Tak for bidrag!", "Grazie per aver contribuito!", "Go raibh maith agat as ranníoc!",  "Merci de contribuer!", "공헌 해 주셔서 감사합니다!", "অবদান রাখার জন্য আপনাকে ধন্যবাদ!", "දායක වූවාට ස්තුතියි!", "Gracias por contribuir!", "Спасибо Вам за Ваш вклад!", "Σας ευχαριστούμε για τη συμβολή!", "ขอบคุณสำหรับการมีส่วนร่วมกับเรา!", "Bedankt voor de bijdrage!", "
-Ευχαριστώ για τη συμβολή!", "شكرا للمساهمة!", "Tibi gratias ob tuam contributionem!", "Terima Kasih Atas Kontribusinya!"]'>
+		<div class="text-center">
+			<h2 class="typed" style="display: inline-block;">
 		   	</h2>
 		</div>
 	</div>
@@ -212,12 +228,12 @@
 									<div class="background-image-holder">
 											{% if project.image %}
 											<img title="{{project.name}} by {{project.author}}"
-									2					 class="background-image" src="img/projects/{{project.image}}">
+														 class="background-image" src="img/projects/{{project.image}}">
 											{% else %}
 											<img title="{{project.name}} by {{project.author}}"
 														 class="background-image" src="img/projects/default.png">
 											{% endif %}
-											<span class="student-project-name"><span>By {{ {project.author }}</span></span>
+											<span class="student-project-name"><span>By {{ project.author }}</span></span>
 									</div>
 								</a>
 							</li>
@@ -225,12 +241,11 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-				<a class="mb0 btn btn-lg btn-filled btnSpacing" href="https://gci16.fossasia.org/#stprojects">Student Projects'16</a>
-			</div>
-		</div>
+		</div><br>
+		<div class="col-sm-12 col-md-12 text-center">
+    			<a class="btn" data-toggle="popover" title="" data-placement="bottom center" href="https://gci16.fossasia.org/#stprojects">Student Projects'16</a>
+    			<a class="btn" data-toggle="popover" title="" data-placement="bottom left" href="https://github.com/fossasia/gci17.fossasia.org/blob/gh-pages/README.md">How to add a Student Project? (README.md)</a>
+ 		</div>
 	</div>
 </section>
 
@@ -590,7 +605,7 @@
 		</div>
 	</div>
 <blockquote class="embedly-card"><h4><a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">FOSSASIA</a></h4><p>FOSSASIA develops Open Source software and hardware solutions with a global developer community from its base in Asia and organizes Open Technology events ar...</p></blockquote>
-<script defer src="//cdn.embedly.com/widgets/platform.js"></script>
+<script async src="https://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 </section>
 
 <!-- Placeholder connect -->
