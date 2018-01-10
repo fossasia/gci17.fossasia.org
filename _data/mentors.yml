@@ -10,6 +10,11 @@
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
 
+- name: Sean McGregor
+  github: seanmcgregor
+  image: Sean McGregor.jpg
+  twitter: seanmcgregor
+ 
 - name: Mario Behling
   github: mariobehling
   image: mariobehling.jpg
