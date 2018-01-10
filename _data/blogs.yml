@@ -8,6 +8,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://beingdvd.wordpress.com/first-time-with-google-code-in/
+  title: First time with Google Code-in
+  img: beingdvd.png
+  author_name: Aniket Dwivedi
+
 - url: https://myblogs938167194.wordpress.com/
   title: My Google Code-In participation
   img: momtahina (2).png
