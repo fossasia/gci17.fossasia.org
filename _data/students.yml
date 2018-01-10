@@ -11,6 +11,12 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Shivam Rai  
+  country: India
+  github: ShivamRai2003
+  image: (rai)shivam.jpg 
+  twitter: Shivam Rai
+  
 - name: Mrthunjai Dhanasekhar
   country: India
   github: mjd220903
@@ -297,6 +303,18 @@
   github: Akharote1
   image: aditya_kharote.jpg
   twitter: Akharote1
+  
+- name: Shahaam Marzook
+  country: SriLanka
+  github: ShahaamMarzook
+  image: Shahaam.jpg
+  twitter: mohammedshahaam
+
+- name: Nishant S
+  country: India
+  github: NishSatish
+  image: pp.jpeg
+  twitter: neymarnishant
 
 - name: Nishant S
   country: India
@@ -309,3 +327,9 @@
   github: ddx-510
   image: ddx.jpg
   twitter: ddx2000
+  
+- name: Poh Say Keong
+  country: Singapore
+  github: PohSayKeong
+  image: SayKeong.jpg
+  twitter: pohsaykeong
