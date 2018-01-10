@@ -8,6 +8,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://myblogs938167194.wordpress.com/
+  title: My Google Code-In participation
+  img: momtahina (2).png
+  author_name: Momtahina Karim
+
 - url: https://participationgcin.wordpress.com/
   title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
   img: sudhanshuedoc.jpg
@@ -72,7 +77,7 @@
   title: My dive into open source with FOSSASIA during Google Code-in
   img: 2.jpeg
   author_name: Kuba Michalski
- 
+  
 - url: https://matthewleecodeinblog.wordpress.com/
   title: Experience with Google Code-In
   img: matthewblog.png
@@ -267,3 +272,28 @@
   title: Here I come Coding In
   img: haider2.jpg
   author_name: Haider Shafaq
+
+- url: https://workingwithfossasiawordpress.wordpress.com/2018/01/06/participation-in-open-source-community/
+  title: Participation in Open source community
+  img: Shahaam.jpg
+  author_name: Shahaam Marzook
+
+- url: https://axirie.wordpress.com/2018/01/05/gci-2017-2018/
+  title: GCI 2017 with FOSSASIA
+  img: axirygit.jpg
+  author_name: Eiffel Chong
+
+- url: https://nishantgci.wordpress.com/2018/01/02/my-journey-in-open-source/
+  title: My journey in the world of open-source programming
+  img: pp.jpeg
+  author_name: Nishant S.
+ 
+- url: https://arjunpandeyblog.wordpress.com/2018/01/09/fossasia-with-gci/
+  title: With fellow contributors
+  img: arjunvideo.jpg
+  author_name: Arjun Pandey
+  
+- url: https://arjunpandeyblog.wordpress.com/2018/01/10/interview-with-a-teacher/
+  title: Interviewing a teacher
+  img: arjun2blog.jpg
+  author_name: Arjun Pandey
