@@ -11,9 +11,10 @@
 #   lng: Mentor's Longitude
 
 - name: Sean McGregor
-  github: seanmcgregor
+  github: smcgregor 
   image: Sean McGregor.jpg
   twitter: seanmcgregor
+  facebook: seanbmcgregor
  
 - name: Mario Behling
   github: mariobehling
