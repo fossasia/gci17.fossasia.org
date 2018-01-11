@@ -7,6 +7,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://fossasiasblog.wordpress.com
+  title: FOSSASIA AND ME
+  img: IMG_567.PNG
+  author_name: Kaushiki Chhabra
+
 - url: https://participationgcin.wordpress.com/
   title: GET LOST IN THE DEPTH OF LEARNING WITH GOOGLE CODE-IN
   img: sudhanshuedoc.jpg
