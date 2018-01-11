@@ -293,8 +293,15 @@
   twitter: artamusebia
   image: Thiyagaraj_T.jpg
   
-  - name: Sean McGregor
+- name: Piyush Agrawal
+  github: poush
+  twitter: mepoush
+  image: poush.jpg
+  
+ - name: Sean McGregor
   github: smcgregor 
   image: Sean McGregor.jpg
   twitter: seanmcgregor
   facebook: seanbmcgregor
+         
+
