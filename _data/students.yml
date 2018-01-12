@@ -1,4 +1,4 @@
-# Please add your entries to a random position in the file.
+﻿# Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
 # The Format is :
@@ -303,6 +303,12 @@
   github: Akharote1
   image: aditya_kharote.jpg
   twitter: Akharote1
+
+- name: Lim Yu Wei
+  country: Singapore
+  github: dhs17y1jLimYuWei
+  image: limyuwei04.jpg
+  twitter: MrNobodi123
   
 - name: Shahaam Marzook
   country: SriLanka
@@ -333,3 +339,4 @@
   github: Guneetconvent2002
   image: Guneet.jpg
   twitter: pohsaykeong
+
