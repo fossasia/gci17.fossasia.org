@@ -1,0 +1,56 @@
+---
+permalink: mentors
+---
+
+{% include header.html %}
+
+<section class="bg-secondary">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<h2>Mentors for you</h2>
+			</div>
+		</div>
+		<div class="row mb64 mb-xs-24 mentor-list">
+			<div class="col-sm-12 text-center spread-children-large">
+				{% for mentor in site.data.mentors %}
+					<div class="card single-mentor">
+
+						{% if mentor.image %}
+								<img class="img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+						{% else %}
+							<img src="img/mentors/member.png" alt="{{ mentor.name }}">
+						{% endif %}
+						<br>
+						<p class="mentor-name">{{ mentor.name }}</p><br>
+
+						<ul class="list-inline social-list social-overlay-list">
+							{% if mentor.github %}
+								<a href="https://github.com/{{mentor.github}}" class="icon-a">
+									<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
+								</a>
+							{% endif %}
+							{% if mentor.twitter %}
+								<a href="https://twitter.com/@{{mentor.twitter}}" class="icon-a">
+									<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
+								</a>
+							{% endif %}
+							{% if mentor.blog %}
+								<a href="https://{{mentor.blog}}" class="icon-a">
+									<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
+								</a>
+							{% endif %}
+							{% if mentor.facebook %}
+								<a href="https://facebook.com/{{mentor.github}}" class="icon-a">
+									<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
+								</a>
+							{% endif %}
+						</ul>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include footer.html %}

@@ -1,8 +1,80 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - name: Student's name
+#   country: Student's Country / Region
+#   github: Student's Github Username
+#   image: Student's image (or representation like a "nick" image)
+#   twitter: Student's Twitter ID
+#   facebook: Student's Facebook ID
+#   lat: Student's Latitude
+#   lng: Student's Longitude
+
+- name: Shivam Rai  
+  country: India
+  github: ShivamRai2003
+  image: (rai)shivam.jpg 
+  twitter: Shivam Rai
+  
+- name: Mrthunjai Dhanasekhar
+  country: India
+  github: mjd220903
+  image: mjd.jpg
+  twitter: mrthunjai
+ 
+- name: Matthew Lee
+  country: United States of America
+  github: mhlee304
+  image: matthewprofile.JPG
+  twitter: mhlee304
+  facebook: mhlee304
+  lat: 43.7844
+  lng: 88.7879
+
+- name: Lokinder Singh
+  country: India
+  github: demonsingh336
+  image: lokinder.jpg
+  twitter: demonsingh336
+  
+- name: Chirag Kumar
+  country: India
+  github: INFERNOMK1
+  image: ChiragKumar.jpg
+  twitter: INFERNOMK1
+  
+- name: Amriyono Maju Ompusunggu
+  country: Indonesia
+  github: amryarios
+  image: amryarios.jpg
+  twitter: AmryArios
+  facebook: ompusunggu.amri
+  lat: -6.2087634
+  lng: 106.84559899999999
+
+- name: Raj Khare
+  country: India
+  github: RajKhare
+  image: rajkhare.png
+  twitter: UserRajKhare
+
+- name: Akshat Jain
+  github: AkshatJain1
+  image: akshatj.jpg
+  twitter: akshatjain0101
+  
 - name: Anastasiia Kostiv
   github: AKostiv8
-  image: kostiv.jpg
+  image: kostiv.jpeg
   twitter: KostivNastya
   facebook: anastasiya.kostiv
+
+- name: Andre Christoga
+  country: Indonesia
+  github: acga
+  image: andre.png
+  twitter: christogandre
 
 - name: Miguel Piedrafita
   image: m1guelpf.png
@@ -24,9 +96,6 @@
 - name: Aleksandr Lymarenko
   image: a-v-lymarenko.png
 
-- name: Naveen Rajan
-  image: naveen.jpg
-
 - name: Abishek V Ashok
   image: abishek.jpg
   lat: 9.9312328
@@ -34,9 +103,13 @@
 
 - name: Mochammad Rafi Al Rizkan
   image: rafi.png
+  github: kol4k
+  facebook: kol4k
+  lat: -6.915510
+  lng: 107.646879
 
 - name: Mehmet Çağrı Arı
-  image: cagriari.jpg
+  image: cagriari.jpeg
 
 - name: Reza Juliandri
   image: reza_juliandri.jpg
@@ -49,14 +122,19 @@
 
 - name: Kuba Michalski
   country: Poland
-  image: kuba-michalski.jpg
+  image: kuba-michalski.jpeg
   github: kubami9
   twitter: top_kuba
+  lat: 52.128588
+  lng: 21.2607444
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
   github: saarthakchats
   twitter: SaarthakChats41
+  facebook: saarthak.chaturvedi
+  lat: 28.5689232
+  lng: 77.26205139999999
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
@@ -77,6 +155,184 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
+
+- name: Prasenjit Gautam
+  github: FreakinBabaJi
+  country: India
+  twitter: B477L3_L0RD
+  facebook: prasenjit.gautam.79
+  image: HyperionGrey.jpg
+
+- name: Ngô Hồng Phúc
+  image: oem.jpg
+  github: Jerry2001
+  facebook: ngohongphuc2001
+
+- name: Tushar Kumar
+  country: India
+  github: awesometushar000
+  image: tushar.jpg
+  twitter: meets2tushar
+
+- name: Aryan Kedare
+  country: India
+  github: aryankedare
+  image: aryankedare.jpeg
+  twitter: KedareAryan
+
+- name: Samyak Jain
+  github: samyakbvs
+  image: samyak.png
+  twitter: Samyakbvs
+  facebook: Samyak Jain
+  lat: 28.621091399999997
+  lng: 77.2173155
+
+- name: Tushar Verma
+  github: 2coolife
+  image: 2coolife.jpg
+  twitter: 2coolife
+
+- name: Supun Tharinda
+  country: Sri Lanka
+  github: STEdirisuriya
+  image: supun.jpg
+  twitter: Supun_Tharinda_
+  lat: 6.737028
+  lng: 79.939276
+
+- name: Kanassanun Namwong
+  country: Thailand
+  github: k7un
+  image: k7un.jpeg
+  facebook: ccr4b
+  twitter: _ccr4b
+
+- name: Ploypiti Piyaprapan
+  country: Thailand
+  github: Ploypiti
+  image: P10YP1T1.jpg
+  twitter: PL0YP1T1
+  facebook: PL0YP1T1
+  lat: 13.756331
+  lng: 100.501765
+
+- name: Piyush Raj
+  country: India
+  github: 0x48piraj
+  image: 0x48piraj.jpg
+  twitter: 0x48piraj
+  facebook: 0x48piraj
+  lat: 25.5938
+  lng: 85.1605
+
+- name: Nuode Chen
+  country: Singapore
+  github: ChenNupde
+  image: Nuode.jpg
+
+  name: Naveen Rajan
+  country: Sri Lanka
+  github: naveentherocker
+  image: naveen.jpg
+  facebook: ntr.sack
+  twitter: ntr_23
+  lat: 7.2905714999999995
+  lng: 80.6337262
+
+- name: Maciej Synowski
+  country: Poland
+  github: Shizerq
+  image: MSShizerq.jpg
+
+- name: Ashish Kumar Singh
+  country: India
+  github: lavavi
+  image: lavavi.jpg
+
+- name: Jeewal Kunwar
+  country: Nepal
+  github: Jeewal
+  image: Jeewal.jpg
+  twitter: jeewalkunwar1
+
+- name: Mridul Birla
+  country: India
+  github: Mridulbirla13
+  image: Mridul.jpg
+  twitter: mridulbirla13
+
+- name: Krish Birla
+  country: India
+  github: krishbirla13
+  image: Krish.jpg
+  twitter: krishbirla13
+
+- name: Arjun Pandey
+  country: India
+  github: arjunpandey2003
+  image: arjun.jpg
+  twitter: arjunpandey2003
+  lat: 77.2090
+  lng: 28.6139
+
+- name: Daniel Lawson
+  country: USA
+  github: daniellawson9999
+  image: danielProfile.jpg
+  twitter: danielblawson9
+  
+- name: Yash Kothari
+  country: India
+  github: Beta-King
+  twitter: Beta_King_500
+  image: Beta_KIng.jpg
+  twitter: Yash_Beta_King
+  lat: 26.9255
+  lng: 75.7861
+  
+- name: Mishaal Kandapath
+  country: Kuwait
+  github: ecomparer
+  image: mishaal_ecomparer.jpg
+  facebook: Mishaal Kandapath
+  website: ecomparer.cf
+  
+- name: Aditya Kharote
+  country: India
+  github: Akharote1
+  image: aditya_kharote.jpg
+  twitter: Akharote1
+  
+- name: Shahaam Marzook
+  country: SriLanka
+  github: ShahaamMarzook
+  image: Shahaam.jpg
+  twitter: mohammedshahaam
+
+- name: Nishant S
+  country: India
+  github: NishSatish
+  image: pp.jpeg
+  twitter: neymarnishant
+
+- name: Dai Tianle
+  country: Singapore
+  github: ddx-510
+  image: ddx.jpg
+  twitter: ddx2000
+  
+- name: Poh Say Keong
+  country: Singapore
+  github: PohSayKeong
+  image: SayKeong.jpg
+  twitter: pohsaykeong
+
+- name: Guneet Singh
+  country: India
+  github: Guneetconvent2002
+  image: Guneet.jpg
+  twitter: pohsaykeong
 
 - name: Srihari Unnikrishnan
   country: India

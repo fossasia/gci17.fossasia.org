@@ -1,6 +1,14 @@
-
 # Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - name: Mentor's name
+#   github: Mentor's Github Username
+#   image: Mentor's image (or representation like a "nick" image)
+#   twitter: Mentor's Twitter ID
+#   facebook: Mentor's Facebook ID
+#   lat: Mentor's Latitude
+#   lng: Mentor's Longitude
 
 - name: Mario Behling
   github: mariobehling
@@ -8,37 +16,101 @@
   blog: mariobehling.de/
   twitter: mariobehling
   facebook: mariobehling
+  lat: 52.520007
+  lng: 13.404954
 
+- name: Sumedh Nimkarde
+  github: sumedh123
+  image: sumedh.jpeg
+  twitter: Sumedh Nimkarde
+  facebook: Sumedh Nimkarde
+  lat: 21.170240
+  lng: 72.831061
+
+- name: Nikit Bhandari
+  github: nikit19
+  image: nikit.jpeg
+  twitter: Nikit Bhandari
 
 - name: Hong Phuc Dang
   github: hpdang
   image: hpdang.jpg
   blog: blog.fossasia.org
   facebook: hpdang
+  lat: 1.352083
+  lng: 103.819836
+
+- name: Mohit Sharma
+  github: ms10398
+  image: mohitsharma.png
+  twitter: MohitSh93319185
+  facebook: ms10398
+  lat: 30.733315
+  lng: 76.779418
 
 - name: Harshit Prasad
   github: harsit98
   image: harsit98.jpg
   blog: blog.fossasia.org
   facebook: prasad.dude28
+  lat: 26.934855
+  lng: 75.924894
 
+- name: Akshat Garg
+  github: akshatnitd
+  image: agarg.jpg
+  blog: aspirewithmeblog.wordpress.com
+  twitter: tweet_akshat
+  Linkedin: akshatnitd
+  lat: 27.0360
+  lng: 88.2627
+
+- name: Louis Gagnon
+  github: louisgag
+  image: LouisGagnon.jpg
+  twitter: louisgagnoncom
+
+- name: Parth Shandilya
+  github: ParthS007
+  image: parths007.jpg
+  twitter: shandilyaparth1
+  facebook: shandilyaparth
+  lat: 26.9124
+  lng: 75.7873
 
 - name: Isuru Abeywardana
   github: isuruAb
   image: isuruAb.jpg
   blog: icodeplus.wordpress.com
   facebook: isuruAb
-
+  lat: 6.7949839999999995
+  lng: 79.92979849999999
 
 - name: Abhinav Khare
   github: CosmicCoder96
   image: CosmicCoder96.jpg
-
+  lat: 12.971599
+  lng: 77.594563
 
 - name: Harsh Vardhan
   github: royalharsh
   image: royalharsh.jpg
+  lat: 20.593684
+  lng: 78.962880
 
+- name: Zameer Ul Haque
+  github: zamhaq
+  image: zamhaq.jpeg
+  twitter: haquezameer
+  blog: zamhaq.github.io/blog/
+  lat: 13.128464
+  lng: 77.587308
+
+- name: Vaibhav Singh
+  github: vaibhavsingh97
+  image: vaibhavsingh97.jpg
+  lat: 28.2453659
+  lng: 76.8086956
 
 - name: Harsh Kothari
   github: harshkothari410
@@ -46,14 +118,16 @@
   blog: harshkothari.com
   facebook: harshkothari410
   twitter: harshkothari410
-
+  lat: 40.486216
+  lng: -74.451819
 
 - name: Jigyasa Grover
   github: jigyasa-grover
   image: jigyasa-grover.jpg
   facebook: grover.jigyasa
   twitter: jigyasa_grover
-
+  lat: 36.778261
+  lng: -119.417932
 
 - name: Saptak Sengupta
   github: SaptakS
@@ -61,7 +135,8 @@
   blog: saptaks.github.io
   facebook: s4pt4ks
   twitter: Saptak013
-
+  lat: 28.613939
+  lng: 77.209021
 
 - name: Damini Satya
   github: daminisatya
@@ -69,26 +144,162 @@
   blog: daminisatya.info
   facebook: daminisatya
   twitter: Daminisatya
-
-
-- name: Mohit Sharma
-  github: ms10398
-  image: mohitsharma.png
-
+  lat: 17.385044
+  lng: 78.486671
 
 - name: Ashwani Kumar
   github: ashwanidv100
   image: ashwanidv100.jpeg
   twitter: ashwanidv100
+  lat: 28.613939
+  lng: 77.209021
 
 - name: Nikhil Rayaprolu
   github: nikhilrayaprolu
   image: nikhilrayaprolu.jpg
+  lat: 17.385044
+  lng: 78.486671
 
 - name: Nicco Kunzmann
   github: niccokunzmann
   image: niccokunzmann.png
+  lat: 51.165691
+  lng: 10.451526
+
+- name: Sudheesh Singanamalla
+  github: sudheesh001
+  image: sudheesh001.jpg
+  lat: 12.971599
+  lng: 77.594563
 
 - name: Anshuman Verma
-  image: ansh.jpg
+  image: ansh.jpeg
   twitter: Anshumaniac12
+  lat: 23.233086
+  lng: 72.651634
+
+- name: Rahul Tiwari
+  github: invinciblycool
+  image: Rahul_Tiw.jpg
+  twitter: invinciblycool
+  lat: 26.912434
+  lng: 75.787271
+
+- name: Nguyen Vu Hung
+  image: hung.jpg
+  github: vuhung
+  facebook: nguyenvuhung
+  lat: 21.027764
+  lng: 105.834160
+
+- name: Avi Aryan
+  image: avi.jpg
+  twitter: aviaryan123
+  github: aviaryan
+
+- name: Sayan Chowdhury
+  image: sayanchowdhury.jpeg
+  twitter: yudocaa
+  github: sayanchowdhury
+  lat: 23.215635
+  lng: 72.636941
+
+- name: Suneet Srivastava
+  github: codedsun
+  image: suneet.jpg
+  blog: suneetsrivastavablog.wordpress.com
+  facebook: suneet.srivastava.583
+  twitter: dSuneetsri
+  lat: 28.669156
+  lng: 77.453758
+
+- name: Yash Ladha
+  github: yashLadha
+  image: Yash.jpg
+  facebook: yash.ladha.7
+  twitter: yashLadha_
+  lat: 23.215635
+  lng: 72.636941
+
+- name: Vibhor Verma
+  github: vibhcool
+  twitter: vibhcool
+  image: vibhor.jpg
+  lat: 28.613939
+  lng: 77.209021
+
+- name: Manish Devgan
+  github: gabru-md
+  facebook: gabrumd
+  image: manish.jpg
+  lat: 28.682062
+  lng: 77.321622
+
+- name: Rupav Jain
+  github: rupav
+  image: rupav.jpg
+  lat: 28.6687
+  lng: 77.1019
+
+- name: Tarun Kumar
+  github: meets2tarun
+  image: meets2tarun.jpg
+  lat: 27.133991
+  lng: 81.961897
+
+- name: Shubham Padia
+  github: shubham-padia
+  twitter: shubham_p98
+  image: shubham-padia.jpg
+  lat: 22.303894
+  lng: 70.802160
+  
+- name: Sanskar Jethi
+  github: stealthanthrax
+  image: sanskar.jpg
+  twitter: sansyrox
+  facebook: sanskar.jethi
+  lat: 28.6
+  lng: 77.3
+  
+- name: Jihye Sofia Seo
+  github: jihyeseo
+  image: jihye.jpeg
+  twitter: jihyeseodr
+  lat: 13.405
+  lng: 52.52
+
+- name: Ayush Gupta
+  github: agbilotia1998
+  twitter: agbilotia1998
+  image: Ayush.jpeg
+  lat: 25.4275
+  lng: 81.7728
+  
+- name: Deepjyoti Mondal
+  github: djmgit
+  twitter: djm_dev96
+  image: Deepjyoti.jpg
+  lat: 22.5726
+  lng: 88.3639
+
+- name: Pratyush Singh
+  github: singhpratyush 
+  twitter: singhpratyush_
+  image: Pratyush.jpg
+
+- name: Thiyagaraj T
+  github: tstreamDOTh
+  twitter: artamusebia
+  image: Thiyagaraj_T.jpg
+
+- name: Piyush Agrawal
+  github: poush
+  twitter: mepoush
+  image: poush.jpg
+
+- name: Sean McGregor
+  github: smcgregor 
+  twitter: seanmcgregor 
+  image: Sean McGregor.jpg
+  facebook: seanbmcgregor 

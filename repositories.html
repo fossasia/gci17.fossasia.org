@@ -1,0 +1,30 @@
+---
+permalink: repositories
+---
+
+{% include header.html %}
+
+<div class="rocket">
+	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
+		<div class="fire"></div>
+	</a>
+</div>
+
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/aos.css" />
+<section class="bg-secondary">
+	<div class="container">
+		<div class="col-sm-12 text-center">
+			<h2 class="animated fadeIn">Repositories</h2>
+			<p class="lead mb64">Repositories to work on with</p>
+		</div>
+		<div class="col-sm-12 col-md-12 text-center spread-children-large mentor-list" id="repos"></div>
+	</div>
+</section>
+<script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+{% include footer.html %}

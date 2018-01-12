@@ -1,0 +1,79 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - url: URL to the video in YouTube 
+#   title: Title of the video
+#   img: Image of the video
+#   author_name: Name of the creator of the blog (most likely you)
+
+- url: https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s
+  title: About FOSSASIA
+  img: FOSSASIA.jpeg
+  author_name: Supun Tharinda Edirisuriya
+
+- url: https://www.youtube.com/watch?v=P4TqM8Qpq7A
+  title: Fossasia Summit Promotional Video
+  img: saarthakvid.jpg
+  author_name: Saarthak Chaturvedi
+
+- url: https://www.youtube.com/watch?v=XvoHY3QCJtw
+  title: Labyrinth
+  img: labyrinth.jpg
+  author_name: Yash Kumar Verma
+  
+- url: https://www.youtube.com/watch?v=iJBtZgYQk0U
+  title: Video Interview
+  img: samyakjain.jpeg
+  author_name: Samyak Jain
+
+- url: https://www.youtube.com/watch?v=dHLtwxt-qBs
+  title: Interview - GCI - Fossasia - Task (Blog)
+  img: Beta_KIng.jpg
+  author_name: Yash Kothari
+  
+- url: https://www.youtube.com/watch?v=6IOoht-49Yc
+  title: Interview with Two Fossasia Buddies
+  img: suups.png
+  author_name: Saarthak Chaturvedi
+  
+- url: https://www.youtube.com/watch?v=RMgVHA7xGXU
+  title: FOSSASIA Summit 2018 Promo
+  img: FOSSASIA.jpeg
+  author_name: Naveen Rajan
+  
+  
+- url: https://youtu.be/aOIzz64E-bE
+  title: FOSSASIA SUMMIT
+  img: yajushvy.jpg
+  author_name: Yajush Vyas
+
+- url: https://www.youtube.com/watch?v=5vXDJOYqWvk
+  title: The Labyrinth maze
+  img: FOSSASIA.jpeg
+  author_name: Samyak Jain 
+
+- url: https://www.youtube.com/watch?v=EyD-epK7_u4
+  title: Fossasia Summit
+  img: FOSSASIA.jpeg
+  author_name: Samyak Jain
+  
+- url: https://www.youtube.com/watch?v=xK6RBWn7mjw&feature=youtu.be
+  title: Promotional Video
+  img: Promotional.jpg
+  author_name: Yash Kothari
+
+- url: https://www.youtube.com/watch?v=-EfJjFKBIYc
+  title: Fossasia Attracting Students
+  img: FOSSASIA.jpeg
+  author_name: Saarthak Chaturvedi
+  
+- url: https://www.youtube.com/watch?v=vM9cD1pHMDQ
+  title: Fossasia Collaborators
+  img: FOSSASIA.jpeg
+  author_name: Samyak Jain
+  
+- url: https://youtu.be/vc4GgDbx8WA
+  title: Labyrinth | A short intro
+  img: LabyrinthCover.jpg
+  author_name: Ploypiti P.

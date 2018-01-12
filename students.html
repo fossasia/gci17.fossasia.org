@@ -1,0 +1,58 @@
+---
+permalink: students
+---
+
+{% include header.html %}
+
+<div class="rocket">
+	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
+		<div class="fire"></div>
+	</a>
+</div>
+
+<section class="bg-secondary">
+	<div class="container">
+		<div class="row">
+			<div class="row mb64 mb-xs-24 mentor-list">
+				<div class="col-sm-12 text-center spread-children-large">
+				{% for student in site.data.students %}
+				<div class="card single-mentor">
+					{% if student.image %}
+					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+					{% else %}
+					<img src="img/students/member.png" alt="{{ student.name }}">
+					{% endif %}
+					<br>
+					<p class="person-name">{{ student.name }}</p><br>
+					<ul class="list-inline social-list social-overlay-list">
+						{% if student.github %}
+						<a href="https://github.com/{{student.github}}" class="icon-a">
+							<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
+						</a>
+						{% endif %}
+						{% if student.twitter %}
+						<a href="https://twitter.com/@{{student.twitter}}" class="icon-a">
+							<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
+						</a>
+						{% endif %}
+						{% if student.blog %}
+						<a href="https://{{student.blog}}" class="icon-a">
+							<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
+						</a>
+						{% endif %}
+						{% if student.facebook %}
+						<a href="https://facebook.com/{{student.facebook}}" class="icon-a">
+							<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
+						</a>
+						{% endif %}
+					</ul>
+				</div>
+				{% endfor %}
+          </div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{% include footer.html %}

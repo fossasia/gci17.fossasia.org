@@ -1,0 +1,30 @@
+{
+    "short_name": "FOSSASIA GCI 17",
+    "name": "FOSSASIA Google Code-In 2017",
+    "start_url": "index.html",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#fff",
+    "theme_color": "#3f51b5",
+    "description": "FOSSASIA Google Code-In Students Website",
+    "dir": "ltr",
+    "lang": "en-US",
+    "icons": [{
+        "src": "icons/128.jpg",
+        "type": "image/jpg",
+        "sizes": "128x128"
+      }, {
+        "src": "icons/152.jpg",
+        "type": "image/jpg",
+        "sizes": "152x152"
+      }, {
+        "src": "icons/144.jpg",
+        "type": "image/jpg",
+        "sizes": "144x144"
+      }, {
+        "src": "icons/192.jpg",
+        "type": "image/jpg",
+        "sizes": "192x192"
+    }]
+}

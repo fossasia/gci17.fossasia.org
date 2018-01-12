@@ -934,8 +934,8 @@ nav.bg-dark .logo-dark {
   top: 0;
   right: 0;
   font-size: 11px;
-  content: "\e64b";
-  font-family: 'themify';
+  content: "\f107";
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1032,6 +1032,10 @@ nav.bg-dark .logo-dark {
   -webkit-transform: translate3d(0, 0px, 0);
   -moz-transform: translate3d(0, 0px, 0);
   visibility: visible;
+}
+.menu > li > ul a:hover {
+  background-color: red;
+  width: 100%;
 }
 .menu > li > ul > li:hover > ul,
 .has-dropdown:hover .mega-menu ul {
@@ -2985,8 +2989,8 @@ button[type="submit"] .form-loading {
   display: inline-block;
   margin-right: 8px;
   color: #292929;
-  content: "\e74b";
-  font-family: 'themify';
+  content: "\f099";
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -3308,8 +3312,8 @@ img {
 }
 .flex-direction-nav a.flex-next:before,
 .flex-direction-nav a.flex-prev:before {
-  content: "\e649";
-  font-family: 'themify';
+  content: "\f061";
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -3323,7 +3327,7 @@ img {
   left: 16px;
 }
 .flex-direction-nav a.flex-prev:before {
-  content: "\e64a";
+  content: "\f060";
 }
 .flex-direction-nav a {
   opacity: 1;
