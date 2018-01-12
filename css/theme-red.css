@@ -1296,7 +1296,7 @@ nav .cart-overview a {
     transform: none !important;
   }
 }
-@media all and (max-width: 990px) {
+@media all and (max-width: 1200px) {
   nav.fixed {
     position: absolute !important;
     opacity: 1 !important;
