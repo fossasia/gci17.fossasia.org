@@ -8,6 +8,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://shivamraigci.wordpress.com/2018/01/13/my-gci-experience/
+  title: About My GCI Experience
+  img: SHIVAM.jpg
+  author_name: Shivam Rai
+  
 - url: https://beingdvd.wordpress.com/first-time-with-google-code-in/
   title: First time with Google Code-in
   img: beingdvdtbu.jpg
