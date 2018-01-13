@@ -8,6 +8,11 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://shivamraigci.wordpress.com/2018/01/13/my-gci-experience/
+  title: About Google Code-In participation
+  img: SHIVAM.jpg
+  author_name: Shivam Rai
+  
 - url: https://myblogs938167194.wordpress.com/
   title: My Google Code-In participation
   img: momtahina (2).png
