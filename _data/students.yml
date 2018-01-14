@@ -11,11 +11,27 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Shivika Chaturvedi
+  image: shivika.jpg
+  github: shivika07
+  twitter: shivikachats
+  facebook: shivika.chaturvedi
+  lat: 28.5689232
+  lng: 77.26205139999999
+
 - name: Shivam Rai  
   country: India
   github: ShivamRai2003
   image: (rai)shivam.jpg 
   twitter: Shivam Rai
+  
+ - name: Saarthak Chaturvedi
+  image: Saarthak.jpg
+  github: saarthakchats
+  twitter: SaarthakChats41
+  facebook: saarthak.chaturvedi
+  lat: 28.5689232
+  lng: 77.26205139999999
   
 - name: Mrthunjai Dhanasekhar
   country: India
@@ -127,14 +143,6 @@
   twitter: top_kuba
   lat: 52.128588
   lng: 21.2607444
-
-- name: Saarthak Chaturvedi
-  image: Saarthak.jpg
-  github: saarthakchats
-  twitter: SaarthakChats41
-  facebook: saarthak.chaturvedi
-  lat: 28.5689232
-  lng: 77.26205139999999
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
