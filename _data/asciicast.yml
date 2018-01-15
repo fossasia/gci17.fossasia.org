@@ -14,6 +14,26 @@
   imgurl: https://asciinema.org/a/152805.png
   maker: Supun Tharinda Edirisuriya
 
+- url: https://asciinema.org/a/156835
+  title: SUSI Server using Kubernetes
+  imgurl: https://asciinema.org/a/156835.png
+  maker: Yash Kumar Verma
+
+- url: https://asciinema.org/a/156500
+  title: Open Event Generator on Google Cloud
+  imgurl: https://asciinema.org/a/156500.png
+  maker: Yash Kumar Verma
+  
+- url: https://asciinema.org/a/153864
+  title: Setting Up SUSI server on local machine
+  imgurl: https://asciinema.org/a/153864.png
+  maker: Yash Kumar Verma
+  
+- url: https://asciinema.org/a/157071
+  title: Complete MBDyn tutorial
+  imgurl: https://asciinema.org/a/157071.png
+  maker: Yash Kumar Verma
+
 - url: https://asciinema.org/a/152580/
   title: How to install SUSI locally
   imgurl: https://asciinema.org/a/152580.png
@@ -23,3 +43,4 @@
   title: Tutorial | chat.susi.ai with surge
   imgurl: https://asciinema.org/a/156709.png
   maker: Yash Kothari
+
