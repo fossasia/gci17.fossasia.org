@@ -11,6 +11,13 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Arnav Raman
+  country: India
+  github: ArnavR
+  image: arnavraman7.jpg
+  twitter: arnavraman7
+  instagram: arnavraman7
+  
 - name: Shivam Rai  
   country: India
   github: ShivamRai2003
