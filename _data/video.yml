@@ -2,10 +2,10 @@
 # This is to remove conflicts with other people adding entries.
 
 # The Format is :
-# - url: URL to the video in YouTube 
-#   title: Title of the video
-#   img: Image of the video
-#   author_name: Name of the creator of the blog (most likely you)
+# - url:  https://youtu.be/YgilHd_tCsU
+#   title: Intro to FOSSASIA
+#   img: FOSSASIA.jpeg
+#   author_name: Mohd Tauseef
 
 - url: https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s
   title: About FOSSASIA
