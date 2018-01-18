@@ -7,7 +7,7 @@
 #   img: Image of the video
 #   author_name: Name of the creator of the blog (most likely you)
 
-- url: https://www.youtube.com/watch?v=Noy7OnKIhXM&t=19s
+- url: https://www.youtube.com/watch?v=Noy7OnKIhXM
   title: About FOSSASIA
   img: FOSSASIA.jpeg
   author_name: Supun Tharinda Edirisuriya
@@ -19,9 +19,29 @@
 
 - url: https://www.youtube.com/watch?v=XvoHY3QCJtw
   title: Labyrinth
-  img: labyrinth.jpg
+  img: verma-labyrinth.png
   author_name: Yash Kumar Verma
   
+- url: https://www.youtube.com/watch?v=yc_d5JJ--vQ
+  title: SUSI AI on Kubernetes
+  img: verma-susi-kubernetes.png
+  author_name: Yash Kumar Verma
+
+- url: https://www.youtube.com/watch?v=AKOHR6uLMlY
+  title: Open Event Webapp
+  img: verma-open-event-webapp.png
+  author_name: Yash Kumar Verma
+
+- url: https://www.youtube.com/watch?v=eKRFpH3P0nw
+  title: Compiling Wine
+  img: verma-wine.png
+  author_name: Yash Kumar Verma
+
+- url: https://www.youtube.com/watch?v=5se37I6BGy0
+  title: Setting Up SUSI Server
+  img: verma-susi-server.png
+  author_name: Yash Kumar Verma
+
 - url: https://www.youtube.com/watch?v=iJBtZgYQk0U
   title: Video Interview
   img: samyakjain.jpeg
