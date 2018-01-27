@@ -8,6 +8,16 @@
 #   img: Image of the blog
 #   author_name: Name of the author of the blog (most likely you)
 
+- url: https://medium.com/@0x48piraj/google-code-in-what-why-how-the-heck-1f58c43500b2
+  title: Google Code In? What, Why & How the Heck ??? | FOSSASIA
+  img: 0x48piraj.jpg
+  author_name: Piyush Raj
+
+- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
+  title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
+  img: 0x48piraj_susi.jpg
+  author_name: Piyush Raj
+
 - url: https://shivamraigci.wordpress.com/2018/01/13/my-gci-experience/
   title: About My GCI Experience
   img: SHIVAM.jpg
@@ -32,11 +42,6 @@
   title: Interview with a teacher about FOSSASIA and Google Code-in
   img: me1.png
   author_name: Amriyono Maju Ompusunggu
-
-- url: http://gci2017fossasia.blogspot.in/2017/11/how-to-clone-biggest-repositories.html
-  title: Playing with git on top of chat.susi.ai | Google Code-In | FOSSASIA
-  img: 0x48piraj.jpg
-  author_name: Piyush Raj
 
 - url: https://abishek24.wordpress.com/2018/01/14/how-i-parallelized-the-travis-ci-build-of-susi-ai/
   title: How I solved an issue for SUSI AI

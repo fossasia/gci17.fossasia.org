@@ -11,6 +11,15 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Piyush Raj
+  country: India
+  github: 0x48piraj
+  image: 0x48piraj.jpg
+  twitter: 0x48piraj
+  facebook: 0x48piraj
+  lat: 25.5938
+  lng: 85.1605
+
 - name: Arnav Raman
   country: India
   github: ArnavR
@@ -225,15 +234,6 @@
   facebook: PL0YP1T1
   lat: 13.756331
   lng: 100.501765
-
-- name: Piyush Raj
-  country: India
-  github: 0x48piraj
-  image: 0x48piraj.jpg
-  twitter: 0x48piraj
-  facebook: 0x48piraj
-  lat: 25.5938
-  lng: 85.1605
 
 - name: Nuode Chen
   country: Singapore
