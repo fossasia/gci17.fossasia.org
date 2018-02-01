@@ -97,7 +97,7 @@
 		</div>
 		<div class="row mb64 mb-xs-24 mentor-list">
 			<div class="col-sm-12 text-center spread-children-large">
-				{% for mentor in site.data.mentors limit:10 %}
+				{% for mentor in site.data.mentors limit:30 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
 								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
@@ -149,7 +149,7 @@
 			<h2 class="animated fadeIn">Students just like you.</h2>
 		</div>
 			<div class="col-sm-12 text-center spread-children-large mentor-list">
-				{% for student in site.data.students limit:5 %}
+				{% for student in site.data.students limit:9 %}
 				<div class="card single-mentor">
 					{% if student.image %}
 					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
