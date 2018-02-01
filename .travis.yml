@@ -12,6 +12,7 @@ env:
   matrix:
     - JOB=BUILD
     - JOB=TEST
+    - JOB=DANGER
 
 rvm:
   - 2.3.3

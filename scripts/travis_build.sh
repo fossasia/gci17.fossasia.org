@@ -7,6 +7,8 @@ if [ "$JOB" == "BUILD" ]; then
     bundle exec jekyll build
 elif [ "$JOB" == "TEST" ]; then
     bundle exec img_checker
+elif [ "$JOB" == "DANGER" ] && [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+    danger --verbose
 fi
 
 exit 0
