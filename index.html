@@ -97,7 +97,7 @@
 		</div>
 		<div class="row mb64 mb-xs-24 mentor-list">
 			<div class="col-sm-12 text-center spread-children-large">
-				{% for mentor in site.data.mentors limit:5 %}
+				{% for mentor in site.data.mentors limit:10 %}
 					<div class="card single-mentor">
 						{% if mentor.image %}
 								<img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
