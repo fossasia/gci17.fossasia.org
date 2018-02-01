@@ -149,7 +149,7 @@
 			<h2 class="animated fadeIn">Students just like you.</h2>
 		</div>
 			<div class="col-sm-12 text-center spread-children-large mentor-list">
-				{% for student in site.data.students limit:9 %}
+				{% for student in site.data.students limit:11 %}
 				<div class="card single-mentor">
 					{% if student.image %}
 					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
