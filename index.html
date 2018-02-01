@@ -67,7 +67,7 @@
 			<div class="col-sm-4">
 				<a href="https://github.com/fossasia/gci17.fossasia.org/graphs/contributors"><h2>2000+ contributors</h2></a>
 				<p>
-					Contributors are students, professors, mentors, and people who loves to be a part of our open source community, they helps creating better program and community.
+					Contributors are students, professors, mentors, and people who loves to be a part of our open source community, they help creating better software and support the community.
 				</p>
 			</div>
 		</div>
@@ -142,72 +142,6 @@
 	</div>
 </section>
 
-<!--contributors section-->
-<section class="bg-secondary">
-	<div class="container">
-		<div class="col-sm-12 text-center">
-			<h2 class="animated fadeIn">Contributors</h2>
-			<p class="lead mb64">People who have made contributions to gci17.fossasia.org</p>
-			<a class="btn btn-lg" href="{{ baseurl }}./activities">view activities</a>
-		</div>
-		<div class="col-sm-12 col-md-12 text-center spread-children-large mentor-list" id="contributors"></div>
-		
-		<div class="col-sm-12 col-md-12 text-center">
-	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/">How can I be a contributor?</a>	
-	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://github.com/fossasia/gci17.fossasia.org">View the Github Repository <i class="fa fa-github fa-lg"></i></a>		
-	 </div>
-	</div>
-</section>
-<!--End of contributors section-->
-
-<!-- Thanks -->
-<section class="bg-dark" style="height: 264px;">
-	<div class="container">
-		<div class="text-center">
-			<h2 class="typed" style="display: inline-block;">
-		   	</h2>
-		</div>
-	</div>
-</section>
-
-<section id="projects">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h4 class="uppercase mb16 animated fadeIn">Student Projects</h4>
-				<p class="lead mb64">Some projects developed by students during GCI</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="lightbox-grid square-thumbs">
-					<ul class="list-inline social-list social-overlay-list">
-							{% for project in site.data.student_projects %}
-							<li class="student_project">
-								<a href="{{project.github}}">
-									<div class="background-image-holder">
-											{% if project.image %}
-											<img title="{{project.name}} by {{project.author}}"
-														 class="background-image" src="img/projects/{{project.image}}">
-											{% else %}
-											<img title="{{project.name}} by {{project.author}}"
-														 class="background-image" src="img/projects/default.png">
-											{% endif %}
-											<span class="student-project-name"><span>By {{ project.author }}</span></span>
-									</div>
-								</a>
-							</li>
-							{% endfor %}
-					</ul>
-				</div>
-			</div>
-		</div><br><br><br>
-		<div class="col-sm-12 col-md-12 text-center">
-    			<a class="btn" data-toggle="popover" title="" data-placement="bottom left" href="https://github.com/fossasia/gci17.fossasia.org/blob/gh-pages/README.md">How to add a Student Project? (README.md)</a>
- 		</div>
-	</div>
-</section>
-
 <!-- Students -->
 <section class="bg-secondary" id="students">
 	<div class="container">
@@ -262,6 +196,72 @@
 		</div>
 	</div>
 </section>
+
+<!-- Thanks -->
+<section class="bg-dark" style="height: 264px;">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="typed" style="display: inline-block;">
+		   	</h2>
+		</div>
+	</div>
+</section>
+
+<section id="projects">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h4 class="uppercase mb16 animated fadeIn">Student Projects</h4>
+				<p class="lead mb64">Some projects developed by students during GCI</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="lightbox-grid square-thumbs">
+					<ul class="list-inline social-list social-overlay-list">
+							{% for project in site.data.student_projects %}
+							<li class="student_project">
+								<a href="{{project.github}}">
+									<div class="background-image-holder">
+											{% if project.image %}
+											<img title="{{project.name}} by {{project.author}}"
+														 class="background-image" src="img/projects/{{project.image}}">
+											{% else %}
+											<img title="{{project.name}} by {{project.author}}"
+														 class="background-image" src="img/projects/default.png">
+											{% endif %}
+											<span class="student-project-name"><span>By {{ project.author }}</span></span>
+									</div>
+								</a>
+							</li>
+							{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="col-sm-12 col-md-12 text-center">
+    			<a class="btn" data-toggle="popover" title="" data-placement="bottom left" href="https://github.com/fossasia/gci17.fossasia.org/blob/gh-pages/README.md">How to add a Student Project? (README.md)</a>
+ 		</div>
+	</div>
+</section>
+
+<!--contributors section-->
+<section class="bg-secondary">
+	<div class="container">
+		<div class="col-sm-12 text-center">
+			<h2 class="animated fadeIn">Contributors</h2>
+			<p class="lead mb64">People who have made contributions to gci17.fossasia.org</p>
+			<a class="btn btn-lg" href="{{ baseurl }}./activities">view activities</a>
+		</div>
+		<div class="col-sm-12 col-md-12 text-center spread-children-large mentor-list" id="contributors"></div>
+		
+		<div class="col-sm-12 col-md-12 text-center">
+	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/">How can I be a contributor?</a>	
+	<a  class="btn" data-toggle="popover" title="" data-placement="bottom" href="https://github.com/fossasia/gci17.fossasia.org">View the Github Repository <i class="fa fa-github fa-lg"></i></a>		
+	 </div>
+	</div>
+</section>
+<!--End of contributors section-->
 
 <!-- App Section -->
 <section id="fossasia-projects">
