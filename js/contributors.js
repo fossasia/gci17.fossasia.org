@@ -7,7 +7,7 @@ function shuffle(o) {
 /* Used to get contributions from the Github API */
 $(document).ready(function(){
   $.ajax({
-    url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors"
+    url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors?per_page=100&page=1"
   }).done(function(data){
     data.forEach(function(contributors){
       var html = '<div class="card hvr-hang single-mentor">';
