@@ -568,6 +568,18 @@ ul.lead li {
 .color-white {
   color: #fff;
 }
+.bg-map {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+.bg-student {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+.bg-blog {
+  background: linear-gradient(to right, #667eea, #764ba2)
+}
+.bg-videos {
+  background: linear-gradient(to right, #ff5f6d, #ffc371)
+}
 /*!---------- 5. SECTIONS ----------*/
 section,
 footer {
