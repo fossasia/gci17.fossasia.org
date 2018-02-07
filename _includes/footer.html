@@ -133,7 +133,7 @@
         <script>
             map = new OpenLayers.Map("map");
             map.addLayer(new OpenLayers.Layer.OSM());
-    
+
             epsg4326 =  new OpenLayers.Projection("EPSG:4326"); //WGS 1984 projection
             projectTo = map.getProjectionObject(); //The map projection (Spherical Mercator)
             var lonLat = new OpenLayers.LonLat(0,0).transform(epsg4326, projectTo);
@@ -147,7 +147,7 @@
                             new OpenLayers.Geometry.Point({{student.lng}}, {{student.lat}}).transform(epsg4326, projectTo),
                             {description:'{{student.name}}'} ,
                             {externalGraphic: 'img/student_marker.png', graphicHeight: 30, graphicWidth: 25, graphicXOffset:-12, graphicYOffset:-25}
-                    );    
+                    );
                     vectorLayer.addFeatures(feature);
                 {% endif %}
             {% endfor %}
@@ -163,8 +163,8 @@
             {% endfor %}
 
             map.addLayer(vectorLayer);
- 
-    
+
+
             //Add a selector control to the vectorLayer with popup functions
             var controls = {
                 selector: new OpenLayers.Control.SelectFeature(vectorLayer, { onSelect: createPopup, onUnselect: destroyPopup })
@@ -187,7 +187,7 @@
                 feature.popup.destroy();
                 feature.popup = null;
             }
-    
+
             map.addControl(controls['selector']);
             controls['selector'].activate();
         </script>
