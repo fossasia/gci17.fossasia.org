@@ -42,7 +42,7 @@ To add a student open the file  `students.yml` in `_data` folder and please main
 - All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
 - All images must be in `img/students`.
 - The images must be 240 x 240 pixels.
-- If you do not want to include your social media accounts or coordinates , please do not provide empty fields like `facebook:`.
+- If you do not want to include your social media accounts or coordinates, please do not provide empty fields like `facebook:`.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
 
@@ -131,7 +131,7 @@ permalink: <some permalink>
 
 - Copy installation files in English and paste them on same directory.
  The name must be like below,
-  You must give same file name of english files with 2 or 3 leters that showing your language that contains in brackets.
+  You must give same file name of english files with 2 or 3 letters that showing your language that contains in brackets.
   That 2 or 3 letters must be english letters.
   ex:- If it's you adding language is Sinhala you can use 'si' as following, 
   `installation_windows(si).md` 
