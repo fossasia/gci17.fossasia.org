@@ -26,21 +26,21 @@
   image: arnavraman7.jpg
   twitter: arnavraman7
   instagram: arnavraman7
-  
-- name: Shivam Rai  
+
+- name: Shivam Rai
   country: India
   github: ShivamRai2003
-  image: (rai)shivam.jpg 
+  image: (rai)shivam.jpg
   twitter: Shivam Rai
   lat: 26.776455
   lng: 80.999398
-  
+
 - name: Mrthunjai Dhanasekhar
   country: India
   github: mjd220903
   image: mjd.jpg
   twitter: mrthunjai
- 
+
 - name: Matthew Lee
   country: United States of America
   github: mhlee304
@@ -55,13 +55,13 @@
   github: demonsingh336
   image: lokinder.jpg
   twitter: demonsingh336
-  
+
 - name: Chirag Kumar
   country: India
   github: INFERNOMK1
   image: ChiragKumar.jpg
   twitter: INFERNOMK1
-  
+
 - name: Amriyono Maju Ompusunggu
   country: Indonesia
   github: amryarios
@@ -81,7 +81,7 @@
   github: AkshatJain1
   image: akshatj.jpg
   twitter: akshatjain0101
-  
+
 - name: Anastasiia Kostiv
   github: AKostiv8
   image: kostiv.jpeg
@@ -110,14 +110,17 @@
   facebook: yashkumarverma
   lat: 30.3164945
   lng: 78.0321918
+  finalist: true
 
 - name: Aleksandr Lymarenko
   image: a-v-lymarenko.png
 
 - name: Abishek V Ashok
   image: abishek.jpg
+  github: abishekvashok
   lat: 9.9312328
   lng: 76.26730409999999
+  winner: true
 
 - name: Mochammad Rafi Al Rizkan
   image: rafi.png
@@ -153,6 +156,7 @@
   facebook: saarthak.chaturvedi
   lat: 28.5689232
   lng: 77.26205139999999
+  finalist: true
 
 - name: Nguyen Chanh Dai
   image: ncdai.jpg
@@ -173,6 +177,7 @@
   facebook: duttaditya18
   lat: 28.641485
   lng: 77.371386
+  finalist: true
 
 - name: Prasenjit Gautam
   github: FreakinBabaJi
@@ -248,6 +253,7 @@
   twitter: ntr_23
   lat: 7.2905714999999995
   lng: 80.6337262
+  winner: true
 
 - name: Maciej Synowski
   country: Poland
@@ -290,7 +296,7 @@
   github: daniellawson9999
   image: danielProfile.jpg
   twitter: danielblawson9
-  
+
 - name: Yash Kothari
   country: India
   github: Beta-King
@@ -299,20 +305,20 @@
   twitter: Yash_Beta_King
   lat: 26.9255
   lng: 75.7861
-  
+
 - name: Mishaal Kandapath
   country: Kuwait
   github: ecomparer
   image: mishaal_ecomparer.jpg
   facebook: Mishaal Kandapath
   website: ecomparer.cf
-  
+
 - name: Aditya Kharote
   country: India
   github: Akharote1
   image: aditya_kharote.jpg
   twitter: Akharote1
-  
+
 - name: Shahaam Marzook
   country: SriLanka
   github: ShahaamMarzook
@@ -330,7 +336,7 @@
   github: ddx-510
   image: ddx.jpg
   twitter: ddx2000
-  
+
 - name: Poh Say Keong
   country: Singapore
   github: PohSayKeong
@@ -348,7 +354,7 @@
   github: pythongiant
   image: srihari.jpeg
   twitter: Harrythecoder
-  
+
 - name: Kush Pandey
   country: India
   github: kushpandey1811
@@ -356,7 +362,7 @@
   twitter: kushpandey1811
   lat: 77.2090
   lng: 28.6139
-  
+
 - name: Arjun Loomba
   country: India
   github: arjunloomba1311
