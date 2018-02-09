@@ -27,6 +27,6 @@
     transition: all 0.6s;
 }
 .mentor-list .single-mentor .social-overlay-list a:hover i{
-    color:black;
+    color: #bebebe;
     transition: all 0.6s;
 }
