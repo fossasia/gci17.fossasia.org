@@ -350,7 +350,8 @@ $(document).ready(function() {
                         slider.find('.flex-active-slide').find('.fs-vid-background video').get(0).play();
                     }
                 }
-            }
+            },
+            animation: "slide"
         });
         $('.slider-paging-controls').flexslider({
             animation: "slide",
