@@ -19,6 +19,7 @@
   facebook: 0x48piraj
   lat: 25.5933
   lng: 85.1603
+  contributionWinner: true
 
 - name: Arnav Raman
   country: India
@@ -148,6 +149,7 @@
   twitter: top_kuba
   lat: 52.128588
   lng: 21.2607444
+  contributionWinner: true
 
 - name: Saarthak Chaturvedi
   image: Saarthak.jpg
@@ -210,6 +212,7 @@
   facebook: Samyak Jain
   lat: 28.621091399999997
   lng: 77.2173155
+  contributionWinner: true
 
 - name: Tushar Verma
   github: 2coolife
@@ -290,6 +293,7 @@
   twitter: arjunpandey2003
   lat: 77.2090
   lng: 28.6139
+  contributionWinner: true
 
 - name: Daniel Lawson
   country: USA
@@ -305,6 +309,7 @@
   twitter: Yash_Beta_King
   lat: 26.9255
   lng: 75.7861
+  contributionWinner: true
 
 - name: Mishaal Kandapath
   country: Kuwait
