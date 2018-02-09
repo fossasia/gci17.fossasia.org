@@ -43,3 +43,8 @@ h2.txt-rotate {
 div.image-tile.outer-title.text-center {
     margin-bottom: 0px;
 }
+
+.flex-direction-nav a.flex-next,
+.flex-direction-nav a.flex-prev{
+    display:none;
+}

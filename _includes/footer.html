@@ -64,9 +64,20 @@
 				</div>
 		   </footer>
 
-
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('Service Worker registration successful with scope: ',
+                            registration.scope);
+                    })
+                    .catch(function(err) {
+                        console.log('Service Worker registration failed: ', err);
+                    });
+            }
+        </script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="js/flexslider.min.js"></script>
 		<script type="text/javascript" src="js/typed.js"></script>
 		<script type="text/javascript">
 			Typed.new('.typed', {
@@ -79,7 +90,6 @@
 			});
 		</script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/flexslider.min.js"></script>
 		<script src="js/lightbox.min.js"></script>
 		<script src="js/masonry.min.js"></script>
 		<script src="js/flickr.js"></script>
@@ -191,17 +201,5 @@
             map.addControl(controls['selector']);
             controls['selector'].activate();
         </script>
-        <script>
-		    if ('serviceWorker' in navigator) {
-		      navigator.serviceWorker.register('sw.js')
-		        .then(function(registration) {
-		          console.log('Service Worker registration successful with scope: ',
-		          registration.scope);
-		        })
-		        .catch(function(err) {
-		          console.log('Service Worker registration failed: ', err);
-		        });
-		    }
-	    </script>
     </body>
 </html>
