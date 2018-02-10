@@ -1046,7 +1046,7 @@ nav.bg-dark .logo-dark {
   visibility: visible;
 }
 .menu > li > ul a:hover {
-  background-color: red;
+  background-color: gray;
   width: 100%;
 }
 .menu > li > ul > li:hover > ul,
