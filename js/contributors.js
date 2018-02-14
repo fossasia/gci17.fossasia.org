@@ -10,10 +10,10 @@ $(document).ready(function(){
     url: "https://api.github.com/repos/fossasia/gci17.fossasia.org/contributors?per_page=100&page=1"
   }).done(function(data){
     data.forEach(function(contributors){
-      var html = '<div class="card hvr-hang single-mentor">';
-      html += '<img src="https://github.com/'+contributors.login+'.png?size=240x240" height="240" width="240">';
+      var html = '<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2"> <div class="card hvr-hang single-mentor">';
+      html += '<img src="https://github.com/'+contributors.login+'.png?size=130x130" height="130" width="130">';
       html += '<br>';
-      html += '<p class="person-name">'+contributors.login+' ('+contributors.contributions;
+      html += '<p class="person-name">'+contributors.login+' <br>('+contributors.contributions;
       if (contributors.contributions === 1) {
         html += ' contribution)</p><br>';
       } else {
@@ -22,7 +22,7 @@ $(document).ready(function(){
       html += '<ul class="list-inline social-list social-overlay-list">';
       html += '<a href="'+contributors.html_url+'" class="icon-a">';
       html += '<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>';
-      html += '</a></ul></div>';
+      html += '</a></ul></div></div>';
       $("#contributors").append(html);
     });
   });
