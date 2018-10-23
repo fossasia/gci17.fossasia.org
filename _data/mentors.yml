@@ -9,7 +9,10 @@
 #   facebook: Mentor's Facebook ID
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
-
+- name: Shubham Kumar
+  github: sk9331657
+  image: shubham.png
+    
 - name: Vaibhav Singh
   github: vaibhavsingh97
   image: vaibhavsingh97.jpg
