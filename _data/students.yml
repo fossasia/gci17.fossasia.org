@@ -11,6 +11,14 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Vishal Kumar
+  country: India
+  github: vishalx360
+  image: vishalx360.jpeg
+  twitter: vishalx360
+  lat: 26.1209
+  lng: 85.3647
+
 - name: Piyush Raj
   country: India
   github: 0x48piraj
