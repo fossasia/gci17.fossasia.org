@@ -19,7 +19,7 @@ To add a mentor open the file `mentors.yml` in `_data` folder and please maintai
 **IMPORTANT:**
 - All images must be optimized before uploaded to the repository via commit or Pull Request. You may use any image optimizer of your choice.
 - All images must be in `img/mentors`.
-- The images must be 240 x 240 pixels.
+- The images must be 240 x 240 pixels.mukeshreddygiris\hhbrhsd
 - If you do not want to include your social media accounts or coordinates , please do not provide empty fields like `facebook:`.
 - Avoid using contractions such as *can't, don't,* etc. If there is no choice (e.g. the name has single quote mark) put double quotes (`"`) around that part.
 
@@ -154,4 +154,4 @@ permalink: <some permalink>
     - [In Sinhala - සිංහලෙන්](/installation/installation_macos(sin).md) 
     - [In Polish - Polski](/installation/installation_macos(pl).md)
     - [In French - Français](/installation/installation_macos(fr).md)
-
+kjkldzuiveh.gfuiewhuitJ
