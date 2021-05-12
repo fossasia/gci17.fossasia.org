@@ -6,6 +6,7 @@ permalink: students
 
 <div class="rocket">
 	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket">
+		<link rel="stylesheet" href="css/images.css">
 		<div class="fire"></div>
 	</a>
 </div>
@@ -18,9 +19,9 @@ permalink: students
 				{% for student in site.data.students %}
 				<div class="card single-mentor">
 					{% if student.image %}
-					<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+					<img src="img/students/abcd.jpg" alt="{{ student.name }}" class="img">
 					{% else %}
-					<img src="img/students/member.png" alt="{{ student.name }}">
+					<img src="img/students/2coolife.jpg" alt="{{ student.name }}" class="img">
 					{% endif %}
 					<br>
 					<p class="person-name">{{ student.name }}</p><br>
