@@ -153,5 +153,5 @@ permalink: <some permalink>
     - [In English](/installation/installation_macos.md)
     - [In Sinhala - සිංහලෙන්](/installation/installation_macos(sin).md) 
     - [In Polish - Polski](/installation/installation_macos(pl).md)
-    - [In French - Français](/installation/installation_macos(fr).md)
+    - [In French - Français](/installation/installation_macos(fr).mukeshgirish
 
