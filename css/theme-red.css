@@ -692,7 +692,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   z-index: 1;
-  background: #292929;
+  background: #292929;;
   background-size: cover !important;
   background-position: 50% 50% !important;
   transition: all 0.3s ease;
@@ -713,7 +713,7 @@ footer.bg-dark li,
 .parallax > .background-image-holder,
 .parallax .slides li > .background-image-holder {
   height: 100vh;
-  top: -50vh;
+  /* top: -50vh; */
   transition: all 0s ease !important;
   transition: opacity 0.3s ease !important;
   -webkit-transform-style: preserve-3d;
@@ -724,6 +724,14 @@ footer.bg-dark li,
 }
 .main-container > a:first-child + .parallax .background-image-holder {
   top: 0;
+}
+.bg-singapore {
+  background-image: url('../img/singapore.jpg') !important;
+  background-attachment: fixed !important;
+}
+.bg-asia {
+  background-image: url('../img/asia-bg.jpg') !important;
+  background-attachment: fixed !important;
 }
 @media all and (max-width: 767px) {
   .parallax > .background-image-holder,

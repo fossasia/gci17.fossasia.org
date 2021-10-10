@@ -337,10 +337,11 @@ footer{ padding: 72px 0; }
 .background-image-holder img{ display: none; }
 .background-multiply .background-image-holder{ background-color: @color-primary !important; background-blend-mode: multiply; }
 .background-image-holder.fadeIn{ opacity: 1; }
-.parallax > .background-image-holder, .parallax .slides li > .background-image-holder{ height: 100vh; top: -50vh; transition: all 0s ease !important; transition: opacity 0.3s ease !important; -webkit-transform-style: preserve-3d; }
+.parallax > .background-image-holder, .parallax .slides li > .background-image-holder{ height: 100vh; transition: all 0s ease !important; transition: opacity 0.3s ease !important; -webkit-transform-style: preserve-3d; }
 .parallax:first-child .slides li > .background-image-holder, .parallax:first-child .background-image-holder{ top: 0; }
 .main-container > a:first-child + .parallax .background-image-holder{ top: 0; } 
-
+.bg-singapore {background-image: url('../img/singapore.jpg') !important;background-attachment: fixed !important}
+.bg-asia {background-image: url('../img/asia-bg.jpg') !important;background-attachment: fixed !important;}
 @media all and (max-width: 767px){
 	.parallax > .background-image-holder, .parallax .slides li > .background-image-holder{ top: 0 !important; transform: none !important; -webkit-transform: none !important; }
 }

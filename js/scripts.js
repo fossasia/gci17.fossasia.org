@@ -1129,7 +1129,7 @@ function initializeMasonry() {
             if ($('.filters.floating').length) {
                 setupFloatingProjectFilters();
                 updateFloatingFilters();
-                window.addEventListener("scroll", updateFloatingFilters, false);
+                // window.addEventListener("scroll", updateFloatingFilters, false);
             }
 
             $('.masonry').addClass('fadeIn');
